@@ -1,0 +1,46 @@
+{
+    "ACOUSTIC_DNA": [
+        {
+            "name": "pytorch_model.bin",
+            "path": "C:\\Users\\adams/.cache/huggingface/hub\\models--m-a-p--MERT-v1-95M\\snapshots\\12af15fef9d0ac838c3f475bfbbf26d2060dd4f5\\pytorch_model.bin",
+            "size_gb": 0.352
+        }
+    ],
+    "IDENTITY_DNA": [
+        {
+            "name": "pytorch_model.bin",
+            "path": "C:\\Users\\adams/.cache/huggingface/hub\\models--openai--clip-vit-base-patch32\\snapshots\\3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268\\pytorch_model.bin",
+            "size_gb": 0.564
+        },
+        {
+            "name": "model.safetensors",
+            "path": "C:\\Users\\adams/.cache/huggingface/hub\\models--openai--clip-vit-base-patch32\\snapshots\\c237dc49a33fc61debc9276459120b7eac67e7ef\\model.safetensors",
+            "size_gb": 0.564
+        }
+    ],
+    "SEMANTIC_BRAIN": [
+        {
+            "name": "model-00001-of-00002.safetensors",
+            "path": "C:\\Users\\adams/.cache/huggingface/hub\\models--google--gemma-2-2b-it\\snapshots\\299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8\\model-00001-of-00002.safetensors",
+            "size_gb": 4.645
+        },
+        {
+            "name": "model-00002-of-00002.safetensors",
+            "path": "C:\\Users\\adams/.cache/huggingface/hub\\models--google--gemma-2-2b-it\\snapshots\\299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8\\model-00002-of-00002.safetensors",
+            "size_gb": 0.224
+        }
+    ],
+    "LATENT_FORGE": [
+        {
+            "name": "compression_state_dict.bin",
+            "path": "C:\\Users\\adams/.cache/huggingface/hub\\models--facebook--musicgen-style\\snapshots\\bd0bbe32a093ef751414cf2dd7a9a7e4fef16e96\\compression_state_dict.bin",
+            "size_gb": 0.22
+        },
+        {
+            "name": "state_dict.bin",
+            "path": "C:\\Users\\adams/.cache/huggingface/hub\\models--facebook--musicgen-style\\snapshots\\bd0bbe32a093ef751414cf2dd7a9a7e4fef16e96\\state_dict.bin",
+            "size_gb": 2.642
+        }
+    ],
+    "VNNI_ACCELERATOR": []
+}
