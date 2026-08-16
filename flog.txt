@@ -1,0 +1,106 @@
+2026-06-22 20:25:54,754	INFO worker.py:2003 -- Started a local Ray instance. View the dashboard at [1m[32mhttp://127.0.0.1:8265 [39m[22m
+C:\WEBCAS~1\.venv\Lib\site-packages\ray\_private\worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+======================================================================
+  🔥 DSP ALIGNMENT FIRE TEST  —  Ray Actor + Pedalboard C++ + PyArrow
+======================================================================
+
+📦 Phase 1: Pedalboard C++ feature extraction (outside Ray)
+  ✅ GIRL NAME DREAM -  i need that.mp3  →  50 segments  (636 ms)
+  ✅ new life.wav  →  50 segments  (133 ms)
+  ✅ new life#1.wav  →  50 segments  (129 ms)
+
+📡 Phase 2: Loading Chris Lake baseline → PyArrow → Ray Plasma
+  ✅ Baseline loaded: 66 segments (Somebody (2024))
+
+🚀 Phase 3: Initializing Ray cluster
+  ✅ Baseline in Plasma store (66 segments)
+  ✅ 4 actors initialized (66 base segments each)
+
+📐 Fitting combined StandardScaler (baseline + target features)...
+  ✅ Combined scaler fitted on 216 samples, pushed to 4 actors
+
+⚡ Phase 4: Parallel alignment
+
+  ▶ GIRL NAME DREAM -  i need that.mp3  (50 segments)
+  Segment                      | Matched Base                 |  Score | Status
+  --------------------------------------------------------------------------------
+  GIRL NAME DREAM -  i need that_seg000 | Breakdown / Low Energy 5     |  88.6% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg001 | Build / Mid Energy 10        |  78.5% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg002 | Build / Mid Energy 10        |  81.3% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg003 | Breakdown / Low Energy 22    |  83.3% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg004 | Breakdown / Low Energy 22    |  81.2% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg005 | Breakdown / Low Energy 16    |  81.8% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg006 | Breakdown / Low Energy 22    |  78.7% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg007 | Breakdown / Low Energy 16    |  80.9% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg008 | Breakdown / Low Energy 16    |  78.9% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg009 | Build / Mid Energy 10        |  87.0% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg010 | Build / Mid Energy 10        |  86.4% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg011 | Breakdown / Low Energy 22    |  79.0% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg012 | Breakdown / Low Energy 22    |  78.6% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg013 | Breakdown / Low Energy 22    |  78.2% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg014 | Breakdown / Low Energy 16    |  82.1% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg015 | Breakdown / Low Energy 16    |  78.7% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg016 | Breakdown / Low Energy 16    |  79.5% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg017 | Breakdown / Low Energy 11    |  84.1% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg018 | Breakdown / Low Energy 11    |  78.6% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg019 | Breakdown / Low Energy 11    |  82.0% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg020 | Breakdown / Low Energy 11    |  86.5% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg021 | Breakdown / Low Energy 22    |  81.4% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg022 | Breakdown / Low Energy 22    |  81.3% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg023 | Breakdown / Low Energy 11    |  82.0% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg024 | Breakdown / Low Energy 16    |  79.6% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg025 | Breakdown / Low Energy 22    |  81.8% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg026 | Breakdown / Low Energy 22    |  81.4% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg027 | Breakdown / Low Energy 22    |  79.8% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg028 | Breakdown / Low Energy 22    |  81.3% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg029 | Breakdown / Low Energy 22    |  82.5% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg030 | Breakdown / Low Energy 22    |  83.3% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg031 | Breakdown / Low Energy 22    |  82.2% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg032 | Build / Mid Energy 10        |  78.2% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg033 | Breakdown / Low Energy 22    |  78.4% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg034 | Build / Mid Energy 10        |  84.7% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg035 | Breakdown / Low Energy 22    |  83.8% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg036 | Breakdown / Low Energy 1     |  83.6% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg037 | Breakdown / Low Energy 22    |  83.5% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg038 | Breakdown / Low Energy 5     |  93.5% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg039 | Breakdown / Low Energy 1     |  82.0% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg040 | Breakdown / Low Energy 1     |  83.0% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg041 | Breakdown / Low Energy 22    |  85.9% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg042 | Breakdown / Low Energy 11    |  86.8% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg043 | Breakdown / Low Energy 16    |  81.7% | ⚠️  fallback
+  GIRL NAME DREAM -  i need that_seg044 | Breakdown / Low Energy 1     |  85.3% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg045 | Breakdown / Low Energy 1     |  86.6% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg046 | Breakdown / Low Energy 22    |  84.5% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg047 | Breakdown / Low Energy 16    |  82.5% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg048 | Breakdown / Low Energy 16    |  82.9% | ✅ passed
+  GIRL NAME DREAM -  i need that_seg049 | Breakdown / Low Energy 22    |  86.2% | ✅ passed
+
+  ⚡ Aligned 50 segments in 12 ms  |  Passed: 25  |  Fallback: 25
+
+  ▶ new life.wav  (50 segments)
+  Segment                      | Matched Base                 |  Score | Status
+  --------------------------------------------------------------------------------
+  new life_seg000              | Breakdown / Low Energy 5     |  57.0% | ⚠️  fallback
+  new life_seg001              | Breakdown / Low Energy 22    |  94.2% | ✅ passed
+  new life_seg002              | Breakdown / Low Energy 22    |  97.3% | ✅ passed
+  new life_seg003              | Breakdown / Low Energy 1     |  99.6% | ✅ passed
+  new life_seg004              | Breakdown / Low Energy 1     |  98.3% | ✅ passed
+  new life_seg005              | Drop / High Energy 15        |  97.4% | ✅ passed
+  new life_seg006              | Breakdown / Low Energy 1     |  98.2% | ✅ passed
+  new life_seg007              | Drop / High Energy 15        |  96.8% | ✅ passed
+  new life_seg008              | Breakdown / Low Energy 1     |  97.4% | ✅ passed
+  new life_seg009              | Breakdown / Low Energy 22    |  94.6% | ✅ passed
+  new life_seg010              | Breakdown / Low Energy 22    |  94.7% | ✅ passed
+  new life_seg011              | Breakdown / Low Energy 1     |  98.0% | ✅ passed
+  new life_seg012              | Breakdown / Low Energy 1     |  97.5% | ✅ passed
+  new life_seg013              | Breakdown / Low Energy 1     |  98.6% | ✅ passed
+  new life_seg014              | Breakdown / Low Energy 22    |  97.3% | ✅ passed
+  new life_seg015              | Drop / High Energy 15        |  97.2% | ✅ passed
+  new life_seg016              | Breakdown / Low Energy 1     |  97.4% | ✅ passed
+  new life_seg017              | Breakdown / Low Energy 22    |  99.0% | ✅ passed
+  new life_seg018              | Drop / High Energy 15        |  97.7% | ✅ passed
+  new life_seg019              | Breakdown / Low Energy 22    |  98.6% | ✅ passed
+  new life_seg020              | Breakdown / Low Energy 22    |  98.6% | ✅ passed
+  new life_seg021              | Breakdown / Low Energy 1     |  99.3% | ✅ passed
+  new life_seg022              | Breakdown / Low Energy 1     |  98.2% | ✅ passed

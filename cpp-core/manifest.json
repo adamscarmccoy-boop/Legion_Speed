@@ -1,0 +1,16 @@
+{
+  "type": "plugin",
+  "runner": "node",
+  "owner": "local-developer",
+  "name": "lms-cognitive-pipeline-core",
+  "version": "1.0.0",
+  "description": "Isolated Cognitive Pipeline Core Engine",
+  "permissions": {
+    "network": true,
+    "allow_ipc": true,
+    "preprocessor_hooks": true,
+    "dangerously_allow_system_execution": true,
+    "host_process_management": true,
+    "local_port_bindings": []
+  }
+}

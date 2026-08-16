@@ -1,0 +1,6 @@
+$c904cd47-e316-410e-b92f-74e2670bee8f²ð#
+track_name ÿÿÿÿÿÿÿÿÿ*string08'segment_name ÿÿÿÿÿÿÿÿÿ*string085vector ÿÿÿÿÿÿÿÿÿ*fixed_size_list:float:102408(semantic_text ÿÿÿÿÿÿÿÿÿ*string08rms ÿÿÿÿÿÿÿÿÿ*float08&crest_factor ÿÿÿÿÿÿÿÿÿ*float08)sub_bass_energy ÿÿÿÿÿÿÿÿÿ*float08%bass_energy ÿÿÿÿÿÿÿÿÿ*float08$
+mid_energy ÿÿÿÿÿÿÿÿÿ*float08%high_energy	 ÿÿÿÿÿÿÿÿÿ*float08+spectral_centroid
+ ÿÿÿÿÿÿÿÿÿ*float08,spectral_bandwidth ÿÿÿÿÿÿÿÿÿ*float08*spectral_rolloff ÿÿÿÿÿÿÿÿÿ*float08+spectral_flatness ÿÿÿÿÿÿÿÿÿ*float08+spectral_contrast ÿÿÿÿÿÿÿÿÿ*float08,zero_crossing_rate ÿÿÿÿÿÿÿÿÿ*float08"'
+lance.auto_cleanup.older_than14days"!
+lance.auto_cleanup.interval20

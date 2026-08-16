@@ -1,0 +1,21 @@
+{
+  "name": "lms-cognitive-pipeline-core",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "devDependencies": {
+    "@lmstudio/sdk": "^1.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "wrangler": "^4.121.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "workerd@1.20260804.1": true
+  }
+}

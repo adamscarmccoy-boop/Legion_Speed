@@ -1,0 +1,282 @@
+{
+  "agent_name": "LegionDAW-Architect",
+  "version": "2.0.0",
+  "updated": "2026-05-28",
+  "description": "Legion DAW AI Agent — MCP tool matrix registered with google-agents-cli",
+  "cloud": {
+    "gcp_project_id": "legiondaw-87798",
+    "gcp_region": "us-central1",
+    "firebase_project": "legiondaw-87798",
+    "sa_key_path": "C:\\Users\\adams\\AppData\\Local\\Google\\Cloud SDK\\sa-key-new.json"
+  },
+  "transport": {
+    "protocol": "MCP/HTTP-Streaming",
+    "local_endpoint": "http://127.0.0.1:8002/tools/execute",
+    "mcp_stdio_entry": "C:\\WEB CASE STUDY\\mcp_rag_server.py",
+    "mcp_stdio_fallback": "C:\\WEB CASE STUDY\\mcp_api_server_old.py",
+    "tailscale_ip": "100.113.76.102",
+    "tailscale_endpoint": "http://100.113.76.102:8002/tools/execute",
+    "colab_sandbox_sse": "http://100.X.X.X:8092/sse"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8001,
+    "api_port": 8002,
+    "loopback": "http://127.0.0.1:8001",
+    "api_loopback": "http://127.0.0.1:8002"
+  },
+  "services": {
+    "lancedb": {
+      "enabled": true,
+      "path": "C:\\STUDIES_BACKUP\\vectors\\lancedb_store",
+      "table": "audio_vibe_gpu",
+      "dimensions": 384,
+      "status": "ONLINE — 2010 embeddings"
+    },
+    "duckdb": {
+      "enabled": true,
+      "path": "C:\\STUDIES_BACKUP\\data\\metadata\\sonic_core_v2.duckdb",
+      "primary_table": "audio_features_batched",
+      "asset_count": 1082,
+      "fallback_path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\data\\metadata\\sonic_core.duckdb"
+    },
+    "ollama": {
+      "enabled": true,
+      "endpoint": "http://100.113.76.102:11434/v1",
+      "model": "phi3"
+    },
+    "audiocraft": {
+      "enabled": true,
+      "output_dir": "C:\\STUDIES_BACKUP\\generated_audio",
+      "stems_dir": "C:\\STUDIES_BACKUP\\separated_stems",
+      "stream_url": "http://100.113.76.102:8010/audio/"
+    },
+    "firebase": {
+      "enabled": true,
+      "project": "legiondaw-87798",
+      "region": "us-central1"
+    }
+  },
+  "paths": {
+    "root": "C:\\STUDIES_BACKUP",
+    "pipeline": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline",
+    "lancedb_store": "C:\\STUDIES_BACKUP\\vectors\\lancedb_store",
+    "sonic_core_duckdb": "C:\\STUDIES_BACKUP\\data\\metadata\\sonic_core_v2.duckdb",
+    "generated_audio": "C:\\STUDIES_BACKUP\\generated_audio",
+    "separated_stems": "C:\\STUDIES_BACKUP\\separated_stems",
+    "world_state": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\legion_world_state.json",
+    "logs": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\data\\logs"
+  },
+  "fallback_paths": {
+    "root": "C:\\WEB CASE STUDY",
+    "pipeline": "C:\\WEB CASE STUDY\\Legion-Jacked-Pipeline",
+    "lancedb_store": "C:\\WEB CASE STUDY\\.vector_cache",
+    "sonic_core_duckdb": "C:\\WEB CASE STUDY\\web_intel_sonicdb.duckdb",
+    "generated_audio": "C:\\WEB CASE STUDY\\generated_audio",
+    "separated_stems": "C:\\WEB CASE STUDY\\separated_stems"
+  },
+  "tools": [
+    {
+      "name": "query_neural_core",
+      "description": "Retrieves relevant context from the Legion LanceDB memory bank (384D vectors). REQUIRED before architectural changes.",
+      "parameters": {
+        "prompt": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "read_file",
+      "description": "Reads any file on C: or D: drives. Inspect code, configs, audio metadata, logs.",
+      "parameters": {
+        "path": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "list_directory",
+      "description": "Lists files and folders in a directory on C: or D:.",
+      "parameters": {
+        "path": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "write_file",
+      "description": "Writes content to a file. WRITE RESTRICTED TO C:\\ ONLY.",
+      "parameters": {
+        "path": {
+          "type": "string",
+          "required": true
+        },
+        "content": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "execute_command",
+      "description": "Executes a shell command. Destructive commands blocked by Iron Gate.",
+      "parameters": {
+        "command": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "ingest_cortex_data",
+      "description": "Triggers high-speed cortex ingestion inside Docker Reactor for GPU vectorization.",
+      "parameters": {}
+    },
+    {
+      "name": "extract_cortex_data",
+      "description": "Triggers cortex extraction inside Docker Reactor.",
+      "parameters": {}
+    },
+    {
+      "name": "generate_music_track",
+      "description": "Generates audio using local Gemma 4 GPU weights — phonetic descriptors or MIDI structures.",
+      "parameters": {
+        "prompt": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "get_asset_grid",
+      "description": "Returns snapshot of latest ingested audio assets from DuckDB (sonic_core_v2.duckdb, 1082 assets).",
+      "parameters": {
+        "limit": {
+          "type": "integer",
+          "default": 10
+        }
+      }
+    },
+    {
+      "name": "get_artist_dna",
+      "description": "Retrieves Artist DNA signature benchmark for ADAMSCARMCCOY. Used to audit generated tracks.",
+      "parameters": {
+        "workspace_id": {
+          "type": "string",
+          "default": "ADAMSCARMCCOY"
+        }
+      }
+    },
+    {
+      "name": "analyze_audio_file",
+      "description": "Deep audio analysis — BPM, key, energy, spectral profile — on any local audio file.",
+      "parameters": {
+        "path": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "relay_tuning_instructions",
+      "description": "Logs tuning feedback and match scores back into the LanceDB memory after generation audits.",
+      "parameters": {
+        "score": {
+          "type": "number",
+          "required": true
+        },
+        "critique": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "extract_stems",
+      "description": "Separates audio into stems (drums, bass, vocals, melody) using local Demucs.",
+      "parameters": {
+        "path": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "search_tracks",
+      "description": "Semantic vector search across the 2010-embedding LanceDB audio_vibe_gpu table.",
+      "parameters": {
+        "query": {
+          "type": "string",
+          "required": true
+        },
+        "limit": {
+          "type": "integer",
+          "default": 10
+        }
+      }
+    },
+    {
+      "name": "get_track_dna",
+      "description": "Returns full DNA profile for a specific track — BPM, key, tags, embedding signature.",
+      "parameters": {
+        "track_id": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "get_tuning_report",
+      "description": "Returns the latest sovereign tuning report comparing generated output vs Artist DNA target.",
+      "parameters": {}
+    },
+    {
+      "name": "pipeline_health_summary",
+      "description": "Live status of DuckDB (1082 assets), LanceDB (2010 vectors), and GPU engine.",
+      "parameters": {}
+    },
+    {
+      "name": "get_data_atlas",
+      "description": "BPM distribution, top keys, and asset composition breakdown across the full library.",
+      "parameters": {}
+    },
+    {
+      "name": "analyze_library_trends",
+      "description": "Statistical trend analysis across the full indexed audio library.",
+      "parameters": {}
+    },
+    {
+      "name": "export_data_for_cloud",
+      "description": "Exports structured data package for upload to GCP legiondaw-87798. Returns Tailscale stream URL.",
+      "parameters": {
+        "format": {
+          "type": "string",
+          "default": "json"
+        }
+      }
+    },
+    {
+      "name": "create_analysis_notebook",
+      "description": "Generates a Jupyter notebook for deep audio analysis and ML experimentation.",
+      "parameters": {
+        "title": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "check_ingestion_status",
+      "description": "Checks current state of the cortex ingestion pipeline.",
+      "parameters": {}
+    },
+    {
+      "name": "clear_vram_bloat",
+      "description": "Clears GPU VRAM cache on the local NVIDIA GTX 1650 Super to reclaim memory.",
+      "parameters": {}
+    }
+  ]
+}

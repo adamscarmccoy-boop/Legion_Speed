@@ -1,0 +1,31 @@
+[project]
+name = "sovereign-producer"
+version = "1.0.0"
+dependencies = [
+    "langgraph>=1.0.8,<1.1.0",
+    "onnxruntime==1.26.0",
+    "langgraph-prebuilt<1.1.0",
+    "torch",
+    "ray",
+    "aiohttp",
+    "fastapi",
+    "uvicorn[standard]",
+    "websockets>=12.0",
+    "filetype",
+    "tinytag",
+    "colorama>=0.4.6",
+    "rich>=13.7.0",
+    "pydantic-settings>=2.0.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "pyaudio>=0.2.14",
+    "librosa>=0.10.0",
+    "soundfile>=0.12.1",
+    "yt-dlp>=2023.11.24"
+]
+
+[tool.pyrefly]
+project-includes = [
+    "**/*.py*",
+    "**/*.ipynb",
+]

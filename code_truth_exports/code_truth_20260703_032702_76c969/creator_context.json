@@ -1,0 +1,219 @@
+{
+  "run_id": "code_truth_20260703_032702_76c969",
+  "created_at": "2026-07-03T08:56:08.440393",
+  "query": "ray actors ray.get_actor namespace legion",
+  "target_file_kind": ".py",
+  "selected_db": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+  "selected_tables": [
+    "chris_lake_speed_test",
+    "chris_lake_web_intel",
+    "mined_code_vectors",
+    "mined_documentation_vectors"
+  ],
+  "verified_sources": [
+    {
+      "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+      "normalized_path": "C:\\WEB CASE STUDY\\mix_audit_agent.py",
+      "symbol_name": "__init__",
+      "exists": true,
+      "readable": true,
+      "contains_symbol": true,
+      "imports": [
+        "os",
+        "json",
+        "subprocess",
+        "librosa",
+        "numpy",
+        "time",
+        "ray",
+        "pandas",
+        "pydantic",
+        "typing"
+      ],
+      "classes": [
+        "StemAudit",
+        "AuditReportData",
+        "RegistryClient"
+      ],
+      "functions": [
+        "extract_stem_features_ray",
+        "run_mix_audit_agent",
+        "__init__",
+        "get_table",
+        "coerce_value"
+      ],
+      "ray_calls": [
+        "ray.is_initialized",
+        "ray.init",
+        "ray.remote",
+        "ray.get_actor",
+        "ray.get",
+        "ray.kill"
+      ],
+      "lancedb_mentions": [],
+      "paths_found": [
+        "C:\\WEB CASE STUDY\\demucs_bridge.py",
+        "C:\\Users\\adams\\Downloads",
+        "C:\\WEB CASE STUDY\\Acoustic-DNA-Audio-Engine\\assets",
+        "C:\\STUDIES_BACKUP\\separated_stems",
+        "c:\\STUDIES_BACKUP\\.venv_fresh\\Scripts\\python.exe",
+        "C:\\Users\\adams\\Downloads\\putting in the work.wav"
+      ],
+      "raw_rag_block": "[Result #1] File: C:/WEB CASE STUDY/mix_audit_agent.py\n  Symbol:  __init__\n  Content:\ndef __init__(self):\n        self.registry = ray.get_actor(\"SwarmKnowledgeRegistry\", namespace=LEGION_NAMESPACE)\n        print(\"RegistryClient connected to SwarmKnowledgeRegistry.\")\n...\n--------------------------------------------------",
+      "relevance_reason": "RAG matched symbol `__init__` in `C:/WEB CASE STUDY/mix_audit_agent.py` for query `ray actors ray.get_actor namespace legion` and verification passed."
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py",
+      "normalized_path": "C:\\WEB CASE STUDY\\legion_sonic_engine_orchestrator.py",
+      "symbol_name": "boot_swarm",
+      "exists": true,
+      "readable": true,
+      "contains_symbol": true,
+      "imports": [
+        "os",
+        "sys",
+        "asyncio",
+        "ray",
+        "json",
+        "typing",
+        "datetime",
+        "schemas",
+        "legion_mcp_client",
+        "intelligence_bridge",
+        "legion_sonic_engine_actors",
+        "subprocess"
+      ],
+      "classes": [
+        "LegionOrchestrator"
+      ],
+      "functions": [
+        "__init__",
+        "boot_swarm",
+        "run_turn",
+        "_save_state",
+        "trigger_antigravity_audit",
+        "shutdown"
+      ],
+      "ray_calls": [
+        "ray.is_initialized",
+        "ray.init",
+        "ray.get",
+        "ray.shutdown"
+      ],
+      "lancedb_mentions": [],
+      "paths_found": [
+        "C:\\WEB CASE STUDY\\data\\chris_lake_fused_raw.json",
+        "C:\\WEB CASE STUDY\\simulation_log.json"
+      ],
+      "raw_rag_block": "[Result #2] File: C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py\n  Symbol:  boot_swarm\n  Content:\ndef boot_swarm(self):\n        \"\"\"Initializes all Ray Actors and the MCP connection.\"\"\"\n        print(\"[Orchestrator] 🚀 Booting the Legion Swarm...\")\n        \n        if not ray.is_initialized():\n            ray.init(namespace=\"legion\", ignore_reinit_\n...\n--------------------------------------------------",
+      "relevance_reason": "RAG matched symbol `boot_swarm` in `C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py` for query `ray actors ray.get_actor namespace legion` and verification passed."
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+      "normalized_path": "C:\\WEB CASE STUDY\\mix_audit_agent.py",
+      "symbol_name": "RegistryClient",
+      "exists": true,
+      "readable": true,
+      "contains_symbol": true,
+      "imports": [
+        "os",
+        "json",
+        "subprocess",
+        "librosa",
+        "numpy",
+        "time",
+        "ray",
+        "pandas",
+        "pydantic",
+        "typing"
+      ],
+      "classes": [
+        "StemAudit",
+        "AuditReportData",
+        "RegistryClient"
+      ],
+      "functions": [
+        "extract_stem_features_ray",
+        "run_mix_audit_agent",
+        "__init__",
+        "get_table",
+        "coerce_value"
+      ],
+      "ray_calls": [
+        "ray.is_initialized",
+        "ray.init",
+        "ray.remote",
+        "ray.get_actor",
+        "ray.get",
+        "ray.kill"
+      ],
+      "lancedb_mentions": [],
+      "paths_found": [
+        "C:\\WEB CASE STUDY\\demucs_bridge.py",
+        "C:\\Users\\adams\\Downloads",
+        "C:\\WEB CASE STUDY\\Acoustic-DNA-Audio-Engine\\assets",
+        "C:\\STUDIES_BACKUP\\separated_stems",
+        "c:\\STUDIES_BACKUP\\.venv_fresh\\Scripts\\python.exe",
+        "C:\\Users\\adams\\Downloads\\putting in the work.wav"
+      ],
+      "raw_rag_block": "[Result #3] File: C:/WEB CASE STUDY/mix_audit_agent.py\n  Symbol:  RegistryClient\n  Content:\nclass RegistryClient:\n    def __init__(self):\n        self.registry = ray.get_actor(\"SwarmKnowledgeRegistry\", namespace=LEGION_NAMESPACE)\n        print(\"RegistryClient connected to SwarmKnowledgeRegistry.\")\n\n    def get_table(self, table_name: str):\n...\n--------------------------------------------------\n\nSearching Documentation for: 'ray actors ray.get_actor namespace legion'...",
+      "relevance_reason": "RAG matched symbol `RegistryClient` in `C:/WEB CASE STUDY/mix_audit_agent.py` for query `ray actors ray.get_actor namespace legion` and verification passed."
+    }
+  ],
+  "rejected_sources": [],
+  "allowed_imports": [
+    "os",
+    "json",
+    "subprocess",
+    "librosa",
+    "numpy",
+    "time",
+    "ray",
+    "pandas",
+    "pydantic",
+    "typing",
+    "sys",
+    "asyncio",
+    "datetime",
+    "schemas",
+    "legion_mcp_client",
+    "intelligence_bridge",
+    "legion_sonic_engine_actors"
+  ],
+  "allowed_ray_calls": [
+    "ray.is_initialized",
+    "ray.init",
+    "ray.remote",
+    "ray.get_actor",
+    "ray.get",
+    "ray.kill",
+    "ray.shutdown"
+  ],
+  "hardcoded_paths_to_parameterize": [
+    "C:\\WEB CASE STUDY\\demucs_bridge.py",
+    "C:\\Users\\adams\\Downloads",
+    "C:\\WEB CASE STUDY\\Acoustic-DNA-Audio-Engine\\assets",
+    "C:\\STUDIES_BACKUP\\separated_stems",
+    "c:\\STUDIES_BACKUP\\.venv_fresh\\Scripts\\python.exe",
+    "C:\\Users\\adams\\Downloads\\putting in the work.wav",
+    "C:\\WEB CASE STUDY\\data\\chris_lake_fused_raw.json",
+    "C:\\WEB CASE STUDY\\simulation_log.json"
+  ],
+  "creation_rules": [
+    "Use only verified_sources as source evidence.",
+    "Do not invent source files.",
+    "Do not invent symbols.",
+    "Do not create mock data.",
+    "Do not use example.com.",
+    "Do not create placeholder rows.",
+    "Parameterize hardcoded paths into a run spec or config object.",
+    "Do not write to LanceDB or Ray registry unless the requested artifact explicitly requires it.",
+    "Generate final runnable Python code directly.",
+    "The generated code must be deterministic.",
+    "The generated code must use Pydantic models for configuration/state boundaries.",
+    "The generated code may use Ray actors only for control/state/work dispatch, never inside the real-time audio callback.",
+    "The generated code must keep the sounddevice audio callback fast and allocation-light.",
+    "The generated code must not perform AI/model inference inside the audio callback.",
+    "The generated code must prefer a single runnable .py file over a multi-file framework."
+  ]
+}

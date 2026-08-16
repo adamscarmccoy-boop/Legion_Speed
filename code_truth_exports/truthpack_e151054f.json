@@ -1,0 +1,21 @@
+{
+  "pack_id": "truthpack_e151054f",
+  "created_at": "2026-07-03T06:33:44.524042+00:00",
+  "queries": [
+    "scrape_prospects download_and_clean weaponize",
+    "FastMCP lancedb semantic_code_search",
+    "ray actors ray.get_actor namespace legion"
+  ],
+  "rag_hits": [],
+  "path_proofs": [],
+  "usage_proofs": [],
+  "correct_lancedb_path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+  "selected_tables": [
+    "chris_lake_speed_test",
+    "chris_lake_web_intel",
+    "mined_code_vectors",
+    "mined_documentation_vectors"
+  ],
+  "missing_files": [],
+  "rejected_claims": []
+}

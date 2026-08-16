@@ -1,0 +1,4027 @@
+{
+  "scan_time_s": 161.76,
+  "files_scanned": 745304,
+  "by_type": [
+    {
+      "category": "audio_wav",
+      "count": 370720,
+      "total_bytes": 569350488010,
+      "total_h": "569.35GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\Contents\\AdamScarMcCoy\\Unknown Album\\01 WAREHOUSE REPEAT.wav",
+          "size": 754738410,
+          "size_h": "754.74MB",
+          "mtime": 1730243214,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\Contents\\PIONEER REC\\UnknownAlbum\\REC005.WAV",
+          "size": 489554032,
+          "size_h": "489.55MB",
+          "mtime": 1388551748,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\RELEASE-DEMO\\I BEEN HEARING WHISPERS - ADAMSCARMCCOY\\New Folder With Items\\New Folder With Items\\RUN RUN SCAR NEW VOX55_master.wav",
+          "size": 288000104,
+          "size_h": "288.00MB",
+          "mtime": 1755291576,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\RELEASE-DEMO\\I BEEN HEARING WHISPERS - ADAMSCARMCCOY\\MASTERING FILES\\RUN RUN SCAR NEW VOX55_master.wav",
+          "size": 288000104,
+          "size_h": "288.00MB",
+          "mtime": 1755291576,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\Contents\\AdamScarMcCoy\\Unknown Album\\01 HALLOWEEN24'.wav",
+          "size": 284910406,
+          "size_h": "284.91MB",
+          "mtime": 1728239406,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\Contents\\AdamScarMcCoy\\HALLOWEEN DUB\\01 HALLOWEEN DUB.wav",
+          "size": 270810638,
+          "size_h": "270.81MB",
+          "mtime": 1730244840,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\Contents\\AdamScarMcCoy\\Unknown Album\\01 REC-2022-03-03.wav",
+          "size": 254282232,
+          "size_h": "254.28MB",
+          "mtime": 1646284822,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\6-3-2025\\Salt and Pepper Groove Project\\Samples\\Processed\\Consolidate\\THM - Percussion Loop 58 - 128 BPM [2025-02-04 155205].wav",
+          "size": 224640044,
+          "size_h": "224.64MB",
+          "mtime": 1749025332,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\RELEASE-DEMO\\RELEASE\\BABE CAVE-ADAMSCARMCCOY - DEMO - 000.wav",
+          "size": 207360104,
+          "size_h": "207.36MB",
+          "mtime": 315547200,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\COLLECT ALL - 2025 LATE\\VIBE - SHE KEEP ON TRYING OG\\Samples\\Recorded\\VOCALS RECORDED 0001 [2025-05-10 092915].wav",
+          "size": 203566892,
+          "size_h": "203.57MB",
+          "mtime": 1746884534,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\FREAKS OUT - ADAMSCARMCCOY - DEMO\\Samples\\MOOD 4.wav",
+          "size": 198948620,
+          "size_h": "198.95MB",
+          "mtime": 1751215132,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\Contents\\AdamScarMcCoy\\Unknown Album\\01 REC-2021-11-26.wav",
+          "size": 195032440,
+          "size_h": "195.03MB",
+          "mtime": 1637982234,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\Contents\\AdamScarMcCoy\\Unknown Album\\01 REC-2024-10-29.wav",
+          "size": 180217244,
+          "size_h": "180.22MB",
+          "mtime": 1730245984,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\RELEASE-DEMO\\RELEASE\\GIMME ME A LITTLE TASTE - ADAMSCARMCCOY - DEMO - m1.wav",
+          "size": 179966104,
+          "size_h": "179.97MB",
+          "mtime": 1746669297,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\000 - MASTERED EXPORT\\Peaceful Summer - ADAMSCARMCCOY - DEMO 2.wav",
+          "size": 174160736,
+          "size_h": "174.16MB",
+          "mtime": 315547200,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\RELEASE-DEMO\\RELEASE\\Peaceful Summer - ADAMSCARMCCOY - DEMO.wav",
+          "size": 174160736,
+          "size_h": "174.16MB",
+          "mtime": 1746664621,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\RELEASE-DEMO\\RELEASE\\Peaceful Summer - ADAMSCARMCCOY - DEMO 2.wav",
+          "size": 174160736,
+          "size_h": "174.16MB",
+          "mtime": 315547200,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\000 - MASTERED EXPORT\\I NEED THAT (2) - ADAMSCARMCCOY.wav",
+          "size": 172800044,
+          "size_h": "172.80MB",
+          "mtime": 1753243474,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\000 - MASTERED EXPORT\\UPDATE - TRACKS FULL 01-2026\\I NEED THAT (2) - ADAMSCARMCCOY.wav",
+          "size": 172800044,
+          "size_h": "172.80MB",
+          "mtime": 1753243474,
+          "ext": ".wav"
+        },
+        {
+          "path": "E:\\000 - MASTERED EXPORT\\1 - VIP - ADAMSCARMCCOY - MASTER RELEASE.wav",
+          "size": 169920044,
+          "size_h": "169.92MB",
+          "mtime": 1753245240,
+          "ext": ".wav"
+        }
+      ]
+    },
+    {
+      "category": "audio_mp3",
+      "count": 18077,
+      "total_bytes": 97927969654,
+      "total_h": "97.93GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\Contents\\UnknownArtist\\UnknownAlbum\\Chill Out Session (Summer 2014 Edition).mp3",
+          "size": 176084915,
+          "size_h": "176.08MB",
+          "mtime": 1436673596,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\Contents\\The Him\\Midnight Mixtapes\\The Him - Midnight Mixtape 7.mp3",
+          "size": 139904507,
+          "size_h": "139.90MB",
+          "mtime": 1440694646,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\EXPORT ALL\\ADAMSCARMCCOY LIVE SET APRIL 2O24.mp3",
+          "size": 139800000,
+          "size_h": "139.80MB",
+          "mtime": 1767296980,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\Contents\\The Him\\The Him Mixes\\The Him - TropiCult Guestmix .mp3",
+          "size": 132592494,
+          "size_h": "132.59MB",
+          "mtime": 1433992704,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\Contents\\Paul van Dyk\\The Politics Of Dancing 3\\01-paul_van_dyk-the_politics_of_dancing_3.mp3",
+          "size": 131459050,
+          "size_h": "131.46MB",
+          "mtime": 1431657668,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\MUSIC\\Ronnie Rising (A Tribute to Ronnie James Dio).mp3",
+          "size": 104478288,
+          "size_h": "104.48MB",
+          "mtime": 1748710962,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\MUSIC\\Master Of Puppets (From the Motion Picture Metallica Through the Never).mp3",
+          "size": 97030260,
+          "size_h": "97.03MB",
+          "mtime": 1748710952,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\FX - EFFECTS\\killamanjaro vs. poison dart 1996 in jacksonville dub fi dub.mp3",
+          "size": 95686027,
+          "size_h": "95.69MB",
+          "mtime": 1205839048,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\Contents\\UnknownArtist\\UnknownAlbum\\EC Mix March 2022 w Intro.mp3",
+          "size": 95655185,
+          "size_h": "95.66MB",
+          "mtime": 1660351398,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\MUSIC\\The Day That Never Comes (Live - October 13 2010 - Auckland New Zealand).mp3",
+          "size": 94908700,
+          "size_h": "94.91MB",
+          "mtime": 1748711020,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\Contents\\UnknownArtist\\UnknownAlbum\\the journey.mp3",
+          "size": 89476674,
+          "size_h": "89.48MB",
+          "mtime": 1432087774,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\MUSIC\\Ride The Lightning (Garage Demo).mp3",
+          "size": 87094540,
+          "size_h": "87.09MB",
+          "mtime": 1748710910,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\MUSIC\\Seek And Destroy (Live - August 27 2015 - Moscow Russia).mp3",
+          "size": 87084508,
+          "size_h": "87.08MB",
+          "mtime": 1748710992,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\MUSIC\\Fade To Black (Live - June 2 2015 - Milan Italy).mp3",
+          "size": 86618064,
+          "size_h": "86.62MB",
+          "mtime": 1748710966,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\MUSIC\\Seek & Destroy (Live - Middletown NY - 1984).mp3",
+          "size": 86171684,
+          "size_h": "86.17MB",
+          "mtime": 1748711006,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\Contents\\Cashmere Cat\\cvshmerecvt.com\\Cashmere Cat Pitchfork __ MoMA PS1 Mix 24071.mp3",
+          "size": 85528955,
+          "size_h": "85.53MB",
+          "mtime": 1430311658,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\MUSIC\\Creeping Death (Live - Palo Alto CA - 1983).mp3",
+          "size": 84787404,
+          "size_h": "84.79MB",
+          "mtime": 1748711010,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\Contents\\John Summit\\UnknownAlbum\\John Summit Live Factory Town Miami.mp3",
+          "size": 83474361,
+          "size_h": "83.47MB",
+          "mtime": 1680854376,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\Contents\\UnknownArtist\\UnknownAlbum\\FractaLL B2B Rocksted @ Mandallah 14102018.mp3",
+          "size": 80335980,
+          "size_h": "80.34MB",
+          "mtime": 1550815038,
+          "ext": ".mp3"
+        },
+        {
+          "path": "E:\\Contents\\Contents\\D-Nox & Beckers\\UnknownAlbum\\D-Nox & Beckers - Passion Volume 1 Dj - Mix.mp3",
+          "size": 78064852,
+          "size_h": "78.06MB",
+          "mtime": 1562721244,
+          "ext": ".mp3"
+        }
+      ]
+    },
+    {
+      "category": "audio_aif",
+      "count": 16566,
+      "total_bytes": 27415144129,
+      "total_h": "27.42GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Samples\\Suitcase Piano\\Suitcase Piano Speakers.aif",
+          "size": 2100906836,
+          "size_h": "2.10GB",
+          "mtime": 1769430456,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\5-2025\\Beat Academy\\Shy Away\\Shy Away Project\\Samples\\Imported\\Strings Ensemble Legato.aif",
+          "size": 1246153830,
+          "size_h": "1.25GB",
+          "mtime": 1625254799,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Samples\\Suitcase Piano\\Suitcase Piano Amp.aif",
+          "size": 1050453635,
+          "size_h": "1.05GB",
+          "mtime": 1769430388,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Samples\\Suitcase Piano\\Suitcase Piano DI.aif",
+          "size": 1050420392,
+          "size_h": "1.05GB",
+          "mtime": 1769430412,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Samples\\Wurly Piano\\Wurly Piano Amp.aif",
+          "size": 944143694,
+          "size_h": "944.14MB",
+          "mtime": 1769430476,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Samples\\Wurly Piano\\Wurly Piano Speakers.aif",
+          "size": 944143694,
+          "size_h": "944.14MB",
+          "mtime": 1769430516,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Samples\\Wurly Piano\\Wurly Piano DI.aif",
+          "size": 472072064,
+          "size_h": "472.07MB",
+          "mtime": 1769430488,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Guitar and Bass\\Samples\\Combined\\Guitar Open.aif",
+          "size": 363581658,
+          "size_h": "363.58MB",
+          "mtime": 1726793098,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Guitar and Bass\\Samples\\Combined\\Electric Bass Open.aif",
+          "size": 284631185,
+          "size_h": "284.63MB",
+          "mtime": 1726793082,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Brass Quartet by Spitfire Audio\\Samples\\Combined\\Long Hollow Air - Brass Quartet.aif",
+          "size": 179866428,
+          "size_h": "179.87MB",
+          "mtime": 1769436802,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Samples\\Wurly Piano\\Wurly Piano Amp note off.aif",
+          "size": 169439666,
+          "size_h": "169.44MB",
+          "mtime": 1769430460,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Samples\\Wurly Piano\\Wurly Piano Speakers note off.aif",
+          "size": 169439666,
+          "size_h": "169.44MB",
+          "mtime": 1769430492,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Samples\\Suitcase Piano\\Suitcase Piano Speakers note off.aif",
+          "size": 167958962,
+          "size_h": "167.96MB",
+          "mtime": 1769430416,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Guitar and Bass\\Samples\\Combined\\Fretless Bass Open.aif",
+          "size": 154907866,
+          "size_h": "154.91MB",
+          "mtime": 1726793088,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Brass Quartet by Spitfire Audio\\Samples\\Combined\\Long Vibrato - Brass Quartet.aif",
+          "size": 150611964,
+          "size_h": "150.61MB",
+          "mtime": 1769436812,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Brass Quartet by Spitfire Audio\\Samples\\Combined\\Long Non-Vibrato - Brass Quartet.aif",
+          "size": 146410546,
+          "size_h": "146.41MB",
+          "mtime": 1769436806,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Guitar and Bass\\Samples\\Combined\\Electric Bass Slap.aif",
+          "size": 110105960,
+          "size_h": "110.11MB",
+          "mtime": 1726793084,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\EXPORT ALL\\Praise the Jackin Disco Scar - 2 - 14 track master.aif",
+          "size": 100800092,
+          "size_h": "100.80MB",
+          "mtime": 1771129754,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\EXPORT ALL\\Praise the Jackin Disco Scar - 2 - 14 track masterizo.aif",
+          "size": 100800092,
+          "size_h": "100.80MB",
+          "mtime": 1771130478,
+          "ext": ".aif"
+        },
+        {
+          "path": "E:\\COLLECT ALL 2016\\GIMME A HUG - DRAKE (SCAR REMIX) Project\\GIMME A HUG - DRAKE(SCAR REMIX).aif",
+          "size": 89280092,
+          "size_h": "89.28MB",
+          "mtime": 1769165700,
+          "ext": ".aif"
+        }
+      ]
+    },
+    {
+      "category": "project_als",
+      "count": 4399,
+      "total_bytes": 23884625562,
+      "total_h": "23.88GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\ADD VOCALS PLZZZZZZ DONE [2025-09-05 004837].als",
+          "size": 160794335,
+          "size_h": "160.79MB",
+          "mtime": 1757046205,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\ADD VOCALS PLZZZZZZ DONE [2025-09-06 021855].als",
+          "size": 160794323,
+          "size_h": "160.79MB",
+          "mtime": 1757047740,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\LE V LEVEL UP [2025-09-15 150802].als",
+          "size": 160756391,
+          "size_h": "160.76MB",
+          "mtime": 1757962316,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\LE V LEVEL UP [2025-09-17 004438].als",
+          "size": 160751888,
+          "size_h": "160.75MB",
+          "mtime": 1757963309,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\LE V LEVEL UP [2025-09-15 145133].als",
+          "size": 160746159,
+          "size_h": "160.75MB",
+          "mtime": 1757041754,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\LE V LEVEL UP [2025-09-04 230850].als",
+          "size": 160741218,
+          "size_h": "160.74MB",
+          "mtime": 1756690331,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\BASS TECH HOTTY Project\\Backup\\BASS TECH HOTTY [2025-09-01 001805].als",
+          "size": 160732404,
+          "size_h": "160.73MB",
+          "mtime": 1756699691,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\LE V LEVEL UP [2025-08-31 213148].als",
+          "size": 160730930,
+          "size_h": "160.73MB",
+          "mtime": 1756689328,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\BASS TECH HOTTY Project\\Backup\\BASS TECH HOTTY [2025-09-01 090701].als",
+          "size": 160729456,
+          "size_h": "160.73MB",
+          "mtime": 1756701327,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\BASS TECH HOTTY Project\\Backup\\BASS TECH HOTTY [2025-09-01 003504].als",
+          "size": 160729450,
+          "size_h": "160.73MB",
+          "mtime": 1756700310,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\BASS TECH HOTTY Project\\Backup\\BASS TECH HOTTY [2025-09-01 091950].als",
+          "size": 160729303,
+          "size_h": "160.73MB",
+          "mtime": 1756732045,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\BASS TECH HOTTY Project\\Backup\\BASS TECH HOTTY [2025-09-01 094717].als",
+          "size": 160723665,
+          "size_h": "160.72MB",
+          "mtime": 1756732813,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\BASS TECH HOTTY Project\\Backup\\BASS TECH HOTTY [2025-09-06 042220].als",
+          "size": 160722908,
+          "size_h": "160.72MB",
+          "mtime": 1756734459,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\new objective  with lev.als",
+          "size": 160704787,
+          "size_h": "160.70MB",
+          "mtime": 1756521546,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\3 for cheeeese2 [2025-09-01 002733].als",
+          "size": 160582942,
+          "size_h": "160.58MB",
+          "mtime": 1756528331,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\ADD VOCALS PLZZZZZZ DONE [2025-09-05 002301].als",
+          "size": 160582523,
+          "size_h": "160.58MB",
+          "mtime": 1757041844,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\3 for cheeeese2 [2025-09-01 052515].als",
+          "size": 160582399,
+          "size_h": "160.58MB",
+          "mtime": 1756700876,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\3 for cheeeese2 [2025-08-30 003147].als",
+          "size": 160580040,
+          "size_h": "160.58MB",
+          "mtime": 1756468849,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\3 for cheeeese2 [2025-08-29 080026].als",
+          "size": 160579072,
+          "size_h": "160.58MB",
+          "mtime": 1756467293,
+          "ext": ".als"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\00-SEPT25 GETTING CLOSE CLOSE\\3 for cheeeese Project\\Backup\\3 for cheeeese [2025-08-29 044356].als",
+          "size": 160418462,
+          "size_h": "160.42MB",
+          "mtime": 1756457029,
+          "ext": ".als"
+        }
+      ]
+    },
+    {
+      "category": "video",
+      "count": 273,
+      "total_bytes": 23859874394,
+      "total_h": "23.86GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\LOGO N VISUALS\\brokchrd_(loop) (Original).mov",
+          "size": 835240922,
+          "size_h": "835.24MB",
+          "mtime": 1687499956,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\LOGO N VISUALS\\glass_ladder_(loop) (Original).mov",
+          "size": 710601825,
+          "size_h": "710.60MB",
+          "mtime": 1687499818,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\LOGO N VISUALS\\0 tech.fux_(loop) (Original).mov",
+          "size": 708762005,
+          "size_h": "708.76MB",
+          "mtime": 1687500198,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\LOGO N VISUALS\\darknet_(loop) (Original).mov",
+          "size": 606907650,
+          "size_h": "606.91MB",
+          "mtime": 1687500286,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\LOGO N VISUALS\\0 milkcave_(loop) (Original).mov",
+          "size": 511423817,
+          "size_h": "511.42MB",
+          "mtime": 1687499974,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\LOGO N VISUALS\\base_ten (Original).mov",
+          "size": 441691128,
+          "size_h": "441.69MB",
+          "mtime": 1687500148,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\VJ Visuals\\Focal Point DXV\\flamboyant_curves.mov",
+          "size": 423016698,
+          "size_h": "423.02MB",
+          "mtime": 1679739432,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\LOGO N VISUALS\\moar (Original).mov",
+          "size": 406960515,
+          "size_h": "406.96MB",
+          "mtime": 1687500198,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\LOGO N VISUALS\\octmesh (Original).mov",
+          "size": 392272701,
+          "size_h": "392.27MB",
+          "mtime": 1687500402,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_Free_EDM_Kits_2018\\Construction Kits & FL Studio Templates\\Kit 7 128 BPM Amin\\FLP\\Silverjack Progressive 7.mp4",
+          "size": 349448634,
+          "size_h": "349.45MB",
+          "mtime": 1515609432,
+          "ext": ".mp4"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_Free_EDM_Kits_2018\\Construction Kits & FL Studio Templates\\Kit 8 128 BPM Gmin\\FLP\\Silverjack Progressive 8.mp4",
+          "size": 345467792,
+          "size_h": "345.47MB",
+          "mtime": 1515609438,
+          "ext": ".mp4"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\VJ Visuals\\Focal Point DXV\\mech_lights.mov",
+          "size": 333053859,
+          "size_h": "333.05MB",
+          "mtime": 1679739450,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\promo and media\\scar media\\Scar Video (Blackbox)\\C0022.MP4",
+          "size": 327584171,
+          "size_h": "327.58MB",
+          "mtime": 1757947500,
+          "ext": ".mp4"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\promo and media\\scar media\\Scar Video (Blackbox)\\002-C0003.MP4",
+          "size": 322087322,
+          "size_h": "322.09MB",
+          "mtime": 1757947320,
+          "ext": ".mp4"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\LOGO N VISUALS\\lightgrid_(loop) (Original).mov",
+          "size": 319061539,
+          "size_h": "319.06MB",
+          "mtime": 1687500502,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\LOGO N VISUALS\\gobo.v2 (Original).mov",
+          "size": 316617563,
+          "size_h": "316.62MB",
+          "mtime": 1687499828,
+          "ext": ".mov"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_Free_EDM_Kits_2018\\Construction Kits & FL Studio Templates\\Kit 10 128 BPM Fmin\\FLP\\Silverjack Progressive 10.mp4",
+          "size": 309800116,
+          "size_h": "309.80MB",
+          "mtime": 1515609446,
+          "ext": ".mp4"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_Free_EDM_Kits_2018\\Construction Kits & FL Studio Templates\\Kit 5 140 BPM Emin\\FLP\\Silverjack Progressive 5.mp4",
+          "size": 308701923,
+          "size_h": "308.70MB",
+          "mtime": 1515609424,
+          "ext": ".mp4"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_Free_EDM_Kits_2018\\Construction Kits & FL Studio Templates\\Kit 6 140 BPM Fmin\\FLP\\Silverjack Progressive 11.mp4",
+          "size": 303658352,
+          "size_h": "303.66MB",
+          "mtime": 1515609452,
+          "ext": ".mp4"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\LOGO N VISUALS\\motubes (Original).mov",
+          "size": 303571969,
+          "size_h": "303.57MB",
+          "mtime": 1687500604,
+          "ext": ".mov"
+        }
+      ]
+    },
+    {
+      "category": "other",
+      "count": 181306,
+      "total_bytes": 18011115048,
+      "total_h": "18.01GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\Program Files\\Components\\Serato Sample.component\\Contents\\Frameworks\\libtensorflow.2.8.2.dylib",
+          "size": 801132720,
+          "size_h": "801.13MB",
+          "mtime": 1714728914,
+          "ext": ".dylib"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SCAR SOUNDS\\magenta_studio-2.0.0.amxd",
+          "size": 667166399,
+          "size_h": "667.17MB",
+          "mtime": 1763599488,
+          "ext": ".amxd"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\Kontakt 8.component\\Contents\\MacOS\\Kontakt 8",
+          "size": 411179392,
+          "size_h": "411.18MB",
+          "mtime": 1748257502,
+          "ext": ""
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\torch\\lib\\torch_cpu.dll",
+          "size": 307778048,
+          "size_h": "307.78MB",
+          "mtime": 1781961608,
+          "ext": ".dll"
+        },
+        {
+          "path": "E:\\Programs\\ABLETON LIVE 12 SUITE v12.3.5 MAC\\Live",
+          "size": 304600848,
+          "size_h": "304.60MB",
+          "mtime": 1769436792,
+          "ext": ""
+        },
+        {
+          "path": "E:\\RELEASE-DEMO\\I BEEN HEARING WHISPERS - ADAMSCARMCCOY\\MASTERING FILES\\RUN RUN SCAR NEW VOX55_master.aup3",
+          "size": 291962880,
+          "size_h": "291.96MB",
+          "mtime": 1755294232,
+          "ext": ".aup3"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\Serato Sample.component\\Contents\\Resources\\bundle1",
+          "size": 248285662,
+          "size_h": "248.29MB",
+          "mtime": 1714728914,
+          "ext": ""
+        },
+        {
+          "path": "E:\\Program Files\\Components\\Massive X.component\\Contents\\MacOS\\Massive X",
+          "size": 236949856,
+          "size_h": "236.95MB",
+          "mtime": 1742830499,
+          "ext": ""
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\lance\\lance.pyd",
+          "size": 225303552,
+          "size_h": "225.30MB",
+          "mtime": 1781961308,
+          "ext": ".pyd"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\Replika XT.component\\Contents\\MacOS\\Replika XT",
+          "size": 181129792,
+          "size_h": "181.13MB",
+          "mtime": 1712675299,
+          "ext": ""
+        },
+        {
+          "path": "E:\\Program Files\\Components\\Replika.component\\Contents\\MacOS\\Replika",
+          "size": 171432544,
+          "size_h": "171.43MB",
+          "mtime": 1712675796,
+          "ext": ""
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\5-2025\\Beat Academy\\Beat Academy Orbit 1.5\\Vst3 Windows\\Orbit 1.5.rmplrInstruments\\Orbit 1.5.rmplr",
+          "size": 171075683,
+          "size_h": "171.08MB",
+          "mtime": 1671130166,
+          "ext": ".rmplr"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\5-2025\\Beat Academy\\Beat Academy Orbit 1.5\\Mac OS AU\\Orbit 1.5.component\\Contents\\Resources\\Orbit 1.5.rmplr",
+          "size": 171075683,
+          "size_h": "171.08MB",
+          "mtime": 1671130140,
+          "ext": ".rmplr"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\5-2025\\Beat Academy\\Beat Academy Orbit 1.5\\Mac OS Vst3\\Orbit 1.5.vst3\\Contents\\Resources\\Orbit 1.5.rmplr",
+          "size": 171075683,
+          "size_h": "171.08MB",
+          "mtime": 1671130088,
+          "ext": ".rmplr"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\Neutone FX.component\\Contents\\Resources\\libtorch\\libtorch_cpu.dylib",
+          "size": 168995216,
+          "size_h": "169.00MB",
+          "mtime": 1718948491,
+          "ext": ".dylib"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\lancedb\\_lancedb.pyd",
+          "size": 167908352,
+          "size_h": "167.91MB",
+          "mtime": 1781958008,
+          "ext": ".pyd"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\resources\\support\\CEF\\libcef.dll",
+          "size": 163259904,
+          "size_h": "163.26MB",
+          "mtime": 1665007788,
+          "ext": ".dll"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\TRK-01\\TRK-01.ens",
+          "size": 153898350,
+          "size_h": "153.90MB",
+          "mtime": 1548084289,
+          "ext": ".ens"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\Reaktor 6.component\\Contents\\MacOS\\Reaktor 6",
+          "size": 149792224,
+          "size_h": "149.79MB",
+          "mtime": 1680169574,
+          "ext": ""
+        },
+        {
+          "path": "E:\\Program Files\\Components\\Raum.component\\Contents\\MacOS\\Raum",
+          "size": 123057808,
+          "size_h": "123.06MB",
+          "mtime": 1712673880,
+          "ext": ""
+        }
+      ]
+    },
+    {
+      "category": "ml_model",
+      "count": 23,
+      "total_bytes": 14132977358,
+      "total_h": "14.13GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\pytorch_model.bin",
+          "size": 8042351585,
+          "size_h": "8.04GB",
+          "mtime": 1776858848,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\state_dict.bin",
+          "size": 3677668599,
+          "size_h": "3.68GB",
+          "mtime": 1776858808,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\APP\\WEIGHTS\\musicgen_fine_tuned_v1.th",
+          "size": 876012565,
+          "size_h": "876.01MB",
+          "mtime": 1780441492,
+          "ext": ".th"
+        },
+        {
+          "path": "E:\\APP\\WEIGHTS\\musicgen_tech_house_v2.th",
+          "size": 876012565,
+          "size_h": "876.01MB",
+          "mtime": 1780440870,
+          "ext": ".th"
+        },
+        {
+          "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\compression_state_dict.bin",
+          "size": 236001935,
+          "size_h": "236.00MB",
+          "mtime": 1776858766,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\Cyberdrive.component\\Contents\\MacOS\\Cyberdrive.bin",
+          "size": 72630128,
+          "size_h": "72.63MB",
+          "mtime": 1746177528,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\DJFX.component\\Contents\\MacOS\\DJFX.bin",
+          "size": 62768240,
+          "size_h": "62.77MB",
+          "mtime": 1748866145,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\Verbum.component\\Contents\\MacOS\\Verbum.bin",
+          "size": 47389664,
+          "size_h": "47.39MB",
+          "mtime": 1746177668,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\FireEQ.component\\Contents\\MacOS\\FireEQ.bin",
+          "size": 45742208,
+          "size_h": "45.74MB",
+          "mtime": 1746177251,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\WideFire.component\\Contents\\MacOS\\WideFire.bin",
+          "size": 44480080,
+          "size_h": "44.48MB",
+          "mtime": 1746177587,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\FireMaster.component\\Contents\\MacOS\\FireMaster.bin",
+          "size": 43883584,
+          "size_h": "43.88MB",
+          "mtime": 1746177172,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\Program Files\\VST\\Verbum.vst\\Contents\\MacOS\\Verbum.bin",
+          "size": 35418912,
+          "size_h": "35.42MB",
+          "mtime": 1742209484,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\Program Files\\VST\\FireEQ.vst\\Contents\\MacOS\\FireEQ.bin",
+          "size": 33771760,
+          "size_h": "33.77MB",
+          "mtime": 1742209077,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\Program Files\\VST\\WideFire.vst\\Contents\\MacOS\\WideFire.bin",
+          "size": 32509680,
+          "size_h": "32.51MB",
+          "mtime": 1742209405,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\APP\\SANDBOX\\workspace\\models\\universal_sentence_encoder.tflite",
+          "size": 6120274,
+          "size_h": "6.12MB",
+          "mtime": 1776859262,
+          "ext": ".tflite"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\resources\\support\\CEF\\v8_context_snapshot.bin",
+          "size": 164747,
+          "size_h": "0.16MB",
+          "mtime": 1665007788,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\resources\\support\\CEF\\snapshot_blob.bin",
+          "size": 49496,
+          "size_h": "0.05MB",
+          "mtime": 1665007788,
+          "ext": ".bin"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\straight.plugin-1.5.0-py3.12-nspkg.pth",
+          "size": 478,
+          "size_h": "0.00MB",
+          "mtime": 1782136774,
+          "ext": ".pth"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\google_generativeai-0.8.6-py3.13-nspkg.pth",
+          "size": 467,
+          "size_h": "0.00MB",
+          "mtime": 1781958016,
+          "ext": ".pth"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\pywin32.pth",
+          "size": 185,
+          "size_h": "0.00MB",
+          "mtime": 1782103046,
+          "ext": ".pth"
+        }
+      ]
+    },
+    {
+      "category": "audio_flac",
+      "count": 1421,
+      "total_bytes": 10153694266,
+      "total_h": "10.15GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\Contents\\Contents\\UnknownArtist\\UnknownAlbum\\Enough_Love_To_Hate_It.flac",
+          "size": 87792955,
+          "size_h": "87.79MB",
+          "mtime": 1662146402,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\Contents\\Contents\\UnknownArtist\\UnknownAlbum\\800_Lesbians.flac",
+          "size": 85774184,
+          "size_h": "85.77MB",
+          "mtime": 1733496574,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Ninetoes - Finder (Carl Cox Remix) - www.djsoundtop.com.flac",
+          "size": 65949538,
+          "size_h": "65.95MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\R\u00dcF\u00dcS DU SOL - Innerbloom (Original Mix).flac",
+          "size": 64823664,
+          "size_h": "64.82MB",
+          "mtime": 1730742946,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Nesta - James Bande (Original Mix) - www.djsoundtop.com.flac",
+          "size": 57918198,
+          "size_h": "57.92MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\S.A.M., Chris Stussy - Breather (Original Mix).flac",
+          "size": 57759570,
+          "size_h": "57.76MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\Contents\\Contents\\UnknownArtist\\UnknownAlbum\\Feels_Good.flac",
+          "size": 57116350,
+          "size_h": "57.12MB",
+          "mtime": 1673965240,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Roland Clark - I Get Deep (Roy Rosenfeld Extended Remix) - www.djsoundtop.com.flac",
+          "size": 56538086,
+          "size_h": "56.54MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\T.Markakis, Blanco K - Havana Jazz (Extended Mix) - www.djsoundtop.com.flac",
+          "size": 56143228,
+          "size_h": "56.14MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Kolter - Be Real (Original Mix) - www.djsoundtop.com.flac",
+          "size": 56021986,
+          "size_h": "56.02MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\DAVI - Self ASCND (Original Mix).flac",
+          "size": 54661961,
+          "size_h": "54.66MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\Mau P - MERTHER (Extended Mix).flac",
+          "size": 54211114,
+          "size_h": "54.21MB",
+          "mtime": 1730742946,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Philip George, Interplanetary Criminal, Kettama - Yosemite (Philip George Remix).flac",
+          "size": 54039700,
+          "size_h": "54.04MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Dilby - Endure (Original Mix) - www.djsoundtop.com.flac",
+          "size": 53259197,
+          "size_h": "53.26MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\Dale Howard - Nasty 90's (Original Mix).flac",
+          "size": 53104481,
+          "size_h": "53.10MB",
+          "mtime": 1730742946,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Julius Strieder - Trimbal (Extended Mix).flac",
+          "size": 53057346,
+          "size_h": "53.06MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\Mobb Deep, Nick Morgan - Shook Ones, Pt. III (Extended Mix).flac",
+          "size": 52660711,
+          "size_h": "52.66MB",
+          "mtime": 1730742946,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Julius Strieder - That's All (Extended Mix) - www.djsoundtop.com.flac",
+          "size": 52597670,
+          "size_h": "52.60MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Markus Homm - Hey You (Original Mix) - www.djsoundtop.com.flac",
+          "size": 52412145,
+          "size_h": "52.41MB",
+          "mtime": 1767477948,
+          "ext": ".flac"
+        },
+        {
+          "path": "E:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\Mau P - BEATS FOR THE UNDERGROUND (Extended Mix).flac",
+          "size": 52075653,
+          "size_h": "52.08MB",
+          "mtime": 1730742946,
+          "ext": ".flac"
+        }
+      ]
+    },
+    {
+      "category": "archive",
+      "count": 178,
+      "total_bytes": 7907734673,
+      "total_h": "7.91GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\RELEASE-DEMO\\RELEASE.zip",
+          "size": 1809808413,
+          "size_h": "1.81GB",
+          "mtime": 1766051962,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\COLLECT ALL - 2025 LATE\\Like I do Project.zip",
+          "size": 879146542,
+          "size_h": "879.15MB",
+          "mtime": 1770182158,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\Not Even Sure-PROMISE YOU OG Project.zip",
+          "size": 859982826,
+          "size_h": "859.98MB",
+          "mtime": 1747870349,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\COLLECT ALL 2016\\LEAD ME FOLLOW ME\\FOLLOW ME.zip",
+          "size": 823468499,
+          "size_h": "823.47MB",
+          "mtime": 1769827564,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\A2 - I NEED THAT - ADAMSCARMCCOY [2025-05-05 182023] Project.zip",
+          "size": 823425975,
+          "size_h": "823.43MB",
+          "mtime": 1760973078,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\COLLECT ALL - (2025)\\WHERE THE REAL ONES AT.zip",
+          "size": 691287640,
+          "size_h": "691.29MB",
+          "mtime": 1759955628,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\000 - MASTERED EXPORT\\TURN THE CLUB UP.zip",
+          "size": 553300756,
+          "size_h": "553.30MB",
+          "mtime": 1759988194,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\COLLECT ALL 2016\\LEAD ME FOLLOW ME\\FOLLOW ME - 127 - G - 2-3-26 Project.zip",
+          "size": 335383984,
+          "size_h": "335.38MB",
+          "mtime": 1770179772,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\DJSUSAN\\FROMDA BOY\\2026 Mixing Guide.zip",
+          "size": 253635716,
+          "size_h": "253.64MB",
+          "mtime": 1770779108,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\RELEASE-DEMO\\I BEEN HEARING WHISPERS - ADAMSCARMCCOY\\I BEEN HEARING WHISPERS.zip",
+          "size": 245544377,
+          "size_h": "245.54MB",
+          "mtime": 1756154302,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\COLLECT ALL - 2025 LATE\\uh oh lets go Project.zip",
+          "size": 166157097,
+          "size_h": "166.16MB",
+          "mtime": 1766217730,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\COLLECT ALL 2016\\2-22 - 2026 - MUSIC INSPO\\SOUND EMBRACE\\Mind Embrace Stems (126BPM) (1).zip",
+          "size": 162461251,
+          "size_h": "162.46MB",
+          "mtime": 1771838690,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\DJSUSAN\\LEGION\\parking lot gang\\parking lot gang Stems (127BPM).zip",
+          "size": 129698292,
+          "size_h": "129.70MB",
+          "mtime": 1780914110,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\DJSUSAN\\LEGION\\puttin in the work\\putting in the work Stems (139BPM).zip",
+          "size": 96283631,
+          "size_h": "96.28MB",
+          "mtime": 1781296870,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\ODD FREQUENCY\\Odd+Frequency+-+Tech+House+Mega+Bundle\\Odd Frequency - Tech House Mega Bundle\\Odd Frequency - Hype - Full Bundle\\Odd Frequency - Hype - Sample Pack\\Odd Frequency - Vocal Pack.zip",
+          "size": 62021114,
+          "size_h": "62.02MB",
+          "mtime": 1733343846,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\LoudMax.vst3.zip",
+          "size": 5444199,
+          "size_h": "5.44MB",
+          "mtime": 1770108218,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\LoudMax.zip",
+          "size": 5444199,
+          "size_h": "5.44MB",
+          "mtime": 1770494554,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\FluxCenter.app\\Contents\\x64\\python313.zip",
+          "size": 3763064,
+          "size_h": "3.76MB",
+          "mtime": 1743030350,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\DJSUSAN\\FROMDA BOY\\Kicks That Dont Suck.zip",
+          "size": 464458,
+          "size_h": "0.46MB",
+          "mtime": 1770771824,
+          "ext": ".zip"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\pyarrow\\tests\\data\\orc\\TestOrcFile.testDate1900.jsn.gz",
+          "size": 182453,
+          "size_h": "0.18MB",
+          "mtime": 1781957832,
+          "ext": ".gz"
+        }
+      ]
+    },
+    {
+      "category": "installer",
+      "count": 164,
+      "total_bytes": 5914409352,
+      "total_h": "5.91GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\Programs\\ABLETON LIVE 12 SUITE v12.3.5 MAC\\ableton_live_suite_12.3.5_universal.dmg",
+          "size": 5394519276,
+          "size_h": "5.39GB",
+          "mtime": 1769435572,
+          "ext": ".dmg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\resources\\packages\\Node for Max\\source\\bin\\pc_x64\\node\\node.exe",
+          "size": 59238536,
+          "size_h": "59.24MB",
+          "mtime": 1665008222,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\12-18\\PSP_stereoAnalyser2_2.0.1_macOS.dmg",
+          "size": 52686711,
+          "size_h": "52.69MB",
+          "mtime": 1768305158,
+          "ext": ".dmg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SCAR SPECIAL ISH FOLDER\\LilMissDoubler-1.0.pkg",
+          "size": 35587196,
+          "size_h": "35.59MB",
+          "mtime": 1764770186,
+          "ext": ".pkg"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\FluxCenter.app\\Contents\\x64\\FluxCenter.exe",
+          "size": 29809520,
+          "size_h": "29.81MB",
+          "mtime": 1743030856,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\Max.exe",
+          "size": 28148736,
+          "size_h": "28.15MB",
+          "mtime": 1665007832,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\MaxRT.exe",
+          "size": 27906560,
+          "size_h": "27.91MB",
+          "mtime": 1665007868,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\MaxRT_nocef.exe",
+          "size": 27099136,
+          "size_h": "27.10MB",
+          "mtime": 1665007758,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\PACKS-01-25\\OCS-45 1.1.5\\OCS-45 1.1.5.pkg",
+          "size": 26404003,
+          "size_h": "26.40MB",
+          "mtime": 1711653572,
+          "ext": ".pkg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\12-18\\PSP_stereoAnalyser2_2.0.1_Win.exe",
+          "size": 26039216,
+          "size_h": "26.04MB",
+          "mtime": 1768305126,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\PACKS-01-25\\OCS-45 1.1.5\\OCS-45 1.1.5.exe",
+          "size": 20777448,
+          "size_h": "20.78MB",
+          "mtime": 1711653570,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\ray\\core\\src\\ray\\raylet\\raylet.exe",
+          "size": 16001536,
+          "size_h": "16.00MB",
+          "mtime": 1781957976,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\ABELTON-000\\Vital\\Vital.exe",
+          "size": 15724032,
+          "size_h": "15.72MB",
+          "mtime": 1676791028,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\VoxengoStereoTouch_218_Mac_VST_VST3_setup.dmg",
+          "size": 15654423,
+          "size_h": "15.65MB",
+          "mtime": 1746420918,
+          "ext": ".dmg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SCAR SPECIAL ISH FOLDER\\LilMissDoubler-1.0.exe",
+          "size": 15645080,
+          "size_h": "15.65MB",
+          "mtime": 1764764474,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\ray\\core\\src\\ray\\gcs\\gcs_server.exe",
+          "size": 14750720,
+          "size_h": "14.75MB",
+          "mtime": 1781957974,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Extensions\\WebConnector\\Ableton Web Connector.exe",
+          "size": 10918024,
+          "size_h": "10.92MB",
+          "mtime": 1679328738,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Extensions\\Index\\Ableton Index.exe",
+          "size": 10123400,
+          "size_h": "10.12MB",
+          "mtime": 1679328740,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\AGENTS\\ar-audio-toolkit\\node_modules\\@esbuild\\win32-x64\\esbuild.exe",
+          "size": 9913856,
+          "size_h": "9.91MB",
+          "mtime": 1771396858,
+          "ext": ".exe"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Extensions\\PluginScanner\\Ableton Plugin Scanner.exe",
+          "size": 8771208,
+          "size_h": "8.77MB",
+          "mtime": 1679328740,
+          "ext": ".exe"
+        }
+      ]
+    },
+    {
+      "category": "image",
+      "count": 19093,
+      "total_bytes": 2222094220,
+      "total_h": "2.22GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\8-1-25\\SoundMorph - Inner Circle 06 - Graphene Lab\\SoundMorph - Inner Circle 06 - Graphene Lab\\5. SoundMorph Wallpapers\\Wallpapers\\SoundMorph - Doom Drones 2.png",
+          "size": 34795536,
+          "size_h": "34.80MB",
+          "mtime": 1567088752,
+          "ext": ".png"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\BIO\\9\\9.30.2022\\DSC00069.jpg",
+          "size": 30254017,
+          "size_h": "30.25MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\promo and media\\DSC00069.jpg",
+          "size": 30254017,
+          "size_h": "30.25MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\BIO\\9\\9.30.2022\\DSC00040.jpg",
+          "size": 24811128,
+          "size_h": "24.81MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\promo and media\\DSC00040.jpg",
+          "size": 24811128,
+          "size_h": "24.81MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\BIO\\9\\9.30.2022\\DSC00043.jpg",
+          "size": 24574768,
+          "size_h": "24.57MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\promo and media\\DSC00043.jpg",
+          "size": 24574768,
+          "size_h": "24.57MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\BIO\\9\\9.30.2022\\DSC00037.jpg",
+          "size": 23932098,
+          "size_h": "23.93MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\promo and media\\DSC00037.jpg",
+          "size": 23932098,
+          "size_h": "23.93MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\BIO\\9\\9.30.2022\\DSC00086.jpg",
+          "size": 23719104,
+          "size_h": "23.72MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\promo and media\\DSC00086.jpg",
+          "size": 23719104,
+          "size_h": "23.72MB",
+          "mtime": 1752141752,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\BIO\\9\\9.30.2022\\DSC00074.jpg",
+          "size": 22830281,
+          "size_h": "22.83MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\promo and media\\DSC00074.jpg",
+          "size": 22830281,
+          "size_h": "22.83MB",
+          "mtime": 1752141830,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\BIO\\9\\9.30.2022\\DSC00067.jpg",
+          "size": 18537102,
+          "size_h": "18.54MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\promo and media\\DSC00067.jpg",
+          "size": 18537102,
+          "size_h": "18.54MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\BIO\\9\\9.30.2022\\DSC00046.jpg",
+          "size": 18461396,
+          "size_h": "18.46MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\promo and media\\DSC00046.jpg",
+          "size": 18461396,
+          "size_h": "18.46MB",
+          "mtime": 1752141808,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\promo and media\\ADAM AND GABE\\DSC04155.jpg",
+          "size": 16980276,
+          "size_h": "16.98MB",
+          "mtime": 1769855492,
+          "ext": ".jpg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\PACKS-01-25\\LDHeavenVox\\LDHeavenVox\\LDSounds Heaven Vox.png",
+          "size": 15641553,
+          "size_h": "15.64MB",
+          "mtime": 1679931204,
+          "ext": ".png"
+        },
+        {
+          "path": "E:\\OTHER\\SCAR BRANDING\\BIO\\9\\9.30.2022\\DSC00025.jpg",
+          "size": 15443772,
+          "size_h": "15.44MB",
+          "mtime": 315547200,
+          "ext": ".jpg"
+        }
+      ]
+    },
+    {
+      "category": "audio_other",
+      "count": 6375,
+      "total_bytes": 1345188779,
+      "total_h": "1.35GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\Contents\\WALKER & ROYCE\\Self Help\\08 Warkin It.m4a",
+          "size": 16228338,
+          "size_h": "16.23MB",
+          "mtime": 1531979818,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\Ed Sheeran\\UnknownAlbum\\The A-Team (Kiddoh Remix).m4a",
+          "size": 15633952,
+          "size_h": "15.63MB",
+          "mtime": 1663979610,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\Mike Dunn\\My House From All Angles (Remixes)\\04 If I Can't Get Down (Mousse T.'s Funky Sh.m4a",
+          "size": 15144773,
+          "size_h": "15.14MB",
+          "mtime": 1660321068,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\WALKER & ROYCE\\Self Help\\07 Love & Marriage (feat. Dances Wit.m4a",
+          "size": 15056068,
+          "size_h": "15.06MB",
+          "mtime": 1531979806,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\Boogie Vice\\Bel Air - Single\\01 Bel Air (The Beatangers Rmx).m4a",
+          "size": 14622357,
+          "size_h": "14.62MB",
+          "mtime": 1529157726,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\WALKER & ROYCE\\Self Help\\03 Best Track Ever.m4a",
+          "size": 14387472,
+          "size_h": "14.39MB",
+          "mtime": 1531979758,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\WALKER & ROYCE\\Self Help\\10 Rub Anotha Dub (feat. Green Velve.m4a",
+          "size": 14337325,
+          "size_h": "14.34MB",
+          "mtime": 1518324742,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\WALKER & ROYCE\\Self Help\\09 Can You Pass That_ (feat. JPatt).m4a",
+          "size": 13979891,
+          "size_h": "13.98MB",
+          "mtime": 1531979838,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\Eats Everything\\Defected Presents Most Rated 2016\\05 Dancing (Again!) (feat. Tiga vs. Audion &.m4a",
+          "size": 13755050,
+          "size_h": "13.76MB",
+          "mtime": 1521762540,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\WALKER & ROYCE\\Self Help\\05 Take Me to Your Leader (feat. Dan.m4a",
+          "size": 11793951,
+          "size_h": "11.79MB",
+          "mtime": 1531979772,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\vandull\\Scorpius - EP\\03 Soulsearch (feat. Cartridge).m4a",
+          "size": 11644943,
+          "size_h": "11.64MB",
+          "mtime": 1679117620,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\Chad Valley\\Shell Suite & Remixes\\02 Shell Suite (1).m4a",
+          "size": 11411132,
+          "size_h": "11.41MB",
+          "mtime": 1663979790,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\WALKER & ROYCE\\Self Help\\06 Why Tho.m4a",
+          "size": 11388794,
+          "size_h": "11.39MB",
+          "mtime": 1531979784,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\Calippo\\Make It Through\\04 Street Blaster.m4a",
+          "size": 11328080,
+          "size_h": "11.33MB",
+          "mtime": 1524333748,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\Boogie Vice\\Bel Air - Single\\02 Bel Air (Original Mix).m4a",
+          "size": 10817766,
+          "size_h": "10.82MB",
+          "mtime": 1529157726,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\Carpainter\\Sable Valley Summer Vol. 1\\10 Time of Rage.m4a",
+          "size": 10021980,
+          "size_h": "10.02MB",
+          "mtime": 1602362856,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\WALKER & ROYCE\\Self Help\\11 Need Ya (feat. Forrest).m4a",
+          "size": 9941587,
+          "size_h": "9.94MB",
+          "mtime": 1531979840,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\WALKER & ROYCE\\Self Help\\04 My Own Thang (feat. Sophiegrophy).m4a",
+          "size": 9828462,
+          "size_h": "9.83MB",
+          "mtime": 1514325948,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\Visla\\Rakka - EP\\04 Rakka.m4a",
+          "size": 9784319,
+          "size_h": "9.78MB",
+          "mtime": 1701992400,
+          "ext": ".m4a"
+        },
+        {
+          "path": "E:\\Contents\\Oddisee\\The Good Fight\\12 Worse Before Better (feat. Tranqi.m4a",
+          "size": 9759840,
+          "size_h": "9.76MB",
+          "mtime": 1663979312,
+          "ext": ".m4a"
+        }
+      ]
+    },
+    {
+      "category": "code",
+      "count": 89247,
+      "total_bytes": 1068289380,
+      "total_h": "1.07GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\share\\jupyter\\labextensions\\@jupyter-widgets\\jupyterlab-manager\\node_modules\\typescript\\lib\\tsserver.js",
+          "size": 11676702,
+          "size_h": "11.68MB",
+          "mtime": 1781996792,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\share\\jupyter\\labextensions\\@jupyter-widgets\\jupyterlab-manager\\node_modules\\typescript\\lib\\tsserverlibrary.js",
+          "size": 11615475,
+          "size_h": "11.62MB",
+          "mtime": 1781996792,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\share\\jupyter\\labextensions\\@jupyter-widgets\\jupyterlab-manager\\node_modules\\typescript\\lib\\typescriptServices.js",
+          "size": 10945736,
+          "size_h": "10.95MB",
+          "mtime": 1781996794,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\share\\jupyter\\labextensions\\@jupyter-widgets\\jupyterlab-manager\\node_modules\\typescript\\lib\\typescript.js",
+          "size": 10945729,
+          "size_h": "10.95MB",
+          "mtime": 1781996794,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\node_modules\\openclaw\\node_modules\\typescript\\lib\\typescript.js",
+          "size": 9144216,
+          "size_h": "9.14MB",
+          "mtime": 1782129470,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\share\\jupyter\\labextensions\\@jupyter-widgets\\jupyterlab-manager\\node_modules\\typescript\\lib\\typingsInstaller.js",
+          "size": 8148122,
+          "size_h": "8.15MB",
+          "mtime": 1781996794,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\share\\jupyter\\labextensions\\@jupyter-widgets\\jupyterlab-manager\\node_modules\\mermaid\\dist\\mermaid.js",
+          "size": 7632684,
+          "size_h": "7.63MB",
+          "mtime": 1781996788,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\resources\\docs\\unibrowser\\package\\c74pm.client.js",
+          "size": 6596577,
+          "size_h": "6.60MB",
+          "mtime": 1665008190,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\node_modules\\openclaw\\node_modules\\typescript\\lib\\_tsc.js",
+          "size": 6239091,
+          "size_h": "6.24MB",
+          "mtime": 1782129468,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\share\\jupyter\\labextensions\\@jupyter-widgets\\jupyterlab-manager\\node_modules\\typescript\\lib\\tsc.js",
+          "size": 6157210,
+          "size_h": "6.16MB",
+          "mtime": 1781996788,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\resources\\packages\\Node for Max\\misc\\debug-monitor\\n4m.monitor.min.js",
+          "size": 5987856,
+          "size_h": "5.99MB",
+          "mtime": 1665008192,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\googleapiclient\\discovery_cache\\documents\\compute.alpha.json",
+          "size": 5677137,
+          "size_h": "5.68MB",
+          "mtime": 1781958010,
+          "ext": ".json"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\googleapiclient\\discovery_cache\\documents\\compute.beta.json",
+          "size": 5239350,
+          "size_h": "5.24MB",
+          "mtime": 1781958010,
+          "ext": ".json"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\web_intel_pipeline - Copy.html",
+          "size": 5051576,
+          "size_h": "5.05MB",
+          "mtime": 1781826286,
+          "ext": ".html"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\googleapiclient\\discovery_cache\\documents\\compute.v1.json",
+          "size": 4895945,
+          "size_h": "4.90MB",
+          "mtime": 1781958010,
+          "ext": ".json"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\share\\jupyter\\labextensions\\@jupyter-widgets\\jupyterlab-manager\\node_modules\\elkjs\\lib\\elk-worker.js",
+          "size": 4773044,
+          "size_h": "4.77MB",
+          "mtime": 1781996788,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\googleapiclient\\discovery_cache\\documents\\aiplatform.v1beta1.json",
+          "size": 3405520,
+          "size_h": "3.41MB",
+          "mtime": 1781958010,
+          "ext": ".json"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\.venv\\share\\jupyter\\labextensions\\@jupyter-widgets\\jupyterlab-manager\\node_modules\\mermaid\\dist\\mermaid.min.js",
+          "size": 3312967,
+          "size_h": "3.31MB",
+          "mtime": 1781996790,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\node_modules\\openclaw\\node_modules\\playwright-core\\lib\\coreBundle.js",
+          "size": 3206963,
+          "size_h": "3.21MB",
+          "mtime": 1782129468,
+          "ext": ".js"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\node_modules\\openclaw\\node_modules\\playwright-core\\lib\\utilsBundle.js",
+          "size": 3093405,
+          "size_h": "3.09MB",
+          "mtime": 1782129470,
+          "ext": ".js"
+        }
+      ]
+    },
+    {
+      "category": "preset",
+      "count": 7431,
+      "total_bytes": 1030191169,
+      "total_h": "1.03GB",
+      "top_20_largest": [
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Stark_BM44U\\Stickz - Stark (Future Bass Project File)\\Stickz - Stark (Samples & Presets)\\SYNTH - Lifelike Kalimba.fxp",
+          "size": 8180113,
+          "size_h": "8.18MB",
+          "mtime": 1688054576,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SERUM PRESETS AND FOLDERS\\FREE TRYOUT - Revealed Serum Big Room Techno Vol. 6\\RR_VO - Flying Saucer.fxp",
+          "size": 7142744,
+          "size_h": "7.14MB",
+          "mtime": 1707851598,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Hip_Hop_Toolkit_473EY\\Stickz - Hip-Hop Toolkit\\Stickz - Hip-Hop Toolkit - Serum Presets\\Stickz - Hip-Hop Toolkit Presets\\PAD - Mark V.fxp",
+          "size": 5234803,
+          "size_h": "5.23MB",
+          "mtime": 1737219840,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Hip_Hop_Toolkit_473EY\\Stickz - Hip-Hop Toolkit\\Stickz - Hip-Hop Toolkit - Serum Presets\\Stickz - Hip-Hop Toolkit Presets\\PAD - Inception.fxp",
+          "size": 5214877,
+          "size_h": "5.21MB",
+          "mtime": 1737219840,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Future_Bass_Toolkit_Z24FG\\Stickz - Future Bass Toolkit\\Stickz - Future Bass Toolkit - Serum Presets\\Stickz - Future Bass Toolkit Presets\\CHORDS - Eternal.fxp",
+          "size": 4756007,
+          "size_h": "4.76MB",
+          "mtime": 1737221558,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SERUM PRESETS AND FOLDERS\\FREE TRYOUT - Revealed Serum Ultimate Plucks Vol. 1\\RR_PL - Happy Crisis.fxp",
+          "size": 4457469,
+          "size_h": "4.46MB",
+          "mtime": 1633430762,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SERUM PRESETS AND FOLDERS\\FREE TRYOUT - Revealed Serum Keys Vol. 3\\RR_KS - Celeste.fxp",
+          "size": 4358093,
+          "size_h": "4.36MB",
+          "mtime": 1668695664,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Future_Bass_Toolkit_Z24FG\\Stickz - Future Bass Toolkit\\Stickz - Future Bass Toolkit - Serum Presets\\Stickz - Future Bass Toolkit Presets\\PAD - Crushed Voices.fxp",
+          "size": 4267854,
+          "size_h": "4.27MB",
+          "mtime": 1737221558,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\KLING\\Pluko - Your Skin By KLING\\Pluko - Your Skin By KLING\\Pluko - Your Skin Presets\\LD_FFB_Vocal Lead 2.fxp",
+          "size": 4100343,
+          "size_h": "4.10MB",
+          "mtime": 1639751524,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Future_Bass_Toolkit_Z24FG\\Stickz - Future Bass Toolkit\\Stickz - Future Bass Toolkit - Serum Presets\\Stickz - Future Bass Toolkit Presets\\PAD - Scare.fxp",
+          "size": 4048025,
+          "size_h": "4.05MB",
+          "mtime": 1737221558,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Hip_Hop_Toolkit_473EY\\Stickz - Hip-Hop Toolkit\\Stickz - Hip-Hop Toolkit - Serum Presets\\Stickz - Hip-Hop Toolkit Presets\\SYNTH - Fake Guitar.fxp",
+          "size": 4037635,
+          "size_h": "4.04MB",
+          "mtime": 1737219842,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SERUM PRESETS AND FOLDERS\\FREE TRYOUT - Revealed Serum Keys Vol. 5\\RR_KS - It Is What It Is.fxp",
+          "size": 3954247,
+          "size_h": "3.95MB",
+          "mtime": 1695183742,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SERUM PRESETS AND FOLDERS\\Black Octopus Sound - Leviathan 3 Serum Presets\\BS - Big Fat Feline.fxp",
+          "size": 3901124,
+          "size_h": "3.90MB",
+          "mtime": 1555077032,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SERUM PRESETS AND FOLDERS\\Black Octopus Sound - Leviathan 3 Serum Presets\\BS - Heavy Modulation.fxp",
+          "size": 3895942,
+          "size_h": "3.90MB",
+          "mtime": 1555077536,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\REVEALED fire PRODUCER\\Revealed Free Tryout Archive\\FREE TRYOUT - Revealed Happy Holidays [2017 Edition]\\FREE TRYOUT - Revealed Happy Holidays [2017 Edition] - Serum Soundset\\REV_BASS - 5anta.fxp",
+          "size": 3893640,
+          "size_h": "3.89MB",
+          "mtime": 1512533370,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\REVEALED fire PRODUCER\\Revealed Free Tryout Archive\\FREE TRYOUT - Revealed Happy Holidays [2017 Edition]\\FREE TRYOUT - Revealed Happy Holidays [2017 Edition] - Serum Soundset\\REV_BASS - Hot Hands.fxp",
+          "size": 3879799,
+          "size_h": "3.88MB",
+          "mtime": 1512533526,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_Free_Welcome_Pack_2\\WAV MIDI Presets\\Future Pop\\Construction Kits\\2 Kit C#m 115 BPM\\Presets\\Serum\\PLUCK - PIANO.fxp",
+          "size": 3878677,
+          "size_h": "3.88MB",
+          "mtime": 1501949780,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\REVEALED fire PRODUCER\\Revealed Producer Starter Pack Vol. 2\\Revealed Producer Starter Pack Vol. 2 - Serum Soundset\\REV_BASS - Slovenia.fxp",
+          "size": 3872211,
+          "size_h": "3.87MB",
+          "mtime": 1603210100,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_Free_Welcome_Pack_2\\WAV MIDI Presets\\Future Pop\\Construction Kits\\1 Kit Dm 110 BPM\\Presets\\Serum\\Marimba Pluck 2.fxp",
+          "size": 3853205,
+          "size_h": "3.85MB",
+          "mtime": 1501724830,
+          "ext": ".fxp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\REVEALED fire PRODUCER\\Revealed Free Tryout Archive\\FREE TRYOUT - Revealed REGGIO Soundset Mega Pack Vol. 1\\FREE TRYOUT - Revealed REGGIO Soundset Mega Pack Vol. 1 - Serum Soundset\\REV_PLUCK - Reveal The Chords.fxp",
+          "size": 3849943,
+          "size_h": "3.85MB",
+          "mtime": 1516020030,
+          "ext": ".fxp"
+        }
+      ]
+    },
+    {
+      "category": "doc",
+      "count": 6329,
+      "total_bytes": 939360947,
+      "total_h": "939.36MB",
+      "top_20_largest": [
+        {
+          "path": "E:\\DJSUSAN\\FROMDA BOY\\2026 Mixing Guide\\THE PRODUCERS CAROUSEL.pdf",
+          "size": 229438081,
+          "size_h": "229.44MB",
+          "mtime": 1768370332,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SCAR SOUNDS\\THE PRODUCERS CAROUSEL.pdf",
+          "size": 229438081,
+          "size_h": "229.44MB",
+          "mtime": 1768370332,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\Ghost Syndicate\\Ghost Syndicate - Music Production Hacks.pdf",
+          "size": 27268082,
+          "size_h": "27.27MB",
+          "mtime": 1751590388,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\DJSUSAN\\FROMDA BOY\\2026 Mixing Guide\\EQ Cheatsheet.pdf",
+          "size": 23185414,
+          "size_h": "23.19MB",
+          "mtime": 1768370332,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SCAR SOUNDS\\EQ Cheatsheet.pdf",
+          "size": 23185414,
+          "size_h": "23.19MB",
+          "mtime": 1768370332,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STAR WARS\\Epic Soundpack Lightsabers\\Epic Soundpack Lightsabers\\You are Missing a lot!.pdf",
+          "size": 22399638,
+          "size_h": "22.40MB",
+          "mtime": 1709839276,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\1-26\\Stickz - Bloom\\Stickz - Bloom Sylenth1 Presets\\How To Install - Sylenth1 Presets.pdf",
+          "size": 19316010,
+          "size_h": "19.32MB",
+          "mtime": 1732740302,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\1-26\\Stickz - Animal\\Stickz - Animal Sylenth1 Presets\\How To Install - Sylenth1 Presets.pdf",
+          "size": 19316010,
+          "size_h": "19.32MB",
+          "mtime": 1732740302,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\1-26\\Stickz - Byte\\Stickz - Byte Sylenth1 Presets\\How To Install - Sylenth1 Presets.pdf",
+          "size": 19316010,
+          "size_h": "19.32MB",
+          "mtime": 1732740302,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Future_Bass_Toolkit_Z24FG\\Stickz - Future Bass Toolkit\\Stickz - Future Bass Toolkit - Sylenth1 Presets\\How To Install - Sylenth1 Presets.pdf",
+          "size": 19316010,
+          "size_h": "19.32MB",
+          "mtime": 1732736702,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SAMPLESOUND PACKS\\SAS023_Samplesound_Techno_Volume_4\\SAS023_Samplesound_Techno_Volume_4\\Extra_Samplesound\\Samplesound General Info.pdf",
+          "size": 16301289,
+          "size_h": "16.30MB",
+          "mtime": 1492028260,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\THM\\TechHouseMarket X CASHEW - Sample Pack\\About CASHEW\\About CASHEW.pdf",
+          "size": 13616390,
+          "size_h": "13.62MB",
+          "mtime": 1647996502,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\7-1-23\\TechHouseMarket X CASHEW - Sample Pack\\About CASHEW\\About CASHEW.pdf",
+          "size": 13616390,
+          "size_h": "13.62MB",
+          "mtime": 1647996502,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\ideazz\\Mystery Pack Vol.2 (Soda Music)\\E-Books\\E-Books\\E-Book How To Market Youself As a DJ_Producer.pdf",
+          "size": 10949314,
+          "size_h": "10.95MB",
+          "mtime": 1738693478,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\MUSIC\\2d8f3a27-8306-4207-ac81-2e8d8363eaaa-compressed.pdf",
+          "size": 10321007,
+          "size_h": "10.32MB",
+          "mtime": 1731957790,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_MPMMM_4\\Marketing Mindset & Motivation Vol 4.pdf",
+          "size": 9215576,
+          "size_h": "9.22MB",
+          "mtime": 1738247438,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\WEB CASE STUDY\\scratch_tail.txt",
+          "size": 5791104,
+          "size_h": "5.79MB",
+          "mtime": 1782241122,
+          "ext": ".txt"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\5-2025\\freetousesounds - Free Room Tone Sounds Abandoned Hospital\\freetousesounds - Free Room Tone Sounds Abandoned Hospital - Discover our World of Sounds.pdf",
+          "size": 3480463,
+          "size_h": "3.48MB",
+          "mtime": 1746972186,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\1-26\\Stickz - Bloom\\License Agreement.pdf",
+          "size": 3118938,
+          "size_h": "3.12MB",
+          "mtime": 1732734336,
+          "ext": ".pdf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\1-26\\Stickz - Animal\\License Agreement.pdf",
+          "size": 3118938,
+          "size_h": "3.12MB",
+          "mtime": 1732734336,
+          "ext": ".pdf"
+        }
+      ]
+    },
+    {
+      "category": "project_flp",
+      "count": 109,
+      "total_bytes": 556701439,
+      "total_h": "556.70MB",
+      "top_20_largest": [
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\KLING\\Kling Music - Black Label House Production Stack\\CONNECT (Project Files & FLPs)\\KLING - Cocoon Remake 127BPM (Deep-Bass House)\\Cocoon Final_2.flp",
+          "size": 87843284,
+          "size_h": "87.84MB",
+          "mtime": 1731531978,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\KLING\\Kling Music - Black Label House Production Stack\\Vocal Pop House (Mini Pack)\\Project File\\KLING - Vocal Pop House Project\\KLING - VPH 2024.flp",
+          "size": 70654057,
+          "size_h": "70.65MB",
+          "mtime": 1695416042,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\KLING\\Kling Music - Black Label House Production Stack\\CONNECT (Project Files & FLPs)\\KLING - Here 2 Stay 130BPM (Bunt. House Style)\\Time Lapse 130 BPMCLouds_3.flp",
+          "size": 48799566,
+          "size_h": "48.80MB",
+          "mtime": 1731532020,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\KLING\\Kling Music - Black Label House Production Stack\\Black Label XP Vol. 1\\FLPs\\BL XP Project - AMPM Bass House Remix\\AMPMAMAMPAMMAP_5 Walk.flp",
+          "size": 27609568,
+          "size_h": "27.61MB",
+          "mtime": 1686069964,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\KLING\\Vluarr Style Project File - KLING\\Deep_2 Dif key_3 WALK_5.flp",
+          "size": 22541496,
+          "size_h": "22.54MB",
+          "mtime": 1694125040,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\ANAS SAMEER\\Maegon StillHere - Never Let You Go Remake\\Maegon Still Here Remake.flp",
+          "size": 22072142,
+          "size_h": "22.07MB",
+          "mtime": 1689803658,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_Free_EDM_Kits_2018\\Construction Kits & FL Studio Templates\\Kit 7 128 BPM Amin\\FLP\\WA Production - EDM Kit 7.flp",
+          "size": 20138232,
+          "size_h": "20.14MB",
+          "mtime": 1499037790,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\KLING\\Kling Music - Black Label House Production Stack\\CONNECT (Project Files & FLPs)\\KLING - Darkness 128BPM (Vluarr,Seth Hills Future House Style)\\Darkness_7.flp",
+          "size": 19385718,
+          "size_h": "19.39MB",
+          "mtime": 1731531980,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\KLING\\Kling Music - Black Label House Production Stack\\CONNECT (Project Files & FLPs)\\Martin - Euphoric (Progressive House)\\Martin ID_4.flp",
+          "size": 17137835,
+          "size_h": "17.14MB",
+          "mtime": 1731531802,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\KLING\\Kling Music - Black Label House Production Stack\\CONNECT (Project Files & FLPs)\\KLING - Blood 128BPM (Bass-Future House)\\Blood_3.flp",
+          "size": 13151506,
+          "size_h": "13.15MB",
+          "mtime": 1731531870,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\ANAS SAMEER\\Dirty Palm Bad Reputation CLARITY ID Anas Sameer Remake\\Bad Reputation ID Remake Youtube Tutorial.flp",
+          "size": 12381467,
+          "size_h": "12.38MB",
+          "mtime": 1708649398,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Stark_BM44U\\Stickz - Stark (Future Bass Project File)\\Stickz - Stark Project File - 147BPM Gmin\\Stickz - Stark Project File - FL Studio 21\\Stickz - Stark.flp",
+          "size": 12084882,
+          "size_h": "12.08MB",
+          "mtime": 1688069152,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Progressive_House_Toolkit_3KZJQ\\Stickz - Progressive House Toolkit\\Stickz - Progressive House Toolkit - Project Files\\Stickz PHT - Adrenaline Project File\\Stickz - Adrenaline FL STUDIO 20\\Stickz - Adrenaline.flp",
+          "size": 11758844,
+          "size_h": "11.76MB",
+          "mtime": 1737221576,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Progressive_House_Toolkit_3KZJQ\\Stickz - Progressive House Toolkit\\Stickz - Progressive House Toolkit - Project Files\\Stickz PHT - Lights Out Project File\\Stickz - Lights Out FL STUDIO 20\\Stickz - Lights Out.flp",
+          "size": 10603731,
+          "size_h": "10.60MB",
+          "mtime": 1737221578,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\ANAS SAMEER\\Had Dream Youtube Tutorial FREE\\Had Dream Youtube Tutorial FREE_2.flp",
+          "size": 10483337,
+          "size_h": "10.48MB",
+          "mtime": 1735767894,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\KLING\\Kling Music - Black Label House Production Stack\\CONNECT (Project Files & FLPs)\\KLING - Jooles 128BPM (Bass House)\\JOOLES_3.flp",
+          "size": 9110160,
+          "size_h": "9.11MB",
+          "mtime": 1731531916,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\ANAS SAMEER\\Future Bass illenium Tutorial\\Future Bass illenium Tutorial.flp",
+          "size": 7419670,
+          "size_h": "7.42MB",
+          "mtime": 1704131334,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\STICKZ\\Stickz_Future_Bass_Toolkit_Z24FG\\Stickz - Future Bass Toolkit\\Stickz - Future Bass Toolkit - Project Files\\Stickz FBT - Flush Project File\\Stickz FBT - Flush - FL STUDIO 20\\Stickz - Flush.flp",
+          "size": 6878892,
+          "size_h": "6.88MB",
+          "mtime": 1737221544,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\ANAS SAMEER\\Inside Our Heart Anas Sameer Remake\\Inside Our Heart Remake_2.flp",
+          "size": 6635672,
+          "size_h": "6.64MB",
+          "mtime": 1692420986,
+          "ext": ".flp"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_Free_EDM_Kits_2018\\Construction Kits & FL Studio Templates\\Kit 2 128 BPM Gmin\\FLP\\WA Production - EDM Kit 2.flp",
+          "size": 6268593,
+          "size_h": "6.27MB",
+          "mtime": 1499026906,
+          "ext": ".flp"
+        }
+      ]
+    },
+    {
+      "category": "font",
+      "count": 730,
+      "total_bytes": 380560164,
+      "total_h": "380.56MB",
+      "top_20_largest": [
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Fonts\\NotoSansCJKsc-Bold.otf",
+          "size": 17859640,
+          "size_h": "17.86MB",
+          "mtime": 1611061930,
+          "ext": ".otf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Fonts\\NotoSansCJKkr-Bold.otf",
+          "size": 17855624,
+          "size_h": "17.86MB",
+          "mtime": 1611061930,
+          "ext": ".otf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Fonts\\NotoSansCJKsc-Regular.otf",
+          "size": 17261160,
+          "size_h": "17.26MB",
+          "mtime": 1611061930,
+          "ext": ".otf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Fonts\\NotoSansCJKkr-Regular.otf",
+          "size": 17257144,
+          "size_h": "17.26MB",
+          "mtime": 1611061930,
+          "ext": ".otf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Fonts\\NotoSansCJKjp-Bold.otf",
+          "size": 16998140,
+          "size_h": "17.00MB",
+          "mtime": 1611061930,
+          "ext": ".otf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Fonts\\NotoSansCJKjp-Regular.otf",
+          "size": 16427228,
+          "size_h": "16.43MB",
+          "mtime": 1611061930,
+          "ext": ".otf"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Fonts\\unifont_jp-14.0.01.ttf",
+          "size": 12189224,
+          "size_h": "12.19MB",
+          "mtime": 1674721056,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\FluxCenter.app\\Contents\\Resources\\GEngine\\font\\NotoSansKR-VariableFont_wght.ttf",
+          "size": 10361060,
+          "size_h": "10.36MB",
+          "mtime": 1741282514,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\VST\\StereoTool.vst\\Contents\\Resources\\GEngine\\font\\NotoSansKR-VariableFont_wght.ttf",
+          "size": 10361060,
+          "size_h": "10.36MB",
+          "mtime": 1712642607,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\StereoTool.component\\Contents\\Resources\\GEngine\\font\\NotoSansKR-VariableFont_wght.ttf",
+          "size": 10361060,
+          "size_h": "10.36MB",
+          "mtime": 1712642607,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\FluxCenter.app\\Contents\\Resources\\GEngine\\font\\NotoSansKR-Thin.ttf",
+          "size": 6201276,
+          "size_h": "6.20MB",
+          "mtime": 1741282514,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\VST\\StereoTool.vst\\Contents\\Resources\\GEngine\\font\\NotoSansKR-Thin.ttf",
+          "size": 6201276,
+          "size_h": "6.20MB",
+          "mtime": 1712642607,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\StereoTool.component\\Contents\\Resources\\GEngine\\font\\NotoSansKR-Thin.ttf",
+          "size": 6201276,
+          "size_h": "6.20MB",
+          "mtime": 1712642607,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\FluxCenter.app\\Contents\\Resources\\GEngine\\font\\NotoSansKR-ExtraLight.ttf",
+          "size": 6201060,
+          "size_h": "6.20MB",
+          "mtime": 1741282514,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\VST\\StereoTool.vst\\Contents\\Resources\\GEngine\\font\\NotoSansKR-ExtraLight.ttf",
+          "size": 6201060,
+          "size_h": "6.20MB",
+          "mtime": 1712642607,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\StereoTool.component\\Contents\\Resources\\GEngine\\font\\NotoSansKR-ExtraLight.ttf",
+          "size": 6201060,
+          "size_h": "6.20MB",
+          "mtime": 1712642607,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\FluxCenter.app\\Contents\\Resources\\GEngine\\font\\NotoSansKR-Light.ttf",
+          "size": 6198972,
+          "size_h": "6.20MB",
+          "mtime": 1741282514,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\VST\\StereoTool.vst\\Contents\\Resources\\GEngine\\font\\NotoSansKR-Light.ttf",
+          "size": 6198972,
+          "size_h": "6.20MB",
+          "mtime": 1712642607,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\StereoTool.component\\Contents\\Resources\\GEngine\\font\\NotoSansKR-Light.ttf",
+          "size": 6198972,
+          "size_h": "6.20MB",
+          "mtime": 1712642607,
+          "ext": ".ttf"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\FluxCenter.app\\Contents\\Resources\\GEngine\\font\\NotoSansKR-Regular.ttf",
+          "size": 6192764,
+          "size_h": "6.19MB",
+          "mtime": 1741282514,
+          "ext": ".ttf"
+        }
+      ]
+    },
+    {
+      "category": "preset_adg",
+      "count": 2785,
+      "total_bytes": 181254171,
+      "total_h": "181.25MB",
+      "top_20_largest": [
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Suitcase Blender.adg",
+          "size": 10207607,
+          "size_h": "10.21MB",
+          "mtime": 1769430516,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Wurly Piano\\Wurly Blender.adg",
+          "size": 9836630,
+          "size_h": "9.84MB",
+          "mtime": 1769430518,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\11-25\\RACKED UP 64+ RACKS DEMO BY FRANTIC NOISE\\HOCKET MACHINE MAGIC.adg",
+          "size": 3864512,
+          "size_h": "3.86MB",
+          "mtime": 1674486920,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Suitcase Organ.adg",
+          "size": 3400947,
+          "size_h": "3.40MB",
+          "mtime": 1769430518,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Suitcase Clav Stack.adg",
+          "size": 3398723,
+          "size_h": "3.40MB",
+          "mtime": 1769430516,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Suitcase Uncle Herbie.adg",
+          "size": 3398666,
+          "size_h": "3.40MB",
+          "mtime": 1769430518,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Suitcase Crispy Afterburn.adg",
+          "size": 3397599,
+          "size_h": "3.40MB",
+          "mtime": 1769430516,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Suitcase Radio Retro.adg",
+          "size": 3396422,
+          "size_h": "3.40MB",
+          "mtime": 1769430518,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Suitcase Deep Roots Funk.adg",
+          "size": 3395794,
+          "size_h": "3.40MB",
+          "mtime": 1769430516,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Suitcase Boulevard Funk.adg",
+          "size": 3395702,
+          "size_h": "3.40MB",
+          "mtime": 1769430516,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Suitcase HUnited Express.adg",
+          "size": 3395516,
+          "size_h": "3.40MB",
+          "mtime": 1769430518,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Basic Suitcase DI.adg",
+          "size": 3395397,
+          "size_h": "3.40MB",
+          "mtime": 1769430516,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Suitcase FlowTron Model A.adg",
+          "size": 3395175,
+          "size_h": "3.40MB",
+          "mtime": 1769430516,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Basic Suitcase Speakers.adg",
+          "size": 3394571,
+          "size_h": "3.39MB",
+          "mtime": 1769430516,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Suitcase Hallmark Bite.adg",
+          "size": 3394194,
+          "size_h": "3.39MB",
+          "mtime": 1769430516,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Suitcase Piano\\Basic Suitcase Amp.adg",
+          "size": 3393385,
+          "size_h": "3.39MB",
+          "mtime": 1769430516,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Wurly Piano\\Wurly Low & Durty.adg",
+          "size": 3277866,
+          "size_h": "3.28MB",
+          "mtime": 1769430520,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Wurly Piano\\Wurly Smokey Water.adg",
+          "size": 3276771,
+          "size_h": "3.28MB",
+          "mtime": 1769430520,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Wurly Piano\\Wurly Shake-Alicious.adg",
+          "size": 3276748,
+          "size_h": "3.28MB",
+          "mtime": 1769430520,
+          "ext": ".adg"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Electric Keyboards\\Sounds\\Wurly Piano\\Wurly Logical Tramp.adg",
+          "size": 3274843,
+          "size_h": "3.27MB",
+          "mtime": 1769430520,
+          "ext": ".adg"
+        }
+      ]
+    },
+    {
+      "category": "preset_vst",
+      "count": 89,
+      "total_bytes": 157730240,
+      "total_h": "157.73MB",
+      "top_20_largest": [
+        {
+          "path": "E:\\Program Files\\VST3\\Vital.vst3",
+          "size": 15787520,
+          "size_h": "15.79MB",
+          "mtime": 1676791282,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\Boogex.vst3",
+          "size": 15114384,
+          "size_h": "15.11MB",
+          "mtime": 1683917152,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\Cymatics Diablo Lite.vst3",
+          "size": 13109848,
+          "size_h": "13.11MB",
+          "mtime": 1700603408,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\SPAN.vst3",
+          "size": 10700424,
+          "size_h": "10.70MB",
+          "mtime": 1726748592,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\Spacer.vst3",
+          "size": 9100672,
+          "size_h": "9.10MB",
+          "mtime": 1709649314,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\TEOTE.vst3",
+          "size": 8911984,
+          "size_h": "8.91MB",
+          "mtime": 1706115076,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\Cymatics Memory.vst3",
+          "size": 8897616,
+          "size_h": "8.90MB",
+          "mtime": 1701819974,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\PsyScope_Pro.vst3",
+          "size": 8724992,
+          "size_h": "8.72MB",
+          "mtime": 1701359624,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\Virtual Vocaid.vst3",
+          "size": 7378432,
+          "size_h": "7.38MB",
+          "mtime": 1727903162,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\Cymatics Deja Vu.vst3",
+          "size": 7011408,
+          "size_h": "7.01MB",
+          "mtime": 1696282150,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\LOCD.vst3\\Contents\\x86_64-win\\LOCD.vst3",
+          "size": 6745600,
+          "size_h": "6.75MB",
+          "mtime": 1759421974,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\Components\\yurr plugins\\YS - AL-CL.vst3\\Contents\\MacOS\\YS - AL-CL.vst3",
+          "size": 6303936,
+          "size_h": "6.30MB",
+          "mtime": 1753345020,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\Orbit 1.5.vst3",
+          "size": 6238208,
+          "size_h": "6.24MB",
+          "mtime": 1667609168,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\5-2025\\Beat Academy\\Beat Academy Orbit 1.5\\Vst3 Windows\\Orbit 1.5.vst3",
+          "size": 6238208,
+          "size_h": "6.24MB",
+          "mtime": 1667609168,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\Pancz.vst3",
+          "size": 5982592,
+          "size_h": "5.98MB",
+          "mtime": 1709648968,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\OCS-45.vst3",
+          "size": 5690752,
+          "size_h": "5.69MB",
+          "mtime": 1709648668,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\OTT.vst3",
+          "size": 3244032,
+          "size_h": "3.24MB",
+          "mtime": 1679595400,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\MAX\\Flechtwerk.vst3\\Contents\\x86_64-win\\Flechtwerk.vst3",
+          "size": 2908672,
+          "size_h": "2.91MB",
+          "mtime": 1761939970,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\ChannelStrip.vst3\\Contents\\x86_64-win\\ChannelStrip.vst3",
+          "size": 2656768,
+          "size_h": "2.66MB",
+          "mtime": 1761939954,
+          "ext": ".vst3"
+        },
+        {
+          "path": "E:\\Program Files\\VST3\\BL-StereoPan.vst3",
+          "size": 2342400,
+          "size_h": "2.34MB",
+          "mtime": 1580320018,
+          "ext": ".vst3"
+        }
+      ]
+    },
+    {
+      "category": "preset_adv",
+      "count": 7024,
+      "total_bytes": 21404376,
+      "total_h": "21.40MB",
+      "top_20_largest": [
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Alternating.adv",
+          "size": 19098,
+          "size_h": "0.02MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Tapping Around.adv",
+          "size": 19011,
+          "size_h": "0.02MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Noise Mallet (Press Keys).adv",
+          "size": 18901,
+          "size_h": "0.02MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Old Wind.adv",
+          "size": 15813,
+          "size_h": "0.02MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Pulsing.adv",
+          "size": 15653,
+          "size_h": "0.02MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Airy (Press Keys).adv",
+          "size": 15239,
+          "size_h": "0.02MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Breathing Metal.adv",
+          "size": 14944,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Quick Spread (Press Keys).adv",
+          "size": 14695,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Rise (Press Keys).adv",
+          "size": 14376,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Gust.adv",
+          "size": 14330,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Nice Drone.adv",
+          "size": 14201,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Slow Spread (Hold Keys).adv",
+          "size": 14096,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Sireny.adv",
+          "size": 13229,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Pan Rhythm.adv",
+          "size": 12935,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Resonant Melody (Press Keys).adv",
+          "size": 12103,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Deep Dim.adv",
+          "size": 11983,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Clicky Sub.adv",
+          "size": 11931,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Pretty Lofi Drone.adv",
+          "size": 11576,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Windy Transmission.adv",
+          "size": 11524,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\Inspired by Nature by Dillon Bastan\\Presets\\Tree Tone Presets\\Trem.adv",
+          "size": 11504,
+          "size_h": "0.01MB",
+          "mtime": 1769429308,
+          "ext": ".adv"
+        }
+      ]
+    },
+    {
+      "category": "midi",
+      "count": 12965,
+      "total_bytes": 20383888,
+      "total_h": "20.38MB",
+      "top_20_largest": [
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\resources\\help\\msp\\MPE_Pad.mid",
+          "size": 49376,
+          "size_h": "0.05MB",
+          "mtime": 1665007552,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_Roundel_Free_Gravity\\WAV MIDI\\MIDI Stems\\Gravity Remake - 0016 - ALL MIDI FILES.mid",
+          "size": 36656,
+          "size_h": "0.04MB",
+          "mtime": 1495169738,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\EXPORT ALL\\Deep End - John Summit (Ollys Edit) - FREE DL.mp3.mid",
+          "size": 24112,
+          "size_h": "0.02MB",
+          "mtime": 1768801328,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\COLLECT ALL - 2025 LATE\\Deep End - John Summit (Ollys Edit) - FREE DL.mp3.mid",
+          "size": 24112,
+          "size_h": "0.02MB",
+          "mtime": 1768801328,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\TEMPLATES\\HLSEDMB Progressive House-Trance Construction Kits\\HLSEDMB Kit 7 Root Key D 130bpm\\MIDIS\\MIDIS.mid",
+          "size": 19088,
+          "size_h": "0.02MB",
+          "mtime": 1611541598,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\SCAR SOUNDS\\DEEP END REMIX DRUMS STANARD SET UP OLLY WATT.mid",
+          "size": 16391,
+          "size_h": "0.02MB",
+          "mtime": 1768705512,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\TEMPLATES\\Hybrid Trap Motion 155 BPM Am\\Ableton WAV MIDI Presets\\MIDI\\Drum Rack.mid",
+          "size": 15332,
+          "size_h": "0.02MB",
+          "mtime": 1539469796,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\Hybrid Trap Motion 155 BPM Am\\Ableton WAV MIDI Presets\\MIDI\\Drum Rack.mid",
+          "size": 15332,
+          "size_h": "0.02MB",
+          "mtime": 1539469796,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\examples\\resources\\prefab_mpe.mid",
+          "size": 15134,
+          "size_h": "0.02MB",
+          "mtime": 1665007550,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\TEMPLATES\\HLSEDMB Progressive House-Trance Construction Kits\\HLSEDMB Kit 1 Root Key C# 128bpm\\MIDIS\\MIDIS.mid",
+          "size": 13317,
+          "size_h": "0.01MB",
+          "mtime": 1611540548,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\resources\\help\\msp\\MPE_Lead.mid",
+          "size": 12720,
+          "size_h": "0.01MB",
+          "mtime": 1665007552,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\TEMPLATES\\HLSEDMB Progressive House-Trance Construction Kits\\HLSEDMB Kit 2 Root Key A 128bpm\\MIDIS\\MIDI.mid",
+          "size": 12196,
+          "size_h": "0.01MB",
+          "mtime": 1611540662,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\TEMPLATES\\HLSEDMB Progressive House-Trance Construction Kits\\HLSEDMB Kit 6 Root Key C 128bpm\\MIDIS\\MIDIS.mid",
+          "size": 11018,
+          "size_h": "0.01MB",
+          "mtime": 1611541426,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\TEMPLATES\\HLSEDMB Progressive House-Trance Construction Kits\\HLSEDMB Kit 3 Root Key C# 128bpm\\MIDIS\\MIDIS.mid",
+          "size": 10845,
+          "size_h": "0.01MB",
+          "mtime": 1611540860,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\PACKS-01-25\\MIDI-20250122T022310Z-001\\MIDI\\051 AT LEAD - Mosquito d#m.mid",
+          "size": 10531,
+          "size_h": "0.01MB",
+          "mtime": 315547200,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\TEMPLATES\\HLSEDMB Progressive House-Trance Construction Kits\\HLSEDMB Kit 4 Root Key A 132bpm\\MIDIS\\MIDI.mid",
+          "size": 10042,
+          "size_h": "0.01MB",
+          "mtime": 1611541052,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\WA Prod\\WAProd_Roundel_Free_Gravity\\WAV MIDI\\MIDI Stems\\Gravity Remake - 0012 - ALP.mid",
+          "size": 9551,
+          "size_h": "0.01MB",
+          "mtime": 1495169882,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\CYMATICS\\Cymatics-TitanPremiumProductionSuiteBeta\\Cymatics - Titan Premium Production Suite Beta\\-Cymatics - TITAN Electronic Melodies (BETA)\\Loop Stems & MIDI\\Cymatics - Golden - 128 BPM G Min\\Cymatics - Golden - 128 BPM G Min.mid",
+          "size": 9491,
+          "size_h": "0.01MB",
+          "mtime": 1689601470,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\PACKS-01-25\\MIDI-20250122T022310Z-001\\MIDI\\017 AT BASS - Farmed gm.mid",
+          "size": 9041,
+          "size_h": "0.01MB",
+          "mtime": 315547200,
+          "ext": ".mid"
+        },
+        {
+          "path": "E:\\OLD ABLETON\\ABELTON\\TEMPLATES\\HLSEDMB Progressive House-Trance Construction Kits\\HLSEDMB Kit 8 Root Key G# 128bpm\\MIDIS\\MIDI.mid",
+          "size": 8841,
+          "size_h": "0.01MB",
+          "mtime": 1611541748,
+          "ext": ".mid"
+        }
+      ]
+    }
+  ],
+  "by_top_dir": [
+    {
+      "dir": "OLD ABLETON",
+      "total_bytes": 500709545141,
+      "total_h": "500.71GB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 454200108429,
+          "h": "454.20GB"
+        },
+        "audio_aif": {
+          "bytes": 25798633213,
+          "h": "25.80GB"
+        },
+        "other": {
+          "bytes": 6944037009,
+          "h": "6.94GB"
+        },
+        "audio_mp3": {
+          "bytes": 3857265520,
+          "h": "3.86GB"
+        },
+        "video": {
+          "bytes": 3566703566,
+          "h": "3.57GB"
+        },
+        "image": {
+          "bytes": 1078300383,
+          "h": "1.08GB"
+        },
+        "audio_flac": {
+          "bytes": 1048942828,
+          "h": "1.05GB"
+        },
+        "preset": {
+          "bytes": 1030191169,
+          "h": "1.03GB"
+        },
+        "project_als": {
+          "bytes": 797371875,
+          "h": "797.37MB"
+        },
+        "doc": {
+          "bytes": 633036903,
+          "h": "633.04MB"
+        },
+        "project_flp": {
+          "bytes": 556701439,
+          "h": "556.70MB"
+        },
+        "installer": {
+          "bytes": 376472510,
+          "h": "376.47MB"
+        },
+        "audio_other": {
+          "bytes": 350126993,
+          "h": "350.13MB"
+        },
+        "preset_adg": {
+          "bytes": 180603571,
+          "h": "180.60MB"
+        },
+        "font": {
+          "bytes": 131585684,
+          "h": "131.59MB"
+        },
+        "archive": {
+          "bytes": 62068353,
+          "h": "62.07MB"
+        },
+        "code": {
+          "bytes": 49649319,
+          "h": "49.65MB"
+        },
+        "preset_adv": {
+          "bytes": 21001406,
+          "h": "21.00MB"
+        },
+        "midi": {
+          "bytes": 20280195,
+          "h": "20.28MB"
+        },
+        "preset_vst": {
+          "bytes": 6250496,
+          "h": "6.25MB"
+        },
+        "ml_model": {
+          "bytes": 214280,
+          "h": "0.21MB"
+        }
+      }
+    },
+    {
+      "dir": "Contents",
+      "total_bytes": 96383203945,
+      "total_h": "96.38GB",
+      "by_category": {
+        "audio_mp3": {
+          "bytes": 79431858606,
+          "h": "79.43GB"
+        },
+        "audio_wav": {
+          "bytes": 15063668438,
+          "h": "15.06GB"
+        },
+        "audio_other": {
+          "bytes": 950981005,
+          "h": "950.98MB"
+        },
+        "audio_flac": {
+          "bytes": 580000941,
+          "h": "580.00MB"
+        },
+        "audio_aif": {
+          "bytes": 349270776,
+          "h": "349.27MB"
+        },
+        "other": {
+          "bytes": 7420083,
+          "h": "7.42MB"
+        },
+        "image": {
+          "bytes": 4096,
+          "h": "0.00MB"
+        }
+      }
+    },
+    {
+      "dir": "COLLECT ALL - (2025)",
+      "total_bytes": 54459164092,
+      "total_h": "54.46GB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 34165136241,
+          "h": "34.17GB"
+        },
+        "project_als": {
+          "bytes": 16687627670,
+          "h": "16.69GB"
+        },
+        "archive": {
+          "bytes": 2374799344,
+          "h": "2.37GB"
+        },
+        "audio_mp3": {
+          "bytes": 677861191,
+          "h": "677.86MB"
+        },
+        "other": {
+          "bytes": 342474323,
+          "h": "342.47MB"
+        },
+        "audio_aif": {
+          "bytes": 197939480,
+          "h": "197.94MB"
+        },
+        "audio_flac": {
+          "bytes": 7936940,
+          "h": "7.94MB"
+        },
+        "audio_other": {
+          "bytes": 3742128,
+          "h": "3.74MB"
+        },
+        "code": {
+          "bytes": 1615687,
+          "h": "1.62MB"
+        },
+        "midi": {
+          "bytes": 31088,
+          "h": "0.03MB"
+        }
+      }
+    },
+    {
+      "dir": "COLLECT ALL - 2025 LATE",
+      "total_bytes": 29766578724,
+      "total_h": "29.77GB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 22922394321,
+          "h": "22.92GB"
+        },
+        "project_als": {
+          "bytes": 5086480504,
+          "h": "5.09GB"
+        },
+        "archive": {
+          "bytes": 1045303639,
+          "h": "1.05GB"
+        },
+        "audio_mp3": {
+          "bytes": 317650742,
+          "h": "317.65MB"
+        },
+        "other": {
+          "bytes": 242077767,
+          "h": "242.08MB"
+        },
+        "audio_aif": {
+          "bytes": 148217560,
+          "h": "148.22MB"
+        },
+        "audio_flac": {
+          "bytes": 3147344,
+          "h": "3.15MB"
+        },
+        "code": {
+          "bytes": 858092,
+          "h": "0.86MB"
+        },
+        "audio_other": {
+          "bytes": 424643,
+          "h": "0.42MB"
+        },
+        "midi": {
+          "bytes": 24112,
+          "h": "0.02MB"
+        }
+      }
+    },
+    {
+      "dir": "COLLECT ALL 2016",
+      "total_bytes": 21333298090,
+      "total_h": "21.33GB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 18567026290,
+          "h": "18.57GB"
+        },
+        "archive": {
+          "bytes": 1321313734,
+          "h": "1.32GB"
+        },
+        "audio_aif": {
+          "bytes": 556322761,
+          "h": "556.32MB"
+        },
+        "project_als": {
+          "bytes": 349770894,
+          "h": "349.77MB"
+        },
+        "audio_mp3": {
+          "bytes": 249469973,
+          "h": "249.47MB"
+        },
+        "other": {
+          "bytes": 230671714,
+          "h": "230.67MB"
+        },
+        "audio_flac": {
+          "bytes": 38736123,
+          "h": "38.74MB"
+        },
+        "video": {
+          "bytes": 19097482,
+          "h": "19.10MB"
+        },
+        "audio_other": {
+          "bytes": 524376,
+          "h": "0.52MB"
+        },
+        "code": {
+          "bytes": 364743,
+          "h": "0.36MB"
+        }
+      }
+    },
+    {
+      "dir": "OTHER",
+      "total_bytes": 21274994263,
+      "total_h": "21.27GB",
+      "by_category": {
+        "video": {
+          "bytes": 20216823626,
+          "h": "20.22GB"
+        },
+        "image": {
+          "bytes": 880052283,
+          "h": "880.05MB"
+        },
+        "other": {
+          "bytes": 168305455,
+          "h": "168.31MB"
+        },
+        "audio_mp3": {
+          "bytes": 7755840,
+          "h": "7.76MB"
+        },
+        "doc": {
+          "bytes": 1173613,
+          "h": "1.17MB"
+        },
+        "code": {
+          "bytes": 873221,
+          "h": "0.87MB"
+        },
+        "project_als": {
+          "bytes": 10225,
+          "h": "0.01MB"
+        }
+      }
+    },
+    {
+      "dir": "MUSIC",
+      "total_bytes": 19767954744,
+      "total_h": "19.77GB",
+      "by_category": {
+        "audio_mp3": {
+          "bytes": 10850371635,
+          "h": "10.85GB"
+        },
+        "audio_flac": {
+          "bytes": 8469652555,
+          "h": "8.47GB"
+        },
+        "audio_wav": {
+          "bytes": 393229814,
+          "h": "393.23MB"
+        },
+        "other": {
+          "bytes": 40261381,
+          "h": "40.26MB"
+        },
+        "doc": {
+          "bytes": 10329905,
+          "h": "10.33MB"
+        },
+        "image": {
+          "bytes": 4109454,
+          "h": "4.11MB"
+        }
+      }
+    },
+    {
+      "dir": "APP",
+      "total_bytes": 13761825393,
+      "total_h": "13.76GB",
+      "by_category": {
+        "ml_model": {
+          "bytes": 13714167523,
+          "h": "13.71GB"
+        },
+        "audio_mp3": {
+          "bytes": 23494670,
+          "h": "23.49MB"
+        },
+        "code": {
+          "bytes": 13351030,
+          "h": "13.35MB"
+        },
+        "video": {
+          "bytes": 5276262,
+          "h": "5.28MB"
+        },
+        "other": {
+          "bytes": 4721625,
+          "h": "4.72MB"
+        },
+        "doc": {
+          "bytes": 814283,
+          "h": "0.81MB"
+        }
+      }
+    },
+    {
+      "dir": "RELEASE-DEMO",
+      "total_bytes": 10507857449,
+      "total_h": "10.51GB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 7060721045,
+          "h": "7.06GB"
+        },
+        "archive": {
+          "bytes": 2055360982,
+          "h": "2.06GB"
+        },
+        "project_als": {
+          "bytes": 796592114,
+          "h": "796.59MB"
+        },
+        "other": {
+          "bytes": 378142460,
+          "h": "378.14MB"
+        },
+        "audio_mp3": {
+          "bytes": 207971666,
+          "h": "207.97MB"
+        },
+        "audio_aif": {
+          "bytes": 8957958,
+          "h": "8.96MB"
+        },
+        "code": {
+          "bytes": 111224,
+          "h": "0.11MB"
+        }
+      }
+    },
+    {
+      "dir": "EXPORT ALL",
+      "total_bytes": 7768699049,
+      "total_h": "7.77GB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 5938183198,
+          "h": "5.94GB"
+        },
+        "audio_mp3": {
+          "bytes": 1605567078,
+          "h": "1.61GB"
+        },
+        "audio_aif": {
+          "bytes": 201957000,
+          "h": "201.96MB"
+        },
+        "other": {
+          "bytes": 15301304,
+          "h": "15.30MB"
+        },
+        "project_als": {
+          "bytes": 5889170,
+          "h": "5.89MB"
+        },
+        "image": {
+          "bytes": 1742181,
+          "h": "1.74MB"
+        },
+        "midi": {
+          "bytes": 24112,
+          "h": "0.02MB"
+        },
+        "doc": {
+          "bytes": 22830,
+          "h": "0.02MB"
+        },
+        "code": {
+          "bytes": 8080,
+          "h": "0.01MB"
+        },
+        "archive": {
+          "bytes": 4096,
+          "h": "0.00MB"
+        }
+      }
+    },
+    {
+      "dir": "DJSUSAN",
+      "total_bytes": 7173168026,
+      "total_h": "7.17GB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 6046484114,
+          "h": "6.05GB"
+        },
+        "archive": {
+          "bytes": 480082097,
+          "h": "480.08MB"
+        },
+        "doc": {
+          "bytes": 253716691,
+          "h": "253.72MB"
+        },
+        "audio_aif": {
+          "bytes": 150264313,
+          "h": "150.26MB"
+        },
+        "audio_mp3": {
+          "bytes": 99558809,
+          "h": "99.56MB"
+        },
+        "other": {
+          "bytes": 86755581,
+          "h": "86.76MB"
+        },
+        "project_als": {
+          "bytes": 51409538,
+          "h": "51.41MB"
+        },
+        "audio_flac": {
+          "bytes": 4542393,
+          "h": "4.54MB"
+        },
+        "image": {
+          "bytes": 336641,
+          "h": "0.34MB"
+        },
+        "code": {
+          "bytes": 17849,
+          "h": "0.02MB"
+        }
+      }
+    },
+    {
+      "dir": "Program Files",
+      "total_bytes": 6052181627,
+      "total_h": "6.05GB",
+      "by_category": {
+        "other": {
+          "bytes": 5037299502,
+          "h": "5.04GB"
+        },
+        "ml_model": {
+          "bytes": 418594256,
+          "h": "418.59MB"
+        },
+        "font": {
+          "bytes": 228866592,
+          "h": "228.87MB"
+        },
+        "preset_vst": {
+          "bytes": 151479744,
+          "h": "151.48MB"
+        },
+        "image": {
+          "bytes": 78508928,
+          "h": "78.51MB"
+        },
+        "installer": {
+          "bytes": 78320369,
+          "h": "78.32MB"
+        },
+        "audio_other": {
+          "bytes": 39389634,
+          "h": "39.39MB"
+        },
+        "archive": {
+          "bytes": 14657367,
+          "h": "14.66MB"
+        },
+        "doc": {
+          "bytes": 2238822,
+          "h": "2.24MB"
+        },
+        "code": {
+          "bytes": 1869918,
+          "h": "1.87MB"
+        },
+        "preset_adg": {
+          "bytes": 553525,
+          "h": "0.55MB"
+        },
+        "preset_adv": {
+          "bytes": 402970,
+          "h": "0.40MB"
+        }
+      }
+    },
+    {
+      "dir": "Programs",
+      "total_bytes": 5699217596,
+      "total_h": "5.70GB",
+      "by_category": {
+        "installer": {
+          "bytes": 5394523871,
+          "h": "5.39GB"
+        },
+        "other": {
+          "bytes": 304678386,
+          "h": "304.68MB"
+        },
+        "code": {
+          "bytes": 8657,
+          "h": "0.01MB"
+        },
+        "doc": {
+          "bytes": 6682,
+          "h": "0.01MB"
+        }
+      }
+    },
+    {
+      "dir": "WEB CASE STUDY",
+      "total_bytes": 2854484844,
+      "total_h": "2.85GB",
+      "by_category": {
+        "other": {
+          "bytes": 1725798474,
+          "h": "1.73GB"
+        },
+        "code": {
+          "bytes": 949695805,
+          "h": "949.70MB"
+        },
+        "audio_wav": {
+          "bytes": 61896390,
+          "h": "61.90MB"
+        },
+        "installer": {
+          "bytes": 55083514,
+          "h": "55.08MB"
+        },
+        "doc": {
+          "bytes": 30415347,
+          "h": "30.42MB"
+        },
+        "font": {
+          "bytes": 18870272,
+          "h": "18.87MB"
+        },
+        "image": {
+          "bytes": 11902502,
+          "h": "11.90MB"
+        },
+        "archive": {
+          "bytes": 819729,
+          "h": "0.82MB"
+        },
+        "midi": {
+          "bytes": 1530,
+          "h": "0.00MB"
+        },
+        "ml_model": {
+          "bytes": 1281,
+          "h": "0.00MB"
+        }
+      }
+    },
+    {
+      "dir": "000 - MASTERED EXPORT",
+      "total_bytes": 2471279156,
+      "total_h": "2.47GB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 1703838333,
+          "h": "1.70GB"
+        },
+        "archive": {
+          "bytes": 553300756,
+          "h": "553.30MB"
+        },
+        "audio_mp3": {
+          "bytes": 211500887,
+          "h": "211.50MB"
+        },
+        "other": {
+          "bytes": 2639180,
+          "h": "2.64MB"
+        }
+      }
+    },
+    {
+      "dir": "PIONEER",
+      "total_bytes": 2468855611,
+      "total_h": "2.47GB",
+      "by_category": {
+        "other": {
+          "bytes": 2343090609,
+          "h": "2.34GB"
+        },
+        "image": {
+          "bytes": 125764380,
+          "h": "125.76MB"
+        },
+        "code": {
+          "bytes": 622,
+          "h": "0.00MB"
+        }
+      }
+    },
+    {
+      "dir": "ABELTON-000",
+      "total_bytes": 2197510478,
+      "total_h": "2.20GB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 2112490924,
+          "h": "2.11GB"
+        },
+        "project_als": {
+          "bytes": 53556993,
+          "h": "53.56MB"
+        },
+        "other": {
+          "bytes": 27822408,
+          "h": "27.82MB"
+        },
+        "audio_aif": {
+          "bytes": 3581068,
+          "h": "3.58MB"
+        },
+        "preset_adg": {
+          "bytes": 58274,
+          "h": "0.06MB"
+        },
+        "code": {
+          "bytes": 811,
+          "h": "0.00MB"
+        }
+      }
+    },
+    {
+      "dir": "scars SAMPLE PACKS",
+      "total_bytes": 1104927786,
+      "total_h": "1.10GB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 862173718,
+          "h": "862.17MB"
+        },
+        "audio_mp3": {
+          "bytes": 209646584,
+          "h": "209.65MB"
+        },
+        "image": {
+          "bytes": 20193399,
+          "h": "20.19MB"
+        },
+        "project_als": {
+          "bytes": 8740870,
+          "h": "8.74MB"
+        },
+        "other": {
+          "bytes": 3373078,
+          "h": "3.37MB"
+        },
+        "audio_flac": {
+          "bytes": 735142,
+          "h": "0.74MB"
+        },
+        "preset_adg": {
+          "bytes": 38801,
+          "h": "0.04MB"
+        },
+        "midi": {
+          "bytes": 18470,
+          "h": "0.02MB"
+        },
+        "code": {
+          "bytes": 7724,
+          "h": "0.01MB"
+        }
+      }
+    },
+    {
+      "dir": "ableton-session-intelligence",
+      "total_bytes": 392728882,
+      "total_h": "392.73MB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 241289812,
+          "h": "241.29MB"
+        },
+        "other": {
+          "bytes": 65176013,
+          "h": "65.18MB"
+        },
+        "project_als": {
+          "bytes": 47131389,
+          "h": "47.13MB"
+        },
+        "code": {
+          "bytes": 27835513,
+          "h": "27.84MB"
+        },
+        "doc": {
+          "bytes": 5688673,
+          "h": "5.69MB"
+        },
+        "image": {
+          "bytes": 4278712,
+          "h": "4.28MB"
+        },
+        "font": {
+          "bytes": 1237616,
+          "h": "1.24MB"
+        },
+        "installer": {
+          "bytes": 91136,
+          "h": "0.09MB"
+        },
+        "ml_model": {
+          "bytes": 18,
+          "h": "0.00MB"
+        }
+      }
+    },
+    {
+      "dir": "DOWNLOAD",
+      "total_bytes": 284745466,
+      "total_h": "284.75MB",
+      "by_category": {
+        "audio_mp3": {
+          "bytes": 177996453,
+          "h": "178.00MB"
+        },
+        "video": {
+          "bytes": 51973458,
+          "h": "51.97MB"
+        },
+        "other": {
+          "bytes": 27325122,
+          "h": "27.33MB"
+        },
+        "image": {
+          "bytes": 16190076,
+          "h": "16.19MB"
+        },
+        "audio_wav": {
+          "bytes": 10487980,
+          "h": "10.49MB"
+        },
+        "doc": {
+          "bytes": 694873,
+          "h": "0.69MB"
+        },
+        "project_als": {
+          "bytes": 44320,
+          "h": "0.04MB"
+        },
+        "archive": {
+          "bytes": 24576,
+          "h": "0.02MB"
+        },
+        "midi": {
+          "bytes": 4381,
+          "h": "0.00MB"
+        },
+        "installer": {
+          "bytes": 4096,
+          "h": "0.00MB"
+        },
+        "code": {
+          "bytes": 131,
+          "h": "0.00MB"
+        }
+      }
+    },
+    {
+      "dir": "AGENTS",
+      "total_bytes": 47848935,
+      "total_h": "47.85MB",
+      "by_category": {
+        "code": {
+          "bytes": 22002842,
+          "h": "22.00MB"
+        },
+        "other": {
+          "bytes": 13496305,
+          "h": "13.50MB"
+        },
+        "installer": {
+          "bytes": 9913856,
+          "h": "9.91MB"
+        },
+        "doc": {
+          "bytes": 1222325,
+          "h": "1.22MB"
+        },
+        "audio_wav": {
+          "bytes": 1154163,
+          "h": "1.15MB"
+        },
+        "image": {
+          "bytes": 59444,
+          "h": "0.06MB"
+        }
+      }
+    },
+    {
+      "dir": "Apps",
+      "total_bytes": 794509,
+      "total_h": "0.79MB",
+      "by_category": {
+        "image": {
+          "bytes": 651741,
+          "h": "0.65MB"
+        },
+        "other": {
+          "bytes": 142768,
+          "h": "0.14MB"
+        }
+      }
+    },
+    {
+      "dir": "CACHE",
+      "total_bytes": 209023,
+      "total_h": "0.21MB",
+      "by_category": {
+        "audio_wav": {
+          "bytes": 204800,
+          "h": "0.20MB"
+        },
+        "other": {
+          "bytes": 4223,
+          "h": "0.00MB"
+        }
+      }
+    },
+    {
+      "dir": "FOUND.000",
+      "total_bytes": 98304,
+      "total_h": "0.10MB",
+      "by_category": {
+        "other": {
+          "bytes": 98304,
+          "h": "0.10MB"
+        }
+      }
+    },
+    {
+      "dir": "OMNI_GRAPH_WEB_AGENT",
+      "total_bytes": 18112,
+      "total_h": "0.02MB",
+      "by_category": {
+        "code": {
+          "bytes": 18112,
+          "h": "0.02MB"
+        }
+      }
+    }
+  ]
+}

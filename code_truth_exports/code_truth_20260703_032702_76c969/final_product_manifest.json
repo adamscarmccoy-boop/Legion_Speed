@@ -1,0 +1,26 @@
+{
+  "run_id": "code_truth_20260703_032702_76c969",
+  "intent": "Retrieve and verify Ray actor, LanceDB, and code-truth source files using local RAG.",
+  "target_file_kind": ".py",
+  "final_files_written": [
+    "C:\\WEB CASE STUDY\\code_truth_exports\\code_truth_20260703_032702_76c969\\truth_state_snapshot.json",
+    "C:\\WEB CASE STUDY\\code_truth_exports\\code_truth_20260703_032702_76c969\\verified_source_pack.md"
+  ],
+  "truth_summary": {
+    "selected_db": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+    "selected_tables": [
+      "chris_lake_speed_test",
+      "chris_lake_web_intel",
+      "mined_code_vectors",
+      "mined_documentation_vectors"
+    ],
+    "rag_results": 1,
+    "rag_code_hits": 3,
+    "path_proofs": 3,
+    "usage_proofs": 3,
+    "errors": 0,
+    "verified_files": 3
+  },
+  "errors": [],
+  "created_at": "2026-07-03T07:27:26.287782"
+}

@@ -1,0 +1,23 @@
+# Critic Feedback: OmniCondVAE v3
+**Date:** 2026-06-30
+**Status:** REVIEWED
+
+## 1. Hardcoded Paths (Critical)
+- **Observation:** The script is littered with hardcoded absolute paths:
+    - `LANCEDB_PATH = r"C:\STUDIES_BACKUP\vectors\lancedb_omni_snowflake_rag"`
+    - `DUCKDB_PATH = r"C:\WEB CASE STUDY\web_intel_sonicdb.duckdb"`
+- **Failure:** This code is non-portable. It will crash immediately on any other machine. This is a "Junior" mistake in a professional pipeline.
+
+## 2. Memory & Scaling
+- **Batch Size:** `128` is reasonable for this model size on CPU.
+- **CPU-Only:** The script explicitly prints `device: CPU`. While the model is small, training for 1500 epochs on CPU is inefficient. There is no `torch.device("cuda" if torch.cuda.is_available() else "cpu")` logic, meaning GPU acceleration is ignored even if available.
+
+## 3. Data Integrity (Edge Cases)
+- **Zero-Filling:** Filling missing DSP columns with `0.0` is a dangerous assumption. If `spectral_centroid` is missing and filled with `0.0`, the model learns that "nothing" is a valid sonic state, potentially warping the latent space for those samples.
+- **BPM Clipping:** `np.clip(X_bpm, 50.0, 250.0)`. Reasonable, but lacks a warning if a significant number of samples are being clipped.
+
+## 4. Sample Diversity
+- **The "Average" Trap:** VAEs are notorious for producing "blurry" (average) results. The diversity check at the end (std dev of 20 samples) is a good start, but it doesn't verify if the samples are *musically* useful or just random noise around the mean.
+
+## Summary
+The model works, but the "plumbing" is brittle. Hardcoded paths and the lack of GPU auto-detection are the primary technical debts.

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/mnt/c/WEB CASE STUDY/build_wsl/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,6 @@
+
+[NVIDIA LangGraph Response]:
+
+
+[NVIDIA LangGraph Response]:
+This function call queries the knowledge registry tool for architectural guidance on fusing NVDINOv2 self-supervised ViT patch embeddings with sovereign_vision_brain.pth and fretflow_omni_v4.onnx across Ray zero-copy PyArrow tables.

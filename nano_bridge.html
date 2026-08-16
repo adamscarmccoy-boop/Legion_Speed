@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legion Gemini Nano Bridge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #080710;
+            --panel-bg: rgba(255, 255, 255, 0.05);
+            --panel-border: rgba(255, 255, 255, 0.1);
+            --accent-primary: #6366f1; /* Neon Purple-Blue */
+            --accent-success: #10b981; /* Emerald Green */
+            --accent-warning: #f59e0b; /* Amber */
+            --accent-error: #ef4444; /* Rose Red */
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Glowing background blobs */
+        body::before, body::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            filter: blur(150px);
+            z-index: 0;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        body::before {
+            background: var(--accent-primary);
+            top: -100px;
+            left: -100px;
+        }
+
+        body::after {
+            background: #a855f7;
+            bottom: -100px;
+            right: -100px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            background: linear-gradient(135deg, #fff 30%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .status-card {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--panel-border);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .status-card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .status-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+        }
+
+        .status-value {
+            font-size: 1.25rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .indicator.green {
+            background-color: var(--accent-success);
+            box-shadow: 0 0 10px var(--accent-success);
+        }
+
+        .indicator.amber {
+            background-color: var(--accent-warning);
+            box-shadow: 0 0 10px var(--accent-warning);
+        }
+
+        .indicator.red {
+            background-color: var(--accent-error);
+            box-shadow: 0 0 10px var(--accent-error);
+        }
+
+        /* Logs Console */
+        .console-section {
+            margin-top: 30px;
+        }
+
+        .console-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .console-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .clear-btn {
+            background: transparent;
+            border: 1px solid var(--panel-border);
+            color: var(--text-muted);
+            padding: 4px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.2s ease;
+        }
+
+        .clear-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+        }
+
+        .console-log {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            height: 200px;
+            overflow-y: auto;
+            padding: 15px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .log-entry {
+            border-left: 2px solid var(--accent-primary);
+            padding-left: 8px;
+        }
+
+        .log-entry.system { border-color: var(--text-muted); color: var(--text-muted); }
+        .log-entry.success { border-color: var(--accent-success); color: var(--accent-success); }
+        .log-entry.error { border-color: var(--accent-error); color: var(--accent-error); }
+        .log-entry.request { border-color: var(--accent-primary); }
+
+        .time {
+            color: #6b7280;
+            margin-right: 8px;
+        }
+
+        /* Manual prompt test section */
+        .test-section {
+            margin-top: 30px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .test-input {
+            flex-grow: 1;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            padding: 12px 16px;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        .test-input:focus {
+            border-color: var(--accent-primary);
+        }
+
+        .test-btn {
+            background: var(--accent-primary);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .test-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        .test-btn:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Legion Gemini Nano Bridge</h1>
+            <p class="subtitle">Bridges Chrome's window.ai to the local Python MCP server</p>
+        </header>
+
+        <div class="status-grid">
+            <div class="status-card">
+                <span class="status-label">Bridge Connection</span>
+                <span class="status-value" id="ws-status">
+                    <span class="indicator red"></span> Disconnected
+                </span>
+            </div>
+            <div class="status-card">
+                <span class="status-label">Gemini Nano (Chrome)</span>
+                <span class="status-value" id="nano-status">
+                    <span class="indicator red"></span> Checking...
+                </span>
+            </div>
+        </div>
+
+        <div class="console-section">
+            <div class="console-header">
+                <span class="console-title">Activity Stream</span>
+                <button class="clear-btn" id="clear-btn">Clear logs</button>
+            </div>
+            <div class="console-log" id="console-log">
+                <div class="log-entry system"><span class="time">[00:00:00]</span> Bridge initialized. Ready to connect.</div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <input type="text" class="test-input" id="test-input" placeholder="Type a test prompt for Gemini Nano..." value="Explain in 5 words what parallel computing is.">
+            <button class="test-btn" id="test-btn">Test Run</button>
+        </div>
+    </div>
+
+    <script>
+        const wsStatusEl = document.getElementById('ws-status');
+        const nanoStatusEl = document.getElementById('nano-status');
+        const consoleLogEl = document.getElementById('console-log');
+        const testInputEl = document.getElementById('test-input');
+        const testBtnEl = document.getElementById('test-btn');
+        const clearBtnEl = document.getElementById('clear-btn');
+
+        let ws = null;
+        let aiSession = null;
+
+        function log(message, type = 'request') {
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            const now = new Date().toTimeString().split(' ')[0];
+            entry.innerHTML = `<span class="time">[${now}]</span> ${message}`;
+            consoleLogEl.appendChild(entry);
+            consoleLogEl.scrollTop = consoleLogEl.scrollHeight;
+        }
+
+        // 1. Detect and check Gemini Nano availability
+        async function checkGeminiNano() {
+            try {
+                // Check standard APIs
+                if (window.ai && window.ai.languageModel) {
+                    const capabilities = await window.ai.languageModel.capabilities();
+                    if (capabilities.available === 'no') {
+                        nanoStatusEl.innerHTML = '<span class="indicator red"></span> Disabled in settings';
+                        log('Gemini Nano is disabled or needs download in Chrome. Go to chrome://flags/#optimization-guide-on-device-model', 'error');
+                        return false;
+                    }
+                    nanoStatusEl.innerHTML = '<span class="indicator green"></span> Ready (languageModel)';
+                    log('Gemini Nano API (window.ai.languageModel) detected and ready.', 'success');
+                    return true;
+                } else if (window.ai && window.ai.assistant) {
+                    // Check older API spec
+                    const capabilities = await window.ai.assistant.capabilities();
+                    if (capabilities.available === 'no') {
+                        nanoStatusEl.innerHTML = '<span class="indicator red"></span> Disabled in settings';
+                        return false;
+                    }
+                    nanoStatusEl.innerHTML = '<span class="indicator green"></span> Ready (assistant)';
+                    log('Gemini Nano API (window.ai.assistant) detected and ready.', 'success');
+                    return true;
+                } else {
+                    nanoStatusEl.innerHTML = '<span class="indicator red"></span> Unsupported browser';
+                    log('No window.ai or window.ai.languageModel detected. Make sure you are using Chrome Dev/Canary with flags enabled.', 'error');
+                    return false;
+                }
+            } catch (e) {
+                nanoStatusEl.innerHTML = '<span class="indicator red"></span> Detection Error';
+                log(`Failed to detect window.ai: ${e.message}`, 'error');
+                return false;
+            }
+        }
+
+        // 2. Initialize the AI Session
+        async function getSession() {
+            if (aiSession) return aiSession;
+            log('Creating a new Gemini Nano session...', 'system');
+            if (window.ai && window.ai.languageModel) {
+                aiSession = await window.ai.languageModel.create();
+            } else if (window.ai && window.ai.assistant) {
+                aiSession = await window.ai.assistant.create();
+            }
+            return aiSession;
+        }
+
+        // 3. Connect WebSocket to Python server
+        function connectWebSocket() {
+            wsStatusEl.innerHTML = '<span class="indicator amber"></span> Connecting...';
+            ws = new WebSocket('ws://127.0.0.1:8765');
+
+            ws.onopen = () => {
+                wsStatusEl.innerHTML = '<span class="indicator green"></span> Connected';
+                log('Successfully connected to Python WebSocket server!', 'success');
+            };
+
+            ws.onmessage = async (event) => {
+                try {
+                    const data = JSON.parse(event.data);
+                    const prompt = data.prompt;
+                    const id = data.id;
+
+                    log(`Received request ID [${id}] prompt: "${prompt}"`, 'request');
+
+                    try {
+                        const session = await getSession();
+                        const startTime = performance.now();
+                        const response = await session.prompt(prompt);
+                        const duration = ((performance.now() - startTime) / 1000).toFixed(2);
+
+                        log(`Generated response in ${duration}s for ID [${id}]`, 'success');
+                        
+                        ws.send(JSON.stringify({
+                            id: id,
+                            response: response
+                        }));
+                    } catch (err) {
+                        log(`Error processing prompt [${id}]: ${err.message}`, 'error');
+                        // Reset session on failure in case it disposed
+                        aiSession = null;
+                        ws.send(JSON.stringify({
+                            id: id,
+                            error: err.message
+                        }));
+                    }
+                } catch (e) {
+                    log(`Failed to parse WebSocket message: ${e.message}`, 'error');
+                }
+            };
+
+            ws.onclose = () => {
+                wsStatusEl.innerHTML = '<span class="indicator red"></span> Disconnected';
+                log('Connection closed. Retrying in 5 seconds...', 'error');
+                setTimeout(connectWebSocket, 5000);
+            };
+
+            ws.onerror = (err) => {
+                log(`WebSocket error occurred`, 'error');
+            };
+        }
+
+        // 4. Test run functionality
+        testBtnEl.onclick = async () => {
+            const prompt = testInputEl.value;
+            if (!prompt) return;
+            log(`Running manual test prompt: "${prompt}"`, 'request');
+            testBtnEl.disabled = true;
+            try {
+                const session = await getSession();
+                const startTime = performance.now();
+                const response = await session.prompt(prompt);
+                const duration = ((performance.now() - startTime) / 1000).toFixed(2);
+                log(`[Test Response, ${duration}s]: ${response}`, 'success');
+            } catch (err) {
+                log(`Manual test failed: ${err.message}`, 'error');
+                aiSession = null;
+            }
+            testBtnEl.disabled = false;
+        };
+
+        clearBtnEl.onclick = () => {
+            consoleLogEl.innerHTML = '';
+            log('Logs cleared.', 'system');
+        };
+
+        // Start detection and connection
+        window.addEventListener('load', async () => {
+            await checkGeminiNano();
+            connectWebSocket();
+        });
+    </script>
+</body>
+</html>

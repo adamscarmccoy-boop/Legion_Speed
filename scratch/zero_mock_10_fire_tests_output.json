@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Test 1: Vision Brain PyTorch Checkpoint",
+    "status": "PASS",
+    "detail": "Real PyTorch Checkpoint Loaded | 6 Tensors | Sample: net.0.weight: (128, 41) (norm=6.16)"
+  },
+  {
+    "id": 2,
+    "name": "Test 2: Master Unified Brain Latents",
+    "status": "PASS",
+    "detail": "Real Master Latents Extracted | Shape: (5, 128) | Energy: 0.998304 | First row: [-0.7410368323326111, 0.0887490063905716, -0.37939366698265076]"
+  },
+  {
+    "id": 3,
+    "name": "Test 3: Snoop DNA & Dolly Pitch Tensors",
+    "status": "PASS",
+    "detail": "Real Tensors Loaded | Snoop DNA (torch.Size([13])): [245.61911010742188, -107.44454956054688, -3.0931308269500732] | Dolly Pitch: 7.0000 | Fused: [252.61911010742188, -100.44454956054688, 3.9068691730499268]"
+  },
+  {
+    "id": 4,
+    "name": "Test 4: Visual Assets Parquet Features",
+    "status": "PASS",
+    "detail": "Real Parquet Loaded | Rows: 85 | Columns: 17 ['image_id', 'image_filename', 'image_path'] | Sample Row 0: {'image_id': 'a57475c10ba6', 'image_filename': '1-Lets_Go_We_Win.jpeg', 'image_path': 'C:\\\\Users\\\\ad..."
+  },
+  {
+    "id": 5,
+    "name": "Test 5: FretFlow ONNX Real Vector Run",
+    "status": "ERROR",
+    "detail": "[ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: omni_vector_v4 for the following indices\n index: 1 Got: 384 Expected: 10\n Please fix either the inputs/outputs or the model."
+  },
+  {
+    "id": 6,
+    "name": "Test 6: Notebook Knowledge Audit Parquet",
+    "status": "PASS",
+    "detail": "Real Catalog Ingested | Rows: 6,566 | Memory: 1.54 MB | Columns: ['filename', 'path', 'status', 'size_kb', 'rows', 'genome_prediction', 'columns_csv', 'error']"
+  },
+  {
+    "id": 7,
+    "name": "Test 7: DuckDB Sonic Engine Database",
+    "status": "PASS",
+    "detail": "Real DuckDB Live Queries | Database: web_intel_sonicdb.duckdb | Tables: applemusic_raw: 50 rows, audio_features: 1,084 rows, chris_lake_baseline: 9 rows"
+  },
+  {
+    "id": 8,
+    "name": "Test 8: Sovereign 30s Capture WAV Signal",
+    "status": "PASS",
+    "detail": "Real WAV Audio Processed | Duration: 30.00s | Channels: 2 | Rate: 48000 Hz | Real RMS: 48.27"
+  },
+  {
+    "id": 9,
+    "name": "Test 9: Ray Swarm Actor Processing",
+    "status": "FAIL",
+    "detail": "Ray Error: The current node timed out during startup. This could happen because some of the raylet failed to startup or the GCS has become overloaded."
+  },
+  {
+    "id": 10,
+    "name": "Test 10: Sovereign Tri-Modal Forward Pass",
+    "status": "PASS",
+    "detail": "Real Tri-Modal Forward Pass | Input Norms: v=0.45, a=0.93, g=0.09 -> Output Latent Shape: torch.Size([1, 128]) | Vector: [-0.41533470153808594, 0.010228976607322693, 1.0982435941696167]"
+  }
+]

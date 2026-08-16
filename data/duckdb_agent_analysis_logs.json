@@ -1,0 +1,34 @@
+[
+  {
+    "summary": "Quality Audit Report for Tech House Dataset",
+    "metrics_analyzed": "[\"Null Keys in t_core_memory table\", \"Dynamic Key Signature Matches (G major)\", \"Confidence Level\"]",
+    "status": "NORMAL",
+    "score": 98.0,
+    "recommended_actions": "[]",
+    "analyzed_at": "2023-04-15T14:30:00Z"
+  },
+  {
+    "summary": "Quality Audit Report for Tech House Dataset",
+    "metrics_analyzed": "[\"Null Keys in t_core_memory table\", \"Dynamic Key Signature Matches (G major)\", \"Confidence Level\"]",
+    "status": "NORMAL",
+    "score": 98.0,
+    "recommended_actions": "[]",
+    "analyzed_at": "2023-04-15T14:30:00Z"
+  },
+  {
+    "summary": "The audit of the Trance Bass dataset, specifically examining 't_low_freq', reveals that out of a sampled size of 14 rows, there were no null keys detected within this subset. This indicates robust data integrity in terms of key presence for these entries.",
+    "metrics_analyzed": "[\"F minor\", \"Dynamic Key Signature Count\"]",
+    "status": "NORMAL",
+    "score": 12.0,
+    "recommended_actions": "[\"Review the dataset for potential null key entries in other subsets to ensure comprehensive data integrity.\", \"Consider expanding the sample size beyond t_low_freq and perform a similar audit across different segments of the Trance Bass dataset.\"]",
+    "analyzed_at": "2026-06-04T20:23:18.152415"
+  },
+  {
+    "summary": "The analysis of the audio log reveals a consistent yet slightly varying frequency differential between sub-bass and kick drum peaks across three data rows, with an average difference of approximately 12.6Hz. Phase alignment shows mostly stability but indicates minor adjustments are needed for optimal synchronization.",
+    "metrics_analyzed": "[\"Frequency Differential\", \"Phase Alignment\"]",
+    "status": "NORMAL",
+    "score": 88.5,
+    "recommended_actions": "[\"Monitor the frequency differential closely to ensure it remains within a desired range for mixing.\", \"Adjust phase alignment as needed based on real-time monitoring and feedback.\"]",
+    "analyzed_at": "2026-06-04T20:26:59.988185"
+  }
+]

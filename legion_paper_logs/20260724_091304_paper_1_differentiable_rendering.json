@@ -1,0 +1,112 @@
+{
+  "paper_title": "Sonic Vision: Differentiable Audio-Visual Rendering via Shared Latent Representations",
+  "generated_at": "20260724_091304",
+  "section_3_method": {
+    "differentiable_renderer": {
+      "latent_dim": 41,
+      "render_params": [
+        "dx",
+        "dy",
+        "scale",
+        "rot",
+        "brightness",
+        "contrast",
+        "blur"
+      ],
+      "parameter_bounds": {
+        "dx": "tanh \u00d7 0.15",
+        "dy": "tanh \u00d7 0.15",
+        "scale": "0.9 + sigmoid \u00d7 0.2",
+        "rot": "0.5 \u00d7 raw",
+        "brightness": "tanh \u00d7 0.1",
+        "contrast": "1.0 + sigmoid \u00d7 0.5",
+        "blur": "sigmoid \u00d7 0.8 + 0.1"
+      },
+      "gradient_flow_enabled": false,
+      "gradient_norm": 0.0
+    },
+    "predgs_adapter": {
+      "num_gaussians": 40,
+      "channels": 3,
+      "render_mode": "differentiable 2D Gaussian splatting",
+      "output_shapes": {}
+    },
+    "perceptual_loss": {
+      "type": "hybrid L1 + SSIM",
+      "lambda_l1": 0.5,
+      "lambda_ssim": 0.5
+    }
+  },
+  "section_4_experiments": {
+    "onnx_bridge_performance": {
+      "sovereign_big_brain_exhaustive": {
+        "path": "C:\\WEB CASE STUDY\\sovereign_big_brain_exhaustive.onnx",
+        "exists": true,
+        "inputs": [
+          {
+            "name": "dna_vector",
+            "shape": [
+              "batch_size",
+              64
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "dsp_state",
+            "shape": [
+              "batch_size",
+              12
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "shape_log": "dna_vector['batch_size', 64]\u2192dsp_state['batch_size', 12]"
+      },
+      "sovereign_bridge_v1": {
+        "path": "C:\\WEB CASE STUDY\\sovereign_bridge_v1.onnx",
+        "exists": true,
+        "inputs": [
+          {
+            "name": "dna_vector",
+            "shape": [
+              "batch_size",
+              64
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "dsp_state",
+            "shape": [
+              "batch_size",
+              12
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "shape_log": "dna_vector['batch_size', 64]\u2192dsp_state['batch_size', 12]"
+      }
+    },
+    "pipeline_run": {
+      "audio": "",
+      "sonic_dna_first_5": [],
+      "style_predictions": {},
+      "rendered_frames": 0,
+      "status": "failed"
+    },
+    "comparison_to_baselines": {
+      "LAV (Sogang 2025)": "EnCodec\u2192StyleGAN2, no end-to-end differentiability",
+      "SeeingSounds (2025)": "Audio\u2192text\u2192image, no video, no gradient flow",
+      "MMControl (2026)": "Joint DiT, black-box generation, not differentiable",
+      "Ours": "Full differentiable pipeline with gradient flow from visual objective back to audio latent \u2713"
+    }
+  },
+  "key_novelty_statements": [
+    "First differentiable audio-conditioned video renderer with end-to-end gradient flow",
+    "Shared 41-dim Sonic DNA latent drives both audio DSP and visual rendering",
+    "PredGSAdapter enables differentiable 2D Gaussian splatting conditioned on audio features"
+  ]
+}

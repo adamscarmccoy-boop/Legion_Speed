@@ -1,0 +1,190 @@
+{
+  "query": "scraper website website+actor",
+  "created_at": "2026-07-03T01:55:01",
+  "db_path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+  "embedding_model": "text-embedding-snowflake-arctic-embed-l-v2.0",
+  "embedding_status": "ok, dims=1024",
+  "limit": 12,
+  "chars": 8000,
+  "imports": {
+    "lancedb": "ok",
+    "pandas": "ok",
+    "ray": "ok",
+    "pyarrow": "ok"
+  },
+  "db_probe": [
+    {
+      "path": "E:\\WEB CASE STUDY\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [
+        "chris_lake_speed_test",
+        "chris_lake_web_intel",
+        "mined_code_vectors",
+        "mined_documentation_vectors"
+      ],
+      "error": null,
+      "score": 2
+    },
+    {
+      "path": "C:\\WEB CASE STUDY\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "C:\\WEB CASE STUDY\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": false,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "E:\\WEB CASE STUDY\\lancedb_web_intel_rag",
+      "exists": false,
+      "tables": [],
+      "error": null,
+      "score": 0
+    }
+  ],
+  "tables": [
+    "chris_lake_speed_test",
+    "chris_lake_web_intel",
+    "mined_code_vectors",
+    "mined_documentation_vectors"
+  ],
+  "errors": [],
+  "code_results": [
+    {
+      "source_file": "C:/WEB CASE STUDY/weaponize.py",
+      "symbol_name": "scrape_prospects",
+      "distance": 1.153787612915039,
+      "content": "def scrape_prospects(target: str, limit: int = 1):\n        \"\"\"Stub: returns a single fake prospect when scraper isn't available.\"\"\"\n        slug = target.replace(\"https://\", \"\").replace(\"http://\", \"\").replace(\"www.\", \"\").split(\"/\")[0].replace(\".\", \"_\") or \"demo\"\n        return [{\n            \"name\": target,\n            \"slug\": slug,\n            \"website\": f\"https://{target}\" if not target.startswith(\"http\") else target,\n            \"contact_email\": None,\n            \"sample_pack_url\": None,\n        }]"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/crawl_and_vectorize_all_ray.py",
+      "symbol_name": "download_and_clean",
+      "distance": 1.2743245363235474,
+      "content": "def download_and_clean(url):\n    \"\"\"Download page and return cleaned text along with its category/source.\"\"\"\n    ctx = ssl.create_default_context()\n    ctx.check_hostname = False\n    ctx.verify_mode = ssl.CERT_NONE\n    try:\n        req = urllib.request.Request(\n            url, \n            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}\n        )\n        with urllib.request.urlopen(req, timeout=10, context=ctx) as response:\n            html = response.read()\n            soup = BeautifulSoup(html, \"html.parser\")\n            for tag in soup([\"script\", \"style\", \"nav\", \"footer\", \"header\", \"aside\"]):\n                tag.decompose()\n            text = soup.get_text(separator=\"\\n\")\n            lines = (line.strip() for line in text.splitlines())\n            chunks = (phrase.strip() for line in lines for phrase in line.split(\"  \"))\n            clean_text = \"\\n\".join(chunk for chunk in chunks if chunk)\n            return {\n                \"url\": url,\n                \"text\": clean_text,\n                \"category\": url.split(\"en/latest/\")[1].split(\"/\")[0] if \"en/latest/\" in url else \"general\"\n            }\n    except Exception as e:\n        return None"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/weaponize.py",
+      "symbol_name": "module",
+      "distance": 1.2830291986465454,
+      "content": "\"\"\"Orchestrator: scrape -> download -> fire_test -> forest -> render -> save.\n\nWires existing pieces (or stubs) into a single run.\n\"\"\"\n\nimport argparse\nimport os\nimport json\nfrom pathlib import Path\nfrom datetime import datetime\n\nimport ray\n\nfrom outreach_schemas import ProspectRecord, PackReport, SegmentAlignment, ForestVerdict\nfrom save_helpers import save_pack_report, save_email_draft, save_html_report, write_index\nfrom renderer import render_report_html\nfrom email_template_generator import generate_email_draft\nfrom preflight import preflight_check\n\n\n# ── Optional real imports (fall back to stubs if missing) ──────────────────────\ntry:\n    from hunt_signal_v2 import scrape_prospects\nexcept Exception:\n    def scrape_prospects(target: str, limit: int = 1):\n        \"\"\"Stub: returns a single fake prospect when scraper isn't available.\"\"\"\n        slug = target.replace(\"https://\", \"\").replace(\"http://\", \"\").replace(\"www.\", \"\").split(\"/\")[0].replace(\".\", \"_\") or \"demo\"\n        return [{\n  "
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/marketing_scorer.py",
+      "symbol_name": "label_artist",
+      "distance": 1.286072850227356,
+      "content": "def label_artist(path):\n            p = str(path).lower()\n            for key, name in ARTIST_MAP.items():\n                if key in p: return name\n            return 'Other'"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/download_ray_docs.py",
+      "symbol_name": "clean_html",
+      "distance": 1.313797116279602,
+      "content": "def clean_html(html):\n    \"\"\"Clean HTML tags and extract readable text.\"\"\"\n    soup = BeautifulSoup(html, \"html.parser\")\n    # Remove script and style elements\n    for script in soup([\"script\", \"style\", \"nav\", \"footer\", \"header\"]):\n        script.decompose()\n    # Get text\n    text = soup.get_text(separator=\"\\n\")\n    # Clean up whitespace\n    lines = (line.strip() for line in text.splitlines())\n    chunks = (phrase.strip() for line in lines for phrase in line.split(\"  \"))\n    text = \"\\n\".join(chunk for chunk in chunks if chunk)\n    return text"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/downloads_premaster_audit.py",
+      "symbol_name": "module",
+      "distance": 1.3249374628067017,
+      "content": "\"\"\"downloads_premaster_audit.py — download_pack(url, dest_dir) -> Path.\n\nPlaceholder downloader that fetches a real sample pack URL if it's an http(s)\nendpoint, otherwise creates a synthetic WAV for testing. Real implementations\ncan swap this for Splice/Cymatics auth-aware downloaders later.\n\"\"\"\n\nimport os\nimport struct\nimport math\nfrom pathlib import Path\nfrom urllib.parse import urlparse\nimport urllib.request\n\n\ndef _make_synthetic_wav(path: Path, vendor_tag: str, duration_sec: float = 8.0,\n                         sample_rate: int = 44100) -> Path:\n    \"\"\"Write a tiny synthetic WAV so downstream DSP has something real to read.\"\"\"\n    import numpy as np\n    n = int(duration_sec * sample_rate)\n    # Simple per-vendor signature so DSP features vary between prospects\n    tag_seed = sum(ord(c) for c in vendor_tag) % 7\n    freqs = [110.0 * (1 + tag_seed * 0.13), 220.0 * (1 + tag_seed * 0.07), 440.0]\n    t = np.arange(n) / sample_rate\n    sig = np.zeros(n, dtype=np.float32)\n    for f in fre"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/downloads_premaster_audit.py",
+      "symbol_name": "download_pack",
+      "distance": 1.3375407457351685,
+      "content": "def download_pack(url: str, dest_dir) -> Path:\n    \"\"\"Download a sample pack (or synthesize a placeholder).\n\n    Args:\n        url: HTTP(S) URL or a vendor domain string.\n        dest_dir: Directory to write the pack into.\n\n    Returns:\n        Path to the downloaded/synthesized file.\n    \"\"\"\n    dest_dir = Path(dest_dir)\n    dest_dir.mkdir(parents=True, exist_ok=True)\n\n    parsed = urlparse(url)\n    slug = (parsed.netloc or parsed.path or \"vendor\").replace(\"www.\", \"\").replace(\".\", \"_\")\n    target = dest_dir / f\"{slug}_sample.wav\"\n\n    # If it's a real http(s) URL, try a quick download\n    if parsed.scheme in (\"http\", \"https\"):\n        try:\n            req = urllib.request.Request(url, headers={\"User-Agent\": \"Mozilla/5.0\"})\n            with urllib.request.urlopen(req, timeout=15) as r:\n                data = r.read()\n            if data and len(data) > 1024:\n                target.write_bytes(data)\n                return target\n        except Exception:\n            pass  # fall through to synthetic\n\n    # Otherwise synthesize a representative sample\n    return _make_synthetic_wav(target, vendor_tag=slug)"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/crawl_and_vectorize_all_ray.py",
+      "symbol_name": "embed_and_package",
+      "distance": 1.3390233516693115,
+      "content": "def embed_and_package(item_idx_tuple):\n        idx, item = item_idx_tuple\n        vector = get_snowflake_embedding(item[\"text\"])\n        if vector:\n            return {\n                \"id\": str(idx),\n                \"text\": item[\"text\"],\n                \"vector\": vector,\n                \"source\": item[\"source\"],\n                \"category\": item[\"category\"]\n            }\n        return None"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/enterprise_forest_engine.py",
+      "symbol_name": "label_artist",
+      "distance": 1.3441113233566284,
+      "content": "def label_artist(path):\n    if not isinstance(path, str): return 'Other'\n    p = path.lower()\n    for key, name in ARTIST_MAP.items():\n        if key in p:\n            return name\n    return 'Other'"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/forest_engine_cell.py",
+      "symbol_name": "label_artist",
+      "distance": 1.3466660976409912,
+      "content": "def label_artist(path):\n    p = str(path).lower()\n    for key, name in ARTIST_MAP.items():\n        if key in p:\n            return name\n    return 'Other'"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/marketing_scorer.py",
+      "symbol_name": "MarketingScorer",
+      "distance": 1.3474310636520386,
+      "content": "class MarketingScorer:\n    def __init__(self):\n        print(\"🌲 INITIALIZING MARKETING SCORER / FOREST ENGINE...\")\n        FEATURES_PATH = r\"c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/exported_json/duckdb_audio_features.json\"\n        MARKET_PATH   = r\"c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/fused_web_data.json\"\n        \n        with open(FEATURES_PATH, 'r', encoding='utf-8') as f:\n            df = pd.DataFrame(json.load(f))\n            \n        with open(MARKET_PATH, 'r', encoding='utf-8') as f:\n            market_raw = json.load(f)\n        market_df = pd.DataFrame(market_raw if isinstance(market_raw, list) else list(market_raw.values()))\n        market_df = market_df[['artist_name','popularity','trending_score','dsp_rms','dsp_crest',\n                               'dsp_sub','dsp_bass','dsp_mid','dsp_high']].dropna(subset=['dsp_rms'])\n                               \n        ARTIST_MAP = {\n            'chris lake':         'Chris Lake',\n            'fisher':             'Fisher',\n            'charlotte de witte': 'Charlotte de Witte',\n            'sam shure':          'Sam Shure',\n            'eli brown':          'Eli Brown',\n        }\n\n        def label_artist(path):\n            p = str(path).lower()\n            for key, name in ARTIST_MAP.items():\n                if key in p: return name\n            return 'Other'\n\n        df['artist'] = df['filepath'].apply(label_artist)\n        \n        self.DSP_FEATURES = ['tempo',"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/ray_swarm_test.py",
+      "symbol_name": "MyActor",
+      "distance": 1.3548625707626343,
+      "content": "class MyActor:\n    def compute(self, x):\n        return x * 2"
+    }
+  ],
+  "doc_results": [
+    {
+      "distance": 1.3850464820861816,
+      "text": "r\n:\ndef\n__init__\n(\nself\n,\nmodel_name\n:\nstr\n=\n\"intfloat/multilingual-e5-large-instruct\"\n):\nself\n.\nmodel_name\n=\nmodel_name\nself\n.\nmodel\n=\nSentenceTransformer\n(\nself\n.\nmodel_name\n,\ndevice\n=\n\"cuda\"\nif\ntorch\n.\ncuda\n.\nis_available\n()\nelse\n\"cpu\"\n)\ndef\nembed_single\n(\nself\n,\ntext\n:\nstr\n)\n->\nnp\n.\nndarray\n:\n\"\"\"Generate an embedding for a single text string.\"\"\"\nreturn\nself\n.\nmodel\n.\nencode\n(\ntext\n,\nconvert_to_numpy\n=\nTrue\n)\ndef\nembed_batch\n(\nself\n,\ntexts\n:\nList\n[\nstr\n])\n->\nnp\n.\nndarray\n:\n\"\"\"Generate embeddings for a batch (list) of text strings.\"\"\"\nreturn\nself\n.\nmodel\n.\nencode\n(\ntexts\n,\nconvert_to_numpy\n=\nTrue\n)\nQuery the Chroma DB\n#\nSimilar to\nChromaWrite\nclass in previous tutotials, we define a\nChromaQuerier\nclass that acts as an interface to a Chroma vector store, enabling efficient retrieval of document chunks based on similarity to a provided query embedding.\nIt processes raw results by reformatting and filtering them according to a defined score threshold, ensuring that only the most relevan"
+    },
+    {
+      "distance": 1.400240182876587,
+      "text": "e production batch\nJobs\nfor offline workloads including data prep, training, batch prediction, and potentially online\nServices\n.\nOn this page"
+    },
+    {
+      "distance": 1.4274277687072754,
+      "text": "s\n(\nresponse\n:\nstr\n,\ncontext\n:\nlist\n)\n->\nstr\n:\n# Create a mapping from chunk_index (as string) to its source link.\nchunk_map\n=\n{\nstr\n(\nitem\n[\n'chunk_index'\n]):\nitem\n[\n'source'\n]\nfor\nitem\nin\ncontext\n}\n# Pattern to match: [^N^] where N is one or more digits.\npattern\n=\nr\n'\\[\\^(\\d+)\\^\\]'\ndef\nrepl\n(\nmatch\n):\nn\n=\nmatch\n.\ngroup\n(\n1\n)\n# Look up the source for the given chunk_index.\nsource_link\n=\nchunk_map\n.\nget\n(\nn\n,\n\"source\"\n)\nhttps_link\n=\ns3_to_https\n(\n\"s3://\"\n+\nsource_link\n)\nreturn\nf\n\"\\[[\n{\nn\n}\n](\n{\nhttps_link\n}\n)\\]\"\n# Substitute all occurrences in the response.\nreturn\nre\n.\nsub\n(\npattern\n,\nrepl\n,\nresponse\n)\ndef\nget_citations_str\n(\ncontext\n):\n# Build the citations string in the format:\n# [1] Page 2, https://link\n# [2] Page 3, https://link etc.\ncitations_lines\n=\n[]\n# Sort context items by chunk_index (assuming chunk_index can be cast to int)\nfor\nitem\nin\nsorted\n(\ncontext\n,\nkey\n=\nlambda\nx\n:\nint\n(\nx\n[\n\"chunk_index\"\n])):\ncitation_number\n=\nitem\n[\n\"chunk_index\"\n]\npage_number\n=\nitem\n[\n\"page_number\""
+    },
+    {
+      "distance": 1.4376550912857056,
+      "text": "ext\"\n:\nbatch\n[\n\"text\"\n],\n\"source\"\n:\nbatch\n[\n\"source\"\n],\n\"doc_id\"\n:\nbatch\n[\n\"doc_id\"\n],\n\"page_number\"\n:\nbatch\n[\n\"page_number\"\n],\n\"chunk_id\"\n:\nbatch\n[\n\"chunk_id\"\n],\n}\nThe ChromaWriter\n#\nThe\nChromaWriter\nis responsible for writing the embedded vectors along with metadata to a Chroma vector store.\nWe implement two special method ,\n__getstate__\nand\n__setstate__\n, which are\nspecial hooks in Python’s pickling protocol :\n__getstate__\n: Prepares the object for pickling by removing attributes that can’t be serialized, ensuring that only the essential state is saved.\n__setstate__\n: Rebuilds the object after unpickling by restoring its state and reinitializing the unpickleable components so that the object remains fully functional.\nThese two functions will prevent the error such as\nTypeError:\ncannot\npickle\n'weakref.ReferenceType'\nobject\nwhen you use\nmap_batches\nduring batching processing with Ray data.\nclass\nChromaWriter\n:\ndef\n__init__\n(\nself\n,\ncollection_name\n:\nstr\n,\nchroma_path\n:\nstr\n):\nself\n.\nc"
+    },
+    {
+      "distance": 1.445399284362793,
+      "text": "ChromaQuerier\n: Searches our document chunks for matches using the vector DB Chroma.\nLLMClient\n: Sends questions to the language model and gets answers back.\nfrom\nrag_utils\nimport\nEmbedder\n,\nLLMClient\n,\nChromaQuerier\nEMBEDDER_MODEL_NAME\n=\n\"intfloat/multilingual-e5-large-instruct\"\nCHROMA_PATH\n=\n\"/mnt/cluster_storage/vector_store\"\nCHROMA_COLLECTION_NAME\n=\n\"anyscale_jobs_docs_embeddings\"\n# Initialize client\nmodel_id\n=\n'Qwen/Qwen2.5-32B-Instruct'\n## model id need to be same as your deployment\nbase_url\n=\n\"http://localhost:8000/\"\n## replace with your own service base url\napi_key\n=\n\"fake-key\"\n## replace with your own api key\n# Initialize the components for rag.\nquerier\n=\nChromaQuerier\n(\nCHROMA_PATH\n,\nCHROMA_COLLECTION_NAME\n,\nscore_threshold\n=\n0.8\n)\nembedder\n=\nEmbedder\n(\nEMBEDDER_MODEL_NAME\n)\nllm_client\n=\nLLMClient\n(\nbase_url\n=\nbase_url\n,\napi_key\n=\napi_key\n,\nmodel_id\n=\nmodel_id\n)\nBasic RAG Prompt\n#\nFirst, let’s use the simple RAG prompt (from LangChain https://python.langchain.com/docs/tutori"
+    },
+    {
+      "distance": 1.450488805770874,
+      "text": "mport\nOptional\n,\nGenerator\nfrom\ntyping\nimport\nDict\n,\nList\n,\nUnion\nimport\ntorch\nimport\nnumpy\nas\nnp\nfrom\nsentence_transformers\nimport\nSentenceTransformer\nfrom\npprint\nimport\npprint\nimport\nchromadb\nfrom\nopenai\nimport\nOpenAI\nfrom\ntyping\nimport\nOptional\n,\nGenerator\nclass\nLLMClient\n:\ndef\n__init__\n(\nself\n,\nbase_url\n:\nstr\n,\napi_key\n:\nOptional\n[\nstr\n]\n=\nNone\n,\nmodel_id\n:\nstr\n=\nNone\n):\n# Ensure the base_url ends with a slash and does not include '/routes'\nif\nnot\nbase_url\n.\nendswith\n(\n\"/\"\n):\nbase_url\n+=\n\"/\"\nif\n\"/routes\"\nin\nbase_url\n:\nraise\nValueError\n(\n\"base_url must end with '.com'\"\n)\nself\n.\nmodel_id\n=\nmodel_id\nself\n.\nclient\n=\nOpenAI\n(\nbase_url\n=\nbase_url\n+\n\"v1\"\n,\napi_key\n=\napi_key\nor\n\"NOT A REAL KEY\"\n,\n)\ndef\nget_response_streaming\n(\nself\n,\nprompt\n:\nstr\n,\ntemperature\n:\nfloat\n=\n0.01\n,\n)\n->\nGenerator\n[\nstr\n,\nNone\n,\nNone\n]:\n\"\"\"\nGet a response from the model based on the provided prompt.\nYields the response tokens as they are streamed.\n\"\"\"\nchat_completions\n=\nself\n.\nclient\n.\nchat\n.\ncompletions\n.\ncreat"
+    },
+    {
+      "distance": 1.4507745504379272,
+      "text": "s\nimport\nurl_to_array\nDeployments\n#\nFirst create a deployment for the trained model that generates a probability distribution for a given image URL. You can specify the compute you want to use with\nray_actor_options\n, and how you want to horizontally scale, with\nnum_replicas\n, this specific deployment.\n@serve\n.\ndeployment\n(\nnum_replicas\n=\n\"1\"\n,\nray_actor_options\n=\n{\n\"num_gpus\"\n:\n1\n,\n\"accelerator_type\"\n:\n\"T4\"\n,\n},\n)\nclass\nClassPredictor\n:\ndef\n__init__\n(\nself\n,\nmodel_id\n,\nartifacts_dir\n,\ndevice\n=\n\"cuda\"\n):\n\"\"\"Initialize the model.\"\"\"\n# Embdding model\nself\n.\nprocessor\n=\nCLIPProcessor\n.\nfrom_pretrained\n(\nmodel_id\n)\nself\n.\nmodel\n=\nCLIPModel\n.\nfrom_pretrained\n(\nmodel_id\n)\nself\n.\nmodel\n.\nto\n(\ndevice\n=\ndevice\n)\nself\n.\ndevice\n=\ndevice\n# Trained classifier\nself\n.\npredictor\n=\nTorchPredictor\n.\nfrom_artifacts_dir\n(\nartifacts_dir\n=\nartifacts_dir\n)\nself\n.\npreprocessor\n=\nself\n.\npredictor\n.\npreprocessor\ndef\nget_probabilities\n(\nself\n,\nurl\n):\nimage\n=\nImage\n.\nfromarray\n(\nnp\n.\nuint8\n(\nurl_to_array\n(\nurl\n="
+    },
+    {
+      "distance": 1.4543325901031494,
+      "text": ":\ndef\n__init__\n(\nself\n,\nmodel_name\n:\nstr\n=\n\"intfloat/multilingual-e5-large-instruct\"\n):\nself\n.\nmodel_name\n=\nmodel_name\nself\n.\nmodel\n=\nSentenceTransformer\n(\nself\n.\nmodel_name\n,\ndevice\n=\n\"cuda\"\nif\ntorch\n.\ncuda\n.\nis_available\n()\nelse\n\"cpu\"\n)\ndef\n__call__\n(\nself\n,\nbatch\n:\nDict\n)\n->\nDict\n:\n# Generate embeddings for the 'user_request' field.\nembeddings\n=\nself\n.\nmodel\n.\nencode\n(\nbatch\n[\n\"user_request\"\n],\nconvert_to_numpy\n=\nTrue\n)\nbatch\n[\n\"embeddings\"\n]\n=\nembeddings\nreturn\nbatch\n# Use the Embedder class to process the batch and generate embeddings.\nds\n=\nds\n.\nmap_batches\n(\nUserRequestEmbedder\n,\ncompute\n=\nray\n.\ndata\n.\nActorPoolStrategy\n(\nsize\n=\n1\n),\nbatch_size\n=\n64\n)\nQuerying the Vector Store and Generating Prompts\n#\nNext, we retrieve context for each user request by querying a vector store (using a tool such as Chroma). This context is then used to build a retrieval-augmented generation (RAG) prompt.\nfrom\nrag_utils\nimport\nChromaQuerier\n,\nrender_rag_prompt\nCHROMA_PATH\n=\n\"/mnt/cluster_storage/vec"
+    },
+    {
+      "distance": 1.4796464443206787,
+      "text": "x\n[\n\"chunk_index\"\n])):\ncitation_number\n=\nitem\n[\n\"chunk_index\"\n]\npage_number\n=\nitem\n[\n\"page_number\"\n]\nhttps_link\n=\ns3_to_https\n(\n\"s3://\"\n+\nitem\n[\n\"source\"\n])\ncitations_lines\n.\nappend\n(\nf\n\"[\n{\ncitation_number\n}\n] Page\n{\npage_number\n}\n,\n{\nhttps_link\n}\n\"\n)\ncitations_str\n=\n\"\n\\n\\n\n\"\n.\njoin\n(\ncitations_lines\n)\nreturn\ncitations_str\ndef\nget_advanced_rag_response_v3_with_citation_link\n(\nuser_request\n:\nstr\n,\ncompany\n:\nstr\n=\n\"Anyscale\"\n,\nchat_history\n:\nstr\n=\n\"\"\n,\nstreaming\n=\nFalse\n):\n\"\"\"\nGenerate a streaming response based on the user's request.\nArgs:\nuser_request (str): The user's query.\nReturns:\ngenerator: A generator that yields response tokens.\n\"\"\"\n# Create an embedding from the user request.\nembedding\n=\nembedder\n.\nembed_single\n(\nuser_request\n)\n# Query the context using the generated embedding.\ncontext\n=\nquerier\n.\nquery\n(\nembedding\n,\nn_results\n=\n5\n)\n# Render the prompt by combining the user request with the retrieved context.\nprompt\n=\nrender_advanced_rag_prompt_v3\n(\ncompany\n,\nuser_request\n,\nc"
+    },
+    {
+      "distance": 1.4848462343215942,
+      "text": "g position in the text\nchunk_index\n=\n0\n# Track which chunk number this is\n# There are many more advanced chunking methods, this example uses a simple technique for demo purposes\n# Loop until processing all the text\nwhile\nstart\n<\nlen\n(\ntext\n):\n# Calculate end position (don't go past text length)\nend\n=\nmin\n(\nstart\n+\nchunk_size\n,\nlen\n(\ntext\n))\n# Extract this chunk's text\nchunk_text\n=\ntext\n[\nstart\n:\nend\n]\n# Create a new record for this chunk\n# It contains all the original document metadata PLUS chunk-specific data\nchunk_record\n=\n{\n**\nrecord\n,\n# All original fields (document_id, business_category, etc.)\n\"chunk_id\"\n:\nstr\n(\nuuid\n.\nuuid4\n()),\n# Unique ID for this specific chunk\n\"chunk_index\"\n:\nchunk_index\n,\n# Position in sequence (0, 1, 2, ...)\n\"chunk_text\"\n:\nchunk_text\n,\n# The actual text content of this chunk\n\"chunk_length\"\n:\nlen\n(\nchunk_text\n),\n# Characters in this chunk\n\"chunk_word_count\"\n:\nlen\n(\nchunk_text\n.\nsplit\n())\n# Words in this chunk\n}\nchunks\n.\nappend\n(\nchunk_record\n)\n# If you've re"
+    },
+    {
+      "distance": 1.4877026081085205,
+      "text": "chunk.\nReturns:\nList[str]: A list of text chunks.\n\"\"\"\nif\nself\n.\nmethod\n==\n'fixed'\n:\nsplitter\n=\nCharacterTextSplitter\n.\nfrom_tiktoken_encoder\n(\nencoding_name\n=\nself\n.\nencoding_name\n,\nchunk_size\n=\nself\n.\nchunk_size\n,\nchunk_overlap\n=\nself\n.\nchunk_overlap\n)\nreturn\nsplitter\n.\nsplit_text\n(\ntext\n)\nelif\nself\n.\nmethod\n==\n'recursive'\n:\nsplitter\n=\nRecursiveCharacterTextSplitter\n.\nfrom_tiktoken_encoder\n(\nencoding_name\n=\nself\n.\nencoding_name\n,\nchunk_size\n=\nself\n.\nchunk_size\n,\nchunk_overlap\n=\nself\n.\nchunk_overlap\n)\nreturn\nsplitter\n.\nsplit_text\n(\ntext\n)\nelse\n:\nraise\nValueError\n(\n\"Unknown chunking method: choose 'fixed' or 'recursive'.\"\n)\nTest the Chunking Strategy Implementation\n#\nNow let’s put the chunking process in action for a single page:\n## Test the Chunking Strategy Implementation\n# Create a ChunkingStrategy instance with the desired settings.\nchunker\n=\nChunkingStrategy\n(\nchunk_size\n=\n300\n,\nchunk_overlap\n=\n50\n)\n# Retrieve page information from the pages list (using the 11th page as an example"
+    },
+    {
+      "distance": 1.4889835119247437,
+      "text": "ing by removing attributes that can’t be serialized, ensuring that only the essential state is saved.\n__setstate__\n: Rebuilds the object after unpickling by restoring its state and reinitializing the unpickleable components so that the object remains fully functional.\nThese two functions will prevent the error such as\nTypeError:\ncannot\npickle\n'weakref.ReferenceType'\nobject\nwhen you use\nmap_batches\nduring batching processing with Ray data.\nfrom\npprint\nimport\npprint\nimport\nchromadb\nclass\nChromaQuerier\n:\n\"\"\"\nA class to query a Chroma database collection and return formatted search results.\n\"\"\"\ndef\n__init__\n(\nself\n,\nchroma_path\n:\nstr\n,\nchroma_collection_name\n:\nstr\n,\nscore_threshold\n:\nfloat\n=\n0.8\n# Define a default threshold value if needed.\n):\n\"\"\"\nInitialize the ChromaQuerier with the specified Chroma DB settings and score threshold.\n\"\"\"\nself\n.\nchroma_path\n=\nchroma_path\nself\n.\nchroma_collection_name\n=\nchroma_collection_name\nself\n.\nscore_threshold\n=\nscore_threshold\n# Initialize the persiste"
+    }
+  ],
+  "ray_results": [],
+  "ray_status": "Connected. Searched 27 in-memory tables."
+}

@@ -1,0 +1,78 @@
+{
+  "created_at": "2026-07-09T07:12:17",
+  "namespace": "legion",
+  "ray_initialized": true,
+  "ray_address": "local",
+  "actors": [
+    {
+      "name": "LegionSupervisor",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "LegionSupervisorActor",
+      "detail": "created: {\"ok\": true, \"actor\": \"LegionSupervisorActor\", \"namespace\": \"legion\", \"created_at\": \"2026-07-09T07:12:17\", \"known_actor_names\": {}}",
+      "methods": [
+        "list_known_actors",
+        "ping",
+        "remember_actor"
+      ]
+    },
+    {
+      "name": "SwarmKnowledgeRegistry",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "SwarmKnowledgeRegistry/Compat",
+      "detail": "created compat registry: {\"ok\": true, \"actor\": \"SwarmKnowledgeRegistryCompat\", \"created_at\": \"2026-07-09T07:12:17\", \"tables\": []}",
+      "methods": [
+        "dump_summary",
+        "get_registered_tables_summary",
+        "get_table",
+        "list_tables",
+        "ping",
+        "register_table"
+      ]
+    },
+    {
+      "name": "SocialActor",
+      "namespace": "legion",
+      "state": "missing",
+      "actor_type": "SocialActor",
+      "detail": "legion_sonic_engine_actors.SocialActor: No module named 'legion_sonic_engine_actors'",
+      "methods": null
+    },
+    {
+      "name": "MarketingActor",
+      "namespace": "legion",
+      "state": "missing",
+      "actor_type": "MarketingActor",
+      "detail": "legion_sonic_engine_actors.MarketingActor: No module named 'legion_sonic_engine_actors'",
+      "methods": null
+    },
+    {
+      "name": "WardenActor",
+      "namespace": "legion",
+      "state": "skipped",
+      "actor_type": "WardenActor",
+      "detail": "needs constructor args or dependencies",
+      "methods": null
+    },
+    {
+      "name": "DSPAlignmentActor",
+      "namespace": "legion",
+      "state": "error",
+      "actor_type": "DSPAlignmentActor",
+      "detail": "missing a required argument: 'lancedb_path'",
+      "methods": null
+    },
+    {
+      "name": "IntelligenceBridge",
+      "namespace": "legion",
+      "state": "skipped",
+      "actor_type": "IntelligenceBridge",
+      "detail": "needs constructor args or dependencies",
+      "methods": null
+    }
+  ],
+  "errors": [
+    "Could not create DSPAlignmentActor: missing a required argument: 'lancedb_path'\nTraceback (most recent call last):\n  File \"E:\\WEB CASE STUDY\\legion_ray_supervisor.py\", line 295, in boot_supervisor\n    actor, mode = create_named_actor(cls, actor_name, *args)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\WEB CASE STUDY\\legion_ray_supervisor.py\", line 200, in create_named_actor\n    actor = actor_cls.options(\n            ^^^^^^^^^^^^^^^^^^\n  File \"E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\ray\\actor.py\", line 1734, in remote\n    return actor_cls._remote(args=args, kwargs=kwargs, **updated_options)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\ray\\_private\\auto_init_hook.py\", line 22, in auto_init_wrapper\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\ray\\util\\tracing\\tracing_helper.py\", line 384, in _invocation_actor_class_remote_span\n    return method(self, args, kwargs, *_args, **_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\ray\\actor.py\", line 1790, in _remote\n    return self._remote(args, kwargs, **updated_options)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\ray\\_private\\auto_init_hook.py\", line 22, in auto_init_wrapper\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\ray\\util\\tracing\\tracing_helper.py\", line 384, in _invocation_actor_class_remote_span\n    return method(self, args, kwargs, *_args, **_kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\ray\\actor.py\", line 1938, in _remote\n    creation_args = signature.flatten_args(function_signature, args, kwargs)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\ray\\_common\\signature.py\", line 130, in flatten_args\n    validate_args(signature_parameters, args, kwargs)\n  File \"E:\\WEB CASE STUDY\\.venv\\Lib\\site-packages\\ray\\_common\\signature.py\", line 101, in validate_args\n    raise TypeError(str(exc)) from None\nTypeError: missing a required argument: 'lancedb_path'\n"
+  ]
+}

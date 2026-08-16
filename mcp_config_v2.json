@@ -1,0 +1,66 @@
+{
+  "mcpServers": {
+    "swarm-gateway": {
+      "command": "e:\\WEB CASE STUDY\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\WEB CASE STUDY\\mcp_swarm_gateway_v2.py"
+      ],
+      "env": {
+        "MCP_API_BASE":   "http://127.0.0.1:8001",
+        "MCP_TOOLS_EXEC": "http://127.0.0.1:8002/tools/execute",
+        "MCP_RAG_BASE":   "http://127.0.0.1:8003",
+        "LM_STUDIO_BASE": "http://127.0.0.1:1234",
+        "OLLAMA_BASE":    "http://127.0.0.1:11434",
+        "TAILSCALE_IP":   "100.113.76.102",
+        "LANCE_STORE":    "C:\\STUDIES_BACKUP\\vectors\\lancedb_store"
+      }
+    },
+    "legion-mcp-rag": {
+      "command": "e:\\WEB CASE STUDY\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\WEB CASE STUDY\\mcp_rag_server.py"
+      ],
+      "env": {
+        "LANCEDB_PATH":   "C:\\STUDIES_BACKUP\\vectors\\lancedb_store",
+        "LM_STUDIO_BASE": "http://127.0.0.1:1234",
+        "SNOWFLAKE_MODEL":"text-embedding-snowflake-arctic-embed-l-v2.0"
+      }
+    },
+    "legion-mcp-worker": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://legion-mcp-worker.adamscarmccoy.workers.dev/mcp"
+      ]
+    }
+  },
+  "model_config": {
+    "ollama_url":    "http://localhost:11434",
+    "lm_studio_url": "http://localhost:1234",
+    "model_id":      "gemma2:2b",
+    "embed_model":   "text-embedding-snowflake-arctic-embed-l-v2.0",
+    "embed_dim":     1024
+  },
+  "lancedb": {
+    "canonical_path": "C:\\STUDIES_BACKUP\\vectors\\lancedb_store",
+    "fallback_path":  "C:\\WEB CASE STUDY\\lancedb_store",
+    "tables": {
+      "audio_vibe_gpu":          {"dim": 384,  "rows": 2010},
+      "audio_manifest_vectors":  {"dim": 768,  "rows": 500},
+      "mined_code_vectors":      {"dim": 1024, "rows": null},
+      "duckdb_metadata_vectors": {"dim": 1024, "rows": 200},
+      "skill_brain":             {"dim": 1024, "rows": 20},
+      "legion_memory":           {"dim": 1024, "rows": 2}
+    }
+  },
+  "logfire": {
+    "enabled": true,
+    "local_only": true,
+    "services": [
+      "legion-swarm-gateway",
+      "legion-mcp-rag-server",
+      "legion-langgraph"
+    ]
+  }
+}

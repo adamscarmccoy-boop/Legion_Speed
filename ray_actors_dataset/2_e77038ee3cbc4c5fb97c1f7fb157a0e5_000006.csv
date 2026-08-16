@@ -1,0 +1,2 @@
+"actor_id","name","class_name","state","pid","namespace","category"
+"3b339f076914e45e41a3862d01000000","ACPControlPlane","ACPControlPlaneActor","ALIVE",25904,"legion","Background AI Model (Legion)"

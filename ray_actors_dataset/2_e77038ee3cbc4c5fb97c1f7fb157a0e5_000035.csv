@@ -1,0 +1,2 @@
+"actor_id","name","class_name","state","pid","namespace","category"
+"fa00d5594269f3cd64ff695101000000","SERVE_PROXY_ACTOR-a529d4c0f806f5b6b5826203db0063f33a56883d0b4b6b259c78ef92","ProxyActor","ALIVE",34568,"serve","Background AI Model (Legion)"

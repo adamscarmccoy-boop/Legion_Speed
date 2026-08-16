@@ -1,0 +1,11 @@
+========================================================================
+         LEGION SYSTEM: DISTRIBUTED MACRO CODE FOREST REPORT
+========================================================================
+Execution Context   : Distributed Ray Parallel Workers
+Total Files Audited : 629
+Total AST Nodes     : 3991
+Monty Verified Clean: 3991
+Monty Flagged Error : 0
+Total Sweep Latency : 17587.46 ms (17.5875 sec)
+Average AST Speed   : 4406.78 μs
+========================================================================

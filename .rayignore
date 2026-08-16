@@ -1,0 +1,14 @@
+# .rayignore
+*.bin
+*.pt
+*.onnx
+*.weights
+*.ckpt
+*.h5
+*.parquet
+*.duckdb
+*.wav
+*.mp3
+*.flac
+.git/
+__pycache__/

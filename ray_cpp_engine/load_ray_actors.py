@@ -10,6 +10,34 @@ import sys
 import struct
 import ray
 
+# ==============================================================================
+# SOVEREIGN LIFE-CYCLE STABILIZER (AUTO-INJECTED)
+# Prevents dangling stdout/stdio pipes and GCS registry locks on Windows exit
+# ==============================================================================
+import atexit
+import signal
+
+def clean_exit_handler(*args, **kwargs):
+    import sys
+    sys.stderr.write("\n[LMS LIFECYCLE] Exit triggered. Flushing system streams...\n")
+    sys.stderr.flush()
+    try:
+        import ray
+        if ray.is_initialized():
+            sys.stderr.write("[LMS LIFECYCLE] Active Ray session detected. Disconnecting...\n")
+            ray.shutdown()
+    except Exception:
+        pass
+    # Avoid raising SystemExit inside an atexit callback (which causes RuntimeWarnings)
+    if args and isinstance(args[0], int):
+        sys.exit(0)
+
+atexit.register(clean_exit_handler)
+signal.signal(signal.SIGINT, clean_exit_handler)
+signal.signal(signal.SIGTERM, clean_exit_handler)
+# ==============================================================================
+
+
 try:
     sys.stdout.reconfigure(encoding='utf-8')
 except Exception:

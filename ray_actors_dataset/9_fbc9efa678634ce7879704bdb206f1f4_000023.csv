@@ -1,0 +1,2 @@
+"actor_id","name","class_name","state","pid","namespace","category"
+"a5735fb52b1e5c58ba43cf5c01000000","TensorEvaluatorActor","TensorEvaluatorActor","ALIVE",35004,"legion","Background AI Model (Legion)"

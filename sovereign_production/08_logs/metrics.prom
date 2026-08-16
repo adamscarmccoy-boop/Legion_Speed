@@ -1,0 +1,23 @@
+# HELP sovereign_mastering_duration_seconds Latency of the mastering run
+# TYPE sovereign_mastering_duration_seconds gauge
+sovereign_mastering_duration_seconds 19.8051
+
+# HELP sovereign_final_rms_db Final loudness level in dB RMS
+# TYPE sovereign_final_rms_db gauge
+sovereign_final_rms_db -9.8996
+
+# HELP sovereign_phase_correlation Phase correlation between L and R channels
+# TYPE sovereign_phase_correlation gauge
+sovereign_phase_correlation 0.8491
+
+# HELP sovereign_stereo_width Stereo width above 150 Hz
+# TYPE sovereign_stereo_width gauge
+sovereign_stereo_width 0.1509
+
+# HELP sovereign_peak_L_db Left channel peak level in dBFS
+# TYPE sovereign_peak_L_db gauge
+sovereign_peak_L_db 0.0000
+
+# HELP sovereign_peak_R_db Right channel peak level in dBFS
+# TYPE sovereign_peak_R_db gauge
+sovereign_peak_R_db 0.0000

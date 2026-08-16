@@ -1,0 +1,2 @@
+"actor_id","name","class_name","state","pid","namespace","category"
+"5947f8edf1ad0cd10b8a234901000000","GenerationWorker","GenerationWorker","ALIVE",32940,"legion","Background AI Model (Legion)"

@@ -1,0 +1,12 @@
+models:
+  - name: "qwen"
+    model: "intel/qwen2.5-coder-1.5b-instruct"
+    usecase: "generate"
+    loader: "vllm"
+    num_gpus: 0.5
+    vllm_config:
+      gpu_util: 0.5
+      max_len: 8192
+      tensor_parallel_size: 1
+      dtype: "float16"
+      trust_remote_code: true

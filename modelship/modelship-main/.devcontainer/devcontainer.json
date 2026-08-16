@@ -1,0 +1,62 @@
+{
+  "name": "modelship",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "target": "dev",
+    "context": "..",
+    "args": {
+      "UID": "${localEnv:UID:1000}",
+      "GID": "${localEnv:GID:1000}"
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "workspaceFolder": "/modelship",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/modelship,type=bind",
+  "runArgs": [
+    "--shm-size=8g",
+    "--gpus=all",
+    "-p", "0.0.0.0:8000:8000",
+    "-p", "0.0.0.0:8265:8265",
+    "-p", "0.0.0.0:8079:8079"
+  ],
+  "forwardPorts": [8000, 8265, 8079],
+  "portsAttributes": {
+    "8000": { "label": "API" },
+    "8265": { "label": "Ray Dashboard" }
+  },
+  "mounts": [
+    "source=${localEnv:HOME}/.claude,target=/home/modelship/.claude,type=bind",
+    "source=${localEnv:HOME}/.gemini,target=/home/modelship/.gemini,type=bind"
+  ],
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && npm install -g @google/gemini-cli",
+  "containerEnv": {
+    "CLAUDE_CONFIG_DIR": "/home/modelship/.claude"
+  },
+  "remoteUser": "modelship",
+  "remoteEnv": {
+    "HF_TOKEN": "${localEnv:HF_TOKEN}",
+    "MSHIP_METRICS": "true"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "google.gemini-cli-vscode-ide-companion",
+        "charliermarsh.ruff",
+        "ms-python.python",
+        "ms-pyright.pyright"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/.venv/bin/python",
+        "ruff.interpreter": ["/.venv/bin/python"],
+        "python.analysis.extraPaths": ["/.venv/lib/python3.12/site-packages"],
+        "pyright.venvPath": "/",
+        "pyright.venv": ".venv"
+      }
+    }
+  }
+}

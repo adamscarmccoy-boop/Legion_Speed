@@ -1,0 +1,47 @@
+{
+  "LM_STUDIO": {
+    "status": "ONLINE",
+    "port": 1234,
+    "env_var": "LM_STUDIO_URL",
+    "env_val": "http://127.0.0.1:1234/v1"
+  },
+  "RAY_GCS": {
+    "status": "ONLINE",
+    "port": 6379,
+    "env_var": "RAY_ADDRESS",
+    "env_val": "ray://127.0.0.1:6379"
+  },
+  "RAY_DASHBOARD": {
+    "status": "ONLINE",
+    "port": 8265,
+    "env_var": "RAY_DASHBOARD_URL",
+    "env_val": "http://127.0.0.1:8265"
+  },
+  "MCP_SWARM": {
+    "status": "ONLINE",
+    "port": 8001,
+    "env_var": "MCP_SWARM_URL",
+    "env_val": "http://127.0.0.1:8001"
+  },
+  "MCP_RAG_SSE": {
+    "status": "OFFLINE",
+    "port": 8005,
+    "env_var": "MCP_RAG_SSE_URL",
+    "env_val": "NULL"
+  },
+  "NPM_VITE_FRONTEND": {
+    "status": "OFFLINE",
+    "port": 5173,
+    "env_var": "NPM_VITE_URL",
+    "env_val": "NULL"
+  },
+  "NPM_NEXT_FRONTEND": {
+    "status": "OFFLINE",
+    "port": 3000,
+    "env_var": "NPM_NEXT_URL",
+    "env_val": "NULL"
+  },
+  "PROCESS_NODE_EXE": "ACTIVE",
+  "PROCESS_CLANGD_EXE": "ACTIVE",
+  "PROCESS_LMSTUDIO_EXE": "INACTIVE"
+}

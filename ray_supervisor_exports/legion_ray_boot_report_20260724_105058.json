@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-07-24T10:50:58",
+  "namespace": "legion",
+  "ray_initialized": true,
+  "ray_address": "auto",
+  "actors": [
+    {
+      "name": "LegionSupervisor",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "LegionSupervisorActor",
+      "detail": "existing: {\"ok\": true, \"actor\": \"LegionSupervisorActor\", \"namespace\": \"legion\", \"created_at\": \"2026-07-24T10:46:36\", \"known_actor_names\": {\"registry\": {\"actor_name\": \"SwarmKnowledgeRegistry\", \"actor_type\": \"SwarmKnowledgeRegistry\", \"detail\": \"existing registry\", \"updated_at\": \"2026-07-24T10:46:36\"}, \"social\": {\"actor_name\": \"SocialActor\", \"actor_type\": \"SocialActor\", \"detail\": \"created\", \"updated_at\": \"2026-07-24T10:46:38\"}, \"marketing\": {\"actor_name\": \"MarketingActor\", \"actor_type\": \"MarketingActor\", \"detail\": \"created\", \"updated_at\": \"2026-07-24T10:46:41\"}, \"dsp_alignment\": {\"actor_name\": \"DSPAlignmentActor\", \"actor_type\": \"DSPAlignmentActor\", \"detail\": \"created\", \"updated_at\": \"2026-07-24T10:46:43\"}, \"gemma_onnx_agent\": {\"actor_name\": \"GemmaONNXAgent\", \"actor_type\": \"GemmaONNXAgent\", \"detail\": \"existing\", \"updated_at\": \"2026-07-24T10:46:45\"}}}",
+      "methods": [
+        "list_known_actors",
+        "ping",
+        "remember_actor"
+      ]
+    },
+    {
+      "name": "SwarmKnowledgeRegistry",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "SwarmKnowledgeRegistry/Compat",
+      "detail": "existing registry: No ping() method; actor handle exists.",
+      "methods": [
+        "add_knowledge_batch",
+        "get_registered_tables_summary",
+        "get_table",
+        "get_table_ref",
+        "register_table",
+        "table_count"
+      ]
+    },
+    {
+      "name": "SocialActor",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "SocialActor",
+      "detail": "existing: {\"status\": \"online\", \"platforms\": {\"instagram\": \"active\", \"tiktok\": \"active\", \"spotify\": \"active\"}}",
+      "methods": [
+        "get_engagement_metrics",
+        "ping"
+      ]
+    },
+    {
+      "name": "MarketingActor",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "MarketingActor",
+      "detail": "existing: {\"status\": \"online\", \"engine_loaded\": true}",
+      "methods": [
+        "ping",
+        "score_audio_dna"
+      ]
+    },
+    {
+      "name": "WardenActor",
+      "namespace": "legion",
+      "state": "skipped",
+      "actor_type": "WardenActor",
+      "detail": "needs constructor args or dependencies",
+      "methods": null
+    },
+    {
+      "name": "DSPAlignmentActor",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "DSPAlignmentActor",
+      "detail": "existing: {\"status\": \"online\", \"db_path\": \"C:\\\\STUDIES_BACKUP\\\\vectors\\\\lancedb_store\"}",
+      "methods": [
+        "align_features",
+        "ping"
+      ]
+    },
+    {
+      "name": "IntelligenceBridge",
+      "namespace": "legion",
+      "state": "skipped",
+      "actor_type": "IntelligenceBridge",
+      "detail": "needs constructor args or dependencies",
+      "methods": null
+    },
+    {
+      "name": "GemmaONNXAgent",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "GemmaONNXAgent",
+      "detail": "existing: \"GemmaONNXAgent is online.\"",
+      "methods": [
+        "generate",
+        "ping"
+      ]
+    }
+  ],
+  "errors": []
+}

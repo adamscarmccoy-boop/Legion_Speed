@@ -1,0 +1,44 @@
+[
+  {
+    "query": "ray actors ray.get_actor namespace legion",
+    "result_index": 1,
+    "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+    "normalized_path": "C:\\WEB CASE STUDY\\mix_audit_agent.py",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 13835,
+    "contains_symbol": true,
+    "symbol_name": "__init__",
+    "evidence_file": "C:\\WEB CASE STUDY\\code_truth_exports\\rag_evidence\\rag_20260703_023632_ray_actors_ray_get_actor_namespace_legion.txt",
+    "verification_error": null,
+    "verified_at": "2026-07-03T06:41:59.533254"
+  },
+  {
+    "query": "ray actors ray.get_actor namespace legion",
+    "result_index": 2,
+    "source_file": "C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py",
+    "normalized_path": "C:\\WEB CASE STUDY\\legion_sonic_engine_orchestrator.py",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 5406,
+    "contains_symbol": true,
+    "symbol_name": "boot_swarm",
+    "evidence_file": "C:\\WEB CASE STUDY\\code_truth_exports\\rag_evidence\\rag_20260703_023632_ray_actors_ray_get_actor_namespace_legion.txt",
+    "verification_error": null,
+    "verified_at": "2026-07-03T06:41:59.533254"
+  },
+  {
+    "query": "ray actors ray.get_actor namespace legion",
+    "result_index": 3,
+    "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+    "normalized_path": "C:\\WEB CASE STUDY\\mix_audit_agent.py",
+    "exists": true,
+    "readable": true,
+    "size_bytes": 13835,
+    "contains_symbol": true,
+    "symbol_name": "RegistryClient",
+    "evidence_file": "C:\\WEB CASE STUDY\\code_truth_exports\\rag_evidence\\rag_20260703_023632_ray_actors_ray_get_actor_namespace_legion.txt",
+    "verification_error": null,
+    "verified_at": "2026-07-03T06:41:59.533254"
+  }
+]

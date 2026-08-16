@@ -1,0 +1,6 @@
+{
+  "endpoint": "https://api.smith.langchain.com",
+  "project": "legion-starter",
+  "tracing": "true",
+  "ls_run_depth": 0
+}

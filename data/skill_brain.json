@@ -1,0 +1,142 @@
+[
+  {
+    "skill_name": "coding-agent",
+    "path": "C:\\Users\\adams\\.agents\\skills\\coding-agent\\SKILL.md",
+    "essence": "--- name: coding-agent description: 'Delegate coding tasks to Codex, Claude Code, OpenCode, or Pi agents via immediate background processes. Use when: (1) building or creating features/apps, (2) revie",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "developing-genkit-js",
+    "path": "C:\\Users\\adams\\.agents\\skills\\developing-genkit-js\\SKILL.md",
+    "essence": "--- name: developing-genkit-js description: Develop AI-powered applications using Genkit in Node.js/TypeScript. Use when the user asks about Genkit, AI agents, flows, or tools in JavaScript/TypeScript",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "devops-engineer",
+    "path": "C:\\Users\\adams\\.agents\\skills\\devops-engineer\\SKILL.md",
+    "essence": "--- name: devops-engineer description: Creates Dockerfiles, configures CI/CD pipelines, writes Kubernetes manifests, and generates Terraform/Pulumi infrastructure templates. Handles deployment automat",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "find-skills",
+    "path": "C:\\Users\\adams\\.agents\\skills\\find-skills\\SKILL.md",
+    "essence": "--- name: find-skills description: Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "genre-presets",
+    "path": "C:\\Users\\adams\\.agents\\skills\\mastering-engineer\\genre-presets.md",
+    "essence": "# Genre-Specific Mastering Presets  Detailed mastering settings by genre.  ---  ## Platform Targets Reference  ### Spotify - **Target**: -14 LUFS integrated - **True peak**: -1.0 dBTP - **What happens",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "mastering-engineer",
+    "path": "C:\\Users\\adams\\.agents\\skills\\mastering-engineer\\SKILL.md",
+    "essence": "--- name: mastering-engineer description: Guides audio mastering for streaming platforms including loudness optimization and tonal balance. Use when the user has approved tracks and wants to master au",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "mcp-builder",
+    "path": "C:\\Users\\adams\\.agents\\skills\\mcp-builder\\SKILL.md",
+    "essence": "--- name: mcp-builder description: Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when buildi",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "microsoft-foundry",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\SKILL.md",
+    "essence": "--- name: microsoft-foundry description: \"Deploy, evaluate, and manage Foundry agents end-to-end: Docker build, ACR push, hosted/prompt agent create, container start, batch eval, continuous eval, prom",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "videoagent-audio-studio",
+    "path": "C:\\Users\\adams\\.agents\\skills\\videoagent-audio-studio\\SKILL.md",
+    "essence": "--- name: videoagent-audio-studio version: 3.0.0 author: \"wells\" emoji: \"\ud83c\udf99\ufe0f\" tags:   - video   - audio   - tts   - music   - sfx   - voice-clone   - elevenlabs   - fal description: >   Tired of juggli",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "connections",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\project\\connections.md",
+    "essence": "# Foundry Project Connections  Connections authenticate and link external resources to a Foundry project. Many agent tools (Azure AI Search, Bing Grounding, MCP) require a project connection before us",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "quota",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\quota\\quota.md",
+    "essence": "# Microsoft Foundry Quota Management  Quota and capacity management for Microsoft Foundry. Quotas are **subscription + region** level.  > \u26a0\ufe0f **Important:** This is the **authoritative skill** for all ",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "rbac",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\rbac\\rbac.md",
+    "essence": "# Microsoft Foundry RBAC Management  Reference for managing RBAC for Microsoft Foundry resources: user permissions, managed identity configuration, and service principal setup for CI/CD.  ## Quick Ref",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "agent-metadata-contract",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\references\\agent-metadata-contract.md",
+    "essence": "# Agent Metadata Contract  Use this contract for every agent source folder that participates in Microsoft Foundry workflows.  ## Required Local Layout  ```text <agent-root>/   .foundry/     agent-meta",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "auth-best-practices",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\references\\auth-best-practices.md",
+    "essence": "# Azure Authentication Best Practices  > Source: [Microsoft \u2014 Passwordless connections for Azure services](https://learn.microsoft.com/azure/developer/intro/passwordless-overview) and [Azure Identity ",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "standard-agent-setup",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\references\\standard-agent-setup.md",
+    "essence": "# Standard Agent Setup  > **MANDATORY:** Read [Standard Agent Setup docs](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/standard-agent-setup?view=foundry) before proceeding with stan",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "create-foundry-resource",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\resource\\create\\create-foundry-resource.md",
+    "essence": "--- name: microsoft-foundry:resource/create description: |   Create Azure AI Services multi-service resource (Foundry resource) using Azure CLI.   USE FOR: create Foundry resource, new AI Services res",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "private-network",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\resource\\private-network\\private-network.md",
+    "essence": "--- name: private-network description: \"Answer questions about and deploy Microsoft Foundry with network isolation. Covers BYO VNet, Managed VNet, hybrid patterns, private endpoints, and Bicep deploym",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "custom-template-adaptation",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\resource\\private-network\\references\\custom-template-adaptation.md",
+    "essence": "# Custom Template Adaptation  For the EXTEND path \u2014 when the user has existing Bicep or Terraform templates.  ## Instructions  1. **Read** the user's existing template files. Understand the resource g",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "deploy",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\resource\\private-network\\references\\deploy.md",
+    "essence": "# Deploy & Track  Applies to all private network deployments.  ## Deploy  ```bash az deployment group create \\   --resource-group <rg> \\   --template-file main.bicep \\   --parameters main.bicepparam \\",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  },
+  {
+    "skill_name": "end-to-end-test",
+    "path": "C:\\Users\\adams\\.agents\\skills\\microsoft-foundry\\resource\\private-network\\references\\end-to-end-test.md",
+    "essence": "# End-to-End Test (VNet Access Required)  Continues from [post-deployment-validation.md](post-deployment-validation.md). Steps 1\u20133 there must be complete first.  ## 4. VNet Access Setup  > \u26a0\ufe0f The rema",
+    "vector": "[Vector dimension: 768]",
+    "type": "professional_skill"
+  }
+]

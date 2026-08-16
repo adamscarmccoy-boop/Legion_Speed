@@ -1,0 +1,190 @@
+{
+  "query": "ray actors ray.get_actor namespace= legion",
+  "created_at": "2026-07-02T23:47:26",
+  "db_path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+  "embedding_model": "text-embedding-snowflake-arctic-embed-l-v2.0",
+  "embedding_status": "ok, dims=1024",
+  "limit": 12,
+  "chars": 8000,
+  "imports": {
+    "lancedb": "ok",
+    "pandas": "ok",
+    "ray": "ok",
+    "pyarrow": "ok"
+  },
+  "db_probe": [
+    {
+      "path": "E:\\WEB CASE STUDY\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [
+        "chris_lake_speed_test",
+        "chris_lake_web_intel",
+        "mined_code_vectors",
+        "mined_documentation_vectors"
+      ],
+      "error": null,
+      "score": 2
+    },
+    {
+      "path": "C:\\WEB CASE STUDY\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "C:\\WEB CASE STUDY\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": false,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "E:\\WEB CASE STUDY\\lancedb_web_intel_rag",
+      "exists": false,
+      "tables": [],
+      "error": null,
+      "score": 0
+    }
+  ],
+  "tables": [
+    "chris_lake_speed_test",
+    "chris_lake_web_intel",
+    "mined_code_vectors",
+    "mined_documentation_vectors"
+  ],
+  "errors": [],
+  "code_results": [
+    {
+      "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+      "symbol_name": "__init__",
+      "distance": 0.7597500085830688,
+      "content": "def __init__(self):\n        self.registry = ray.get_actor(\"SwarmKnowledgeRegistry\", namespace=LEGION_NAMESPACE)\n        print(\"RegistryClient connected to SwarmKnowledgeRegistry.\")"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py",
+      "symbol_name": "boot_swarm",
+      "distance": 0.8058830499649048,
+      "content": "def boot_swarm(self):\n        \"\"\"Initializes all Ray Actors and the MCP connection.\"\"\"\n        print(\"[Orchestrator] 🚀 Booting the Legion Swarm...\")\n        \n        if not ray.is_initialized():\n            ray.init(namespace=\"legion\", ignore_reinit_error=True)\n\n        # 1. Instantiate the Intelligence Bridge\n        self.bridge = IntelligenceBridge.remote(MARKET_DATA_PATH)\n        \n        # 2. Instantiate the Core Actors\n        # We pass the bridge handle so the Warden can query it\n        from legion_sonic_engine_actors import SocialActor, MarketingActor, WardenActor\n        \n        self.actors['social'] = SocialActor.remote()\n        self.actors['marketing'] = MarketingActor.remote()\n        self.actors['warden'] = WardenActor.remote(\n            self.actors['social'], \n            self.actors['marketing']\n        )\n        \n        print(\"[Orchestrator] ✅ Swarm Booted. All actors online.\")"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+      "symbol_name": "RegistryClient",
+      "distance": 0.8236611485481262,
+      "content": "class RegistryClient:\n    def __init__(self):\n        self.registry = ray.get_actor(\"SwarmKnowledgeRegistry\", namespace=LEGION_NAMESPACE)\n        print(\"RegistryClient connected to SwarmKnowledgeRegistry.\")\n\n    def get_table(self, table_name: str):\n        return ray.get(self.registry.get_table.remote(table_name))"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/run_simulation_with_stem_mastering.py",
+      "symbol_name": "boot_swarm",
+      "distance": 0.8288871645927429,
+      "content": "def boot_swarm(self):\n        \"\"\"Initializes all Ray Actors and the MCP connection.\"\"\"\n        print(\"[OrchestratorV2] 🚀 Booting the Legion Swarm...\")\n        \n        if not ray.is_initialized():\n            ray.init(namespace=\"legion\", ignore_reinit_error=True)\n\n        self.bridge = IntelligenceBridge.remote(MARKET_DATA_PATH)\n        from legion_sonic_engine_actors import SocialActor, MarketingActor, WardenActor\n        \n        self.actors['social'] = SocialActor.remote()\n        self.actors['marketing'] = MarketingActor.remote()\n        self.actors['warden'] = WardenActor.remote(self.actors['social'], self.actors['marketing'])\n        \n        print(\"[OrchestratorV2] ✅ Swarm Booted. All actors online.\")"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/run_simulation_with_stem_mastering.py",
+      "symbol_name": "LegionOrchestratorV2",
+      "distance": 0.8473913669586182,
+      "content": "class LegionOrchestratorV2:\n    \"\"\"\n    The Master Orchestrator, now updated to call the stem mastering workflow.\n    \"\"\"\n    def __init__(self):\n        self.state = AgentState(\n            session_id=f\"session_{int(datetime.utcnow().timestamp())}\",\n            current_phase=\"intro\",\n            current_city=\"Charlotte\"\n        )\n        self.actors = {}\n        self.mcp = None\n\n    def boot_swarm(self):\n        \"\"\"Initializes all Ray Actors and the MCP connection.\"\"\"\n        print(\"[OrchestratorV2] 🚀 Booting the Legion Swarm...\")\n        \n        if not ray.is_initialized():\n            ray.init(namespace=\"legion\", ignore_reinit_error=True)\n\n        self.bridge = IntelligenceBridge.remote(MARKET_DATA_PATH)\n        from legion_sonic_engine_actors import SocialActor, MarketingActor, WardenActor\n        \n        self.actors['social'] = SocialActor.remote()\n        self.actors['marketing'] = MarketingActor.remote()\n        self.actors['warden'] = WardenActor.remote(self.actors['social'], self.actors['marketing'])\n        \n        print(\"[OrchestratorV2] ✅ Swarm Booted. All actors online.\")\n\n    def run_turn(self):\n        \"\"\"Executes a single simulation turn.\"\"\"\n        print(f\"\\n--- 🔄 Running Simulation Turn: {self.state.session_id} ---\")\n        \n        current_metrics = {\"dsp_sub\": 12.0, \"dsp_rms\": -10.5}\n        gap = ray.get(self.bridge.get_intelligence_gap.remote(current_metrics))\n        self.state.intelligence_gap = gap\n        print(f\"[SENSE] Intelligence Gap: {self.s"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py",
+      "symbol_name": "LegionOrchestrator",
+      "distance": 0.8561864495277405,
+      "content": "class LegionOrchestrator:\n    \"\"\"\n    The Master Orchestrator that drives the simulation loop.\n    \"\"\"\n    def __init__(self):\n        self.state = AgentState(\n            session_id=f\"session_{int(datetime.utcnow().timestamp())}\",\n            current_phase=\"intro\",\n            current_city=\"Charlotte\"\n        )\n        self.actors = {}\n        self.mcp = None\n\n    def boot_swarm(self):\n        \"\"\"Initializes all Ray Actors and the MCP connection.\"\"\"\n        print(\"[Orchestrator] 🚀 Booting the Legion Swarm...\")\n        \n        if not ray.is_initialized():\n            ray.init(namespace=\"legion\", ignore_reinit_error=True)\n\n        # 1. Instantiate the Intelligence Bridge\n        self.bridge = IntelligenceBridge.remote(MARKET_DATA_PATH)\n        \n        # 2. Instantiate the Core Actors\n        # We pass the bridge handle so the Warden can query it\n        from legion_sonic_engine_actors import SocialActor, MarketingActor, WardenActor\n        \n        self.actors['social'] = SocialActor.remote()\n        self.actors['marketing'] = MarketingActor.remote()\n        self.actors['warden'] = WardenActor.remote(\n            self.actors['social'], \n            self.actors['marketing']\n        )\n        \n        print(\"[Orchestrator] ✅ Swarm Booted. All actors online.\")\n\n    def run_turn(self):\n        \"\"\"Executes a single simulation turn.\"\"\"\n        print(f\"\\n--- 🔄 Running Simulation Turn: {self.state.session_id} ---\")\n        # 1. Sense: Get the Intelligence Report\n        # We simulat"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/test_registry_connection.py",
+      "symbol_name": "module",
+      "distance": 0.8601899147033691,
+      "content": "import ray\nimport json\n\ndef test_registry():\n    print(\"Connecting to Ray cluster...\")\n    ray.init(address=\"auto\", namespace=\"legion\", ignore_reinit_error=True)\n    \n    print(\"Grabbing SwarmKnowledgeRegistry actor...\")\n    try:\n        registry = ray.get_actor(\"SwarmKnowledgeRegistry\")\n    except ValueError:\n        print(\"ERROR: Could not find 'SwarmKnowledgeRegistry' actor. Is the swarm running?\")\n        return\n        \n    summary = ray.get(registry.get_registered_tables_summary.remote())\n    tables = list(summary.keys())\n    print(f\"\\n✅ SUCCESSFULLY CONNECTED! Found {len(tables)} registered tables in live memory.\")\n    \n    table_name = \"chrislake_stems_duckdb\"\n    print(f\"\\nAttempting to instantly pull table '{table_name}' from RAM...\")\n    \n    if table_name in tables:\n        data = ray.get(registry.get_table.remote(table_name))\n        print(f\"✅ Success! Pulled {len(data)} rows.\")\n        print(\"\\n--- FIRST ROW ---\")\n        print(json.dumps(data[0], indent=2))\n    else:\n   "
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/scratch_inspect.py",
+      "symbol_name": "module",
+      "distance": 0.8664202094078064,
+      "content": "import ray\nimport os\n\ntry:\n    ray.init(namespace='legion', ignore_reinit_error=True)\n    registry = ray.get_actor('SwarmKnowledgeRegistry', namespace='legion')\n    tables = ray.get(registry.list_tables.remote())\n    \n    for tbl_name in ['audio_vibe_gpu', 'chris_lake_fused_raw', 'legion_memory', 'audio_manifest_vectors', 'enriched_audio_dataset']:\n        if tbl_name in tables:\n            arrow_table = ray.get(registry.get_table.remote(tbl_name))\n            print(f'\\n--- {tbl_name} ({arrow_table.num_rows} rows) ---')\n            print(arrow_table.schema.names)\n            # Safe print to avoid unicode terminal errors\n            rows = arrow_table.slice(0, 1).to_pylist()\n            print(str(rows).encode('ascii', 'replace').decode('ascii'))\nexcept Exception as e:\n    print(f\"Error: {e}\")\n"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/search_swarm.py",
+      "symbol_name": "module",
+      "distance": 0.8754594326019287,
+      "content": "import sys\ntry:\n    sys.stdout.reconfigure(encoding='utf-8')\nexcept:\n    pass\n\nimport os\nimport shutil\nimport numpy as np\nimport pyarrow as pa\nimport ray\nfrom sklearn.preprocessing import StandardScaler\nfrom scipy.spatial.distance import cdist\n\n# Reference features for 'E:\\DJSUSAN\\LEGION\\2 Bass.wav'\nTARGET_RMS = -24.764841079711914\nTARGET_CREST = 5.588803768157959\n\ndef main():\n    if not ray.is_initialized():\n        try:\n            ray.init(address=\"auto\", namespace=\"legion\", ignore_reinit_error=True)\n        except ConnectionError:\n            print(\"Could not connect to existing Ray cluster. Please ensure the Swarm is running.\")\n            return\n    \n    try:\n        registry = ray.get_actor(\"SwarmKnowledgeRegistry\", namespace=\"legion\")\n    except ValueError:\n        print(\"SwarmKnowledgeRegistry actor not found. Please ensure ray_arrow_swarm.py is running.\")\n        return\n\n    all_names = []\n    all_features = []\n    \n    summary = ray.get(registry.get_registered_tables_summary"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/dsp_alignment_actor_local.py",
+      "symbol_name": "module",
+      "distance": 0.9003375172615051,
+      "content": "\"\"\"\nDSP Alignment Ray Actor\n=======================\nArchitecture:\n  OUTSIDE RAY  → Pedalboard C++ loads audio, extracts features → Pydantic validates\n  PLASMA STORE → PyArrow RecordBatch (zero-copy ref via ray.put)\n  INSIDE ACTOR → scipy/numba C-extensions do the math (no Pedalboard fork issues)\n  VERIFY PASS  → re-measures from LanceDB scalar columns, checks score drift < 5%\n\"\"\"\n\nimport sys\nsys.stdout.reconfigure(encoding='utf-8')\n\nimport os\nimport time\nimport numpy as np\nimport pyarrow as pa\nimport ray\n\n# ── Pydantic models (the firewall between Pedalboard and Ray) ─────────────────\nfrom legion_schema_local import (\n    SegmentPhysics,\n    AlignmentQuery,\n    AlignmentResult,\n    VerificationReport,\n    SOVEREIGN_TARGET_RMS,\n    SOVEREIGN_TARGET_CREST,\n)\n\n\n# ═══════════════════════════════════════════════════════════════════════════════\n# DSPAlignmentActor  —  stateful Ray Actor, one per CPU core\n# Pedalboard is NEVER imported here (fork-safety). scipy + numba only.\n# ═══════════════"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/ray_code_swarm.py",
+      "symbol_name": "register_table",
+      "distance": 0.9086719155311584,
+      "content": "def register_table(self, name: str, table: pa.Table):\n        self.registry[name] = table\n        print(f\"Registered Code Swarm Table: '{name}' in Actor state.\")"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/search_swarm.py",
+      "symbol_name": "main",
+      "distance": 0.9157328605651855,
+      "content": "def main():\n    if not ray.is_initialized():\n        try:\n            ray.init(address=\"auto\", namespace=\"legion\", ignore_reinit_error=True)\n        except ConnectionError:\n            print(\"Could not connect to existing Ray cluster. Please ensure the Swarm is running.\")\n            return\n    \n    try:\n        registry = ray.get_actor(\"SwarmKnowledgeRegistry\", namespace=\"legion\")\n    except ValueError:\n        print(\"SwarmKnowledgeRegistry actor not found. Please ensure ray_arrow_swarm.py is running.\")\n        return\n\n    all_names = []\n    all_features = []\n    \n    summary = ray.get(registry.get_registered_tables_summary.remote())\n    \n    print(\"Gathering PyArrow tables from Swarm memory...\")\n    for table_name in summary.keys():\n        try:\n            tbl = ray.get(registry.get_table.remote(table_name))\n            df = tbl.to_pandas()\n            \n            # Find RMS column\n            if \"rms_db\" in df.columns:\n                rms_col = \"rms_db\"\n            elif \"rms\" in df.columns:\n                rms_col = \"rms\"\n            else:\n                continue\n                \n            if \"crest_factor\" not in df.columns:\n                continue\n                \n            # Find name/path column\n            name_col = None\n            for col in [\"filepath\", \"filename\", \"segment_name\", \"track_name\"]:\n                if col in df.columns:\n                    name_col = col\n                    break\n            if not name_col:\n                continue\n          "
+    }
+  ],
+  "doc_results": [
+    {
+      "distance": 1.0284180641174316,
+      "text": "mmunity due to its support for complex, multi-agent scenarios.\nExample: Non-Streaming (Full Response)\n#\nprompt = \"what is ray?\"\n# --- Get the response without streaming ---\nresponse = llm_client.get_response(prompt, temperature=0.5)\nprint(\"\\n\\nModel response (non-streaming):\")\nprint(response)\n{\"asctime\": \"2025-05-19 10:01:31,654\", \"levelname\": \"INFO\", \"message\": \"HTTP Request: POST https://llm-service-qwen2p5-32b-jgz99.cld-kvedzwag2qa8i5bj.s.anyscaleuserdata.com/v1/chat/completions \\\"HTTP/1.1 200 OK\\\"\", \"filename\": \"_client.py\", \"lineno\": 1025, \"job_id\": \"02000000\", \"worker_id\": \"02000000ffffffffffffffffffffffffffffffffffffffffffffffff\", \"node_id\": \"7a87cdeb8936fafd92d0d4cab8456af74f2aae665f59cec80664527f\", \"timestamp_ns\": 1747674091654282480}\nModel response (non-streaming):\n\"Ray\" can refer to different things depending on the context. Here are a few possibilities:\n1. **Physics**: In physics, a ray is a line or beam of light, heat, or other form of electromagnetic radiation or particle"
+    },
+    {
+      "distance": 1.050168514251709,
+      "text": "can load the model once, store it inside the default object store and then have each instance of our class refer to it.\nmodel\n=\nload_model\n(\n...\n)\nmodel_ref\n=\nray\n.\nput\n(\nmodel\n)\nclass\nFoo\n:\ndef\n__init__\n(\nself\n,\nmodel_ref\n):\nself\n.\nmodel\n=\nray\n.\nget\n(\nmodel_ref\n)\n...\n# Generate batch embeddings\nembeddings_ds\n=\nds\n.\nmap_batches\n(\nEmbedImages\n,\nfn_constructor_kwargs\n=\n{\n\"model_id\"\n:\n\"openai/clip-vit-base-patch32\"\n,\n\"device\"\n:\n\"cuda\"\n,\n},\n# class kwargs\nfn_kwargs\n=\n{},\n# __call__ kwargs\ncompute\n=\nray\n.\ndata\n.\nActorPoolStrategy\n(\nsize\n=\n4\n),\nbatch_size\n=\n64\n,\nnum_gpus\n=\n1\n,\naccelerator_type\n=\n\"T4\"\n,\n)\nembeddings_ds\n=\nembeddings_ds\n.\ndrop_columns\n([\n\"image\"\n])\n# remove image column\nRay Data\n#\nRay Data not only makes it extremely easy to distribute workloads but also ensures that they with:\nefficiency\n: minimize CPU/GPU idle time with heterogeneous resource scheduling.\nscalability\n: streaming execution to petabyte-scale datasets, especially when\nworking with LLMs\nreliability\nby checkpointin"
+    },
+    {
+      "distance": 1.0917774438858032,
+      "text": "ams\n=\n{\n# XGBoost specific params.\n\"tree_method\"\n:\n\"gpu_hist\"\n,\n# GPU-specific parameter\n\"eval_metric\"\n:\n[\n\"logloss\"\n,\n\"error\"\n],\n},\n...\n)\nFor more advanced topics, see:\nRay Tune\nfor hyperparameter optimization\nRay Serve\nfor model deployment\nRay Data\nfor more advanced data processing\nOn this page"
+    },
+    {
+      "distance": 1.0926613807678223,
+      "text": "a.com/v1/chat/completions \\\"HTTP/1.1 200 OK\\\"\", \"filename\": \"_client.py\", \"lineno\": 1025, \"job_id\": \"02000000\", \"worker_id\": \"02000000ffffffffffffffffffffffffffffffffffffffffffffffff\", \"node_id\": \"7a87cdeb8936fafd92d0d4cab8456af74f2aae665f59cec80664527f\", \"timestamp_ns\": 1747674064287065217}\nRay is a high-performance distributed computing framework that was originally developed by researchers at the RISELab (formerly known as AMPLab) at the University of California, Berkeley. It is designed to make it easier to write and scale parallel and distributed applications in Python. Ray is particularly well-suited for machine learning, reinforcement learning, and other data-intensive computing tasks.\nRay provides several key features:\n1. **Task Parallelism**: Ray allows you to define tasks that can be executed in parallel across multiple CPUs or GPUs.\n2. **Actor Model**: Ray supports the actor model of concurrency, which means you can create and manage stateful objects (actors) that can be dis"
+    },
+    {
+      "distance": 1.0961350202560425,
+      "text": "isting ray runtime (from previous notebook if still running)\naddress\n=\nos\n.\nenviron\n.\nget\n(\n\"RAY_ADDRESS\"\n,\n\"auto\"\n),\nruntime_env\n=\n{\n\"env_vars\"\n:\n{\n\"RAY_TRAIN_V2_ENABLED\"\n:\n\"1\"\n},\n# \"py_executable\": \"uv run\", # if using uv\n# \"working_dir\": \"/home/ray/default\",\n# if using uv\n},\n)\n%%\nbash\n# This will be removed once Ray Train v2 is enabled by default.\necho \"RAY_TRAIN_V2_ENABLED=1\" > /home/ray/default/.env\n# Load env vars in notebooks.\nfrom\ndotenv\nimport\nload_dotenv\nload_dotenv\n()\nPreprocess\n#\nYou need to convert the classes to labels (unique integers) so that you can train a classifier that can correctly predict the class given an input image. But before you do this, apply the same data ingestion and preprocessing as the previous notebook.\ndef\nadd_class\n(\nrow\n):\nrow\n[\n\"class\"\n]\n=\nrow\n[\n\"path\"\n]\n.\nrsplit\n(\n\"/\"\n,\n3\n)[\n-\n2\n]\nreturn\nrow\n# Preprocess data splits.\ntrain_ds\n=\nray\n.\ndata\n.\nread_images\n(\n\"s3://doggos-dataset/train\"\n,\ninclude_paths\n=\nTrue\n,\nshuffle\n=\n\"files\"\n)\ntrain_ds\n=\ntrain_ds"
+    },
+    {
+      "distance": 1.0994062423706055,
+      "text": "ls\n=\nawait\nget_mcp_tools\n()\ntools\n=\nlist\n(\nmcp_tools\n)\nprint\n(\nf\n\"\n\\n\n[Agent] Using\n{\nlen\n(\ntools\n)\n}\ntool(s).\"\n)\nmemory\n=\nMemorySaver\n()\nagent\n=\ncreate_agent\n(\nllm\n,\ntools\n,\nsystem_prompt\n=\nPROMPT\n,\ncheckpointer\n=\nmemory\n,\n)\nreturn\nagent\nHow the agent works:\nLLM configuration\n: Connects to your deployed Qwen model using the OpenAI-compatible API.\nTool discovery\n: The function\nget_mcp_tools\nuses\nMultiServerMCPClient\nto automatically discover available tools from the MCP service.\nAgent creation\n: Creates an agent with the LLM, tools, and system prompt using LangChain’s\ncreate_agent\nfunction.\nMemory management\n: Uses\nMemorySaver\nto maintain conversation state across multiple turns.\nStep 4: Create the agent deployment script\n#\nThe\nray_serve_agent_deployment.py\nscript deploys the agent as a Ray Serve application with a\n/chat\nendpoint.\nimport\njson\nfrom\ncontextlib\nimport\nasynccontextmanager\nfrom\ntyping\nimport\nAsyncGenerator\nfrom\nuuid\nimport\nuuid4\nfrom\nfastapi\nimport\nFastAPI\n,\nRequest\nfrom\nfa"
+    },
+    {
+      "distance": 1.1002278327941895,
+      "text": "ionModel\n(\nembedding_dim\n=\n512\n,\nhidden_dim\n=\n256\n,\ndropout_p\n=\n0.3\n,\nnum_classes\n=\nnum_classes\n,\n)\nprint\n(\nmodel\n)\nBatching\n#\nTake a look at a sample batch of data and ensure that tensors have the proper data type.\nfrom\nray.train.torch\nimport\nget_device\ndef\ncollate_fn\n(\nbatch\n,\ndevice\n=\nNone\n):\ndtypes\n=\n{\n\"embedding\"\n:\ntorch\n.\nfloat32\n,\n\"label\"\n:\ntorch\n.\nint64\n}\ntensor_batch\n=\n{}\n# If no device is provided, try to get it from Ray Train context\nif\ndevice\nis\nNone\n:\ntry\n:\ndevice\n=\nget_device\n()\nexcept\nRuntimeError\n:\n# When not in Ray Train context, use CPU for testing\ndevice\n=\n\"cpu\"\nfor\nkey\nin\ndtypes\n.\nkeys\n():\nif\nkey\nin\nbatch\n:\ntensor_batch\n[\nkey\n]\n=\ntorch\n.\nas_tensor\n(\nbatch\n[\nkey\n],\ndtype\n=\ndtypes\n[\nkey\n],\ndevice\n=\ndevice\n,\n)\nreturn\ntensor_batch\n# Sample batch\nsample_batch\n=\ntrain_ds\n.\ntake_batch\n(\nbatch_size\n=\n3\n)\ncollate_fn\n(\nbatch\n=\nsample_batch\n,\ndevice\n=\n\"cpu\"\n)\nModel registry\n#\nCreate a model registry in\nAnyscale user storage\nto save the model checkpoints to. Use OSS MLflow but"
+    },
+    {
+      "distance": 1.1020700931549072,
+      "text": "It loads the trained DLinear model from a checkpoint and\nprocesses input batches to produce predictions. The\ncall\nmethod performs inference\non a given batch of NumPy arrays.\nRay Data’s actor-based processing enables loading the model weights and transferring them to GPU only once and reusing them across batches.\nclass\nPredictor\n:\n\"\"\"Actor class for performing inference with the DLinear model.\"\"\"\ndef\n__init__\n(\nself\n,\ncheckpoint_path\n:\nstr\n,\nconfig\n:\ndict\n):\nself\n.\nconfig\n=\nconfig\nself\n.\ndevice\n=\ntorch\n.\ndevice\n(\n\"cuda\"\nif\ntorch\n.\ncuda\n.\nis_available\n()\nelse\n\"cpu\"\n)\n# Load model from checkpoint.\nself\n.\nmodel\n=\nDLinear\n(\nconfig\n)\n.\nfloat\n()\ncheckpoint\n=\ntorch\n.\nload\n(\ncheckpoint_path\n,\nmap_location\n=\nself\n.\ndevice\n)\nself\n.\nmodel\n.\nload_state_dict\n(\ncheckpoint\n[\n\"model_state_dict\"\n])\nself\n.\nmodel\n.\nto\n(\nself\n.\ndevice\n)\nself\n.\nmodel\n.\neval\n()\ndef\n__call__\n(\nself\n,\nbatch\n:\ndict\n[\nstr\n,\nnp\n.\nndarray\n])\n->\ndict\n:\n\"\"\"Process a batch of data for inference (numpy batch format).\"\"\"\n# Convert inp"
+    },
+    {
+      "distance": 1.1031279563903809,
+      "text": "wd\n(),\nos\n.\npardir\n)))\nimport\nrandom\nimport\ntempfile\nimport\ntime\nimport\nwarnings\nimport\nnumpy\nas\nnp\nimport\nray\nfrom\nray\nimport\ntrain\nfrom\nray.train\nimport\nCheckpoint\n,\nCheckpointConfig\n,\nRunConfig\n,\nScalingConfig\n,\nget_dataset_shard\nfrom\nray.train.torch\nimport\nTorchTrainer\nimport\ntorch\nimport\ntorch.nn\nas\nnn\nfrom\ntorch\nimport\noptim\nimport\ne2e_timeseries\nfrom\ne2e_timeseries.data_factory\nimport\ndata_provider\nfrom\ne2e_timeseries.metrics\nimport\nmetric\nfrom\ne2e_timeseries.model\nimport\nDLinear\nfrom\ne2e_timeseries.tools\nimport\nadjust_learning_rate\nwarnings\n.\nfilterwarnings\n(\n\"ignore\"\n)\nInitialize the Ray cluster with the\ne2e_timeseries\nmodule, so that newly-spawned workers can import from it.\nray\n.\ninit\n(\nruntime_env\n=\n{\n\"py_modules\"\n:\n[\ne2e_timeseries\n]})\nAnatomy of a Ray Train job\n#\nRay Train provides the Trainer abstraction, which handles the complexity of distributed training. The Trainer takes a few inputs:\nTraining function: The Python code that executes on each distributed training work"
+    },
+    {
+      "distance": 1.1096105575561523,
+      "text": "gboost\n]})\nLoading the model\n#\nNext, load the pre-trained preprocessor and XGBoost model from the MLflow registry as demonstrated in the validation notebook.\nCreating a Ray Serve deployment\n#\nNext, define the Ray Serve endpoint. Use a reusable class to avoid reloading the model and preprocessor for each request. The deployment supports both Pythonic and HTTP requests.\nimport\npandas\nas\npd\nimport\nxgboost\nfrom\nray\nimport\nserve\nfrom\nstarlette.requests\nimport\nRequest\nfrom\ndist_xgboost.data\nimport\nload_model_and_preprocessor\n@serve\n.\ndeployment\n(\nnum_replicas\n=\n2\n,\nmax_ongoing_requests\n=\n25\n,\nray_actor_options\n=\n{\n\"num_cpus\"\n:\n2\n})\nclass\nXGBoostModel\n:\ndef\n__init__\n(\nself\n):\nself\n.\npreprocessor\n,\nself\n.\nmodel\n=\nload_model_and_preprocessor\n()\n@serve\n.\nbatch\n(\nmax_batch_size\n=\n16\n,\nbatch_wait_timeout_s\n=\n0.1\n)\nasync\ndef\npredict_batch\n(\nself\n,\ninput_data\n:\nlist\n[\ndict\n])\n->\nlist\n[\nfloat\n]:\nprint\n(\nf\n\"Batch size:\n{\nlen\n(\ninput_data\n)\n}\n\"\n)\n# Convert list of dictionaries to DataFrame.\ninput_df\n="
+    },
+    {
+      "distance": 1.1100808382034302,
+      "text": "config\n=\nconfig\n,\nstream_mode\n=\n\"updates\"\n):\nsafe_update\n=\njsonable_encoder\n(\nupdate\n)\n# Proper SSE framing: \"data: <json>\\n\\n\".\nyield\nf\n\"data:\n{\njson\n.\ndumps\n(\nsafe_update\n)\n}\n\\n\\n\n\"\nexcept\nException\nas\ne\n:\n# Don't crash the SSE; surface one terminal error event and end.\nerr\n=\n{\n\"error\"\n:\ntype\n(\ne\n)\n.\n__name__\n,\n\"detail\"\n:\nstr\n(\ne\n)}\nyield\nf\n\"data:\n{\njson\n.\ndumps\n(\nerr\n)\n}\n\\n\\n\n\"\n# Expose thread id so the client can reuse it on the next call.\nheaders\n=\n{\n\"X-Thread-Id\"\n:\nthread_id\n}\nreturn\nStreamingResponse\n(\nevent_stream\n(),\nmedia_type\n=\n\"text/event-stream\"\n,\nheaders\n=\nheaders\n,\n)\n# ----------------------------------------------------------------------\n# Ray Serve deployment wrapper.\n# ----------------------------------------------------------------------\n@serve\n.\ndeployment\n(\nray_actor_options\n=\n{\n\"num_cpus\"\n:\n1\n})\n@serve\n.\ningress\n(\nfastapi_app\n)\nclass\nLangGraphServeDeployment\n:\npass\napp\n=\nLangGraphServeDeployment\n.\nbind\n()\n# Deploy the agent app locally:\n# serve run ray_serve_agent"
+    },
+    {
+      "distance": 1.11580491065979,
+      "text": "s in the shared storage location, making them available for future model serving, evaluation, or retraining workflows. Ray also integrates with\nother experiment trackers\n.\nimport\nshutil\nfrom\ntempfile\nimport\nTemporaryDirectory\nimport\nmlflow\nfrom\ndist_xgboost.constants\nimport\n(\nexperiment_name\n,\nmodel_fname\n,\nmodel_registry\n,\npreprocessor_fname\n,\n)\ndef\nclean_up_old_runs\n():\n# Clean up old MLflow runs.\nos\n.\npath\n.\nisdir\n(\nmodel_registry\n)\nand\nshutil\n.\nrmtree\n(\nmodel_registry\n)\n# mlflow.delete_experiment(experiment_name)\nos\n.\nmakedirs\n(\nmodel_registry\n,\nexist_ok\n=\nTrue\n)\ndef\nlog_run_to_mlflow\n(\nmodel_config\n,\nresult\n,\npreprocessor_path\n):\n# Create a model registry in user storage.\nmlflow\n.\nset_tracking_uri\n(\nf\n\"file:\n{\nmodel_registry\n}\n\"\n)\n# Create a new experiment and log metrics and artifacts.\nmlflow\n.\nset_experiment\n(\nexperiment_name\n)\nwith\nmlflow\n.\nstart_run\n(\ndescription\n=\n\"xgboost breast cancer classifier on all features\"\n):\nmlflow\n.\nlog_params\n(\nmodel_config\n)\nmlflow\n.\nlog_metrics\n("
+    }
+  ],
+  "ray_results": [],
+  "ray_status": "Connected. Searched 27 in-memory tables."
+}

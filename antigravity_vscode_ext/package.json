@@ -1,0 +1,66 @@
+{
+  "name": "antigravity-swarm",
+  "displayName": "Antigravity Swarm",
+  "description": "Legion LangGraph Swarm Interface",
+  "version": "1.0.0",
+  "publisher": "legion",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "antigravity.startSwarm",
+        "title": "Start Antigravity Swarm"
+      },
+      {
+        "command": "legionSonicEngine.analyzeAudio",
+        "title": "Legion: Analyze Audio File"
+      },
+      {
+        "command": "legionSonicEngine.masterAudio",
+        "title": "Legion: Master Audio File"
+      },
+      {
+        "command": "legionSonicEngine.refreshConnection",
+        "title": "Legion: Refresh Connection"
+      }
+    ],
+    "configuration": {
+      "title": "Legion Sonic Engine",
+      "properties": {
+        "legionSonicEngine.apiBaseUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "Base URL for the Legion API Bridge."
+        },
+        "legionSonicEngine.llmProvider": {
+          "type": "string",
+          "enum": [
+            "nvidia",
+            "gemini",
+            "lmstudio"
+          ],
+          "default": "nvidia",
+          "description": "LLM provider for chat orchestration. NVIDIA uses integrate.api.nvidia.com, Gemini uses Google AI Studio, LMStudio uses localhost."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "@types/vscode": "^1.90.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

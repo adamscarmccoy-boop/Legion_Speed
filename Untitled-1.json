@@ -1,0 +1,106 @@
+{
+  "mcpServers": {
+    "datacloud_bigquery_toolbox": {
+      "args": [
+        "-y",
+        "\"@toolbox-sdk/server@\u003e=1.1.0\"",
+        "--prebuilt",
+        "bigquery",
+        "--stdio",
+        "--user-agent-metadata",
+        "datacloud.antigravity ide"
+      ],
+      "command": "npx",
+      "disabled": true,
+      "env": {
+        "BIGQUERY_LOCATION": "us",
+        "BIGQUERY_PROJECT": "legiondaw-87798"
+      }
+    },
+    "datacloud_knowledge_catalog_toolbox": {
+      "args": [
+        "-y",
+        "\"@toolbox-sdk/server@\u003e=1.1.0\"",
+        "--prebuilt",
+        "dataplex",
+        "--stdio",
+        "--user-agent-metadata",
+        "google-cloud-data-agent-kit-antigravity ide"
+      ],
+      "command": "npx",
+      "disabled": true,
+      "env": {
+        "DATAPLEX_PROJECT": "legiondaw-87798"
+      }
+    },
+    "devin/github-mcp-server": {
+      "registry": "devin/github-mcp-server",
+      "url": "https://api.githubcopilot.com/mcp"
+    },
+    "firebase-mcp-server": {
+      "args": [
+        "-y",
+        "firebase-tools@latest",
+        "mcp"
+      ],
+      "command": "npx",
+      "disabled": true
+    },
+    "google-cloud-resource-manager": {
+      "disabled": false,
+      "serverUrl": "https://cloudresourcemanager.googleapis.com/mcp"
+    },
+    "google-developer-knowledge": {
+      "serverUrl": "https://developerknowledge.googleapis.com/mcp"
+    },
+    "legion-architect": {
+      "args": [
+        "-u",
+        "c:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\mcp_server.py"
+      ],
+      "command": "c:\\STUDIES_BACKUP\\.venv_fresh\\Scripts\\python.exe",
+      "disabled": false,
+      "env": {
+        "DUCKDB_PATH": "C:\\STUDIES_BACKUP\\data\\metadata\\sonic_core_v2.duckdb",
+        "LANCEDB_PATH": "C:\\STUDIES_BACKUP\\vectors\\lancedb_store",
+        "OLLAMA_MODEL": "phi3",
+        "OLLAMA_URL": "http://127.0.0.1:11434/v1",
+        "PYTHONPATH": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline",
+        "SANDBOX_DIR": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\sandbox",
+        "VECTOR_MODEL": "snowflake-arctic-embed:latest"
+      }
+    },
+    "legion-pydantic": {
+      "args": [
+        "-u",
+        "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\AI_Logs\\pydantic_model_0\\mcp_server.py"
+      ],
+      "command": "c:\\STUDIES_BACKUP\\.venv_fresh\\Scripts\\python.exe",
+      "disabled": true,
+      "env": {
+        "DUCKDB_PATH": "C:\\STUDIES_BACKUP\\data\\metadata\\sonic_core_v2.duckdb",
+        "LANCEDB_PATH": "C:\\STUDIES_BACKUP\\vectors\\lancedb_store",
+        "OLLAMA_MODEL": "phi3",
+        "OLLAMA_URL": "http://127.0.0.1:11434/v1",
+        "PYTHONPATH": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline",
+        "SANDBOX_DIR": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\sandbox",
+        "VECTOR_MODEL": "snowflake-arctic-embed:latest"
+      }
+    },
+    "notebooks": {
+      "args": [
+        "c:\\Users\\adams\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.3.1-universal\\mcp_servers\\cli\\mcp_proxy_bundle.js",
+        "notebooks-antigravityide"
+      ],
+      "command": "node"
+    },
+    "visualization": {
+      "args": [
+        "c:\\Users\\adams\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.3.1-universal\\mcp_servers\\cli\\mcp_proxy_bundle.js",
+        "visualization-antigravityide"
+      ],
+      "command": "node",
+      "disabled": false
+    }
+  }
+}

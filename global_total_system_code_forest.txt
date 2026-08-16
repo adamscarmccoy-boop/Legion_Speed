@@ -1,0 +1,3 @@
+Telemetry Status   : SUCCESS
+Total Sweep Time   : 7996.15 ms (7.9961 sec)
+Total AST Node Rows: 3996

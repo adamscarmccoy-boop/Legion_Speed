@@ -1,0 +1,8 @@
+2026-06-22 20:23:50,660	INFO worker.py:2003 -- Started a local Ray instance. View the dashboard at [1m[32mhttp://127.0.0.1:8265 [39m[22m
+2026-06-22 20:23:50,663	WARNING working_dir.py:86 -- Directory '.venv' is now ignored by default when packaging the working directory. To disable this behavior, set the `RAY_OVERRIDE_RUNTIME_ENV_DEFAULT_EXCLUDES=''` environment variable.
+2026-06-22 20:23:50,664	WARNING working_dir.py:86 -- Directory '__pycache__' is now ignored by default when packaging the working directory. To disable this behavior, set the `RAY_OVERRIDE_RUNTIME_ENV_DEFAULT_EXCLUDES=''` environment variable.
+2026-06-22 20:23:50,670	INFO packaging.py:392 -- Ignoring upload to cluster for these files: [WindowsPath('C:/WEB CASE STUDY/.pytest_cache/.gitignore')]
+2026-06-22 20:23:50,671	INFO packaging.py:392 -- Ignoring upload to cluster for these files: [WindowsPath('C:/WEB CASE STUDY/.ruff_cache/.gitignore')]
+2026-06-22 20:23:50,679	INFO packaging.py:392 -- Ignoring upload to cluster for these files: [WindowsPath('C:/WEB CASE STUDY/Acoustic-DNA-Audio-Engine/.gitignore')]
+2026-06-22 20:23:50,856	INFO packaging.py:392 -- Ignoring upload to cluster for these files: [WindowsPath('C:/WEB CASE STUDY/FretFlow-Audio-Engine/.pytest_cache/.gitignore')]
+2026-06-22 20:23:50,923	INFO packaging.py:392 -- Ignoring upload to cluster for these files: [WindowsPath('C:/WEB CASE STUDY/jules notebook/jules_repo/.gitignore')]

@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.20)
+project(SovereignOrtRunner LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Define DLL target from C++ runner
+add_library(sovereign_agent_runner SHARED sovereign_agent_runner.cpp)
+
+# Point to ONNX Runtime headers & lib (adjust paths if stored elsewhere)
+target_include_directories(sovereign_agent_runner PRIVATE "Files/onnxruntime/include")runner PRIVATE "C:/Program Files/onnxruntime/lib/onnxruntime.lib")

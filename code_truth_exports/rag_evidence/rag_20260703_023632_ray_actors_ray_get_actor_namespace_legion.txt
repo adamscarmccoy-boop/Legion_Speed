@@ -1,0 +1,282 @@
+QUERY: ray actors ray.get_actor namespace legion
+COMMAND: C:\WEB CASE STUDY\.venv\Scripts\python.exe C:\WEB CASE STUDY\ADAMSCARMCCOY_QUERY_RAG.PY ray actors ray.get_actor namespace legion
+RETURNCODE: 0
+
+STDERR:
+C:\WEB CASE STUDY\ADAMSCARMCCOY_QUERY_RAG.PY:75: DeprecationWarning: table_names() is deprecated, use list_tables() instead
+  if "mined_code_vectors" in db.table_names():
+C:\WEB CASE STUDY\ADAMSCARMCCOY_QUERY_RAG.PY:107: DeprecationWarning: table_names() is deprecated, use list_tables() instead
+  if "mined_documentation_vectors" in db.table_names():
+2026-07-03 02:36:30,551	INFO worker.py:1833 -- Connecting to existing Ray cluster at address: 127.0.0.1:55046...
+2026-07-03 02:36:30,575	INFO worker.py:2015 -- Connected to Ray cluster. View the dashboard at [1m[32mhttp://127.0.0.1:8266 [39m[22m
+
+
+STDOUT:
+=== Legion RAG Database Query Tool ===
+Connecting to LanceDB at: c:\STUDIES_BACKUP\Legion-Jacked-Pipeline\ableton-session-intelligence\lancedb_web_intel_rag...
+
+Searching Code base for: 'ray actors ray.get_actor namespace legion'...
+
+--- Semantic Code Results ---
+
+[Result #1] File: C:/WEB CASE STUDY/mix_audit_agent.py
+  Symbol:  __init__
+  Content:
+def __init__(self):
+        self.registry = ray.get_actor("SwarmKnowledgeRegistry", namespace=LEGION_NAMESPACE)
+        print("RegistryClient connected to SwarmKnowledgeRegistry.")
+...
+--------------------------------------------------
+
+[Result #2] File: C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py
+  Symbol:  boot_swarm
+  Content:
+def boot_swarm(self):
+        """Initializes all Ray Actors and the MCP connection."""
+        print("[Orchestrator] 🚀 Booting the Legion Swarm...")
+        
+        if not ray.is_initialized():
+            ray.init(namespace="legion", ignore_reinit_
+...
+--------------------------------------------------
+
+[Result #3] File: C:/WEB CASE STUDY/mix_audit_agent.py
+  Symbol:  RegistryClient
+  Content:
+class RegistryClient:
+    def __init__(self):
+        self.registry = ray.get_actor("SwarmKnowledgeRegistry", namespace=LEGION_NAMESPACE)
+        print("RegistryClient connected to SwarmKnowledgeRegistry.")
+
+    def get_table(self, table_name: str):
+...
+--------------------------------------------------
+
+Searching Documentation for: 'ray actors ray.get_actor namespace legion'...
+
+--- Semantic Documentation Results ---
+
+[Match #1] (Distance: 1.0402)
+  mmunity due to its support for complex, multi-agent scenarios.
+Example: Non-Streaming (Full Response)
+#
+prompt = "what is ray?"
+# --- Get the response without streaming ---
+response = llm_client.get_response(prompt, temperature=0.5)
+print("\n\nModel response (non-streaming):")
+print(response)
+{"asctime": "2025-05-19 10:01:31,654", "levelname": "INFO", "message": "HTTP Request: POST https://llm-service-qwen2p5-32b-jgz99.cld-kvedzwag2qa8i5bj.s.anyscaleuserdata.com/v1/chat/completions \"HTTP/1.1 200 OK\"", "filename": "_client.py", "lineno": 1025, "job_id": "02000000", "worker_id": "02000000ffffffffffffffffffffffffffffffffffffffffffffffff", "node_id": "7a87cdeb8936fafd92d0d4cab8456af74f2aae665f59cec80664527f", "timestamp_ns": 1747674091654282480}
+Model response (non-streaming):
+"Ray" can refer to different things depending on the context. Here are a few possibilities:
+1. **Physics**: In physics, a ray is a line or beam of light, heat, or other form of electromagnetic radiation or particle
+--------------------------------------------------
+
+[Match #2] (Distance: 1.0538)
+  can load the model once, store it inside the default object store and then have each instance of our class refer to it.
+model
+=
+load_model
+(
+...
+)
+model_ref
+=
+ray
+.
+put
+(
+model
+)
+class
+Foo
+:
+def
+__init__
+(
+self
+,
+model_ref
+):
+self
+.
+model
+=
+ray
+.
+get
+(
+model_ref
+)
+...
+# Generate batch embeddings
+embeddings_ds
+=
+ds
+.
+map_batches
+(
+EmbedImages
+,
+fn_constructor_kwargs
+=
+{
+"model_id"
+:
+"openai/clip-vit-base-patch32"
+,
+"device"
+:
+"cuda"
+,
+},
+# class kwargs
+fn_kwargs
+=
+{},
+# __call__ kwargs
+compute
+=
+ray
+.
+data
+.
+ActorPoolStrategy
+(
+size
+=
+4
+),
+batch_size
+=
+64
+,
+num_gpus
+=
+1
+,
+accelerator_type
+=
+"T4"
+,
+)
+embeddings_ds
+=
+embeddings_ds
+.
+drop_columns
+([
+"image"
+])
+# remove image column
+Ray Data
+#
+Ray Data not only makes it extremely easy to distribute workloads but also ensures that they with:
+efficiency
+: minimize CPU/GPU idle time with heterogeneous resource scheduling.
+scalability
+: streaming execution to petabyte-scale datasets, especially when
+working with LLMs
+reliability
+by checkpointin
+--------------------------------------------------
+
+[Match #3] (Distance: 1.0968)
+  wd
+(),
+os
+.
+pardir
+)))
+import
+random
+import
+tempfile
+import
+time
+import
+warnings
+import
+numpy
+as
+np
+import
+ray
+from
+ray
+import
+train
+from
+ray.train
+import
+Checkpoint
+,
+CheckpointConfig
+,
+RunConfig
+,
+ScalingConfig
+,
+get_dataset_shard
+from
+ray.train.torch
+import
+TorchTrainer
+import
+torch
+import
+torch.nn
+as
+nn
+from
+torch
+import
+optim
+import
+e2e_timeseries
+from
+e2e_timeseries.data_factory
+import
+data_provider
+from
+e2e_timeseries.metrics
+import
+metric
+from
+e2e_timeseries.model
+import
+DLinear
+from
+e2e_timeseries.tools
+import
+adjust_learning_rate
+warnings
+.
+filterwarnings
+(
+"ignore"
+)
+Initialize the Ray cluster with the
+e2e_timeseries
+module, so that newly-spawned workers can import from it.
+ray
+.
+init
+(
+runtime_env
+=
+{
+"py_modules"
+:
+[
+e2e_timeseries
+]})
+Anatomy of a Ray Train job
+#
+Ray Train provides the Trainer abstraction, which handles the complexity of distributed training. The Trainer takes a few inputs:
+Training function: The Python code that executes on each distributed training work
+--------------------------------------------------
+
+Connecting to Ray Swarm Registry...
+Connected. Searching 27 in-memory tables for 'ray actors ray.get_actor namespace legion'...
+No matching records found in Ray shared memory tables.
+

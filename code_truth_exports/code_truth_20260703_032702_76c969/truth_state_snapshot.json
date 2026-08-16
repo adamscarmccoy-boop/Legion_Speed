@@ -1,0 +1,260 @@
+{
+  "run_id": "code_truth_20260703_032702_76c969",
+  "intent": "Retrieve and verify Ray actor, LanceDB, and code-truth source files using local RAG.",
+  "target_file_kind": ".py",
+  "selected_lancedb": {
+    "selected_path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+    "selected_tables": [
+      "chris_lake_speed_test",
+      "chris_lake_web_intel",
+      "mined_code_vectors",
+      "mined_documentation_vectors"
+    ],
+    "probes": [
+      {
+        "path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+        "exists": true,
+        "connected": true,
+        "tables": [
+          "chris_lake_speed_test",
+          "chris_lake_web_intel",
+          "mined_code_vectors",
+          "mined_documentation_vectors"
+        ],
+        "table_count": 4,
+        "has_code_truth_tables": true,
+        "score": 4,
+        "error": null,
+        "probed_at": "2026-07-03T07:27:09.049845"
+      }
+    ],
+    "selected_reason": "Selected DB has mined_code_vectors + mined_documentation_vectors."
+  },
+  "rag_results": [
+    {
+      "query": "ray actors ray.get_actor namespace legion",
+      "command": [
+        "C:\\WEB CASE STUDY\\.venv\\Scripts\\python.exe",
+        "C:\\WEB CASE STUDY\\ADAMSCARMCCOY_QUERY_RAG.PY",
+        "ray actors ray.get_actor namespace legion"
+      ],
+      "returncode": 0,
+      "stdout": "=== Legion RAG Database Query Tool ===\nConnecting to LanceDB at: c:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag...\n\nSearching Code base for: 'ray actors ray.get_actor namespace legion'...\n\n--- Semantic Code Results ---\n\n[Result #1] File: C:/WEB CASE STUDY/mix_audit_agent.py\n  Symbol:  __init__\n  Content:\ndef __init__(self):\n        self.registry = ray.get_actor(\"SwarmKnowledgeRegistry\", namespace=LEGION_NAMESPACE)\n        print(\"RegistryClient connected to SwarmKnowledgeRegistry.\")\n...\n--------------------------------------------------\n\n[Result #2] File: C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py\n  Symbol:  boot_swarm\n  Content:\ndef boot_swarm(self):\n        \"\"\"Initializes all Ray Actors and the MCP connection.\"\"\"\n        print(\"[Orchestrator] 🚀 Booting the Legion Swarm...\")\n        \n        if not ray.is_initialized():\n            ray.init(namespace=\"legion\", ignore_reinit_\n...\n--------------------------------------------------\n\n[Result #3] File: C:/WEB CASE STUDY/mix_audit_agent.py\n  Symbol:  RegistryClient\n  Content:\nclass RegistryClient:\n    def __init__(self):\n        self.registry = ray.get_actor(\"SwarmKnowledgeRegistry\", namespace=LEGION_NAMESPACE)\n        print(\"RegistryClient connected to SwarmKnowledgeRegistry.\")\n\n    def get_table(self, table_name: str):\n...\n--------------------------------------------------\n\nSearching Documentation for: 'ray actors ray.get_actor namespace legion'...\n\n--- Semantic Documentation Results ---\n\n[Match #1] (Distance: 1.0402)\n  mmunity due to its support for complex, multi-agent scenarios.\nExample: Non-Streaming (Full Response)\n#\nprompt = \"what is ray?\"\n# --- Get the response without streaming ---\nresponse = llm_client.get_response(prompt, temperature=0.5)\nprint(\"\\n\\nModel response (non-streaming):\")\nprint(response)\n{\"asctime\": \"2025-05-19 10:01:31,654\", \"levelname\": \"INFO\", \"message\": \"HTTP Request: POST https://llm-service-qwen2p5-32b-jgz99.cld-kvedzwag2qa8i5bj.s.anyscaleuserdata.com/v1/chat/completions \\\"HTTP/1.1 200 OK\\\"\", \"filename\": \"_client.py\", \"lineno\": 1025, \"job_id\": \"02000000\", \"worker_id\": \"02000000ffffffffffffffffffffffffffffffffffffffffffffffff\", \"node_id\": \"7a87cdeb8936fafd92d0d4cab8456af74f2aae665f59cec80664527f\", \"timestamp_ns\": 1747674091654282480}\nModel response (non-streaming):\n\"Ray\" can refer to different things depending on the context. Here are a few possibilities:\n1. **Physics**: In physics, a ray is a line or beam of light, heat, or other form of electromagnetic radiation or particle\n--------------------------------------------------\n\n[Match #2] (Distance: 1.0538)\n  can load the model once, store it inside the default object store and then have each instance of our class refer to it.\nmodel\n=\nload_model\n(\n...\n)\nmodel_ref\n=\nray\n.\nput\n(\nmodel\n)\nclass\nFoo\n:\ndef\n__init__\n(\nself\n,\nmodel_ref\n):\nself\n.\nmodel\n=\nray\n.\nget\n(\nmodel_ref\n)\n...\n# Generate batch embeddings\nembeddings_ds\n=\nds\n.\nmap_batches\n(\nEmbedImages\n,\nfn_constructor_kwargs\n=\n{\n\"model_id\"\n:\n\"openai/clip-vit-base-patch32\"\n,\n\"device\"\n:\n\"cuda\"\n,\n},\n# class kwargs\nfn_kwargs\n=\n{},\n# __call__ kwargs\ncompute\n=\nray\n.\ndata\n.\nActorPoolStrategy\n(\nsize\n=\n4\n),\nbatch_size\n=\n64\n,\nnum_gpus\n=\n1\n,\naccelerator_type\n=\n\"T4\"\n,\n)\nembeddings_ds\n=\nembeddings_ds\n.\ndrop_columns\n([\n\"image\"\n])\n# remove image column\nRay Data\n#\nRay Data not only makes it extremely easy to distribute workloads but also ensures that they with:\nefficiency\n: minimize CPU/GPU idle time with heterogeneous resource scheduling.\nscalability\n: streaming execution to petabyte-scale datasets, especially when\nworking with LLMs\nreliability\nby checkpointin\n--------------------------------------------------\n\n[Match #3] (Distance: 1.0968)\n  wd\n(),\nos\n.\npardir\n)))\nimport\nrandom\nimport\ntempfile\nimport\ntime\nimport\nwarnings\nimport\nnumpy\nas\nnp\nimport\nray\nfrom\nray\nimport\ntrain\nfrom\nray.train\nimport\nCheckpoint\n,\nCheckpointConfig\n,\nRunConfig\n,\nScalingConfig\n,\nget_dataset_shard\nfrom\nray.train.torch\nimport\nTorchTrainer\nimport\ntorch\nimport\ntorch.nn\nas\nnn\nfrom\ntorch\nimport\noptim\nimport\ne2e_timeseries\nfrom\ne2e_timeseries.data_factory\nimport\ndata_provider\nfrom\ne2e_timeseries.metrics\nimport\nmetric\nfrom\ne2e_timeseries.model\nimport\nDLinear\nfrom\ne2e_timeseries.tools\nimport\nadjust_learning_rate\nwarnings\n.\nfilterwarnings\n(\n\"ignore\"\n)\nInitialize the Ray cluster with the\ne2e_timeseries\nmodule, so that newly-spawned workers can import from it.\nray\n.\ninit\n(\nruntime_env\n=\n{\n\"py_modules\"\n:\n[\ne2e_timeseries\n]})\nAnatomy of a Ray Train job\n#\nRay Train provides the Trainer abstraction, which handles the complexity of distributed training. The Trainer takes a few inputs:\nTraining function: The Python code that executes on each distributed training work\n--------------------------------------------------\n\nConnecting to Ray Swarm Registry...\nConnected. Searching 27 in-memory tables for 'ray actors ray.get_actor namespace legion'...\nNo matching records found in Ray shared memory tables.\n",
+      "stderr": "C:\\WEB CASE STUDY\\ADAMSCARMCCOY_QUERY_RAG.PY:75: DeprecationWarning: table_names() is deprecated, use list_tables() instead\n  if \"mined_code_vectors\" in db.table_names():\nC:\\WEB CASE STUDY\\ADAMSCARMCCOY_QUERY_RAG.PY:107: DeprecationWarning: table_names() is deprecated, use list_tables() instead\n  if \"mined_documentation_vectors\" in db.table_names():\n2026-07-03 03:27:19,726\tINFO worker.py:1833 -- Connecting to existing Ray cluster at address: 127.0.0.1:57712...\n2026-07-03 03:27:19,748\tINFO worker.py:2015 -- Connected to Ray cluster. View the dashboard at \u001b[1m\u001b[32mhttp://127.0.0.1:8265 \u001b[39m\u001b[22m\n",
+      "stdout_chars": 4953,
+      "stderr_chars": 602,
+      "ran_at": "2026-07-03T07:27:21.628677",
+      "error": null
+    }
+  ],
+  "rag_code_hits": [
+    {
+      "query": "ray actors ray.get_actor namespace legion",
+      "result_index": 1,
+      "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+      "symbol_name": "__init__",
+      "raw_block": "[Result #1] File: C:/WEB CASE STUDY/mix_audit_agent.py\n  Symbol:  __init__\n  Content:\ndef __init__(self):\n        self.registry = ray.get_actor(\"SwarmKnowledgeRegistry\", namespace=LEGION_NAMESPACE)\n        print(\"RegistryClient connected to SwarmKnowledgeRegistry.\")\n...\n--------------------------------------------------",
+      "parsed_at": "2026-07-03T07:27:21.649684"
+    },
+    {
+      "query": "ray actors ray.get_actor namespace legion",
+      "result_index": 2,
+      "source_file": "C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py",
+      "symbol_name": "boot_swarm",
+      "raw_block": "[Result #2] File: C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py\n  Symbol:  boot_swarm\n  Content:\ndef boot_swarm(self):\n        \"\"\"Initializes all Ray Actors and the MCP connection.\"\"\"\n        print(\"[Orchestrator] 🚀 Booting the Legion Swarm...\")\n        \n        if not ray.is_initialized():\n            ray.init(namespace=\"legion\", ignore_reinit_\n...\n--------------------------------------------------",
+      "parsed_at": "2026-07-03T07:27:21.649684"
+    },
+    {
+      "query": "ray actors ray.get_actor namespace legion",
+      "result_index": 3,
+      "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+      "symbol_name": "RegistryClient",
+      "raw_block": "[Result #3] File: C:/WEB CASE STUDY/mix_audit_agent.py\n  Symbol:  RegistryClient\n  Content:\nclass RegistryClient:\n    def __init__(self):\n        self.registry = ray.get_actor(\"SwarmKnowledgeRegistry\", namespace=LEGION_NAMESPACE)\n        print(\"RegistryClient connected to SwarmKnowledgeRegistry.\")\n\n    def get_table(self, table_name: str):\n...\n--------------------------------------------------\n\nSearching Documentation for: 'ray actors ray.get_actor namespace legion'...",
+      "parsed_at": "2026-07-03T07:27:21.649684"
+    }
+  ],
+  "path_proofs": [
+    {
+      "query": "ray actors ray.get_actor namespace legion",
+      "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+      "normalized_path": "C:\\WEB CASE STUDY\\mix_audit_agent.py",
+      "exists": true,
+      "readable": true,
+      "size_bytes": 13835,
+      "symbol_name": "__init__",
+      "contains_symbol": true,
+      "error": null,
+      "verified_at": "2026-07-03T07:27:23.868878"
+    },
+    {
+      "query": "ray actors ray.get_actor namespace legion",
+      "source_file": "C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py",
+      "normalized_path": "C:\\WEB CASE STUDY\\legion_sonic_engine_orchestrator.py",
+      "exists": true,
+      "readable": true,
+      "size_bytes": 5406,
+      "symbol_name": "boot_swarm",
+      "contains_symbol": true,
+      "error": null,
+      "verified_at": "2026-07-03T07:27:23.868878"
+    },
+    {
+      "query": "ray actors ray.get_actor namespace legion",
+      "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+      "normalized_path": "C:\\WEB CASE STUDY\\mix_audit_agent.py",
+      "exists": true,
+      "readable": true,
+      "size_bytes": 13835,
+      "symbol_name": "RegistryClient",
+      "contains_symbol": true,
+      "error": null,
+      "verified_at": "2026-07-03T07:27:23.870884"
+    }
+  ],
+  "usage_proofs": [
+    {
+      "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+      "normalized_path": "C:\\WEB CASE STUDY\\mix_audit_agent.py",
+      "parsed": true,
+      "imports": [
+        "os",
+        "json",
+        "subprocess",
+        "librosa",
+        "numpy",
+        "time",
+        "ray",
+        "pandas",
+        "pydantic",
+        "typing"
+      ],
+      "functions": [
+        "extract_stem_features_ray",
+        "run_mix_audit_agent",
+        "__init__",
+        "get_table",
+        "coerce_value"
+      ],
+      "classes": [
+        "StemAudit",
+        "AuditReportData",
+        "RegistryClient"
+      ],
+      "ray_calls": [
+        "ray.is_initialized",
+        "ray.init",
+        "ray.remote",
+        "ray.get_actor",
+        "ray.get",
+        "ray.kill"
+      ],
+      "lancedb_mentions": [],
+      "paths_found": [
+        "C:\\WEB CASE STUDY\\demucs_bridge.py",
+        "C:\\Users\\adams\\Downloads",
+        "C:\\WEB CASE STUDY\\Acoustic-DNA-Audio-Engine\\assets",
+        "C:\\STUDIES_BACKUP\\separated_stems",
+        "c:\\STUDIES_BACKUP\\.venv_fresh\\Scripts\\python.exe",
+        "C:\\Users\\adams\\Downloads\\putting in the work.wav"
+      ],
+      "risk_flags": [],
+      "error": null,
+      "traced_at": "2026-07-03T07:27:26.227499"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/legion_sonic_engine_orchestrator.py",
+      "normalized_path": "C:\\WEB CASE STUDY\\legion_sonic_engine_orchestrator.py",
+      "parsed": true,
+      "imports": [
+        "os",
+        "sys",
+        "asyncio",
+        "ray",
+        "json",
+        "typing",
+        "datetime",
+        "schemas",
+        "legion_mcp_client",
+        "intelligence_bridge",
+        "legion_sonic_engine_actors",
+        "subprocess"
+      ],
+      "functions": [
+        "__init__",
+        "boot_swarm",
+        "run_turn",
+        "_save_state",
+        "trigger_antigravity_audit",
+        "shutdown"
+      ],
+      "classes": [
+        "LegionOrchestrator"
+      ],
+      "ray_calls": [
+        "ray.is_initialized",
+        "ray.init",
+        "ray.get",
+        "ray.shutdown"
+      ],
+      "lancedb_mentions": [],
+      "paths_found": [
+        "C:\\WEB CASE STUDY\\data\\chris_lake_fused_raw.json",
+        "C:\\WEB CASE STUDY\\simulation_log.json"
+      ],
+      "risk_flags": [],
+      "error": null,
+      "traced_at": "2026-07-03T07:27:26.239542"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/mix_audit_agent.py",
+      "normalized_path": "C:\\WEB CASE STUDY\\mix_audit_agent.py",
+      "parsed": true,
+      "imports": [
+        "os",
+        "json",
+        "subprocess",
+        "librosa",
+        "numpy",
+        "time",
+        "ray",
+        "pandas",
+        "pydantic",
+        "typing"
+      ],
+      "functions": [
+        "extract_stem_features_ray",
+        "run_mix_audit_agent",
+        "__init__",
+        "get_table",
+        "coerce_value"
+      ],
+      "classes": [
+        "StemAudit",
+        "AuditReportData",
+        "RegistryClient"
+      ],
+      "ray_calls": [
+        "ray.is_initialized",
+        "ray.init",
+        "ray.remote",
+        "ray.get_actor",
+        "ray.get",
+        "ray.kill"
+      ],
+      "lancedb_mentions": [],
+      "paths_found": [
+        "C:\\WEB CASE STUDY\\demucs_bridge.py",
+        "C:\\Users\\adams\\Downloads",
+        "C:\\WEB CASE STUDY\\Acoustic-DNA-Audio-Engine\\assets",
+        "C:\\STUDIES_BACKUP\\separated_stems",
+        "c:\\STUDIES_BACKUP\\.venv_fresh\\Scripts\\python.exe",
+        "C:\\Users\\adams\\Downloads\\putting in the work.wav"
+      ],
+      "risk_flags": [],
+      "error": null,
+      "traced_at": "2026-07-03T07:27:26.243889"
+    }
+  ],
+  "errors": [],
+  "created_at": "2026-07-03T07:27:26.282985"
+}

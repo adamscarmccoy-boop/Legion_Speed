@@ -1,0 +1,16 @@
+name = "legion-mcp-worker"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[ai]
+binding = "AI"
+
+[vars]
+LOCAL_API_URL = "https://api.adamscarmccoy.com"
+LOCAL_RAG_URL = "https://rag.adamscarmccoy.com"
+
+[observability.logs]
+enabled = true
+invocation_logs = true
+

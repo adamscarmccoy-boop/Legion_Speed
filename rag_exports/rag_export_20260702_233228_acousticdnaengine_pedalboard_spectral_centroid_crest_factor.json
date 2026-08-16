@@ -1,0 +1,190 @@
+{
+  "query": "AcousticDNAEngine Pedalboard spectral centroid crest factor",
+  "created_at": "2026-07-02T23:32:28",
+  "db_path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+  "embedding_model": "text-embedding-snowflake-arctic-embed-l-v2.0",
+  "embedding_status": "ok, dims=1024",
+  "limit": 12,
+  "chars": 5000,
+  "imports": {
+    "lancedb": "ok",
+    "pandas": "ok",
+    "ray": "ok",
+    "pyarrow": "ok"
+  },
+  "db_probe": [
+    {
+      "path": "E:\\WEB CASE STUDY\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [
+        "chris_lake_speed_test",
+        "chris_lake_web_intel",
+        "mined_code_vectors",
+        "mined_documentation_vectors"
+      ],
+      "error": null,
+      "score": 2
+    },
+    {
+      "path": "C:\\WEB CASE STUDY\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "C:\\WEB CASE STUDY\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": false,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "E:\\WEB CASE STUDY\\lancedb_web_intel_rag",
+      "exists": false,
+      "tables": [],
+      "error": null,
+      "score": 0
+    }
+  ],
+  "tables": [
+    "chris_lake_speed_test",
+    "chris_lake_web_intel",
+    "mined_code_vectors",
+    "mined_documentation_vectors"
+  ],
+  "errors": [],
+  "code_results": [
+    {
+      "source_file": "C:/WEB CASE STUDY/FretFlow-Audio-Engine/engine/analysis.py",
+      "symbol_name": "AcousticDNAEngine",
+      "distance": 0.9550574421882629,
+      "content": "class AcousticDNAEngine:\n    \"\"\"\n    Production-ready feature extraction core.\n    Designed for zero-copy buffer handoffs with integrated H.O.R.N. logging.\n    \"\"\"\n    def __init__(self, sample_rate=44100, buffer_size=1024):\n        self.sr = sample_rate\n        self.buffer_size = buffer_size\n        self.board = Pedalboard([Gain(gain_db=6.0)])\n        logger.info(f\"Acoustic DNA Engine Initialized: SR={self.sr}, Buffer={self.buffer_size}\")\n\n    def process_buffer(self, raw_buffer):\n        \"\"\"\n        Applies DSP conditioning and extracts Chroma DNA.\n        \"\"\"\n        if len(raw_buffer) != self.buffer_size:\n            logger.warning(f\"Buffer size mismatch! Expected {self.buffer_size}, got {len(raw_buffer)}\")\n        \n        # 1. Condition\n        conditioned = self.board(raw_buffer, sample_rate=self.sr)\n        \n        # 2. Extract Chroma (12-note energy vector)\n        # Optimized hop_length for single-frame inference\n        chroma = librosa.feature.chroma_stft(\n            y=conditioned, \n            sr=self.sr, \n            n_fft=self.buffer_size, \n            hop_length=self.buffer_size + 1\n        )\n        \n        dna_vector = np.mean(chroma, axis=1)\n        \n        # Log high-energy detections (simplified confidence)\n        if np.max(dna_vector) > 0.8:\n            logger.info(f\"High-confidence note detected: NoteIndex={np.argmax(dna_vector)}\")\n            \n        return dna_vector\n\n    def get_latency_optimized_window(self):\n        \"\"\"Returns the recommended"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/Acoustic-DNA-Audio-Engine/engine/analysis.py",
+      "symbol_name": "AcousticDNAEngine",
+      "distance": 0.979289174079895,
+      "content": "class AcousticDNAEngine:\n    \"\"\"\n    Production-ready feature extraction core.\n    Designed for zero-copy buffer handoffs with integrated H.O.R.N. logging.\n    \"\"\"\n    def __init__(self, sample_rate=44100, buffer_size=1024):\n        self.sr = sample_rate\n        self.buffer_size = buffer_size\n        self.board = Pedalboard([Gain(gain_db=6.0)])\n        logger.info(f\"Acoustic DNA Engine Initialized: SR={self.sr}, Buffer={self.buffer_size}\")\n\n    def process_buffer(self, raw_buffer):\n        \"\"\"\n        Applies DSP conditioning and extracts Chroma DNA.\n        \"\"\"\n        if len(raw_buffer) != self.buffer_size:\n            logger.warning(f\"Buffer size mismatch! Expected {self.buffer_size}, got {len(raw_buffer)}\")\n        \n        # 1. Condition\n        conditioned = self.board(raw_buffer, sample_rate=self.sr)\n        \n        # 2. Extract Chroma (12-note energy vector)\n        # Optimized hop_length for single-frame inference\n        chroma = librosa.feature.chroma_stft(\n            y=conditioned, \n            sr=self.sr, \n            n_fft=self.buffer_size, \n            hop_length=self.buffer_size + 1\n        )\n        \n        dna_vector = np.mean(chroma, axis=1)\n        \n        # Log high-energy detections (simplified confidence)\n        if np.max(dna_vector) > 0.8:\n            logger.info(f\"High-confidence note detected: NoteIndex={np.argmax(dna_vector)}\")\n            \n        return dna_vector\n\n    def get_latency_optimized_window(self):\n        \"\"\"Returns the recommended"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/fire_test.py",
+      "symbol_name": "extract_features_pedalboard",
+      "distance": 1.0041630268096924,
+      "content": "def extract_features_pedalboard(wav_path: str, segment_sec: float = 30.0) -> list[SegmentPhysics]:\n    \"\"\"\n    Load WAV with Pedalboard C++ engine. Slice into segments.\n    Units MATCHED to LanceDB schema:\n      - rms       : linear (0-1), same as LanceDB 'rms' column\n      - crest_factor : ratio, same scale as LanceDB 'crest_factor' column\n      - band energies : raw FFT magnitude^2 sums — same computation as C++ engine\n      - spectral_centroid : Hz\n    \"\"\"\n    segments = []\n    track_name = os.path.splitext(os.path.basename(wav_path))[0]\n\n    with AudioFile(wav_path) as f:\n        sr     = f.samplerate\n        frames = int(segment_sec * sr)\n        seg_idx = 0\n\n        while True:\n            audio = f.read(frames)   # numpy float32 (channels, samples)\n            if audio.shape[1] < frames // 2:\n                break\n\n            mono = audio.mean(axis=0)\n\n            # ── LINEAR RMS → convert to dB (matches original script's parse_text_features) ──\n            rms_lin = float(np.sqrt(np.mean(mono ** 2)))\n            rms_db  = float(20 * np.log10(rms_lin)) if rms_lin > 1e-9 else -100.0\n            peak    = float(np.max(np.abs(mono)))\n            crest   = float(peak / rms_lin) if rms_lin > 1e-9 else 0.0\n\n            seg = SegmentPhysics(\n                segment_name  = f\"{track_name}_seg{seg_idx:03d}\",\n                track_name    = track_name,\n                rms_db        = rms_db,     # dB — matches original parse_text_features output\n                crest_factor  = "
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/run_fire_test.py",
+      "symbol_name": "extract_features_pedalboard",
+      "distance": 1.0241297483444214,
+      "content": "def extract_features_pedalboard(wav_path: str, segment_sec: float = 30.0) -> list[SegmentPhysics]:\n\n    \"\"\"\n\n    Load WAV with Pedalboard C++ engine. Slice into segments.\n\n    Units MATCHED to LanceDB schema:\n\n      - rms       : linear (0-1), same as LanceDB 'rms' column\n\n      - crest_factor : ratio, same scale\n\n      - band energies : raw FFT magnitude^2 sums — same computation as C++ engine\n\n      - spectral_centroid : Hz\n\n    \"\"\"\n\n    segments = []\n\n    track_name = os.path.splitext(os.path.basename(wav_path))[0]\n\n\n\n    with AudioFile(wav_path) as f:\n\n        sr     = f.samplerate\n\n        frames = int(segment_sec * sr)\n\n        seg_idx = 0\n\n\n\n        while True:\n\n            audio = f.read(frames)   # numpy float32 (channels, samples)\n\n            if audio.shape[1] < frames // 2:\n\n                break\n\n\n\n            mono = audio.mean(axis=0)\n\n\n\n            # ── LINEAR RMS → convert to dB (matches original script's parse_text_features) ──\n\n            rms_lin = float(np.sqrt(np.mean(mono ** 2)))\n\n            rms_db  = float(20 * np.log10(rms_lin)) if rms_lin > 1e-9 else -100.0\n\n            peak    = float(np.max(np.abs(mono)))\n\n            crest   = float(peak / rms_lin) if rms_lin > 1e-9 else 0.0\n\n\n\n            seg = SegmentPhysics(\n\n                segment_name  = f\"{track_name}_seg{seg_idx:03d}\",\n\n                track_name    = track_name,\n\n                rms_db        = rms_db,     # dB — matches original parse_text_features output\n\n                crest_factor  ="
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/run_fire_test2.py",
+      "symbol_name": "extract_features_pedalboard",
+      "distance": 1.0247420072555542,
+      "content": "def extract_features_pedalboard(wav_path: str, segment_sec: float = 30.0) -> list[SegmentPhysics]:\n\n    \"\"\"\n\n    Load WAV with Pedalboard C++ engine. Slice into segments.\n\n    Units MATCHED to LanceDB schema:\n\n      - rms       : linear (0-1), same as LanceDB 'rms' column\n\n      - crest_factor : ratio, same scale\n\n      - band energies : raw FFT magnitude^2 sums — same computation as C++ engine\n\n      - spectral_centroid : Hz\n\n    \"\"\"\n\n    segments = []\n\n    track_name = os.path.splitext(os.path.basename(wav_path))[0]\n\n\n\n    with AudioFile(wav_path) as f:\n\n        sr     = f.samplerate\n\n        frames = int(segment_sec * sr)\n\n        seg_idx = 0\n\n\n\n        while True:\n\n            audio = f.read(frames)   # numpy float32 (channels, samples)\n\n            if audio.shape[1] < frames // 2:\n\n                break\n\n\n\n            mono = audio.mean(axis=0)\n\n\n\n            # ── LINEAR RMS → convert to dB (matches original script's parse_text_features) ──\n\n            rms_lin = float(np.sqrt(np.mean(mono ** 2)))\n\n            rms_db  = float(20 * np.log10(rms_lin)) if rms_lin > 1e-9 else -100.0\n\n            peak    = float(np.max(np.abs(mono)))\n\n            crest   = float(peak / rms_lin) if rms_lin > 1e-9 else 0.0\n\n\n\n            seg = SegmentPhysics(\n\n                segment_name  = f\"{track_name}_seg{seg_idx:03d}\",\n\n                track_name    = track_name,\n\n                rms_db        = rms_db,     # dB — matches original parse_text_features output\n\n                crest_factor  ="
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/FretFlow-Audio-Engine/engine/analysis.py",
+      "symbol_name": "module",
+      "distance": 1.0347192287445068,
+      "content": "import numpy as np\nimport librosa\nimport logging\nimport os\nfrom datetime import datetime\nfrom pedalboard import Pedalboard, Gain\n\n# --- H.O.R.N. Log Configuration ---\nLOG_DIR = \"logs\"\nos.makedirs(LOG_DIR, exist_ok=True)\nLOG_FILE = os.path.join(LOG_DIR, f\"engine_{datetime.now().strftime('%Y%m%d')}.log\")\n\nlogging.basicConfig(\n    level=logging.INFO,\n    format='%(asctime)s [%(levelname)s] %(message)s',\n    handlers=[\n        logging.FileHandler(LOG_FILE),\n        logging.StreamHandler()\n    ]\n)\nlogger = logging.getLogger(\"AcousticDNAEngine\")\n\nclass AcousticDNAEngine:\n    \"\"\"\n    Production-ready feature extraction core.\n    Designed for zero-copy buffer handoffs with integrated H.O.R.N. logging.\n    \"\"\"\n    def __init__(self, sample_rate=44100, buffer_size=1024):\n        self.sr = sample_rate\n        self.buffer_size = buffer_size\n        self.board = Pedalboard([Gain(gain_db=6.0)])\n        logger.info(f\"Acoustic DNA Engine Initialized: SR={self.sr}, Buffer={self.buffer_size}\")\n\n    def "
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/Acoustic-DNA-Audio-Engine/engine/analysis.py",
+      "symbol_name": "module",
+      "distance": 1.0501288175582886,
+      "content": "import numpy as np\nimport librosa\nimport logging\nimport os\nfrom datetime import datetime\nfrom pedalboard import Pedalboard, Gain\n\n# --- H.O.R.N. Log Configuration ---\nLOG_DIR = \"logs\"\nos.makedirs(LOG_DIR, exist_ok=True)\nLOG_FILE = os.path.join(LOG_DIR, f\"engine_{datetime.now().strftime('%Y%m%d')}.log\")\n\nlogging.basicConfig(\n    level=logging.INFO,\n    format='%(asctime)s [%(levelname)s] %(message)s',\n    handlers=[\n        logging.FileHandler(LOG_FILE),\n        logging.StreamHandler()\n    ]\n)\nlogger = logging.getLogger(\"AcousticDNAEngine\")\n\nclass AcousticDNAEngine:\n    \"\"\"\n    Production-ready feature extraction core.\n    Designed for zero-copy buffer handoffs with integrated H.O.R.N. logging.\n    \"\"\"\n    def __init__(self, sample_rate=44100, buffer_size=1024):\n        self.sr = sample_rate\n        self.buffer_size = buffer_size\n        self.board = Pedalboard([Gain(gain_db=6.0)])\n        logger.info(f\"Acoustic DNA Engine Initialized: SR={self.sr}, Buffer={self.buffer_size}\")\n\n    def "
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/Acoustic-DNA-Audio-Engine/engine/analysis.py",
+      "symbol_name": "process_buffer",
+      "distance": 1.0872838497161865,
+      "content": "def process_buffer(self, raw_buffer):\n        \"\"\"\n        Applies DSP conditioning and extracts Chroma DNA.\n        \"\"\"\n        if len(raw_buffer) != self.buffer_size:\n            logger.warning(f\"Buffer size mismatch! Expected {self.buffer_size}, got {len(raw_buffer)}\")\n        \n        # 1. Condition\n        conditioned = self.board(raw_buffer, sample_rate=self.sr)\n        \n        # 2. Extract Chroma (12-note energy vector)\n        # Optimized hop_length for single-frame inference\n        chroma = librosa.feature.chroma_stft(\n            y=conditioned, \n            sr=self.sr, \n            n_fft=self.buffer_size, \n            hop_length=self.buffer_size + 1\n        )\n        \n        dna_vector = np.mean(chroma, axis=1)\n        \n        # Log high-energy detections (simplified confidence)\n        if np.max(dna_vector) > 0.8:\n            logger.info(f\"High-confidence note detected: NoteIndex={np.argmax(dna_vector)}\")\n            \n        return dna_vector"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/master_from_db.py",
+      "symbol_name": "module",
+      "distance": 1.0982391834259033,
+      "content": "import duckdb\nimport os\nimport soundfile as sf\nimport numpy as np\nfrom pedalboard import Pedalboard, Compressor, HighpassFilter, Gain, Limiter\n\n# ── 1. LOAD TARGETS FROM GROUND TRUTH ───────────────────────\nDB_PATH = r\"C:\\WEB CASE STUDY\\web_intel_sonicdb.duckdb\"\nINPUT_WAV = r\"C:\\Users\\adams\\Downloads\\Sovereign Anchor V2.wav\"\nOUTPUT_WAV = r\"C:\\Users\\adams\\Downloads\\Sovereign Anchor V2_MASTERED.wav\"\n\nconn = duckdb.connect(DB_PATH)\n# Fetch the Chris Lake target baseline\nbaseline = conn.execute(\"SELECT rms_db, crest_factor FROM chris_lake_baseline LIMIT 1\").fetchone()\nconn.close()\n\nTARGET_RMS = float(baseline[0])\nTARGET_CREST = float(baseline[1])\n\nprint(f\"Sovereign Baseline Loaded: {TARGET_RMS:.2f} dB RMS, {TARGET_CREST:.2f} Crest\")\n\n# ── 2. DYNAMIC MASTERING CHAIN ──────────────────────────────\ndef master_audio(input_path, output_path):\n    y, sr = sf.read(input_path)\n    \n    # Calculate current metrics\n    rms = np.sqrt(np.mean(y**2))\n    rms_db = 20 * np.log10(rms) if rms > 1e-9 else -"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/FretFlow-Audio-Engine/tests/test_engine.py",
+      "symbol_name": "engine",
+      "distance": 1.1099621057510376,
+      "content": "def engine():\n    return AcousticDNAEngine(sample_rate=44100, buffer_size=1024)"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/Acoustic-DNA-Audio-Engine/engine/__init__.py",
+      "symbol_name": "module",
+      "distance": 1.1118052005767822,
+      "content": ""
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/split_and_master_pipeline.py",
+      "symbol_name": "extract_stem_features_ray",
+      "distance": 1.1138641834259033,
+      "content": "def extract_stem_features_ray(file_path, drum_type, ref_stem_data):\n    if not os.path.exists(file_path):\n        return {\"error\": f\"File {file_path} not found\"}\n        \n    y, sr = librosa.load(file_path, sr=22050, mono=True)\n    \n    # Standard RMS\n    rms = librosa.feature.rms(y=y)\n    avg_rms = np.mean(rms)\n    rms_db = 20 * np.log10(avg_rms) if avg_rms > 0 else -100.0\n    \n    # Peak & Crest\n    peak = np.max(np.abs(y))\n    crest_factor = peak / avg_rms if avg_rms > 0 else 0.0\n    \n    # Frequency energy bands\n    S = np.abs(librosa.stft(y))\n    freqs = librosa.fft_frequencies(sr=sr)\n    \n    sub_bass = np.sum(S[(freqs >= 20) & (freqs < 60), :])\n    bass = np.sum(S[(freqs >= 60) & (freqs < 250), :])\n    mids = np.sum(S[(freqs >= 250) & (freqs < 2000), :])\n    highs = np.sum(S[freqs >= 2000, :])\n    \n    centroid = float(np.mean(librosa.feature.spectral_centroid(y=y, sr=sr)))\n    \n    # Compute deltas against reference\n    rms_delta = float(rms_db) - ref_stem_data[\"rms_db\"]\n    crest_delta = float(crest_factor) - ref_stem_data[\"crest_factor\"]\n    centroid_delta = centroid - ref_stem_data[\"spectral_centroid\"]\n    \n    # Calculate corrective recommendation\n    recommendation = \"\"\n    if rms_delta > 3.0:\n        recommendation += f\"Reduce gain by {abs(rms_delta):.1f} dB. \"\n    elif rms_delta < -3.0:\n        recommendation += f\"Increase gain by {abs(rms_delta):.1f} dB. \"\n        \n    if crest_delta < -1.5:\n        recommendation += \"Too squashed. Reduce limiter/compressor ra"
+    }
+  ],
+  "doc_results": [
+    {
+      "distance": 1.3361539840698242,
+      "text": "ray\n.\ndata\n.\nread_csv\n(\n\"s3://anonymous@air-example-data/breast_cancer.csv\"\n)\nseed\n=\n42\n# Split 70% for training.\ntrain_dataset\n,\nrest\n=\ndataset\n.\ntrain_test_split\n(\ntest_size\n=\n0.3\n,\nshuffle\n=\nTrue\n,\nseed\n=\nseed\n)\n# Split the remaining 30% into 15% validation and 15% testing.\nvalid_dataset\n,\ntest_dataset\n=\nrest\n.\ntrain_test_split\n(\ntest_size\n=\n0.5\n,\nshuffle\n=\nTrue\n,\nseed\n=\nseed\n)\nreturn\ntrain_dataset\n,\nvalid_dataset\n,\ntest_dataset\n# Load and split the dataset.\ntrain_dataset\n,\nvalid_dataset\n,\n_test_dataset\n=\nprepare_data\n()\ntrain_dataset\n.\ntake\n(\n1\n)\nLook at the output to see that the dataset contains features characterizing cell nuclei in breast mass, such as radius, texture, perimeter, area, smoothness, compactness, concavity, symmetry, and more.\nData preprocessing\n#\nNotice that the features have different magnitudes and ranges. While tree-based models like XGBoost aren’t as sensitive to these differences, feature scaling can still improve numerical stability in some cases.\nRay Data"
+    },
+    {
+      "distance": 1.3671834468841553,
+      "text": "ams\n=\n{\n# XGBoost specific params.\n\"tree_method\"\n:\n\"gpu_hist\"\n,\n# GPU-specific parameter\n\"eval_metric\"\n:\n[\n\"logloss\"\n,\n\"error\"\n],\n},\n...\n)\nFor more advanced topics, see:\nRay Tune\nfor hyperparameter optimization\nRay Serve\nfor model deployment\nRay Data\nfor more advanced data processing\nOn this page"
+    },
+    {
+      "distance": 1.3915314674377441,
+      "text": "l replicas\nCalculate confusion matrix components for each batch\nAggregate results across all batches\nComputed key performance metrics, like precision, recall, F1-score, and accuracy\nThe same code can efficiently run on terabyte-scale datasets without modifications using Ray Data’s distributed processing capabilities.\nThe next tutorial shows how to serve this XGBoost model for online inference using Ray Serve.\nOn this page"
+    },
+    {
+      "distance": 1.4208694696426392,
+      "text": "st cancer classifier on all features\"\n):\nmlflow\n.\nlog_params\n(\nmodel_config\n)\nmlflow\n.\nlog_metrics\n(\nresult\n.\nmetrics\n)\n# Selectively log just the preprocessor and model weights.\nwith\nTemporaryDirectory\n()\nas\ntmp_dir\n:\nshutil\n.\ncopy\n(\nos\n.\npath\n.\njoin\n(\nresult\n.\ncheckpoint\n.\npath\n,\nmodel_fname\n),\nos\n.\npath\n.\njoin\n(\ntmp_dir\n,\nmodel_fname\n),\n)\nshutil\n.\ncopy\n(\npreprocessor_path\n,\nos\n.\npath\n.\njoin\n(\ntmp_dir\n,\npreprocessor_fname\n),\n)\nmlflow\n.\nlog_artifacts\n(\ntmp_dir\n)\nclean_up_old_runs\n()\nlog_run_to_mlflow\n(\nmodel_config\n,\nresult\n,\npreprocessor_path\n)\nStart the MLflow server to view the experiments:\nmlflow\nserver\n-h\n0.0.0.0\n-p\n8080\n--backend-store-uri\n{model_registry}\nTo view the dashboard, go to the\nOverview tab\n>\nOpen Ports\n>\n8080\n.\nYou can also view the Ray Dashboard and Train workload dashboards:\nYou can retrieve the best model from the registry:\nfrom\ndist_xgboost.data\nimport\nget_best_model_from_registry\nbest_model\n,\nartifacts_dir\n=\nget_best_model_from_registry\n()\nartifacts_dir\nProducti"
+    },
+    {
+      "distance": 1.4226218461990356,
+      "text": "rSpeechSeq2Seq\n,\nAutoProcessor\nTRANSCRIPTION_MODEL\n=\n\"openai/whisper-tiny\"\nJUDGE_MODEL\n=\n\"unsloth/Meta-Llama-3.1-8B-Instruct\"\nStreaming data ingestion\n#\nray.data.read_parquet\nreads the records lazily\nand\ndistributes them across the cluster.\nThis approach leverages every node’s network bandwidth and starts work immediately without waiting\nfor the entire dataset download.\nAfter loading, Ray divides the data into blocks and dispatches them to workers for processing.\n# Load the English subset of Common Voice 11.0.\nraw_ds\n=\nray\n.\ndata\n.\nread_parquet\n(\n\"s3://anonymous@air-example-data/common_voice_11_0_audio_dataset.parquet\"\n)\n# Subsample for demonstration purposes.\nraw_ds\n=\nraw_ds\n.\nlimit\n(\n1000\n)\nAudio preprocessing\n#\nThe Whisper checkpoint expects 16 kHz mono audio.\nThe sample rate adjustment happens on CPU using TorchAudio, streaming the tensors\nback into the Dataset. The operation runs in parallel, so a simple\nds.map\ndistributes the work across the cluster’s CPU cores.\nds.map()\napplies"
+    },
+    {
+      "distance": 1.4590450525283813,
+      "text": "ute resources\nseamlessly\nUses\nlazy execution\nto optimize the execution plan\nProcesses data through each stage as soon as the first data block is available. This\nstreaming execution model\nminimizes the time-to-first-result, eliminates large intermediate data storage, and maximizes resource utilization\nThe same script scales to larger GPU clusters with minimal code changes\nThis tutorial runs on a cluster with five L4 GPU worker nodes.\nSetup\n#\nGet the code\n#\ngit\nclone\nhttps://github.com/anyscale/templates\n&&\ncd\ntemplates/templates/audio-dataset-curation-llm-judge\n!\nuv\npip\ninstall\n-r\npython_depset.lock\n--system\n--no-deps\n--no-cache-dir\n--index-strategy\nunsafe-best-match\nimport\nio\nimport\nos\nimport\nnumpy\nas\nnp\nimport\nray\nimport\nsoundfile\nas\nsf\nimport\ntorch\nimport\ntorchaudio.transforms\nas\nT\nfrom\nray.data.llm\nimport\nbuild_processor\n,\nvLLMEngineProcessorConfig\nfrom\ntransformers\nimport\nAutoModelForSpeechSeq2Seq\n,\nAutoProcessor\nTRANSCRIPTION_MODEL\n=\n\"openai/whisper-tiny\"\nJUDGE_MODEL\n=\n\"unsloth/Me"
+    },
+    {
+      "distance": 1.4631770849227905,
+      "text": "allel, Parameter Server, and even custom strategies.\nRay Compiled graphs\nallow you to even define different parallelism for jointly optimizing multiple models like Megatron, DeepSpeed, etc., or only allow for one global setting.\nYou can also use Torch DDP, FSPD, DeepSpeed, etc., under the hood.\n🔥\nRayTurbo Train\noffers even more improvement to the price-performance ratio, performance monitoring and more:\nelastic training\nto scale to a dynamic number of workers, continue training on fewer resources, even on spot instances.\npurpose-built dashboard\ndesigned to streamline the debugging of Ray Train workloads:\nMonitoring: View the status of training runs and train workers.\nMetrics: See insights on training throughput and training system operation time.\nProfiling: Investigate bottlenecks, hangs, or errors from individual training worker processes.\nYou can view experiment metrics and model artifacts in the model registry. You’re using OSS MLflow so you can run the server by pointing to the mod"
+    },
+    {
+      "distance": 1.4679104089736938,
+      "text": "s in the shared storage location, making them available for future model serving, evaluation, or retraining workflows. Ray also integrates with\nother experiment trackers\n.\nimport\nshutil\nfrom\ntempfile\nimport\nTemporaryDirectory\nimport\nmlflow\nfrom\ndist_xgboost.constants\nimport\n(\nexperiment_name\n,\nmodel_fname\n,\nmodel_registry\n,\npreprocessor_fname\n,\n)\ndef\nclean_up_old_runs\n():\n# Clean up old MLflow runs.\nos\n.\npath\n.\nisdir\n(\nmodel_registry\n)\nand\nshutil\n.\nrmtree\n(\nmodel_registry\n)\n# mlflow.delete_experiment(experiment_name)\nos\n.\nmakedirs\n(\nmodel_registry\n,\nexist_ok\n=\nTrue\n)\ndef\nlog_run_to_mlflow\n(\nmodel_config\n,\nresult\n,\npreprocessor_path\n):\n# Create a model registry in user storage.\nmlflow\n.\nset_tracking_uri\n(\nf\n\"file:\n{\nmodel_registry\n}\n\"\n)\n# Create a new experiment and log metrics and artifacts.\nmlflow\n.\nset_experiment\n(\nexperiment_name\n)\nwith\nmlflow\n.\nstart_run\n(\ndescription\n=\n\"xgboost breast cancer classifier on all features\"\n):\nmlflow\n.\nlog_params\n(\nmodel_config\n)\nmlflow\n.\nlog_metrics\n("
+    },
+    {
+      "distance": 1.4842417240142822,
+      "text": "ation\nfor more information on using Ray Data with Anyscale and for more advanced use cases, see\nWorking with LLMs\n.\nOn this page"
+    },
+    {
+      "distance": 1.4902255535125732,
+      "text": "gloss'\n,\n0.06741214815308066\n),\n(\n'validation-error'\n,\n0.01176470588235294\n)])\nSee that the Ray Train logs metrics based on the values you configured in\neval_metric\nand\nevals\n.\nYou can also reconstruct the trained model from the checkpoint directory:\nbooster\n=\nRayTrainReportCallback\n.\nget_model\n(\nresult\n.\ncheckpoint\n)\nbooster\nModel registry\n#\nNow that you’ve trained the model, save it to a model registry for future use. As this is a distributed training workload, the model registry storage needs to be accessible from all workers in the cluster. This storage can be S3, NFS, or another network-attached solution. Anyscale simplifies this process by automatically creating and mounting\nshared storage options\non every cluster node, ensuring that model artifacts are readable and writable across the distributed environment.\nThe MLflow tracking server stores experiment metadata and model artifacts in the shared storage location, making them available for future model serving, evaluation, or ret"
+    },
+    {
+      "distance": 1.4975764751434326,
+      "text": "gle np.array for faster tensor creation.\nspectograms\n=\nnp\n.\narray\n(\nbatch\n[\n\"input_features\"\n])\nspectograms\n=\ntorch\n.\ntensor\n(\nspectograms\n)\n.\nto\n(\nself\n.\ndevice\n,\ndtype\n=\nself\n.\ndtype\n)\nwith\ntorch\n.\nno_grad\n():\n# Generate token IDs for the batched input features.\ntoken_ids\n=\nself\n.\nmodel\n.\ngenerate\n(\nspectograms\n)\nreturn\n{\n\"id\"\n:\nbatch\n[\n\"id\"\n],\n\"token_ids\"\n:\ntoken_ids\n.\ncpu\n()\n.\nnumpy\n()}\n# Transcribe audio to text tokens using Whisper.\n# Use 2 workers using 1 GPU each.\nds\n=\nds\n.\nmap_batches\n(\nTranscriber\n,\nbatch_size\n=\n2\n,\nbatch_format\n=\n\"numpy\"\n,\nconcurrency\n=\n2\n,\nnum_gpus\n=\n1\n)\nNow decode the tokens into actual transcriptions. This step decouples from the previous step to prevent GPU blocks on CPU work and avoid idle time. This approach also allows independent scaling of the number of decoders from the number of Whisper replicas.\nSeparating the GPU work from CPU work eliminates GPU idle. The\nconcurrency=5\nand\nbatch_size=32\nparameters show how to use more CPU workers and bigger bat"
+    },
+    {
+      "distance": 1.501961350440979,
+      "text": "cs_embeddings\"\n# Initialize client\nmodel_id\n=\n'Qwen/Qwen2.5-32B-Instruct'\n## model id need to be same as your deployment\nbase_url\n=\n\"http://localhost:8000/\"\n## replace with your own service base url\napi_key\n=\n\"fake-key\"\n## replace with your own api key\n# Initialize the components for rag.\nquerier\n=\nChromaQuerier\n(\nCHROMA_PATH\n,\nCHROMA_COLLECTION_NAME\n,\nscore_threshold\n=\n0.8\n)\nembedder\n=\nEmbedder\n(\nEMBEDDER_MODEL_NAME\n)\nllm_client\n=\nLLMClient\n(\nbase_url\n=\nbase_url\n,\napi_key\n=\napi_key\n,\nmodel_id\n=\nmodel_id\n)\nLoad the Evaluation Data\n#\nThe evaluation data is stored in a CSV file (\nevaluation_data/rag-eval-questions.csv\n) that contains 64 user queries grouped by category.\nThese queries cover a range of topics—from technical questions about Anyscale and its relationship with Ray, to casual, ethically sensitive, and non-English requests. This diverse dataset helps assess the system’s performance on a wide variety of inputs.\nFeel free to add more categories or questions as needed.\nimport\npand"
+    }
+  ],
+  "ray_results": [],
+  "ray_status": "Connected. Searched 27 in-memory tables."
+}

@@ -1,0 +1,2 @@
+"actor_id","name","class_name","state","pid","namespace","category"
+"90383920badd1aaab296762201000000","SERVE_REPLICA::SovereignRenderDeployment#SovereignRenderDeployment#kd65u171","ServeReplica:SovereignRenderDeployment:SovereignRenderDeployment","ALIVE",21460,"serve","Serve Deployment (Dashboard)"

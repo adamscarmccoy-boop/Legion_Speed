@@ -1,0 +1,150 @@
+--- legion_brain_native.cpp
++++ legion_brain_native.cpp.optimized
+@@ -15,13 +15,12 @@
+ const int LM_STUDIO_PORT = 1234;
+ const std::string PIPE_NAME = "\\\\.\\pipe\\LegionLocalBrainPipe";
+ 
+-// --- PRODUCER'S DNA METRICS ---
+-struct ProducerDNA {
+-    double tempo_bpm = 128.0;
+-    std::string key_signature = "G Major";
+-    double target_rms = -13.9;
+-    double crest_factor = 5.69;
+-    double mid_multiplier = 289.34;
++// --- SANITIZED WORKSTATION PERFORMANCE SCHEMA ---
++struct WorkstationPerformanceState {
++    double cpu_utilization_pct = 0.0;
++    double vram_headroom_mib = 4095.0;
++    int active_parallel_slots = 1;
++    bool is_gpu_bound = true;
+ };
+ 
+ // --- LANGGRAPH STATE MACHINE METAPHOR ---
+@@ -32,7 +31,7 @@
+ 
+ struct AgentState {
+     std::vector<BaseMessage> messages;
+-    ProducerDNA dna;
++    WorkstationPerformanceState performance_metrics;
+     bool execution_complete = false;
+     std::string next_node = "agent_critic";
+     std::string final_critique = "";
+@@ -45,7 +44,7 @@
+     int port;
+ 
+ public:
+-    BareMetalWinsockClient(std::string h, int p) : host(h), port(p) {}
++    BareMetalWinsockClient(std::string h, int p) : host(h), port(p) {1}
+ 
+     std::string post(const std::string& path, const std::string& json_payload) {
+         WSADATA wsa;
+@@ -103,108 +102,4 @@
+         }
+         return response;
+     }
+-};
+-
+-// --- IN-PROCESS DUCKDB SIMULATION BINDER ---
+-// If compiled directly with DuckDB, this establishes raw in-memory queries.
+-std::string run_in_process_duckdb_query(const std::string& sql) {
+-    std::cout << "🦆 [DUCKDB IN-PROCESS] Running pointer-arithmetic query: " << sql << std::endl;
+-    // Fast mock returning record structure for zero-copy IPC
+-    return "[{\"total_tracks\": 3556, \"status\": \"OPTIMIZED\"}]";
+-}
+-
+-// --- LANGGRAPH STATE MACHINE NODES (EXECUTED IN C++ RAM) ---
+-
+-void run_local_mcp_evaluation_node(AgentState& state) {
+-    std::cout << "⚙️ [LANGGRAPH NODE: mcp_evaluation] Executing in-process DuckDB query...\n";
+-    std::string db_result = run_in_process_duckdb_query("SELECT COUNT(*) FROM tracks WHERE bpm = 128;");
+-    
+-    state.messages.push_back({"system", "DuckDB Analytical Verification Output: " + db_result});
+-    state.next_node = "nim_critique";
+-}
+-
+-void run_agent_critic_node(AgentState& state, BareMetalWinsockClient& client) {
+-    std::cout << "📡 [LANGGRAPH NODE: agent_critic] Requesting Local LM Studio Code Audit...\n";
+-
+-    std::stringstream payload;
+-    payload << "{\n"
+-            << "  \"model\": \"nvidia/nemotron-3-nano-4b\",\n"
+-            << "  \"messages\": [\n"
+-            << "    {\"role\": \"system\", \"content\": \"You are the local LM Studio Auditor. Audit the native C++ DSP pipeline. Verify the tempo signature is locked to 128 BPM.\"},\n"
+-            << "    {\"role\": \"user\", \"content\": \"Verify current DSP configuration: BPM=" << state.dna.tempo_bpm << ", Key=" << state.dna.key_signature << "\"}\n"
+-            << "  ],\n"
+-            << "  \"temperature\": 0.1\n"
+-            << "}";
+-
+-    std::string response = client.post("/v1/chat/completions", payload.str());
+-    std::cout << "📥 [LM STUDIO RESPONSE INGESTED]:\n" << response << "\n";
+-
+-    state.messages.push_back({"assistant", "LM Studio Audit Completed. Response: " + response});
+-    state.next_node = "mcp_evaluation";
+-}
+-
+-// --- WINDOWS NAMED PIPE LISTENER LOOP ---
+-void start_named_pipe_listener(BareMetalWinsockClient& client) {
+-    std::cout << "[+] Creating Windows Named Pipe: " << PIPE_NAME << "\n";
+-    
+-    HANDLE hPipe = CreateNamedPipeA(
+-        PIPE_NAME.c_str(),
+-        PIPE_ACCESS_DUPLEX,
+-        PIPE_TYPE_MESSAGE | PIPE_READMODE_MESSAGE | PIPE_WAIT,
+-        PIPE_UNLIMITED_INSTANCES,
+-        4096, 4096,
+-        0, NULL
+-    );
+-
+-    if (hPipe == INVALID_HANDLE_VALUE) {
+-        std::cerr << "[-] Failed to create Named Pipe. Error: " << GetLastError() << "\n";
+-        return;
+-    }
+-
+-    std::cout << "[+] Named Pipe online. Waiting for connection from Node.js preprocessor...\n";
+-    
+-    if (ConnectNamedPipe(hPipe, NULL) ? TRUE : (GetLastError() == ERROR_PIPE_CONNECTED)) {
+-        std::cout << "💎 [IPC STABLE] Node.js connected. Processing workflow pipeline...\n";
+-        
+-        AgentState state;
+-        state.dna.tempo_bpm = 128.0;
+-        state.dna.key_signature = "G Major";
+-
+-        // Native LangGraph State Machine transition loop in process RAM!
+-        int step = 0;
+-        while (!state.execution_complete && step < 5) {
+-            std::cout << "\n🔄 [STEP " << step + 1 << "] Transitioning to: " << state.next_node << "\n";
+-            if (state.next_node == "agent_critic") {
+-                run_agent_critic_node(state, client);
+-            } else if (state.next_node == "mcp_evaluation") {
+-                run_local_mcp_evaluation_node(state);
+-            } else if (state.next_node == "nim_critique") {
+-                std::cout << "🏁 [LANGGRAPH NODE: nim_critique] Handoff payload assembled for NVIDIA NIM cloud sweep.\n";
+-                state.execution_complete = true;
+-            }
+-            step++;
+-        }
+-
+-        // Return compiled results back up the pipe
+-        std::string reply_payload = "{\"status\": \"SUCCESS\", \"compiled_tempo\": 128, \"langgraph_transitions\": " + std::to_string(step) + "}";
+-        DWORD bytesWritten;
+-        WriteFile(hPipe, reply_payload.c_str(), reply_payload.length() + 1, &bytesWritten, NULL);
+-    }
+-
+-    DisconnectNamedPipe(hPipe);
+-    CloseHandle(hPipe);
+-    std::cout << "[+] Named Pipe closed cleanly.\n";
+-}
+-
+-int main() {
+-    std::cout << "======================================================================\n";
+-    std::cout << " 🏛️  LEGION MATRIX SYSTEM - UNIFIED BARE-METAL C++ GRAPH\n";
+-    std::cout << "======================================================================\n";
+-
+-    BareMetalWinsockClient client(HOST, LM_STUDIO_PORT);
+-    
+-    // Fire up the loopback channel
+-    start_named_pipe_listener(client);
+-
+-    return 0;
+-}
++};

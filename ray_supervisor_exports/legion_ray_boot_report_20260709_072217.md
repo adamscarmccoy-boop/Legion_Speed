@@ -1,0 +1,91 @@
+# legion_ray_boot_report
+
+Created: `2026-07-09T07:22:17`
+
+```json
+{
+  "created_at": "2026-07-09T07:22:17",
+  "namespace": "legion",
+  "ray_initialized": true,
+  "ray_address": "local",
+  "actors": [
+    {
+      "name": "LegionSupervisor",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "LegionSupervisorActor",
+      "detail": "created: {\"ok\": true, \"actor\": \"LegionSupervisorActor\", \"namespace\": \"legion\", \"created_at\": \"2026-07-09T07:22:14\", \"known_actor_names\": {}}",
+      "methods": [
+        "list_known_actors",
+        "ping",
+        "remember_actor"
+      ]
+    },
+    {
+      "name": "SwarmKnowledgeRegistry",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "SwarmKnowledgeRegistry/Compat",
+      "detail": "created compat registry: {\"ok\": true, \"actor\": \"SwarmKnowledgeRegistryCompat\", \"created_at\": \"2026-07-09T07:22:14\", \"tables\": []}",
+      "methods": [
+        "dump_summary",
+        "get_registered_tables_summary",
+        "get_table",
+        "list_tables",
+        "ping",
+        "register_table"
+      ]
+    },
+    {
+      "name": "SocialActor",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "SocialActor",
+      "detail": "created: {\"status\": \"online\", \"platforms\": {\"instagram\": \"active\", \"tiktok\": \"active\", \"spotify\": \"active\"}}",
+      "methods": [
+        "get_engagement_metrics",
+        "ping"
+      ]
+    },
+    {
+      "name": "MarketingActor",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "MarketingActor",
+      "detail": "created: {\"status\": \"online\", \"engine_loaded\": true}",
+      "methods": [
+        "ping",
+        "score_audio_dna"
+      ]
+    },
+    {
+      "name": "WardenActor",
+      "namespace": "legion",
+      "state": "skipped",
+      "actor_type": "WardenActor",
+      "detail": "needs constructor args or dependencies",
+      "methods": null
+    },
+    {
+      "name": "DSPAlignmentActor",
+      "namespace": "legion",
+      "state": "ok",
+      "actor_type": "DSPAlignmentActor",
+      "detail": "created: {\"status\": \"online\", \"db_path\": \"C:\\\\STUDIES_BACKUP\\\\vectors\\\\lancedb_store\"}",
+      "methods": [
+        "align_features",
+        "ping"
+      ]
+    },
+    {
+      "name": "IntelligenceBridge",
+      "namespace": "legion",
+      "state": "skipped",
+      "actor_type": "IntelligenceBridge",
+      "detail": "needs constructor args or dependencies",
+      "methods": null
+    }
+  ],
+  "errors": []
+}
+```

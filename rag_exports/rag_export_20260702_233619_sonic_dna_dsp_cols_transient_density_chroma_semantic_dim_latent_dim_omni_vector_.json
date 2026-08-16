@@ -1,0 +1,190 @@
+{
+  "query": "sonic dna dsp cols transient density chroma semantic_dim latent_dim omni_vector_list",
+  "created_at": "2026-07-02T23:36:19",
+  "db_path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+  "embedding_model": "text-embedding-snowflake-arctic-embed-l-v2.0",
+  "embedding_status": "ok, dims=1024",
+  "limit": 12,
+  "chars": 8000,
+  "imports": {
+    "lancedb": "ok",
+    "pandas": "ok",
+    "ray": "ok",
+    "pyarrow": "ok"
+  },
+  "db_probe": [
+    {
+      "path": "E:\\WEB CASE STUDY\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [
+        "chris_lake_speed_test",
+        "chris_lake_web_intel",
+        "mined_code_vectors",
+        "mined_documentation_vectors"
+      ],
+      "error": null,
+      "score": 2
+    },
+    {
+      "path": "C:\\WEB CASE STUDY\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "C:\\WEB CASE STUDY\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": false,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "E:\\WEB CASE STUDY\\lancedb_web_intel_rag",
+      "exists": false,
+      "tables": [],
+      "error": null,
+      "score": 0
+    }
+  ],
+  "tables": [
+    "chris_lake_speed_test",
+    "chris_lake_web_intel",
+    "mined_code_vectors",
+    "mined_documentation_vectors"
+  ],
+  "errors": [],
+  "code_results": [
+    {
+      "source_file": "C:/WEB CASE STUDY/upgraded_dynamic_batch_master_complete.py",
+      "symbol_name": "SonicDNAMini",
+      "distance": 0.9665104746818542,
+      "content": "class SonicDNAMini(nn.Module):\n    def __init__(self, in_dim, latent_dim):\n        super().__init__()\n        self.encoder = nn.Sequential(\n            nn.Linear(in_dim, 128), nn.LayerNorm(128), nn.GELU(),\n            nn.Linear(128, 64), nn.LayerNorm(64), nn.GELU(),\n            nn.Linear(64, latent_dim)\n        )\n        self.decoder = nn.Sequential(\n            nn.Linear(latent_dim, 64), nn.GELU(),\n            nn.Linear(64, 128), nn.GELU(),\n            nn.Linear(128, in_dim)\n        )\n    def forward(self, x):\n        return self.decoder(self.encoder(x))"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/Acoustic-DNA-Audio-Engine/engine/analysis.py",
+      "symbol_name": "process_buffer",
+      "distance": 1.023937463760376,
+      "content": "def process_buffer(self, raw_buffer):\n        \"\"\"\n        Applies DSP conditioning and extracts Chroma DNA.\n        \"\"\"\n        if len(raw_buffer) != self.buffer_size:\n            logger.warning(f\"Buffer size mismatch! Expected {self.buffer_size}, got {len(raw_buffer)}\")\n        \n        # 1. Condition\n        conditioned = self.board(raw_buffer, sample_rate=self.sr)\n        \n        # 2. Extract Chroma (12-note energy vector)\n        # Optimized hop_length for single-frame inference\n        chroma = librosa.feature.chroma_stft(\n            y=conditioned, \n            sr=self.sr, \n            n_fft=self.buffer_size, \n            hop_length=self.buffer_size + 1\n        )\n        \n        dna_vector = np.mean(chroma, axis=1)\n        \n        # Log high-energy detections (simplified confidence)\n        if np.max(dna_vector) > 0.8:\n            logger.info(f\"High-confidence note detected: NoteIndex={np.argmax(dna_vector)}\")\n            \n        return dna_vector"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/train_omni_v3_generation.py",
+      "symbol_name": "module",
+      "distance": 1.0397439002990723,
+      "content": "\"\"\"\ntrain_omni_v3_generation.py\n===========================\nConditional VAE (OmniCondVAE v3) — full train + generate pipeline.\n\nData sources:\n  - LanceDB omni_semantic_baselines  (5,908 rows: DSP + 384-dim semantic)\n  - DuckDB  sonic_dna                (unmastered stems DSP)\n  - JSON    enriched_samples_only    (3,983 rows: genre_class + BPM)\n\nOutput: sonic_dna_output/fretflow_omni_v3.pt\n        sonic_dna_output/training_curve_omni_v3.png\n\"\"\"\nimport sys, os, time, warnings\nwarnings.filterwarnings(\"ignore\")\ntry:\n    sys.stdout.reconfigure(encoding=\"utf-8\")\nexcept Exception:\n    pass\n\nimport numpy as np\nimport pandas as pd\nimport torch\nimport torch.nn as nn\nimport torch.nn.functional as F\nimport torch.optim as optim\nfrom torch.utils.data import DataLoader, TensorDataset\nimport ray\n\n# ─────────────────────────────────────────────────────────────────────────────\n# PATHS\n# ─────────────────────────────────────────────────────────────────────────────\nLANCEDB_PATH      = r\"C:\\STUDIES_BACKUP\\v"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/Acoustic-DNA-Audio-Engine/engine/analysis.py",
+      "symbol_name": "AcousticDNAEngine",
+      "distance": 1.0443135499954224,
+      "content": "class AcousticDNAEngine:\n    \"\"\"\n    Production-ready feature extraction core.\n    Designed for zero-copy buffer handoffs with integrated H.O.R.N. logging.\n    \"\"\"\n    def __init__(self, sample_rate=44100, buffer_size=1024):\n        self.sr = sample_rate\n        self.buffer_size = buffer_size\n        self.board = Pedalboard([Gain(gain_db=6.0)])\n        logger.info(f\"Acoustic DNA Engine Initialized: SR={self.sr}, Buffer={self.buffer_size}\")\n\n    def process_buffer(self, raw_buffer):\n        \"\"\"\n        Applies DSP conditioning and extracts Chroma DNA.\n        \"\"\"\n        if len(raw_buffer) != self.buffer_size:\n            logger.warning(f\"Buffer size mismatch! Expected {self.buffer_size}, got {len(raw_buffer)}\")\n        \n        # 1. Condition\n        conditioned = self.board(raw_buffer, sample_rate=self.sr)\n        \n        # 2. Extract Chroma (12-note energy vector)\n        # Optimized hop_length for single-frame inference\n        chroma = librosa.feature.chroma_stft(\n            y=conditioned, \n            sr=self.sr, \n            n_fft=self.buffer_size, \n            hop_length=self.buffer_size + 1\n        )\n        \n        dna_vector = np.mean(chroma, axis=1)\n        \n        # Log high-energy detections (simplified confidence)\n        if np.max(dna_vector) > 0.8:\n            logger.info(f\"High-confidence note detected: NoteIndex={np.argmax(dna_vector)}\")\n            \n        return dna_vector\n\n    def get_latency_optimized_window(self):\n        \"\"\"Returns the recommended"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/execute_clean_generation.py",
+      "symbol_name": "module",
+      "distance": 1.048257827758789,
+      "content": "import pandas as pd\nimport numpy as np\nimport torch\nimport torch.nn as nn\nimport os\nimport datetime\nimport re\nimport lancedb\nfrom scipy.spatial.distance import cdist\nimport soundfile as sf\nimport warnings\nwarnings.filterwarnings('ignore')\n\nprint(\"[BOOT] Starting Clean Data Generation Engine...\")\n\n# Load Semantic Vectors (Real Float Arrays)\nLANCEDB_PATH = r\"C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\vectors\\lancedb_store\"\nldb = lancedb.connect(LANCEDB_PATH)\nvibe_df = ldb.open_table(\"audio_vibe_gpu\").to_pandas()\n\n# Load Clean Enriched Samples\nsamples_df = pd.read_json(r'C:\\WEB CASE STUDY\\data\\enriched_samples_only.json')\n\n# Merge them on filename\ndf = pd.merge(vibe_df, samples_df, on='filename', how='inner')\nprint(f\"[SYSTEM] Clean Dataset Size: {len(df)} tracks\")\n\ndef build_omni_vector(row):\n    sem = np.array(row['vector'], dtype=np.float32)\n    bpm = np.array([float(row.get('tempo', 128.0))], dtype=np.float32)\n    return np.concatenate([sem, bpm])\n\ndf['omni_vector'] = df.apply(build_omni"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/Acoustic-DNA-Audio-Engine/tests/test_engine.py",
+      "symbol_name": "test_feature_extraction_shape",
+      "distance": 1.0535624027252197,
+      "content": "def test_feature_extraction_shape(engine):\n    \"\"\"Ensure the Acoustic DNA vector is exactly 12 dimensions (C through B).\"\"\"\n    dummy_buffer = np.random.uniform(-0.1, 0.1, 1024).astype(np.float32)\n    dna = engine.process_buffer(dummy_buffer)\n    assert dna.shape == (12,)\n    assert np.all(dna >= 0)"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/omni_v3_train.py",
+      "symbol_name": "__init__",
+      "distance": 1.0562649965286255,
+      "content": "def __init__(self, omni_dim, latent_dim, n_genres):\n        super().__init__()\n        self.omni_dim = omni_dim\n        self.latent_dim = latent_dim\n        self.genre_emb = nn.Embedding(n_genres, 16)\n        \n        # Encoder: 1036+16 -> 512 -> 256 -> 128 -> (mu, var)\n        self.encoder_net = nn.Sequential(\n            nn.Linear(omni_dim + 16, 512), nn.LayerNorm(512), nn.GELU(),\n            nn.Linear(512, 256), nn.LayerNorm(256), nn.GELU(),\n            nn.Linear(256, 128), nn.LayerNorm(128), nn.GELU(),\n        )\n        self.fc_mu = nn.Linear(128, latent_dim)\n        self.fc_var = nn.Linear(128, latent_dim)\n        \n        # Decoder: latent+16 -> 128 -> 256 -> 512 -> 1036\n        self.decoder_net = nn.Sequential(\n            nn.Linear(latent_dim + 16, 128), nn.LayerNorm(128), nn.GELU(),\n            nn.Linear(128, 256), nn.LayerNorm(256), nn.GELU(),\n            nn.Linear(256, 512), nn.LayerNorm(512), nn.GELU(),\n            nn.Linear(512, omni_dim)\n        )\n        \n        # Mastering Head: 11 DSP -> 3 Params\n        self.mastering_head = nn.Sequential(\n            nn.Linear(11, 32), nn.GELU(), nn.Linear(32, 3)\n        )"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/bulk_generator_clean.py",
+      "symbol_name": "module",
+      "distance": 1.0618925094604492,
+      "content": "import pandas as pd\nimport numpy as np\nimport torch\nimport torch.nn as nn\nimport os\nimport datetime\nfrom scipy.spatial.distance import cdist\nimport lancedb\nimport warnings\nwarnings.filterwarnings('ignore')\n\nprint(\"[BOOT] Running CLEAN BULK Generation Trace (100 Tracks)...\")\n\n# Load Semantic Vectors\nLANCEDB_PATH = r\"C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\vectors\\lancedb_store\"\nldb = lancedb.connect(LANCEDB_PATH)\nvibe_df = ldb.open_table(\"audio_vibe_gpu\").to_pandas()\n\n# Load Clean Enriched Samples\nsamples_df = pd.read_json(r'C:\\WEB CASE STUDY\\data\\enriched_samples_only.json')\n\n# Merge them on filename\ndf = pd.merge(vibe_df, samples_df, on='filename', how='inner')\n\ndef build_omni_vector(row):\n    sem = np.array(row['vector'], dtype=np.float32)\n    bpm = np.array([float(row.get('tempo', 128.0))], dtype=np.float32)\n    return np.concatenate([sem, bpm])\n\ndf['omni_vector'] = df.apply(build_omni_vector, axis=1)\n\nweights_path = r\"C:\\WEB CASE STUDY\\sonic_dna_output\\fretflow_v2.pt\"\ncheckpoint ="
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/train_omni_v3_generation.py",
+      "symbol_name": "__init__",
+      "distance": 1.074263095855713,
+      "content": "def __init__(self, omni_dim, latent_dim, n_genres, genre_emb=32):\n        super().__init__()\n        self.omni_dim   = omni_dim\n        self.latent_dim = latent_dim\n        self.cond_dim   = genre_emb + 1\n\n        self.genre_emb = nn.Embedding(n_genres, genre_emb)\n\n        # ── Encoder ──────────────────────────────────────────────────────────\n        enc_in = omni_dim + self.cond_dim\n        self.encoder = nn.Sequential(\n            nn.Linear(enc_in, 512), nn.LayerNorm(512), nn.GELU(),\n            ResBlock(512),\n            nn.Linear(512, 256), nn.LayerNorm(256), nn.GELU(),\n            ResBlock(256),\n            nn.Linear(256, 128), nn.LayerNorm(128), nn.GELU(),\n        )\n        self.fc_mu  = nn.Linear(128, latent_dim)\n        self.fc_var = nn.Linear(128, latent_dim)\n\n        # ── Decoder ──────────────────────────────────────────────────────────\n        dec_in = latent_dim + self.cond_dim\n        self.decoder = nn.Sequential(\n            nn.Linear(dec_in, 128), nn.LayerNorm(128), nn.GELU(),\n            ResBlock(128),\n            nn.Linear(128, 256), nn.LayerNorm(256), nn.GELU(),\n            ResBlock(256),\n            nn.Linear(256, 512), nn.LayerNorm(512), nn.GELU(),\n            nn.Linear(512, omni_dim),\n        )\n\n        # ── Mastering head (DSP -> compression params) ────────────────────────\n        self.mastering_head = nn.Sequential(\n            nn.Linear(11, 64), nn.GELU(),\n            nn.Linear(64, 32), nn.GELU(),\n            nn.Linear(32, 3),   # gain_db, comp_rati"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/omni_v3_train.py",
+      "symbol_name": "OmniCondVAE",
+      "distance": 1.08025324344635,
+      "content": "class OmniCondVAE(nn.Module):\n    def __init__(self, omni_dim, latent_dim, n_genres):\n        super().__init__()\n        self.omni_dim = omni_dim\n        self.latent_dim = latent_dim\n        self.genre_emb = nn.Embedding(n_genres, 16)\n        \n        # Encoder: 1036+16 -> 512 -> 256 -> 128 -> (mu, var)\n        self.encoder_net = nn.Sequential(\n            nn.Linear(omni_dim + 16, 512), nn.LayerNorm(512), nn.GELU(),\n            nn.Linear(512, 256), nn.LayerNorm(256), nn.GELU(),\n            nn.Linear(256, 128), nn.LayerNorm(128), nn.GELU(),\n        )\n        self.fc_mu = nn.Linear(128, latent_dim)\n        self.fc_var = nn.Linear(128, latent_dim)\n        \n        # Decoder: latent+16 -> 128 -> 256 -> 512 -> 1036\n        self.decoder_net = nn.Sequential(\n            nn.Linear(latent_dim + 16, 128), nn.LayerNorm(128), nn.GELU(),\n            nn.Linear(128, 256), nn.LayerNorm(256), nn.GELU(),\n            nn.Linear(256, 512), nn.LayerNorm(512), nn.GELU(),\n            nn.Linear(512, omni_dim)\n        )\n        \n        # Mastering Head: 11 DSP -> 3 Params\n        self.mastering_head = nn.Sequential(\n            nn.Linear(11, 32), nn.GELU(), nn.Linear(32, 3)\n        )\n\n    def forward(self, x, genre_ids):\n        cond = self.genre_emb(genre_ids)\n        h = self.encoder_net(torch.cat([x, cond], dim=1))\n        mu = self.fc_mu(h)\n        log_var = self.fc_var(h)\n        \n        # Reparameterization\n        std = torch.exp(0.5 * log_var)\n        eps = torch.randn_like(std)\n        z = "
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/train_omni_v3_generation.py",
+      "symbol_name": "OmniCondVAE",
+      "distance": 1.0827786922454834,
+      "content": "class OmniCondVAE(nn.Module):\n    \"\"\"\n    Conditional VAE:\n      encode(x, cond) -> mu, log_var\n      decode(z, cond) -> x_recon\n      mastering_head(dsp_slice) -> (gain_db, comp_ratio, threshold_db)\n    Generation:\n      sample z ~ N(0,I), decode with desired genre+BPM condition\n    \"\"\"\n    def __init__(self, omni_dim, latent_dim, n_genres, genre_emb=32):\n        super().__init__()\n        self.omni_dim   = omni_dim\n        self.latent_dim = latent_dim\n        self.cond_dim   = genre_emb + 1\n\n        self.genre_emb = nn.Embedding(n_genres, genre_emb)\n\n        # ── Encoder ──────────────────────────────────────────────────────────\n        enc_in = omni_dim + self.cond_dim\n        self.encoder = nn.Sequential(\n            nn.Linear(enc_in, 512), nn.LayerNorm(512), nn.GELU(),\n            ResBlock(512),\n            nn.Linear(512, 256), nn.LayerNorm(256), nn.GELU(),\n            ResBlock(256),\n            nn.Linear(256, 128), nn.LayerNorm(128), nn.GELU(),\n        )\n        self.fc_mu  = nn.Linear(128, latent_dim)\n        self.fc_var = nn.Linear(128, latent_dim)\n\n        # ── Decoder ──────────────────────────────────────────────────────────\n        dec_in = latent_dim + self.cond_dim\n        self.decoder = nn.Sequential(\n            nn.Linear(dec_in, 128), nn.LayerNorm(128), nn.GELU(),\n            ResBlock(128),\n            nn.Linear(128, 256), nn.LayerNorm(256), nn.GELU(),\n            ResBlock(256),\n            nn.Linear(256, 512), nn.LayerNorm(512), nn.GELU(),\n            nn.Lin"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/test_weights_on_mastered.py",
+      "symbol_name": "SonicDNAMaster",
+      "distance": 1.0941139459609985,
+      "content": "class SonicDNAMaster:\n    def __init__(self, model_path):\n        ckpt = torch.load(model_path, weights_only=False)\n        self.in_dim  = ckpt[\"in_dim\"]\n        self.out_dim = ckpt[\"out_dim\"]\n        self.dsp_cols = ckpt[\"dsp_cols\"]\n        self.X_mean  = torch.tensor(ckpt[\"X_mean\"])\n        self.X_std   = torch.tensor(ckpt[\"X_std\"])\n        self.Y_mean  = torch.tensor(ckpt[\"Y_mean\"])\n        self.Y_std   = torch.tensor(ckpt[\"Y_std\"])\n        self.model   = _MasteringNet(self.in_dim, self.out_dim)\n        self.model.load_state_dict(ckpt[\"model_state_dict\"])\n        self.model.eval()\n\n    def predict(self, feat_dict: dict):\n        vec = torch.tensor([float(feat_dict.get(c, 0.0)) for c in self.dsp_cols], dtype=torch.float32)\n        vec_norm = (vec - self.X_mean) / self.X_std\n        with torch.no_grad():\n            raw = self.model(vec_norm.unsqueeze(0)).squeeze()\n        out = raw * self.Y_std + self.Y_mean\n        gain_db      = float(np.clip(out[0].item(), -12.0, 12.0))\n        comp_ratio   = float(np.clip(out[1].item(), 1.0, 4.5))\n        threshold_db = float(np.clip(out[2].item(), -80.0, 0.0))\n        return gain_db, comp_ratio, threshold_db"
+    }
+  ],
+  "doc_results": [
+    {
+      "distance": 1.219763994216919,
+      "text": "each series is a 1D list of floats/integers.\ne.g., [[0.1, 0.2, ..., 0.N], [0.3, 0.4, ..., 0.M]]\nEach series is a 1D list of floats/integers.\n\"\"\"\n# Convert list of 1D series to a 2D numpy array (batch_size, seq_len).\nbatch_x\n=\nnp\n.\narray\n(\nbatch_x\n,\ndtype\n=\nnp\n.\nfloat32\n)\nbatch_x\n=\ntorch\n.\nfrom_numpy\n(\nbatch_x\n)\n.\nfloat\n()\n.\nto\n(\nself\n.\ndevice\n)\n# Ensure batch_x is 3D: (batch_size, seq_len, num_features)\n# For univariate 'S' models, num_features is 1.\nif\nbatch_x\n.\nndim\n==\n2\n:\nbatch_x\n=\nbatch_x\n.\nunsqueeze\n(\n-\n1\n)\nwith\ntorch\n.\nno_grad\n():\noutputs\n=\nself\n.\nmodel\n(\nbatch_x\n)\n# Output shape: (batch_size, pred_len, features_out)\n# Slice to get the prediction length part of the output.\n# The [:, :, :] part takes all output features.\n# For 'S' (single-feature) forecasting, DLinear typically outputs 1 feature.\n# For 'M' (multi-feature) forecasting, DLinear typically outputs multiple features.\noutputs\n=\noutputs\n[:,\n-\nself\n.\nargs\n[\n\"pred_len\"\n]\n:,\n:]\n# If 'S' (single feature forecasting) and the"
+    },
+    {
+      "distance": 1.2238703966140747,
+      "text": "e text.\nGenerates embeddings.\nWrites the results to Chroma DB.\n# Constants for your data sources and vector store configuration\nEMBEDDER_MODEL\n=\n\"intfloat/multilingual-e5-large-instruct\"\nCHROMA_PATH\n=\n\"/mnt/cluster_storage/vector_store\"\nCHROMA_COLLECTION_NAME\n=\n\"anyscale_jobs_docs_embeddings\"\n# Build the processing pipeline using Ray Data API\nprocessed_ds\n=\n(\nds\n.\nflat_map\n(\nChunker\n,\nfn_constructor_kwargs\n=\n{\n\"method\"\n:\n\"recursive\"\n},\nconcurrency\n=\n5\n,\nnum_cpus\n=\n1\n)\n.\nmap_batches\n(\nEmbedder\n,\nfn_constructor_kwargs\n=\n{\n\"model_name\"\n:\nEMBEDDER_MODEL\n},\nbatch_size\n=\n800\n,\nconcurrency\n=\n1\n,\nnum_gpus\n=\n1\n)\n.\nmap_batches\n(\nChromaWriter\n,\nbatch_size\n=\n500\n,\nconcurrency\n=\n1\n,\nnum_cpus\n=\n1\n,\nfn_constructor_kwargs\n=\n{\n\"collection_name\"\n:\nCHROMA_COLLECTION_NAME\n,\n\"chroma_path\"\n:\nCHROMA_PATH\n}\n)\n)\nExecute the Entire Text Processing Pipeline\n#\nRun the pipeline to process all documents:\n# Execute pipeline\nprocessed_ds\n.\ntake_all\n()\nprint\n(\n\"Data ingestion completed successfully!\"\n)\nVerifying and S"
+    },
+    {
+      "distance": 1.239271640777588,
+      "text": "parallel, so a simple\nds.map\ndistributes the work across the cluster’s CPU cores.\nds.map()\napplies the transformation function to each record in parallel across the cluster. Whenever possible, Ray avoids transferring objects across network connections to take advantage of zero-copy reads, avoiding serialization and deserialization overhead.\nAs soon as blocks of data finish preprocessing, they can move to the next stage without waiting for the entire dataset.\ndef\nresample\n(\nitem\n):\n# Resample at 16kHz, which is what openai/whisper-large-v3-turbo was trained on.\naudio_bytes\n=\nitem\n.\npop\n(\n\"audio_bytes\"\n)\nnew_sampling_rate\n=\n16000\ndata\n,\nsampling_rate\n=\nsf\n.\nread\n(\nio\n.\nBytesIO\n(\naudio_bytes\n),\ndtype\n=\n\"float32\"\n,\nalways_2d\n=\nTrue\n)\nwaveform\n=\ntorch\n.\nfrom_numpy\n(\ndata\n.\nT\n.\ncopy\n())\nwaveform\n=\nT\n.\nResample\n(\nsampling_rate\n,\nnew_sampling_rate\n)(\nwaveform\n)\n.\nsqueeze\n()\nitem\n[\n\"arr\"\n]\n=\nnp\n.\narray\n(\nwaveform\n)\nitem\n[\n\"sampling_rate\"\n]\n=\nnew_sampling_rate\nreturn\nitem\nds\n=\nraw_ds\n.\nmap\n(\nre"
+    },
+    {
+      "distance": 1.2514264583587646,
+      "text": "h metadata\nimport\nuuid\nall_chunks\n=\n[]\nfor\npage\nin\npages\n:\nchunks\n=\nchunker\n.\nchunk_document\n(\npage\n[\n\"text\"\n])\nfor\nchunk\nin\nchunks\n:\nall_chunks\n.\nappend\n({\n\"id\"\n:\nstr\n(\nuuid\n.\nuuid4\n()),\n# Generate a unique ID for each chunk\n\"text\"\n:\nchunk\n,\n\"metadata\"\n:\n{\n\"source\"\n:\npage\n[\n\"source\"\n],\n\"doc_id\"\n:\npage\n[\n\"doc_id\"\n],\n\"file_name\"\n:\npage\n[\n\"file_name\"\n],\n\"file_type\"\n:\npage\n[\n\"file_type\"\n],\n\"page_number\"\n:\npage\n[\n\"page_number\"\n],\n\"chunk_method\"\n:\nchunker\n.\nmethod\n}\n})\nprint\n(\nf\n\"Created\n{\nlen\n(\nall_chunks\n)\n}\ntext chunks.\"\n)\nGenerate Embeddings\n#\nBefore setting up Chroma DB for vector storage, generate embeddings for your text chunks.\nWe are using\nintfloat/multilingual-e5-large-instruct\nmodel.\nfrom\nsentence_transformers\nimport\nSentenceTransformer\n# Initialize a SentenceTransformer model (choose one appropriate for your use case)\nembed_model\n=\nSentenceTransformer\n(\n\"intfloat/multilingual-e5-large-instruct\"\n)\n# Gather all chunk texts for embedding generation\nchunk_texts\n=\n[\nchunk\n[\n\"text\"\n]"
+    },
+    {
+      "distance": 1.2555330991744995,
+      "text": "gle np.array for faster tensor creation.\nspectograms\n=\nnp\n.\narray\n(\nbatch\n[\n\"input_features\"\n])\nspectograms\n=\ntorch\n.\ntensor\n(\nspectograms\n)\n.\nto\n(\nself\n.\ndevice\n,\ndtype\n=\nself\n.\ndtype\n)\nwith\ntorch\n.\nno_grad\n():\n# Generate token IDs for the batched input features.\ntoken_ids\n=\nself\n.\nmodel\n.\ngenerate\n(\nspectograms\n)\nreturn\n{\n\"id\"\n:\nbatch\n[\n\"id\"\n],\n\"token_ids\"\n:\ntoken_ids\n.\ncpu\n()\n.\nnumpy\n()}\n# Transcribe audio to text tokens using Whisper.\n# Use 2 workers using 1 GPU each.\nds\n=\nds\n.\nmap_batches\n(\nTranscriber\n,\nbatch_size\n=\n2\n,\nbatch_format\n=\n\"numpy\"\n,\nconcurrency\n=\n2\n,\nnum_gpus\n=\n1\n)\nNow decode the tokens into actual transcriptions. This step decouples from the previous step to prevent GPU blocks on CPU work and avoid idle time. This approach also allows independent scaling of the number of decoders from the number of Whisper replicas.\nSeparating the GPU work from CPU work eliminates GPU idle. The\nconcurrency=5\nand\nbatch_size=32\nparameters show how to use more CPU workers and bigger bat"
+    },
+    {
+      "distance": 1.2555854320526123,
+      "text": "den_dim\"\n]\ndropout_p\n=\nconfig\n[\n\"dropout_p\"\n]\nlr\n=\nconfig\n[\n\"lr\"\n]\nlr_factor\n=\nconfig\n[\n\"lr_factor\"\n]\nlr_patience\n=\nconfig\n[\n\"lr_patience\"\n]\nnum_epochs\n=\nconfig\n[\n\"num_epochs\"\n]\nbatch_size\n=\nconfig\n[\n\"batch_size\"\n]\nnum_classes\n=\nconfig\n[\n\"num_classes\"\n]\n# Experiment tracking.\nif\nray\n.\ntrain\n.\nget_context\n()\n.\nget_world_rank\n()\n==\n0\n:\nmlflow\n.\nset_tracking_uri\n(\nf\n\"file:\n{\nmodel_registry\n}\n\"\n)\nmlflow\n.\nset_experiment\n(\nexperiment_name\n)\nmlflow\n.\nstart_run\n()\nmlflow\n.\nlog_params\n(\nconfig\n)\n# Datasets.\ntrain_ds\n=\nray\n.\ntrain\n.\nget_dataset_shard\n(\n\"train\"\n)\nval_ds\n=\nray\n.\ntrain\n.\nget_dataset_shard\n(\n\"val\"\n)\n# Model.\nmodel\n=\nClassificationModel\n(\nembedding_dim\n=\nembedding_dim\n,\nhidden_dim\n=\nhidden_dim\n,\ndropout_p\n=\ndropout_p\n,\nnum_classes\n=\nnum_classes\n,\n)\nmodel\n=\nray\n.\ntrain\n.\ntorch\n.\nprepare_model\n(\nmodel\n)\n# Training components.\nloss_fn\n=\ntorch\n.\nnn\n.\nCrossEntropyLoss\n()\noptimizer\n=\ntorch\n.\noptim\n.\nAdam\n(\nmodel\n.\nparameters\n(),\nlr\n=\nlr\n)\nscheduler\n=\ntorch\n.\noptim\n.\nlr_scheduler\n.\nReduceL"
+    },
+    {
+      "distance": 1.259690761566162,
+      "text": "peline\nprocessed_ds\n.\ntake_all\n()\nprint\n(\n\"Data ingestion completed successfully!\"\n)\nVerifying and Searching the Data\n#\nCheck Stored Embeddings\n#\nAfter processing, you can verify how many vectors have been stored in the Chroma DB:\nimport\nchromadb\nCHROMA_PATH\n=\n\"/mnt/cluster_storage/vector_store\"\nCHROMA_COLLECTION_NAME\n=\n\"anyscale_jobs_docs_embeddings\"\n# Initialize the Chroma client and retrieve (or create) your collection\nchroma_client\n=\nchromadb\n.\nPersistentClient\n(\npath\n=\nCHROMA_PATH\n)\ncollection\n=\nchroma_client\n.\nget_or_create_collection\n(\nname\n=\nCHROMA_COLLECTION_NAME\n)\n# Show how many vectors are stored in the collection.\nvector_count\n=\ncollection\n.\ncount\n()\nprint\n(\n\"Total number of vectors in the collection:\"\n,\nvector_count\n)\nYou can also check the storage usage:\n!\nls\n-lh\n/mnt/cluster_storage/vector_store\nPerforming a Vector Search\n#\nNow that the data is ingested, you can search for relevant document chunks. For example, to search for “how to submit anyscale jobs”:\nfrom\npprint\nim"
+    },
+    {
+      "distance": 1.25980806350708,
+      "text": "ation\nfor more information on using Ray Data with Anyscale and for more advanced use cases, see\nWorking with LLMs\n.\nOn this page"
+    },
+    {
+      "distance": 1.2754664421081543,
+      "text": "1\nif\nconfig\n[\n\"features\"\n]\n==\n\"MS\"\nelse\n0\n# Slice for prediction length first.\noutputs_pred_len\n=\nraw_pred\n[:,\n-\npred_len\n:,\n:]\nbatch_y_pred_len\n=\nbatch_y\n[:,\n-\npred_len\n:,\n:]\n# Then slice for features.\nfinal_pred\n=\noutputs_pred_len\n[:,\n:,\nf_dim_start_index\n:]\nfinal_target\n=\nbatch_y_pred_len\n[:,\n:,\nf_dim_start_index\n:]\nreturn\nfinal_pred\n,\nfinal_target\n# === Build Model ===\nmodel\n=\nDLinear\n(\nconfig\n)\n.\nfloat\n()\n# Convenience function to move the model to the correct device and set up\n# parallel strategy.\nmodel\n=\ntrain\n.\ntorch\n.\nprepare_model\n(\nmodel\n)\n# === Get Data ===\ntrain_ds\n=\nget_dataset_shard\n(\n\"train\"\n)\n# === Optimizer and Criterion ===\nmodel_optim\n=\noptim\n.\nAdam\n(\nmodel\n.\nparameters\n(),\nlr\n=\nconfig\n[\n\"learning_rate\"\n])\ncriterion\n=\nnn\n.\nMSELoss\n()\n# === AMP Scaler ===\nscaler\n=\nNone\nif\nconfig\n[\n\"use_amp\"\n]:\nscaler\n=\ntorch\n.\namp\n.\nGradScaler\n(\n\"cuda\"\n)\n# === Training Loop ===\nfor\nepoch\nin\nrange\n(\nconfig\n[\n\"train_epochs\"\n]):\nmodel\n.\ntrain\n()\ntrain_loss_epoch\n=\n[]\nepoch_start_time\n="
+    },
+    {
+      "distance": 1.2782903909683228,
+      "text": "- page_number\n- source\n- text (from documents)\n- distance\n- score\nParameters:\nchroma_results (dict): The raw results from the Chroma DB query.\nReturns:\nlist: A list of dictionaries with the desired keys.\n\"\"\"\nreformatted\n=\n[]\n# Get the lists from the results. They are expected to be lists of lists.\nmetadatas\n=\nchroma_results\n.\nget\n(\n\"metadatas\"\n,\n[])\ndocuments\n=\nchroma_results\n.\nget\n(\n\"documents\"\n,\n[])\ndistances\n=\nchroma_results\n.\nget\n(\n\"distances\"\n,\n[])\n# Loop over each group (each inner list represents one set of matches)\nchunk_index\n=\n1\nfor\nmeta_group\n,\ndoc_group\n,\ndistance_group\nin\nzip\n(\nmetadatas\n,\ndocuments\n,\ndistances\n):\n# Iterate over each item in the inner lists\nfor\nmeta\n,\ntext\n,\ndistance\nin\nzip\n(\nmeta_group\n,\ndoc_group\n,\ndistance_group\n):\nitem\n=\n{\n\"chunk_index\"\n:\nchunk_index\n,\n\"chunk_id\"\n:\nmeta\n.\nget\n(\n\"chunk_id\"\n),\n\"doc_id\"\n:\nmeta\n.\nget\n(\n\"doc_id\"\n),\n\"page_number\"\n:\nmeta\n.\nget\n(\n\"page_number\"\n),\n\"source\"\n:\nmeta\n.\nget\n(\n\"source\"\n),\n\"text\"\n:\ntext\n,\n\"distance\"\n:\ndistance\n,\n\"sco"
+    },
+    {
+      "distance": 1.2879236936569214,
+      "text": "convert to pandas.\ntrain_ds\n=\ntrain_ds\n.\nmaterialize\n()\n.\nto_pandas\n()\nval_ds\n=\nval_ds\n.\nmaterialize\n()\n.\nto_pandas\n()\n# Separate the labels from the features.\ntrain_X\n,\ntrain_y\n=\ntrain_ds\n.\ndrop\n(\n\"target\"\n,\naxis\n=\n1\n),\ntrain_ds\n[\n\"target\"\n]\neval_X\n,\neval_y\n=\nval_ds\n.\ndrop\n(\n\"target\"\n,\naxis\n=\n1\n),\nval_ds\n[\n\"target\"\n]\n# Convert the data into DMatrix format for XGBoost.\ndtrain\n=\nxgboost\n.\nDMatrix\n(\ntrain_X\n,\nlabel\n=\ntrain_y\n)\ndeval\n=\nxgboost\n.\nDMatrix\n(\neval_X\n,\nlabel\n=\neval_y\n)\n# Do distributed data-parallel training.\n# Ray Train sets up the necessary coordinator processes and\n# environment variables for workers to communicate with each other.\n_booster\n=\nxgboost\n.\ntrain\n(\nconfig\n[\n\"xgboost_params\"\n],\ndtrain\n=\ndtrain\n,\nevals\n=\n[(\ndtrain\n,\n\"train\"\n),\n(\ndeval\n,\n\"validation\"\n)],\nnum_boost_round\n=\n10\n,\n# Handles metric logging and checkpointing.\ncallbacks\n=\n[\nRayTrainReportCallback\n()],\n)\n# Parameters for the XGBoost model.\nmodel_config\n=\n{\n\"xgboost_params\"\n:\n{\n\"objective\"\n:\n\"binary:logist"
+    },
+    {
+      "distance": 1.2884609699249268,
+      "text": "ct\n:\n\"\"\"\nProcess a batch of documents by adding them to the Chroma collection.\n\"\"\"\n# Prepare metadata for each entry in the batch\nmetadatas\n=\n[]\nfor\ni\nin\nrange\n(\nlen\n(\nbatch\n[\n\"chunk_id\"\n])):\nmetadata\n=\n{\n\"source\"\n:\nbatch\n[\n\"source\"\n][\ni\n],\n\"doc_id\"\n:\nbatch\n[\n\"doc_id\"\n][\ni\n],\n\"page_number\"\n:\nint\n(\nbatch\n[\n\"page_number\"\n][\ni\n]),\n\"chunk_id\"\n:\nbatch\n[\n\"chunk_id\"\n][\ni\n]\n}\nmetadatas\n.\nappend\n(\nmetadata\n)\nembeddings\n=\nbatch\n[\n\"embeddings\"\n]\n.\ntolist\n()\ndocuments\n=\n[\ntext\nfor\ntext\nin\nbatch\n[\n\"text\"\n]]\nids\n=\n[\nid\nfor\nid\nin\nbatch\n[\n\"chunk_id\"\n]]\n# Add the embeddings, documents, ids, and metadata to the collection\nself\n.\ncollection\n.\nadd\n(\nembeddings\n=\nembeddings\n,\ndocuments\n=\ndocuments\n,\nids\n=\nids\n,\nmetadatas\n=\nmetadatas\n)\nreturn\n{}\nSetting Up the Text Processing Pipeline\n#\nFinally, define constants for your data sources and vector store configuration. Then, build the Ray pipeline that:\nChunks the text.\nGenerates embeddings.\nWrites the results to Chroma DB.\n# Constants for your data sources and"
+    }
+  ],
+  "ray_results": [],
+  "ray_status": "Connected. Searched 27 in-memory tables."
+}

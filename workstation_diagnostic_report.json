@@ -1,0 +1,260 @@
+{
+  "timestamp": "2026-08-16T16:28:12.989220",
+  "elapsed_seconds": 229.73,
+  "packages": {
+    "openai": true,
+    "ray": true,
+    "pyarrow": true,
+    "duckdb": true,
+    "lancedb": true
+  },
+  "metrics": {
+    "total_files": 89229,
+    "parquet_size_mb": 2.49,
+    "top_extensions": {
+      ".py": {
+        "count": 42750,
+        "size_kb": 554539.0,
+        "lines": 14921033
+      },
+      ".h": {
+        "count": 10575,
+        "size_kb": 55955.4,
+        "lines": 1371390
+      },
+      ".pyi": {
+        "count": 6684,
+        "size_kb": 21826.4,
+        "lines": 0
+      },
+      ".no_ext": {
+        "count": 5727,
+        "size_kb": 20744257.4,
+        "lines": 0
+      },
+      ".svg": {
+        "count": 3884,
+        "size_kb": 9308.2,
+        "lines": 0
+      },
+      ".json": {
+        "count": 2760,
+        "size_kb": 274536.6,
+        "lines": 9045561
+      },
+      ".mo": {
+        "count": 1986,
+        "size_kb": 28538.4,
+        "lines": 0
+      },
+      ".md": {
+        "count": 1927,
+        "size_kb": 14573.7,
+        "lines": 297793
+      }
+    }
+  },
+  "databases": {
+    "duckdb": {
+      "web_intel_sonicdb.duckdb": {
+        "applemusic_raw": 50,
+        "audio_features": 1084,
+        "chris_lake_baseline": 9,
+        "core_paths": 7466,
+        "discogs_releases": 15,
+        "enriched_paths": 0,
+        "global_registry": 7466,
+        "interaction_logs": 37,
+        "listenbrainz_ground_truth": 30,
+        "mined_music": 28979,
+        "sonic_dna": 300,
+        "spotify_charts_daily": 20,
+        "spotify_track_metrics": 1084,
+        "test_table": 2,
+        "web_intel_raw": 90,
+        "workspace_metrics": 90273
+      }
+    },
+    "lancedb": {}
+  },
+  "onnx": {
+    "dna_brain.onnx": {
+      "size_mb": 0.01,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "fretflow_omni_v4.onnx": {
+      "size_mb": 0.0,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "omni_master_brain_v1.onnx": {
+      "size_mb": 0.01,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "real_data_brain.onnx": {
+      "size_mb": 0.0,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "sovereign_big_brain_exhaustive.onnx": {
+      "size_mb": 0.02,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "sovereign_bridge_v1.onnx": {
+      "size_mb": 0.01,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "model.onnx": {
+      "size_mb": 0.0,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "code_genome_brain.onnx": {
+      "size_mb": 0.0,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "mega_sovereign_brain.onnx": {
+      "size_mb": 0.08,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "sovereign_master_clean.onnx": {
+      "size_mb": 0.02,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "sovereign_master_v5.onnx": {
+      "size_mb": 0.0,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "audio_llm_v1.onnx": {
+      "size_mb": 0.0,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "fretflow_omni_v3.onnx": {
+      "size_mb": 0.17,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "sonic_dna_master_v2.onnx": {
+      "size_mb": 0.03,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "sonic_dna_mini_v1.onnx": {
+      "size_mb": 0.02,
+      "has_sidecar": true,
+      "ready": true
+    },
+    "light_bvlc_alexnet.onnx": {
+      "size_mb": 0.0,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "light_densenet121.onnx": {
+      "size_mb": 0.2,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "light_inception_v1.onnx": {
+      "size_mb": 0.04,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "light_inception_v2.onnx": {
+      "size_mb": 0.15,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "light_resnet50.onnx": {
+      "size_mb": 0.08,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "light_shufflenet.onnx": {
+      "size_mb": 0.06,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "light_squeezenet.onnx": {
+      "size_mb": 0.01,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "light_vgg19.onnx": {
+      "size_mb": 0.01,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "light_zfnet512.onnx": {
+      "size_mb": 0.0,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "logreg_iris.onnx": {
+      "size_mb": 0.0,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "mul_1.onnx": {
+      "size_mb": 0.0,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "sigmoid.onnx": {
+      "size_mb": 0.0,
+      "has_sidecar": false,
+      "ready": false
+    },
+    "silero_vad_v6.onnx": {
+      "size_mb": 1.19,
+      "has_sidecar": false,
+      "ready": true
+    },
+    "ch_PP-OCRv4_det_infer.onnx": {
+      "size_mb": 4.53,
+      "has_sidecar": false,
+      "ready": true
+    },
+    "ch_PP-OCRv4_rec_infer.onnx": {
+      "size_mb": 10.35,
+      "has_sidecar": false,
+      "ready": true
+    },
+    "ch_ppocr_mobile_v2.0_cls_infer.onnx": {
+      "size_mb": 0.56,
+      "has_sidecar": false,
+      "ready": false
+    }
+  },
+  "ports": {
+    "agent_8099": {
+      "name": "Legion Agent Server",
+      "port": 8099,
+      "is_up": true
+    },
+    "lm_studio": {
+      "name": "LM Studio C++ REST",
+      "port": 1234,
+      "is_up": true
+    },
+    "ray_gcs": {
+      "name": "Ray Cluster GCS",
+      "port": 6379,
+      "is_up": true
+    },
+    "mcp_gateway": {
+      "name": "FastMCP Sensory DB",
+      "port": 8001,
+      "is_up": false
+    }
+  },
+  "ai_synthesis": "- Stack health: All critical components are operational with 16 out of 31 ONNX models active and verified, indicating stable model deployment; however, only 0 LanceDB vectors exist, suggesting no embedding generation is currently in progress.  \n- Ingestion & sensory persistence: High-volume ingestion complete (89229 files ingested), with Parquet storage at 2.49 MB and dominant Python-based data types; sensory lakehouse web_intel_sonicdb.duckdb holds 136,905 rows, confirming persistent data retention and query readiness.  \n- Hardware/VRAM clearance: GTX 1650 SUPER (4GB VRAM) is within target limits (<1500 token window), but no active embeddings are being generated, so VRAM usage remains nominally clear despite hardware capacity."
+}

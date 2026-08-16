@@ -1,0 +1,550 @@
+{
+  "E:\\OLD ABLETON": {
+    "walk_all": {
+      "root": "E:\\OLD ABLETON",
+      "exists": true,
+      "total_audio": 375510,
+      "total_size_gb": 451.63,
+      "ext_breakdown": {
+        ".mp3": 5371,
+        ".wav": 352830,
+        ".aif": 15904,
+        ".m4a": 25,
+        ".flac": 1160,
+        ".aiff": 220
+      },
+      "top_15_subdirs": [
+        [
+          "ABELTON",
+          359842
+        ],
+        [
+          "ABELTON-000",
+          15668
+        ]
+      ]
+    },
+    "company_match": {
+      "root": "E:\\OLD ABLETON",
+      "total_audio": 375510,
+      "company_hits": {
+        "black octopus": 89496,
+        "cymatics": 6053,
+        "splice": 1770,
+        "sample magic": 757,
+        "toolroom": 86,
+        "sounds.com": 36,
+        "ghetto house": 1
+      }
+    },
+    "two_level": {
+      "root": "E:\\OLD ABLETON",
+      "two_level": {
+        "ABELTON-000": [
+          "[file] Bad Bad Bad Behaviors.mp3",
+          "[file] KILLA.mp3",
+          "[file] WATCH ME.mp3",
+          "[file] WATCH ME-2.mp3",
+          "Docs",
+          "Redist",
+          "Legal",
+          "PACKS",
+          "Bad Bad Bad Behaviors Project",
+          "EKKKKKK BEEP BEEP Project",
+          "IN MY ATMOSPHERE Project",
+          "KILLA Project",
+          "LOVE OR HATE Project",
+          "PLZ SAVE ME Project",
+          "PLZ SAVE ME-1 Project",
+          "VVehaviors Project",
+          "WATCH ME Project"
+        ],
+        "ABELTON": [
+          "PACKS-MAC",
+          "TEMPLATES",
+          "DOWNLOADED10-24",
+          "TKNVLT SAMPLES",
+          "PHANTOM",
+          "New folder",
+          "THM",
+          "SAMPLESOUND PACKS",
+          "PACKS-01-25",
+          "5-2025",
+          "PACKS 2-2025",
+          "untitled folder",
+          "CYMATICS",
+          "GHOSTHACK2025",
+          "KLING",
+          "ideazz",
+          "RACKS FOR MASTERING",
+          "NATIVE INSTRUMENTS",
+          "Samples",
+          "TO BE Installed on PC",
+          "4-2025",
+          "SYNTHWAVE PACK",
+          "9-2-25",
+          "EASTER",
+          "VOCAL PACKS",
+          "CYBERPUNK SAMPLE PACK",
+          "FX - EFFECTS",
+          "MY LOOPS",
+          "DRUM PACKAGES",
+          "matt"
+        ]
+      }
+    },
+    "filename_patterns": {
+      "root": "E:\\OLD ABLETON",
+      "top_30_filename_prefixes": [
+        [
+          ". Lev4",
+          6872
+        ],
+        [
+          ". Lev2",
+          5246
+        ],
+        [
+          ". Lev",
+          4096
+        ],
+        [
+          ". Lev3",
+          3951
+        ],
+        [
+          ". hhvt",
+          3607
+        ],
+        [
+          ". KLING",
+          3580
+        ],
+        [
+          ". BOS",
+          3111
+        ],
+        [
+          ". REV",
+          2829
+        ],
+        [
+          ". GS",
+          2610
+        ],
+        [
+          ". THM",
+          2604
+        ],
+        [
+          ". Kick",
+          2462
+        ],
+        [
+          "GS CNTRFG",
+          2150
+        ],
+        [
+          "Ali Nadem",
+          2075
+        ],
+        [
+          ". Ali",
+          2075
+        ],
+        [
+          "KLING Nitric",
+          1989
+        ],
+        [
+          ". HTHT",
+          1846
+        ],
+        [
+          "Odd Frequency",
+          1836
+        ],
+        [
+          ". Odd",
+          1817
+        ],
+        [
+          ". HBHT",
+          1672
+        ],
+        [
+          "Kick &",
+          1571
+        ],
+        [
+          ". Cymatics",
+          1406
+        ],
+        [
+          ". HBH2",
+          1392
+        ],
+        [
+          ". hth",
+          1339
+        ],
+        [
+          ". hthi",
+          1335
+        ],
+        [
+          ". HTHFU",
+          1312
+        ],
+        [
+          "KLING Black",
+          1304
+        ],
+        [
+          "THM Vocal",
+          1258
+        ],
+        [
+          ". PML",
+          1256
+        ],
+        [
+          "PML THA",
+          1252
+        ],
+        [
+          ". LC",
+          1242
+        ]
+      ]
+    },
+    "shortcuts": {
+      "root": "E:\\OLD ABLETON",
+      "shortcut_count": 2,
+      "shortcuts": [
+        "E:\\OLD ABLETON\\Vital - Shortcut.lnk",
+        "E:\\OLD ABLETON\\ABELTON\\FX - EFFECTS\\Vital - Shortcut.lnk"
+      ]
+    }
+  },
+  "D:\\OLD ABLETON": {
+    "walk_all": {
+      "root": "D:\\OLD ABLETON",
+      "exists": false
+    },
+    "company_match": {
+      "root": "D:\\OLD ABLETON",
+      "exists": false
+    },
+    "two_level": {
+      "root": "D:\\OLD ABLETON",
+      "exists": false
+    },
+    "filename_patterns": {
+      "root": "D:\\OLD ABLETON",
+      "exists": false
+    },
+    "shortcuts": {
+      "root": "D:\\OLD ABLETON",
+      "exists": false
+    }
+  },
+  "E:\\scars SAMPLE PACKS": {
+    "walk_all": {
+      "root": "E:\\scars SAMPLE PACKS",
+      "exists": true,
+      "total_audio": 330,
+      "total_size_gb": 1.0,
+      "ext_breakdown": {
+        ".wav": 264,
+        ".flac": 2,
+        ".mp3": 64
+      },
+      "top_15_subdirs": [
+        [
+          "SCARS LABORATORY - SAMPLE PACK 1 PREVIEW",
+          198
+        ],
+        [
+          "PROJECTS USED",
+          132
+        ]
+      ]
+    },
+    "company_match": {
+      "root": "E:\\scars SAMPLE PACKS",
+      "total_audio": 330,
+      "company_hits": {}
+    },
+    "two_level": {
+      "root": "E:\\scars SAMPLE PACKS",
+      "two_level": {
+        "PROJECTS USED": [
+          "SP1 SYNTH,BASS,DRUMS Project",
+          "sp1 - synth-kick-drum Project",
+          "sp1-synth,drum,clap Project"
+        ],
+        "SCARS LABORATORY - SAMPLE PACK 1 PREVIEW": [
+          "BASS",
+          "DRUM RACKS",
+          "FX",
+          "LEADS",
+          "PERCUSSION LOOP",
+          "SYNTH",
+          "VOCALS",
+          "YUMMY SOUNDS",
+          "randy session"
+        ],
+        "SCARS LAB SAMPLE PACK IMAGES": [
+          "IMAGES STARTED AS"
+        ]
+      }
+    },
+    "filename_patterns": {
+      "root": "E:\\scars SAMPLE PACKS",
+      "top_30_filename_prefixes": [
+        [
+          ". SCAR",
+          55
+        ],
+        [
+          "SCAR SP1",
+          41
+        ],
+        [
+          "SCAR LAB",
+          19
+        ],
+        [
+          "Sonicspore FPS",
+          9
+        ],
+        [
+          ". Sonicspore",
+          9
+        ],
+        [
+          ". THM",
+          7
+        ],
+        [
+          "SS ZMT",
+          6
+        ],
+        [
+          ". SS",
+          6
+        ],
+        [
+          "WATFH Synth",
+          6
+        ],
+        [
+          ". WATFH",
+          6
+        ],
+        [
+          ". Audio",
+          5
+        ],
+        [
+          ". AU",
+          4
+        ],
+        [
+          "THM 909",
+          4
+        ],
+        [
+          "Audio 2",
+          4
+        ],
+        [
+          "AU BHT",
+          3
+        ],
+        [
+          ". STCR2",
+          3
+        ],
+        [
+          "THM Vocal",
+          3
+        ],
+        [
+          "18 Audio",
+          3
+        ],
+        [
+          ". 18",
+          3
+        ],
+        [
+          "I beeee",
+          3
+        ],
+        [
+          ". I",
+          3
+        ],
+        [
+          "guitar",
+          3
+        ],
+        [
+          ". guitar",
+          3
+        ],
+        [
+          "other",
+          3
+        ],
+        [
+          ". other",
+          3
+        ],
+        [
+          "bass",
+          3
+        ],
+        [
+          ". bass",
+          3
+        ],
+        [
+          "piano",
+          3
+        ],
+        [
+          ". piano",
+          3
+        ],
+        [
+          "drums",
+          3
+        ]
+      ]
+    },
+    "shortcuts": {
+      "root": "E:\\scars SAMPLE PACKS",
+      "shortcut_count": 0,
+      "shortcuts": []
+    }
+  },
+  "D:\\scars SAMPLE PACKS": {
+    "walk_all": {
+      "root": "D:\\scars SAMPLE PACKS",
+      "exists": false
+    },
+    "company_match": {
+      "root": "D:\\scars SAMPLE PACKS",
+      "exists": false
+    },
+    "two_level": {
+      "root": "D:\\scars SAMPLE PACKS",
+      "exists": false
+    },
+    "filename_patterns": {
+      "root": "D:\\scars SAMPLE PACKS",
+      "exists": false
+    },
+    "shortcuts": {
+      "root": "D:\\scars SAMPLE PACKS",
+      "exists": false
+    }
+  },
+  "E:\\COLLECT ALL": {
+    "walk_all": {
+      "root": "E:\\COLLECT ALL",
+      "exists": true,
+      "total_audio": 0,
+      "total_size_gb": 0.0,
+      "ext_breakdown": {},
+      "top_15_subdirs": []
+    },
+    "company_match": {
+      "root": "E:\\COLLECT ALL",
+      "total_audio": 0,
+      "company_hits": {}
+    },
+    "two_level": {
+      "root": "E:\\COLLECT ALL",
+      "two_level": {}
+    },
+    "filename_patterns": {
+      "root": "E:\\COLLECT ALL",
+      "top_30_filename_prefixes": []
+    },
+    "shortcuts": {
+      "root": "E:\\COLLECT ALL",
+      "shortcut_count": 0,
+      "shortcuts": []
+    }
+  },
+  "D:\\COLLECT ALL - (2025)": {
+    "walk_all": {
+      "root": "D:\\COLLECT ALL - (2025)",
+      "exists": false
+    },
+    "company_match": {
+      "root": "D:\\COLLECT ALL - (2025)",
+      "exists": false
+    },
+    "two_level": {
+      "root": "D:\\COLLECT ALL - (2025)",
+      "exists": false
+    },
+    "filename_patterns": {
+      "root": "D:\\COLLECT ALL - (2025)",
+      "exists": false
+    },
+    "shortcuts": {
+      "root": "D:\\COLLECT ALL - (2025)",
+      "exists": false
+    }
+  },
+  "D:\\COLLECT ALL - 2025 LATE": {
+    "walk_all": {
+      "root": "D:\\COLLECT ALL - 2025 LATE",
+      "exists": false
+    },
+    "company_match": {
+      "root": "D:\\COLLECT ALL - 2025 LATE",
+      "exists": false
+    },
+    "two_level": {
+      "root": "D:\\COLLECT ALL - 2025 LATE",
+      "exists": false
+    },
+    "filename_patterns": {
+      "root": "D:\\COLLECT ALL - 2025 LATE",
+      "exists": false
+    },
+    "shortcuts": {
+      "root": "D:\\COLLECT ALL - 2025 LATE",
+      "exists": false
+    }
+  },
+  "D:\\000 - MASTERED EXPORT": {
+    "walk_all": {
+      "root": "D:\\000 - MASTERED EXPORT",
+      "exists": false
+    },
+    "company_match": {
+      "root": "D:\\000 - MASTERED EXPORT",
+      "exists": false
+    },
+    "two_level": {
+      "root": "D:\\000 - MASTERED EXPORT",
+      "exists": false
+    },
+    "filename_patterns": {
+      "root": "D:\\000 - MASTERED EXPORT",
+      "exists": false
+    },
+    "shortcuts": {
+      "root": "D:\\000 - MASTERED EXPORT",
+      "exists": false
+    }
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "filepath": "C:\\STUDIES_BACKUP\\separated_stems\\htdemucs\\90. Chris Lake, Gotye, Fisher, Kimbra, Sante Sansone - Somebody (2024) (2024)\\bass.wav",
+    "filename": "bass.wav",
+    "asset_type": "STEM",
+    "drum_type": "BASS",
+    "tempo": null,
+    "key": null,
+    "rms_db": -37.98942947387695,
+    "crest_factor": 1.1721795797348022,
+    "sub_bass_energy": 3044.17578125,
+    "bass_energy": 75.03480529785156,
+    "mid_energy": 231.44833374023438,
+    "high_energy": 618.223388671875,
+    "spectral_centroid": 592.9598170212
+  },
+  {
+    "filepath": "C:\\STUDIES_BACKUP\\separated_stems\\htdemucs\\90. Chris Lake, Gotye, Fisher, Kimbra, Sante Sansone - Somebody (2024) (2024)\\drums.wav",
+    "filename": "drums.wav",
+    "asset_type": "STEM",
+    "drum_type": "DRUMS",
+    "tempo": null,
+    "key": null,
+    "rms_db": -14.412613868713379,
+    "crest_factor": 4.225632190704346,
+    "sub_bass_energy": 37174.75,
+    "bass_energy": 104861.75,
+    "mid_energy": 44429.3203125,
+    "high_energy": 199412.53125,
+    "spectral_centroid": 3335.7380176041984
+  },
+  {
+    "filepath": "C:\\STUDIES_BACKUP\\separated_stems\\htdemucs\\90. Chris Lake, Gotye, Fisher, Kimbra, Sante Sansone - Somebody (2024) (2024)\\other.wav",
+    "filename": "other.wav",
+    "asset_type": "STEM",
+    "drum_type": "FULL_TRACK",
+    "tempo": null,
+    "key": null,
+    "rms_db": -30.9786434173584,
+    "crest_factor": 10.904216766357422,
+    "sub_bass_energy": 3478.891845703125,
+    "bass_energy": 10567.462890625,
+    "mid_energy": 9219.2255859375,
+    "high_energy": 5679.40087890625,
+    "spectral_centroid": 2473.105756831919
+  },
+  {
+    "filepath": "C:\\STUDIES_BACKUP\\separated_stems\\htdemucs\\90. Chris Lake, Gotye, Fisher, Kimbra, Sante Sansone - Somebody (2024) (2024)\\vocals.wav",
+    "filename": "vocals.wav",
+    "asset_type": "STEM",
+    "drum_type": "VOCALS",
+    "tempo": null,
+    "key": null,
+    "rms_db": -35.700477600097656,
+    "crest_factor": 1.175154685974121,
+    "sub_bass_energy": 3959.51025390625,
+    "bass_energy": 51.273006439208984,
+    "mid_energy": 152.90122985839844,
+    "high_energy": 634.9449462890625,
+    "spectral_centroid": 489.31423023091116
+  }
+]

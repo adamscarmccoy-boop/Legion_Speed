@@ -1,0 +1,42 @@
+{
+  "ray_address": "ray://127.0.0.1:10001",
+  "ray_dashboard": "http://127.0.0.1:8265",
+  "namespace": "legion",
+  "root_a": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline",
+  "root_b": "C:\\WEB CASE STUDY",
+  "onnx_models": {
+    "sovereign_big_brain_exhaustive": "sovereign_big_brain_exhaustive.onnx",
+    "sovereign_bridge_v1": "sovereign_bridge_v1.onnx",
+    "fretflow_omni_v4": "fretflow_omni_v4.onnx",
+    "omni_master_brain_v1": "omni_master_brain_v1.onnx",
+    "dna_brain": "dna_brain.onnx",
+    "real_data_brain": "real_data_brain.onnx"
+  },
+  "sonic_dna_engine": "sonic_dna_engine",
+  "expected_actors": [
+    "SwarmKnowledgeRegistry",
+    "CodeSwarmKnowledgeRegistry",
+    "SwarmKnowledgeWorker",
+    "RegistryClient",
+    "TrainerActor",
+    "VAETrainer",
+    "GenerationWorker",
+    "EmbedWorker",
+    "GenomeBrain",
+    "GenomeActor",
+    "OmniCognitiveWorker",
+    "OmniKnowledgeWorker",
+    "TensorEvaluatorActor",
+    "SovereignInferenceActor",
+    "DSPAlignmentActor",
+    "MyActor",
+    "OllamaEmbeddingWorker",
+    "IntelligenceBridge",
+    "IndependentWorkFinderActor",
+    "SovereignEngine",
+    "GenomeTransformer",
+    "GenomePolicy"
+  ],
+  "alignment_threshold": 0.75,
+  "qc_pass_threshold": 7.0
+}

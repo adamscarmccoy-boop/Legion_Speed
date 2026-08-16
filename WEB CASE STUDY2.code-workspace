@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Users/adams/Downloads/matrix-world-engine"
+		}
+	],
+	"settings": {
+		"powershell.cwd": "WEB CASE STUDY",
+		"git.ignoreLimitWarning": true,
+		"python-envs.pythonProjects": [
+			{
+				"path": ".",
+				"envManager": "ms-python.python:venv",
+				"packageManager": "ms-python.python:pip"
+			},
+			{
+				"path": "ray_arrow_swarm.py",
+				"envManager": "ms-python.python:venv",
+				"packageManager": "ms-python.python:pip",
+				"workspace": "WEB CASE STUDY"
+			}
+		]
+	}
+}

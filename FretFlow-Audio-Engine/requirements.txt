@@ -1,0 +1,12 @@
+librosa
+numpy
+pedalboard
+duckdb
+soundfile
+scipy
+torch
+torchaudio
+torchvision
+torchaudio-augmentations
+torchmetrics
+torchsummary

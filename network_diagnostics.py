@@ -1,0 +1,379 @@
+"""
+Sovereign Legion — Network, API Key & Inference Diagnostics
+Checks every endpoint and key referenced in .env and the codebase.
+"""
+import sys
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except Exception:
+    pass
+
+import os
+import json
+import time
+import socket
+import subprocess
+
+# ==============================================================================
+# SOVEREIGN LIFE-CYCLE STABILIZER (AUTO-INJECTED)
+# Prevents dangling stdout/stdio pipes and GCS registry locks on Windows exit
+# ==============================================================================
+import atexit
+import signal
+
+def clean_exit_handler(*args, **kwargs):
+    import sys
+    sys.stderr.write("\n[LMS LIFECYCLE] Exit triggered. Flushing system streams...\n")
+    sys.stderr.flush()
+    try:
+        import ray
+        if ray.is_initialized():
+            sys.stderr.write("[LMS LIFECYCLE] Active Ray session detected. Disconnecting...\n")
+            ray.shutdown()
+    except Exception:
+        pass
+    sys.exit(0)
+
+atexit.register(clean_exit_handler)
+signal.signal(signal.SIGINT, clean_exit_handler)
+signal.signal(signal.SIGTERM, clean_exit_handler)
+# ==============================================================================
+
+
+# ── Colour helpers (works in Windows Terminal / VS Code) ──────────────
+OK   = "\u2705"
+FAIL = "\u274C"
+WARN = "\u26A0\uFE0F"
+INFO = "\U0001F6F0\uFE0F"
+
+def section(title):
+    print(f"\n{'='*60}")
+    print(f"  {title}")
+    print(f"{'='*60}")
+
+def check_tcp(host, port, timeout=3):
+    """Return True if TCP connect succeeds."""
+    try:
+        with socket.create_connection((host, port), timeout=timeout):
+            return True
+    except Exception:
+        return False
+
+# ── Load .env (simple parser) ────────────────────────────────────────
+def load_dotenv_simple(path):
+    env = {}
+    if not os.path.exists(path):
+        return env
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            if "=" not in line:
+                continue
+            key, _, val = line.partition("=")
+            val = val.strip().strip('"').strip("'")
+            env[key.strip()] = val
+    return env
+
+env = load_dotenv_simple(r"c:\WEB CASE STUDY\.env")
+
+# =====================================================================
+# 1. PYTHON ENVIRONMENT
+# =====================================================================
+section("1. PYTHON ENVIRONMENT")
+venv_python = r"c:\WEB CASE STUDY\.venv\Scripts\python.exe"
+if os.path.exists(venv_python):
+    print(f"  {OK} venv python exists: {venv_python}")
+else:
+    print(f"  {FAIL} venv python NOT found at {venv_python}")
+
+print(f"  {INFO} Running with: {sys.executable}")
+print(f"  {INFO} Python version: {sys.version}")
+
+# =====================================================================
+# 2. LOCAL SERVICES — TCP PORT CHECKS
+# =====================================================================
+section("2. LOCAL SERVICES — TCP PORT CHECKS")
+
+services = [
+    ("Ray GCS (head)",          "127.0.0.1", 6379),
+    ("Ray Dashboard",           "127.0.0.1", 8265),
+    ("Ray Serve (HTTP)",        "127.0.0.1", 8000),
+    ("LM Studio (embeddings)", "127.0.0.1", 1234),
+    ("Ollama",                  "127.0.0.1", 11434),
+    ("MCP RAG Server",         "127.0.0.1", 8003),
+    ("Prometheus",              "127.0.0.1", 9090),
+]
+
+for name, host, port in services:
+    ok = check_tcp(host, port)
+    icon = OK if ok else FAIL
+    print(f"  {icon} {name:30s}  {host}:{port}")
+
+# =====================================================================
+# 3. LM STUDIO — EMBEDDINGS INFERENCE CHECK
+# =====================================================================
+section("3. LM STUDIO — EMBEDDINGS INFERENCE")
+
+try:
+    import requests
+    t0 = time.time()
+    r = requests.post(
+        "http://127.0.0.1:1234/v1/embeddings",
+        json={"model": "text-embedding-snowflake-arctic-embed-l-v2.0", "input": "diagnostic ping"},
+        timeout=10,
+    )
+    elapsed = time.time() - t0
+    if r.status_code == 200:
+        data = r.json()
+        vec = data.get("data", [{}])[0].get("embedding", [])
+        print(f"  {OK} Embeddings returned {len(vec)}-dim vector in {elapsed:.2f}s")
+    else:
+        print(f"  {FAIL} Status {r.status_code}: {r.text[:200]}")
+except requests.exceptions.ConnectionError:
+    print(f"  {FAIL} Connection refused — LM Studio not running on :1234")
+except Exception as e:
+    print(f"  {FAIL} {e}")
+
+# =====================================================================
+# 4. LM STUDIO — CHAT / COMPLETION INFERENCE CHECK
+# =====================================================================
+section("4. LM STUDIO — CHAT COMPLETION INFERENCE")
+
+try:
+    t0 = time.time()
+    r = requests.get("http://127.0.0.1:1234/v1/models", timeout=5)
+    if r.status_code == 200:
+        models = r.json().get("data", [])
+        model_ids = [m.get("id", "?") for m in models]
+        print(f"  {OK} LM Studio models loaded: {model_ids}")
+    else:
+        print(f"  {WARN} /v1/models returned {r.status_code}")
+
+    # Quick chat completion test with first available model
+    if model_ids:
+        chat_r = requests.post(
+            "http://127.0.0.1:1234/v1/chat/completions",
+            json={
+                "model": model_ids[0],
+                "messages": [{"role": "user", "content": "Say PONG"}],
+                "max_tokens": 10,
+            },
+            timeout=30,
+        )
+        elapsed = time.time() - t0
+        if chat_r.status_code == 200:
+            reply = chat_r.json()["choices"][0]["message"]["content"]
+            print(f"  {OK} Chat inference OK ({elapsed:.2f}s): {reply.strip()[:80]}")
+        else:
+            print(f"  {FAIL} Chat completion status {chat_r.status_code}: {chat_r.text[:200]}")
+except requests.exceptions.ConnectionError:
+    print(f"  {FAIL} Connection refused — LM Studio not running")
+except Exception as e:
+    print(f"  {FAIL} {e}")
+
+# =====================================================================
+# 5. OLLAMA INFERENCE CHECK
+# =====================================================================
+section("5. OLLAMA INFERENCE CHECK")
+
+try:
+    r = requests.get("http://127.0.0.1:11434/api/tags", timeout=5)
+    if r.status_code == 200:
+        models = [m.get("name") for m in r.json().get("models", [])]
+        print(f"  {OK} Ollama running — models: {models[:5]}")
+    else:
+        print(f"  {WARN} Ollama responded {r.status_code}")
+except requests.exceptions.ConnectionError:
+    print(f"  {FAIL} Ollama not running on :11434")
+except Exception as e:
+    print(f"  {FAIL} {e}")
+
+# =====================================================================
+# 6. RAY CLUSTER HEALTH
+# =====================================================================
+section("6. RAY CLUSTER HEALTH")
+
+try:
+    import ray
+    ray.init(address="auto", namespace="legion", ignore_reinit_error=True)
+    nodes = ray.nodes()
+    alive = [n for n in nodes if n.get("Alive")]
+    print(f"  {OK} Ray cluster connected — {len(alive)} alive node(s)")
+    for n in alive:
+        res = n.get("Resources", {})
+        print(f"      CPU: {res.get('CPU',0)}, GPU: {res.get('GPU',0)}, "
+              f"Memory: {res.get('memory',0)/1e9:.1f} GB, "
+              f"ObjStore: {res.get('object_store_memory',0)/1e9:.1f} GB")
+
+    # Check detached actors
+    for actor_name in ["SwarmKnowledgeRegistry", "CodeSwarmKnowledgeRegistry"]:
+        try:
+            a = ray.get_actor(actor_name, namespace="legion")
+            print(f"  {OK} Actor '{actor_name}' is ALIVE")
+        except ValueError:
+            print(f"  {WARN} Actor '{actor_name}' not found (not booted yet)")
+except Exception as e:
+    print(f"  {FAIL} Ray cluster: {e}")
+
+# =====================================================================
+# 7. API KEY VALIDATION — CLOUD ENDPOINTS
+# =====================================================================
+section("7. API KEY VALIDATION — CLOUD ENDPOINTS")
+
+# --- NVIDIA NIM ---
+nvidia_key = env.get("NVIDIA_API_KEY", "")
+if nvidia_key:
+    try:
+        r = requests.get(
+            "https://integrate.api.nvidia.com/v1/models",
+            headers={"Authorization": f"Bearer {nvidia_key}"},
+            timeout=10,
+        )
+        if r.status_code == 200:
+            print(f"  {OK} NVIDIA API Key valid (models endpoint 200)")
+        elif r.status_code == 401:
+            print(f"  {FAIL} NVIDIA API Key REJECTED (401 Unauthorized)")
+        else:
+            print(f"  {WARN} NVIDIA API returned {r.status_code}: {r.text[:120]}")
+    except Exception as e:
+        print(f"  {FAIL} NVIDIA API check failed: {e}")
+else:
+    print(f"  {WARN} NVIDIA_API_KEY not set in .env")
+
+# --- Google AI Studio / Gemini ---
+google_key = env.get("GOOGLE_API_KEY", "")
+if google_key:
+    try:
+        r = requests.get(
+            f"https://generativelanguage.googleapis.com/v1beta/models?key={google_key}",
+            timeout=10,
+        )
+        if r.status_code == 200:
+            print(f"  {OK} Google AI Studio API Key valid")
+        elif r.status_code == 400 or r.status_code == 403:
+            print(f"  {FAIL} Google API Key REJECTED ({r.status_code}): {r.text[:120]}")
+        else:
+            print(f"  {WARN} Google API returned {r.status_code}")
+    except Exception as e:
+        print(f"  {FAIL} Google API check failed: {e}")
+else:
+    print(f"  {WARN} GOOGLE_API_KEY not set")
+
+# --- OpenRouter ---
+openrouter_key = env.get("OPENROUTER_API_KEY", "")
+if openrouter_key:
+    try:
+        r = requests.get(
+            "https://openrouter.ai/api/v1/models",
+            headers={"Authorization": f"Bearer {openrouter_key}"},
+            timeout=10,
+        )
+        if r.status_code == 200:
+            print(f"  {OK} OpenRouter API Key valid")
+        else:
+            print(f"  {WARN} OpenRouter returned {r.status_code}")
+    except Exception as e:
+        print(f"  {FAIL} OpenRouter check failed: {e}")
+else:
+    print(f"  {WARN} OPENROUTER_API_KEY not set")
+
+# --- Groq ---
+groq_key = env.get("GROQ_API_KEY", "")
+if groq_key:
+    try:
+        r = requests.get(
+            "https://api.groq.com/openai/v1/models",
+            headers={"Authorization": f"Bearer {groq_key}"},
+            timeout=10,
+        )
+        if r.status_code == 200:
+            print(f"  {OK} Groq API Key valid")
+        elif r.status_code == 401:
+            print(f"  {FAIL} Groq API Key REJECTED (401)")
+        else:
+            print(f"  {WARN} Groq returned {r.status_code}")
+    except Exception as e:
+        print(f"  {FAIL} Groq check failed: {e}")
+else:
+    print(f"  {WARN} GROQ_API_KEY not set")
+
+# --- HuggingFace ---
+hf_token = env.get("HF_TOKEN", "")
+if hf_token:
+    try:
+        r = requests.get(
+            "https://huggingface.co/api/whoami-v2",
+            headers={"Authorization": f"Bearer {hf_token}"},
+            timeout=10,
+        )
+        if r.status_code == 200:
+            user = r.json().get("name", "?")
+            print(f"  {OK} HuggingFace token valid (user: {user})")
+        elif r.status_code == 401:
+            print(f"  {FAIL} HuggingFace token REJECTED (401)")
+        else:
+            print(f"  {WARN} HuggingFace returned {r.status_code}")
+    except Exception as e:
+        print(f"  {FAIL} HuggingFace check failed: {e}")
+else:
+    print(f"  {WARN} HF_TOKEN not set")
+
+# =====================================================================
+# 8. .env SANITY — COMMON MISCONFIGURATIONS
+# =====================================================================
+section("8. .ENV SANITY CHECKS")
+
+# Check OPENAI_API_KEY is set to "GEMINI_API_KEY" (literal string, not a real key)
+openai_val = env.get("OPENAI_API_KEY", "")
+if openai_val == "GEMINI_API_KEY":
+    print(f"  {WARN} OPENAI_API_KEY is set to the literal string 'GEMINI_API_KEY'")
+    print(f"       This is NOT a real API key — any OpenAI-compatible client using")
+    print(f"       this env var will fail auth against cloud endpoints.")
+    print(f"       If you only use local LM Studio, this is fine.")
+
+# Check for semicolon-delimited multi-keys
+multi_keys = env.get("OPENAI_API_KEYS", "")
+if ";" in multi_keys:
+    parts = multi_keys.split(";")
+    print(f"  {INFO} OPENAI_API_KEYS has {len(parts)} entries: {[p[:12]+'...' for p in parts]}")
+    for p in parts:
+        if p.strip() == "lm-studio":
+            print(f"       'lm-studio' = local placeholder (OK for LM Studio)")
+
+multi_urls = env.get("OPENAI_API_BASE_URLS", "")
+if ";" in multi_urls:
+    urls = multi_urls.split(";")
+    print(f"  {INFO} OPENAI_API_BASE_URLS routes to {len(urls)} backends:")
+    for u in urls:
+        print(f"       -> {u.strip()}")
+
+# =====================================================================
+# 9. LANCEDB LOCAL LAKEHOUSE
+# =====================================================================
+section("9. LANCEDB LOCAL LAKEHOUSE")
+
+lancedb_path = env.get("SESSION_INTEL_LANCEDB_URI", r"c:\WEB CASE STUDY\.vector_cache")
+lancedb_rag_path = r"C:\STUDIES_BACKUP\Legion-Jacked-Pipeline\ableton-session-intelligence\lancedb_web_intel_rag"
+
+for label, path in [("Vector Cache", lancedb_path), ("RAG Lakehouse", lancedb_rag_path)]:
+    if os.path.exists(path):
+        try:
+            import lancedb
+            db = lancedb.connect(path)
+            tables = db.table_names()
+            print(f"  {OK} {label}: {path}")
+            print(f"       Tables ({len(tables)}): {tables[:8]}")
+        except Exception as e:
+            print(f"  {WARN} {label} exists but can't open: {e}")
+    else:
+        print(f"  {FAIL} {label} path missing: {path}")
+
+# =====================================================================
+# SUMMARY
+# =====================================================================
+section("DIAGNOSTIC COMPLETE")
+print(f"  Timestamp: {time.strftime('%Y-%m-%dT%H:%M:%S')}")
+print(f"  Machine:   {socket.gethostname()}")
+print()

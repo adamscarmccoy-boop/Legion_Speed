@@ -1,0 +1,122 @@
+[
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\pytorch_model.bin",
+    "size": 8042351585,
+    "ext": ".bin",
+    "size_h": "8.04GB"
+  },
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\pytorch_model.bin",
+    "size": 8042351585,
+    "ext": ".bin",
+    "size_h": "8.04GB"
+  },
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\pytorch_model.bin",
+    "size": 8042351585,
+    "ext": ".bin",
+    "size_h": "8.04GB"
+  },
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\state_dict.bin",
+    "size": 3677668599,
+    "ext": ".bin",
+    "size_h": "3.68GB"
+  },
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\state_dict.bin",
+    "size": 3677668599,
+    "ext": ".bin",
+    "size_h": "3.68GB"
+  },
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\state_dict.bin",
+    "size": 3677668599,
+    "ext": ".bin",
+    "size_h": "3.68GB"
+  },
+  {
+    "path": "E:\\APP\\WEIGHTS\\musicgen_fine_tuned_v1.th",
+    "size": 876012565,
+    "ext": ".th",
+    "size_h": "0.88GB"
+  },
+  {
+    "path": "E:\\APP\\WEIGHTS\\musicgen_tech_house_v2.th",
+    "size": 876012565,
+    "ext": ".th",
+    "size_h": "0.88GB"
+  },
+  {
+    "path": "E:\\APP\\WEIGHTS\\musicgen_fine_tuned_v1.th",
+    "size": 876012565,
+    "ext": ".th",
+    "size_h": "0.88GB"
+  },
+  {
+    "path": "E:\\APP\\WEIGHTS\\musicgen_tech_house_v2.th",
+    "size": 876012565,
+    "ext": ".th",
+    "size_h": "0.88GB"
+  },
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\compression_state_dict.bin",
+    "size": 236001935,
+    "ext": ".bin",
+    "size_h": "0.24GB"
+  },
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\compression_state_dict.bin",
+    "size": 236001935,
+    "ext": ".bin",
+    "size_h": "0.24GB"
+  },
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\musicgen_medium\\compression_state_dict.bin",
+    "size": 236001935,
+    "ext": ".bin",
+    "size_h": "0.24GB"
+  },
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\universal_sentence_encoder.tflite",
+    "size": 6120274,
+    "ext": ".tflite",
+    "size_h": "0.01GB"
+  },
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\universal_sentence_encoder.tflite",
+    "size": 6120274,
+    "ext": ".tflite",
+    "size_h": "0.01GB"
+  },
+  {
+    "path": "E:\\APP\\SANDBOX\\workspace\\models\\universal_sentence_encoder.tflite",
+    "size": 6120274,
+    "ext": ".tflite",
+    "size_h": "0.01GB"
+  },
+  {
+    "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\resources\\support\\CEF\\v8_context_snapshot.bin",
+    "size": 164747,
+    "ext": ".bin",
+    "size_h": "0.00GB"
+  },
+  {
+    "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\resources\\support\\CEF\\snapshot_blob.bin",
+    "size": 49496,
+    "ext": ".bin",
+    "size_h": "0.00GB"
+  },
+  {
+    "path": "E:\\OLD ABLETON\\ABELTON-000\\PACKS\\User Library\\Resources\\Max\\resources\\help\\max\\filein_data.bin",
+    "size": 37,
+    "ext": ".bin",
+    "size_h": "0.00GB"
+  },
+  {
+    "path": "E:\\ableton-session-intelligence\\.venv_old\\Lib\\site-packages\\_virtualenv.pth",
+    "size": 18,
+    "ext": ".pth",
+    "size_h": "0.00GB"
+  }
+]

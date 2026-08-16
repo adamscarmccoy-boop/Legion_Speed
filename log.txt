@@ -1,0 +1,81 @@
+========================================================================
+        MCP RAG + MONTY 100-AST RETRIEVAL EVALUATION LOG
+========================================================================
+Timestamp: 2026-07-31 19:39:21
+Total Candidate AST Snippets Evaluated: 100
+Passed Cleanly (Pydantic -> Monty):    33
+Rejected / Failed Preflight:            67
+Total Benchmark Pipeline Duration:      2219.20 ms
+Average Latency Per AST Sandbox Run:   22.1920 ms
+========================================================================
+
+------------------------------------------------------------------------
+  🏆 TOP 5 BEST RESULTS (Passed Cleanly & Fastest Latency)
+------------------------------------------------------------------------
+Rank #1 | AST ID #9 [FunctionDef] - build_omni_vector
+  Source File: 22import os.py
+  Status:      ✅ PASSED
+  Latency:     10.1941 ms (10194.10 us)
+  Code Snippet: def build_omni_vector(row):     """Create omni vector from semantic and audio vectors with BPM"""     sem = np.array([fl...
+
+Rank #2 | AST ID #8 [FunctionDef] - safe_json
+  Source File: 11Untitled-2.py
+  Status:      ✅ PASSED
+  Latency:     10.3855 ms (10385.50 us)
+  Code Snippet: def safe_json(obj: Any) -> str:     try:         return json.dumps(obj, indent=2, default=str)     except Exception:    ...
+
+Rank #3 | AST ID #19 [FunctionDef] - get_process_memory_map
+  Source File: analyze_svchost.py
+  Status:      ✅ PASSED
+  Latency:     10.9265 ms (10926.50 us)
+  Code Snippet: def get_process_memory_map():     """Fetches Working Set memory for svchost PIDs using wmic."""     cmd = ["wmic", "proc...
+
+Rank #4 | AST ID #6 [FunctionDef] - train_router
+  Source File: # train_segment_profile_ray.py
+  Status:      ✅ PASSED
+  Latency:     11.1605 ms (11160.50 us)
+  Code Snippet: def train_router(features_scaled: np.ndarray, labels: np.ndarray, input_dim: int, n_clusters: int) -> Tuple[SegmentRoute...
+
+Rank #5 | AST ID #18 [FunctionDef] - get_active_service_hosts
+  Source File: analyze_svchost.py
+  Status:      ✅ PASSED
+  Latency:     12.4144 ms (12414.40 us)
+  Code Snippet: def get_active_service_hosts():     """Uses tasklist.exe to deterministically capture all svchost processes and hosted s...
+
+------------------------------------------------------------------------
+  ⚠️ TOP 5 WORST / REJECTED RESULTS (Failed Sandbox or Slowest)
+------------------------------------------------------------------------
+Rank #1 | AST ID #3 [FunctionDef] - extract_segment_features
+  Source File: # train_segment_profile_ray.py
+  Status:      ❌ REJECTED
+  Latency:     16.3467 ms (16346.70 us)
+  Reason:      MontySyntaxError: Expected `except` or `finally` after `try` block
+  Code Snippet: def extract_segment_features(y: np.ndarray, sr: int) -> np.ndarray:     """     Returns one feature vector for one audio...
+
+Rank #2 | AST ID #4 [FunctionDef] - process_audio_file
+  Source File: # train_segment_profile_ray.py
+  Status:      ❌ REJECTED
+  Latency:     11.8997 ms (11899.70 us)
+  Reason:      MontySyntaxError: unexpected EOF while parsing
+  Code Snippet: def process_audio_file(path: str) -> Dict:     """     Ray worker: loads one audio file, slices it into overlapping segm...
+
+Rank #3 | AST ID #5 [ClassDef] - SegmentRouter
+  Source File: # train_segment_profile_ray.py
+  Status:      ❌ REJECTED
+  Latency:     11.1093 ms (11109.30 us)
+  Reason:      MontyRuntimeError: NotImplementedError: The monty syntax parser does not yet support class inheritance and metaclasses
+  Code Snippet: class SegmentRouter(torch.nn.Module):     def __init__(self, input_dim: int, n_clusters: int):         super().__init__(...
+
+Rank #4 | AST ID #7 [FunctionDef] - derive_cluster_dsp_presets
+  Source File: # train_segment_profile_ray.py
+  Status:      ❌ REJECTED
+  Latency:     11.9779 ms (11977.90 us)
+  Reason:      MontySyntaxError: Expected `:`, found newline
+  Code Snippet: def derive_cluster_dsp_presets(raw_features: np.ndarray, labels: np.ndarray) -> List[Dict]:     """     Turns learned se...
+
+Rank #5 | AST ID #10 [FunctionDef] - register_swarm_knowledge_registry
+  Source File: 22import os.py
+  Status:      ❌ REJECTED
+  Latency:     11.6977 ms (11697.70 us)
+  Reason:      MontyRuntimeError: NotImplementedError: The monty syntax parser does not yet support class inheritance and metaclasses
+  Code Snippet: def register_swarm_knowledge_registry():     """Register SwarmKnowledgeRegistry actor at module startup"""     print("🚀 ...

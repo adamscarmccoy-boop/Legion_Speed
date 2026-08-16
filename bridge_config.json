@@ -1,0 +1,22 @@
+{
+  "input_dim": 41,
+  "output_dim": 12,
+  "semantic_anchors": {
+    "0":  ["Cybernetic",      ["neon", "chrome", "circuitry", "mechanical"]],
+    "1":  ["Organic",         ["fluid", "biological", "growth", "veins"]],
+    "2":  ["Brutalist",       ["concrete", "monolithic", "heavy", "industrial"]],
+    "3":  ["Ethereal",        ["mist", "glow", "translucent", "dreamlike"]],
+    "4":  ["Glitch",          ["digital noise", "pixelated", "fragmented", "stutter"]],
+    "5":  ["High-Energy",     ["explosive", "vibrant", "sharp", "kinetic"]],
+    "6":  ["Dark",            ["void", "shadow", "obsidian", "noir"]],
+    "7":  ["Retro-Futurism",  ["analog", "synthwave", "VHS", "warm"]],
+    "8":  ["Luxury",          ["gold", "silk", "polished", "refined"]],
+    "9":  ["Chaos",           ["turbulent", "abstract", "distorted", "unstable"]],
+    "10": ["Minimal",         ["clean", "geometric", "white-space", "stark"]],
+    "11": ["Surreal",         ["impossible", "melting", "gravity-defying", "strange"]]
+  },
+  "palette_map": {
+    "dark_palette": ["deep obsidian", "midnight blue"],
+    "light_palette": ["vibrant cyan", "electric violet"]
+  }
+}

@@ -1,0 +1,2 @@
+"actor_id","name","class_name","state","pid","namespace","category"
+"480691dffb955438e49d22d101000000","SovereignInferenceActor","SovereignInferenceActor","ALIVE",11160,"legion","Background AI Model (Legion)"

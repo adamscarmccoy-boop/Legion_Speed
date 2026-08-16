@@ -1,0 +1,38 @@
+﻿{
+    "status":  "OK",
+    "raw":  {
+                "id":  "chatcmpl-wpf2kr8w44bnb4z9owwrq",
+                "object":  "chat.completion",
+                "created":  1786906060,
+                "model":  "nvidia/nemotron-3-nano-4b",
+                "choices":  [
+                                {
+                                    "index":  0,
+                                    "message":  {
+                                                    "role":  "assistant",
+                                                    "content":  "I\u0027ll analyze your C++ snippet for 4GB VRAM safety and minimal allocations using the **GGUF Hardware Auditor** tool. Please provide the code you\u0027d like me to evaluate.\n\nOnce I have the code, I\u0027ll check:\n1. Memory allocation patterns (heap vs stack)\n2. Potential VRAM overflow risks\n3. Allocation minimization opportunities\n4. Safe memory usage practices\n\nThe auditor will flag any unsafe operations or inefficient allocations that could exceed your 4GB VRAM limit.",
+                                                    "reasoning_content":  "",
+                                                    "tool_calls":  [
+
+                                                                   ]
+                                                },
+                                    "logprobs":  null,
+                                    "finish_reason":  "stop"
+                                }
+                            ],
+                "usage":  {
+                              "prompt_tokens":  41,
+                              "completion_tokens":  102,
+                              "total_tokens":  143,
+                              "completion_tokens_details":  {
+                                                                "reasoning_tokens":  0
+                                                            }
+                          },
+                "stats":  {
+
+                          },
+                "system_fingerprint":  "nvidia/nemotron-3-nano-4b"
+            },
+    "content":  "I\u0027ll analyze your C++ snippet for 4GB VRAM safety and minimal allocations using the **GGUF Hardware Auditor** tool. Please provide the code you\u0027d like me to evaluate.\n\nOnce I have the code, I\u0027ll check:\n1. Memory allocation patterns (heap vs stack)\n2. Potential VRAM overflow risks\n3. Allocation minimization opportunities\n4. Safe memory usage practices\n\nThe auditor will flag any unsafe operations or inefficient allocations that could exceed your 4GB VRAM limit.",
+    "approx_tokens":  116
+}

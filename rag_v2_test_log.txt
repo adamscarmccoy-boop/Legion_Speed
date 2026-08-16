@@ -1,0 +1,7 @@
+Timestamp: 2026-07-31 19:47:29
+Query: ray router vector search
+Execution Duration: 61.88 ms
+
+--- RAG-V2 MONTY VERIFIED RESULTS FOR 'ray router vector search' ---
+SYSTEM: 0 ASTs verified clean (1 broken/unsafe ASTs discarded by Monty preflight).
+

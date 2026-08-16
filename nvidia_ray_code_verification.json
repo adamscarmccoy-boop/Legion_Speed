@@ -1,0 +1,1772 @@
+{
+  "timestamp": "2026-07-23 06:48:02",
+  "total_files_scanned": 4566,
+  "ui_files_count": 282,
+  "parquet_dataset": "C:\\WEB CASE STUDY\\code_ui_forest_audit.parquet",
+  "rf_accuracy": 0.9638690828561909,
+  "feature_importances": {
+    "size_kb": 0.194300335820472,
+    "num_lines": 0.17089660267851364,
+    "num_chars": 0.15926772827319816,
+    "num_words": 0.15702959499577177,
+    "num_comments": 0.06491862614111321,
+    "comment_ratio": 0.07083612578840338,
+    "functions_count": 0.06516836552599818,
+    "classes_count": 0.051691679280457425,
+    "imports_count": 0.06589094149607225
+  },
+  "verification_results": [
+    {
+      "file": "build_diffusion_dataset.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build_mined_code_vectors.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "chat_export.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "data_discovery_guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "data_discovery_guide_1.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "data_discovery_guide_2.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "data_discovery_guide_3.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Legion_Startup_Guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "nano_bridge.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "run_vector_rebuild.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "sovereign_vision_pipeline_guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "STARTUP_GUIDE.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "start_openwebui.bat",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "unified_forest.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "web_intel_pipeline - Copy.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "web_intel_pipeline-6-19.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "web_intel_pipeline-rays.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\cudaq-guide\\BENCHMARK.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\cudaq-guide\\skill-card.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\cudaq-guide\\SKILL.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\cudaq-guide\\evals\\EVAL.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\cudaq-guide\\evals\\evals.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\cuopt-developer\\references\\build_and_test.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\deepstream-generate-pipeline\\references\\requirement-extraction.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\deepstream-import-vision-model\\references\\engine-build.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\deepstream-import-vision-model\\references\\model-acquire.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\deepstream-import-vision-model\\scripts\\report\\report-style.css",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\deepstream-sop\\references\\skill_09_docker_build_deploy.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\deepstream-sop\\references\\skill_10_test_suite.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\digital-health-clinical-asr-build\\BENCHMARK.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\digital-health-clinical-asr-build\\skill-card.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\digital-health-clinical-asr-build\\SKILL.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\digital-health-clinical-asr-build\\evals\\evals.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\digital-health-clinical-asr-build\\references\\manifest-schema.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\digital-health-clinical-asr-build\\references\\pronunciation-pipeline.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\earth2studio-create-datasource\\references\\implementation-guide.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\earth2studio-create-datasource\\references\\testing-guide.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\earth2studio-create-datasource\\references\\validation-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\earth2studio-create-diagnostic\\references\\testing-guide.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\earth2studio-create-diagnostic\\references\\validation-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\earth2studio-create-prognostic\\references\\testing-guide.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\earth2studio-create-prognostic\\references\\validation-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-build-source\\BENCHMARK.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-build-source\\skill-card.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-build-source\\SKILL.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-build-source\\evals\\evals.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-build-source\\references\\build-modes.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-build-source\\references\\composite-registration.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-build-source\\references\\long-tail-gotchas.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-build-source\\references\\manifest-schema.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-build-source\\references\\upstream-recipe.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-init-target\\references\\ui-samples.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-promote-image\\references\\build-source-freshness-gate.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-quick-start\\BENCHMARK.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-quick-start\\skill-card.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-quick-start\\SKILL.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\jetson-quick-start\\evals\\evals.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\nemoclaw-user-guide\\BENCHMARK.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\nemoclaw-user-guide\\skill-card.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\nemoclaw-user-guide\\SKILL.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\nemoclaw-user-guide\\evals\\evals.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\nemotron-policy-generator\\assets\\nemotron_policy_generator.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\cpp-native-viewer\\project-build.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\dependencies\\quick-setup.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\ovui-library\\api-reference.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\ovui-library\\extending.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\ovui-library\\README.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\ovui-local-viewer-recipe\\interaction-features.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\ovui-local-viewer-recipe\\project-structure.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\ovui-local-viewer-recipe\\README.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\ovui-local-viewer-recipe\\setup-shell-renderer.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\ovui-local-viewer-recipe\\validation-build-order.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\streaming-server\\frame-loop-and-continuity.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-realtime-viewer\\references\\streaming-viewer-recipe\\validation-build-order.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\omniverse-usd-performance-tuning\\references\\usd-structure-assessment\\references\\instancing-readiness\\references\\instancing-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\physical-ai-video-data-augmentation\\assets\\cookbooks\\TUNING_GUIDE.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\skill-card-generator\\references\\style-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tao-finetune-cosmos-reason\\references\\detailed-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tao-port-huggingface-model\\references\\task-type-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tao-run-automl\\references\\detailed-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tao-run-automl-deft-pipeline\\references\\quick-start-example.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tao-run-deft-aoi\\references\\DEFT_Loop_Report.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tao-run-on-slurm\\references\\detailed-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tao-train-dino\\references\\detailed-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tilegym-cutile-python\\examples\\tilegym_and_examples_guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tilegym-cutile-python\\guidelines\\01_implementation_lessons.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tilegym-cutile-python\\guidelines\\02_code_generation_rules.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tilegym-cutile-python\\guidelines\\03_concepts.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\tilegym-improve-cutile-kernel-perf\\references\\ir-dump-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": ".agents\\skills\\vss-deploy-profile\\references\\prerequisites.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "antigravity_vscode_ext\\out\\common_types.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "antigravity_vscode_ext\\out\\extension.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "antigravity_vscode_ext\\src\\webview.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\query\\client-vscode\\query.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T01-28-13-0876.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T01-36-05-0901.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T01-36-32-0476.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T01-43-48-0292.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T01-44-54-0514.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-15-44-0316.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-18-14-0237.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-18-19-0062.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-20-07-0062.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-20-49-0352.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-22-42-0231.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-25-23-0013.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-30-53-0174.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-35-42-0491.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-37-58-0571.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-42-23-0369.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-44-13-0270.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-10T02-48-56-0354.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-11T08-59-50-0215.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-11T09-01-10-0565.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-11T09-02-12-0849.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-11T09-02-13-0305.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-11T14-23-39-0527.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-11T14-23-39-0732.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-11T14-24-47-0122.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-11T16-00-42-0464.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T04-17-06-0287.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T04-17-07-0224.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T06-26-16-0143.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T06-26-22-0167.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T06-27-06-0031.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T06-27-06-0903.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T06-27-25-0956.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T06-46-45-0492.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T07-20-50-0738.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T08-09-15-0773.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T08-09-15-0893.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T09-38-39-0520.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T09-53-17-0858.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T09-57-34-0926.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T10-11-48-0927.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T10-12-33-0419.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T10-54-26-0735.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T11-21-33-0298.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T11-21-33-0490.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T11-39-53-0139.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T11-39-55-0812.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T11-45-45-0501.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T14-34-21-0097.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T14-34-23-0701.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T21-06-26-0186.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T21-37-02-0320.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-12T21-39-45-0706.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-17T01-51-01-0941.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-17T01-53-33-0514.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T04-46-19-0237.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T04-47-15-0416.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T05-33-51-0018.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T05-40-05-0129.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T06-19-36-0978.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T06-20-59-0478.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T06-33-37-0617.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T10-49-29-0380.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T12-00-00-0101.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T12-00-41-0220.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T12-00-54-0582.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T12-31-19-0060.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T12-31-26-0336.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T12-31-33-0348.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T13-42-08-0843.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T13-46-52-0720.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T13-47-22-0029.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T13-47-50-0751.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T13-48-20-0284.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-18T13-51-35-0684.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-19T10-18-11-0420.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-19T10-56-38-0443.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-19T14-12-15-0035.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-20T00-09-26-0511.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-20T11-40-43-0172.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-20T14-57-03-0273.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-20T20-52-50-0168.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-20T20-55-18-0355.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-21T01-22-42-0192.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-21T07-32-39-0891.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-22T08-18-12-0055.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-22T23-05-35-0024.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-22T23-50-00-0541.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-22T23-52-58-0352.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-23T03-28-50-0744.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-23T08-05-04-0193.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-23T10-23-19-0027.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-23T10-24-21-0210.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-23T10-26-26-0344.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-23T10-28-30-0697.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "build\\.cmake\\api\\v1\\reply\\error-2026-07-23T10-44-52-0803.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-6WA5gd\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-AVhqKj\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-DTXnjW\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-EpS7LY\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-fhrRvq\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-fhrRvq\\strip-cf-connecting-ip-header.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-hvRyvM\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-KX8fXt\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-KX8fXt\\strip-cf-connecting-ip-header.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-M9dcTf\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-nVWW5a\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-o4sW9V\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-pM9P53\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-pM9P53\\strip-cf-connecting-ip-header.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-u2DFM9\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-WsD1eK\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-WsD1eK\\strip-cf-connecting-ip-header.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-XIHzYN\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-xulmyQ\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-ZEgKDD\\middleware-insertion-facade.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\bundle-ZEgKDD\\strip-cf-connecting-ip-header.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-6Lznqm\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-7ORTQJ\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-8rmDBd\\eb3a616dcf7c5bc31d5c352a0d16fa3a9c3d27f7-index.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-8rmDBd\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-9VqxYO\\eb3a616dcf7c5bc31d5c352a0d16fa3a9c3d27f7-index.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-9VqxYO\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-GaMv8V\\eb3a616dcf7c5bc31d5c352a0d16fa3a9c3d27f7-index.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-GaMv8V\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-gee14R\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-gIMnNn\\eb3a616dcf7c5bc31d5c352a0d16fa3a9c3d27f7-index.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-gIMnNn\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-h5oNK8\\eb3a616dcf7c5bc31d5c352a0d16fa3a9c3d27f7-index.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-h5oNK8\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-hAklFP\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-JRJ8cg\\eb3a616dcf7c5bc31d5c352a0d16fa3a9c3d27f7-index.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-JRJ8cg\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-krIv7z\\eb3a616dcf7c5bc31d5c352a0d16fa3a9c3d27f7-index.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-krIv7z\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-pGNpu4\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-uRZgea\\eb3a616dcf7c5bc31d5c352a0d16fa3a9c3d27f7-index.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-uRZgea\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-UtFzDX\\eb3a616dcf7c5bc31d5c352a0d16fa3a9c3d27f7-index.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-UtFzDX\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-vVCasx\\eb3a616dcf7c5bc31d5c352a0d16fa3a9c3d27f7-index.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-vVCasx\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\.wrangler\\tmp\\dev-Wp3udk\\index.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "cloudflare_mcp_server\\public\\index.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Cpp_Audio_Ingestion\\build.bat",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "docs\\rag-v1\\.lmstudio\\dev.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "jules notebook\\jules_repo\\.claude\\skills\\build\\SKILL.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "jules notebook\\jules_repo\\.claude\\skills\\skill-creator\\assets\\eval_review.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "jules notebook\\jules_repo\\.claude\\skills\\skill-creator\\eval-viewer\\viewer.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "jules notebook\\jules_repo\\.claude\\skills\\skill-creator\\scripts\\quick_validate.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "jules notebook\\jules_repo\\.claude\\skills\\write\\references\\platform-writing-guide.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "open-webui-data\\uploads\\b02a7ea0-f9d9-4e06-b202-cd5b9ccc8672_LEGION_MANIFEST.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "open-webui-data\\uploads\\cb1ff0fa-2cea-4dbf-b8b4-961fa5fbf294_mcp_rag_server.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "open-webui-data\\uploads\\e7b94cd6-df5c-41fe-8b4f-0b0153635801_ray_arrow_swarm.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "open-webui-data\\uploads\\ee6bb451-e732-49b2-917c-dd22835459d6_ray_arrow_swarm.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "outreach\\splice_com\\report.html",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "proxy-to-gemini\\docs\\quickstart.md",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "rag-v1\\.lmstudio\\dev.js",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\build_env.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\wheel_builder.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\operations\\build\\build_tracker.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata_editable.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata_legacy.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel_editable.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel_legacy.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\operations\\build\\__init__.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\requirements.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_internal\\utils\\setuptools_build.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "Scripts\\Lib\\site-packages\\pip\\_vendor\\packaging\\requirements.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "sovereign_onnx_masters\\ONNX_SOV_parking lot gang-it aint no picnic-build yummy.wav.dna.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "sovereign_onnx_masters\\ONNX_SOV_quit let the beat talk(synth response, rhythmic pluck) (Edit).wav.dna.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "sovereign_onnx_masters_v2\\ONNX2_SOV_parking lot gang-it aint no picnic-build yummy.wav.dna.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "sovereign_onnx_masters_v2\\ONNX2_SOV_quit let the beat talk(synth response, rhythmic pluck) (Edit).wav.dna.json",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\build_env.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\wheel_builder.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\build_tracker.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata_editable.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata_legacy.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel_editable.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel_legacy.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\operations\\build\\__init__.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\requirements.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_internal\\utils\\setuptools_build.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "venv\\Lib\\site-packages\\pip\\_vendor\\packaging\\requirements.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "# train_segment_profile_ray.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "acp_control_plane.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "ADAMSCARMCCOY_DISTRIBUTED_TRAIN.PY",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "ADAMSCARMCCOY_QUERY_RAG.PY",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "ADAMSCARMCCOY_SUBMIT_RAY_TASK.PY",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "add_prometheus.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "AISTUDIO_ASK_GEMMA.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "analyze_all_databases.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "analyze_overlap.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    },
+    {
+      "file": "append_cell.py",
+      "status": "VERIFIED_MCP_LOCAL",
+      "route": "mcp_fastapi",
+      "mcp_response": "{\"status\":\"error\",\"message\":\"OpenAI API error: Error code: 400 - {'error': {'message': 'meta/llama-3.1-70b-instruct is not a valid model ID', 'code': 400}, 'user_id': 'user_3DAw8py0oHLgLUzqeS0bOpSIqRW'}\"}"
+    }
+  ]
+}

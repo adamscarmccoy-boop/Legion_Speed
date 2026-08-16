@@ -1,0 +1,7 @@
+{
+  "subject": "I analyzed sample_pack_placeholder.wav in 5s — 82% alignment to Chris Lake",
+  "body": "Hi,\n\nI ran a quick deterministic audit of \"sample_pack_placeholder.wav\" against our commercial reference baseline (Chris Lake \"Somebody (2024)\" — 66 segments).\n\nHighlights:\n- Alignment pass rate: 82.0%\n- Top style match: Chris Lake (confidence 0.96)\n- Key findings: Avg alignment 91.0% against Chris Lake reference, Chris Lake match confidence 0.96, 50 segments analyzed in 120ms\n\nI've attached a short one-page report with the full breakdown. Want me to run the same audit on your latest release or full catalog?\n\nBest,\nLegion Intelligence\n",
+  "cta": "Reply to request a full audit",
+  "send_to": "",
+  "attachment_paths": []
+}

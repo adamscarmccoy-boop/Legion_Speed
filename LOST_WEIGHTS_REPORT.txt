@@ -1,0 +1,314 @@
+FOUND 104 WEIGHT FILES:
+============================================================
+[.BIN] 7669.78 MB
+Path: C:\STUDIES_BACKUP\Legion-Jacked-Pipeline\workspace\models\musicgen_medium\pytorch_model.bin
+------------------------------------------------------------
+[.BIN] 3507.30 MB
+Path: C:\STUDIES_BACKUP\Legion-Jacked-Pipeline\workspace\models\musicgen_medium\state_dict.bin
+------------------------------------------------------------
+[.BIN] 225.07 MB
+Path: C:\STUDIES_BACKUP\Legion-Jacked-Pipeline\workspace\models\musicgen_medium\compression_state_dict.bin
+------------------------------------------------------------
+[.ONNX] 214.06 MB
+Path: C:\WEB CASE STUDY\mastered_output\code_genome_brain.onnx
+------------------------------------------------------------
+[.BIN] 69.27 MB
+Path: E:\Program Files\Components\Cyberdrive.component\Contents\MacOS\Cyberdrive.bin
+------------------------------------------------------------
+[.BIN] 59.86 MB
+Path: E:\Program Files\Components\DJFX.component\Contents\MacOS\DJFX.bin
+------------------------------------------------------------
+[.BIN] 45.19 MB
+Path: E:\Program Files\Components\Verbum.component\Contents\MacOS\Verbum.bin
+------------------------------------------------------------
+[.BIN] 43.62 MB
+Path: E:\Program Files\Components\FireEQ.component\Contents\MacOS\FireEQ.bin
+------------------------------------------------------------
+[.BIN] 42.42 MB
+Path: E:\Program Files\Components\WideFire.component\Contents\MacOS\WideFire.bin
+------------------------------------------------------------
+[.BIN] 41.85 MB
+Path: E:\Program Files\Components\FireMaster.component\Contents\MacOS\FireMaster.bin
+------------------------------------------------------------
+[.BIN] 33.78 MB
+Path: E:\Program Files\VST\Verbum.vst\Contents\MacOS\Verbum.bin
+------------------------------------------------------------
+[.BIN] 32.21 MB
+Path: E:\Program Files\VST\FireEQ.vst\Contents\MacOS\FireEQ.bin
+------------------------------------------------------------
+[.BIN] 31.00 MB
+Path: E:\Program Files\VST\WideFire.vst\Contents\MacOS\WideFire.bin
+------------------------------------------------------------
+[.PT] 8.79 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\fretflow_omni_v3.pt
+------------------------------------------------------------
+[.PT] 8.79 MB
+Path: E:\OmniCond_Production_Backup\fretflow_omni_v3.pt
+------------------------------------------------------------
+[.PT] 8.79 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\fretflow_omni_v3.pt
+------------------------------------------------------------
+[.ONNX] 1.31 MB
+Path: C:\WEB CASE STUDY\gemma_onnx\model.onnx
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\sonic_dna_omni_v2_pro.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\sonic_dna_omni_v2_pro.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\sonic_dna_omni_v1.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\sonic_dna_omni_v2.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\sonic_dna_omni_v1.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\sonic_dna_omni_v2.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\fretflow_v1.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: E:\OmniCond_Production_Backup\fretflow_v1.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\fretflow_v1.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: C:\WEB CASE STUDY\Snoop_Stylizer_App\best_sonic_dna_pro.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: C:\STUDIES_BACKUP\Legion-Jacked-Pipeline\ableton-session-intelligence\best_sonic_dna_pro.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: E:\OmniCond_Production_Backup\best_sonic_dna_pro.pt
+------------------------------------------------------------
+[.PT] 1.16 MB
+Path: E:\Snoop_Stylizer_App\best_sonic_dna_pro.pt
+------------------------------------------------------------
+[.PT] 1.10 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\fretflow_proper_v2.pt
+------------------------------------------------------------
+[.PT] 1.10 MB
+Path: E:\OmniCond_Production_Backup\fretflow_proper_v2.pt
+------------------------------------------------------------
+[.PT] 1.10 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\fretflow_proper_v2.pt
+------------------------------------------------------------
+[.PT] 1.08 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\fretflow_v2.pt
+------------------------------------------------------------
+[.PT] 1.08 MB
+Path: E:\OmniCond_Production_Backup\fretflow_v2.pt
+------------------------------------------------------------
+[.PT] 1.08 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\fretflow_v2.pt
+------------------------------------------------------------
+[.PT] 0.49 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\sonic_dna_mini_v3.pt
+------------------------------------------------------------
+[.PT] 0.49 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\sonic_dna_mini_v3.pt
+------------------------------------------------------------
+[.ONNX] 0.17 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\fretflow_omni_v3.onnx
+------------------------------------------------------------
+[.ONNX] 0.17 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\fretflow_omni_v3.onnx
+------------------------------------------------------------
+[.BIN] 0.16 MB
+Path: E:\OLD ABLETON\ABELTON-000\PACKS\User Library\Resources\Max\resources\support\CEF\v8_context_snapshot.bin
+------------------------------------------------------------
+[.PT] 0.14 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\sonic_dna_mini_v1.pt
+------------------------------------------------------------
+[.PT] 0.14 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\sonic_dna_mini_v1.pt
+------------------------------------------------------------
+[.PT] 0.14 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\sonic_dna_mini_v2.pt
+------------------------------------------------------------
+[.PT] 0.14 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\sonic_dna_mini_v2.pt
+------------------------------------------------------------
+[.ONNX] 0.08 MB
+Path: C:\WEB CASE STUDY\mastered_output\mega_sovereign_brain.onnx
+------------------------------------------------------------
+[.PT] 0.07 MB
+Path: C:\WEB CASE STUDY\antigravity_vscode_ext\backend\sonic_dna_master_v5_final.pt
+------------------------------------------------------------
+[.PT] 0.07 MB
+Path: C:\WEB CASE STUDY\sonic_dna_engine\sonic_dna_master_v5_final.pt
+------------------------------------------------------------
+[.PT] 0.07 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\sonic_dna_master_v2.pt
+------------------------------------------------------------
+[.PT] 0.07 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\sonic_dna_master_v2.pt
+------------------------------------------------------------
+[.PT] 0.07 MB
+Path: C:\WEB CASE STUDY\antigravity_vscode_ext\backend\sonic_dna_master_v3.pt
+------------------------------------------------------------
+[.PT] 0.07 MB
+Path: C:\WEB CASE STUDY\sonic_dna_engine\sonic_dna_master_v3.pt
+------------------------------------------------------------
+[.PT] 0.07 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_engine\sonic_dna_master_v3.pt
+------------------------------------------------------------
+[.PT] 0.07 MB
+Path: C:\WEB CASE STUDY\Snoop_Stylizer_App\Snoop_segment_router.pt
+------------------------------------------------------------
+[.PTH] 0.06 MB
+Path: C:\WEB CASE STUDY\sovereign_vision_brain.pth
+------------------------------------------------------------
+[.BIN] 0.05 MB
+Path: E:\OLD ABLETON\ABELTON-000\PACKS\User Library\Resources\Max\resources\support\CEF\snapshot_blob.bin
+------------------------------------------------------------
+[.BIN] 0.03 MB
+Path: C:\.genkit\brain.bin
+------------------------------------------------------------
+[.BIN] 0.03 MB
+Path: C:\.genkit\bridge.bin
+------------------------------------------------------------
+[.ONNX] 0.03 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\sonic_dna_master_v2.onnx
+------------------------------------------------------------
+[.ONNX] 0.03 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_master_v2.onnx
+------------------------------------------------------------
+[.ONNX] 0.03 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\sonic_dna_master_v2.onnx
+------------------------------------------------------------
+[.PT] 0.03 MB
+Path: C:\WEB CASE STUDY\antigravity_vscode_ext\backend\audio_llm_v1.pt
+------------------------------------------------------------
+[.PT] 0.03 MB
+Path: C:\WEB CASE STUDY\sonic_dna_engine\audio_llm_v1.pt
+------------------------------------------------------------
+[.PT] 0.03 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_engine\audio_llm_v1.pt
+------------------------------------------------------------
+[.ONNX] 0.02 MB
+Path: C:\WEB CASE STUDY\sonic_dna_output\sonic_dna_mini_v1.onnx
+------------------------------------------------------------
+[.ONNX] 0.02 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_mini_v1.onnx
+------------------------------------------------------------
+[.ONNX] 0.02 MB
+Path: E:\OmniCond_Production_Backup\sonic_dna_output\sonic_dna_mini_v1.onnx
+------------------------------------------------------------
+[.ONNX] 0.02 MB
+Path: C:\WEB CASE STUDY\mastered_output\sovereign_master_clean.onnx
+------------------------------------------------------------
+[.ONNX] 0.02 MB
+Path: C:\WEB CASE STUDY\sovereign_big_brain_exhaustive.onnx
+------------------------------------------------------------
+[.ONNX] 0.01 MB
+Path: C:\WEB CASE STUDY\omni_master_brain_v1.onnx
+------------------------------------------------------------
+[.ONNX] 0.01 MB
+Path: C:\WEB CASE STUDY\sovereign_bridge_v1.onnx
+------------------------------------------------------------
+[.PT] 0.01 MB
+Path: C:\WEB CASE STUDY\Snoop_Stylizer_App\Snoop_segment_profile.pt
+------------------------------------------------------------
+[.ONNX] 0.01 MB
+Path: C:\WEB CASE STUDY\dna_brain.onnx
+------------------------------------------------------------
+[.ONNX] 0.00 MB
+Path: C:\WEB CASE STUDY\real_data_brain.onnx
+------------------------------------------------------------
+[.ONNX] 0.00 MB
+Path: C:\WEB CASE STUDY\sonic_dna_engine\audio_llm_v1.onnx
+------------------------------------------------------------
+[.ONNX] 0.00 MB
+Path: C:\WEB CASE STUDY\fretflow_omni_v4.onnx
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: C:\WEB CASE STUDY\Snoop_Stylizer_App\Michael_absolute_dna.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\Snoop_Stylizer_App\Michael_absolute_dna.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: C:\WEB CASE STUDY\Snoop_Stylizer_App\Michael_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\OMNI_GRAPH_WEB_AGENT\Medical_Voice_Stylizer\Michael_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\Snoop_Stylizer_App\Michael_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: C:\WEB CASE STUDY\Snoop_Stylizer_App\Dolly_absolute_dna.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: C:\WEB CASE STUDY\Snoop_Stylizer_App\Drake_absolute_dna.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: C:\WEB CASE STUDY\Snoop_Stylizer_App\Snoop_absolute_dna.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\Snoop_Stylizer_App\Dolly_absolute_dna.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\Snoop_Stylizer_App\Drake_absolute_dna.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\Snoop_Stylizer_App\Snoop_absolute_dna.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: C:\WEB CASE STUDY\Dolly_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: C:\WEB CASE STUDY\snoop_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: C:\WEB CASE STUDY\Snoop_Stylizer_App\Dolly_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: C:\WEB CASE STUDY\Snoop_Stylizer_App\Drake_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: C:\WEB CASE STUDY\Snoop_Stylizer_App\snoop_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\OMNI_GRAPH_WEB_AGENT\Medical_Voice_Stylizer\Dolly_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\OMNI_GRAPH_WEB_AGENT\Medical_Voice_Stylizer\Drake_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\OMNI_GRAPH_WEB_AGENT\Medical_Voice_Stylizer\snoop_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\Snoop_Stylizer_App\Dolly_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\Snoop_Stylizer_App\Drake_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: E:\Snoop_Stylizer_App\snoop_pitch_delta.pt
+------------------------------------------------------------
+[.PT] 0.00 MB
+Path: C:\WEB CASE STUDY\snoop_dna.pt
+------------------------------------------------------------
+[.ONNX] 0.00 MB
+Path: C:\WEB CASE STUDY\mastered_output\sovereign_master_v5.onnx
+------------------------------------------------------------
+[.PTH] 0.00 MB
+Path: C:\WEB CASE STUDY\.venv2\Lib\site-packages\distutils-precedence.pth
+------------------------------------------------------------
+[.BIN] 0.00 MB
+Path: E:\OLD ABLETON\ABELTON-000\PACKS\User Library\Resources\Max\resources\help\max\filein_data.bin
+------------------------------------------------------------
+[.PTH] 0.00 MB
+Path: C:\STUDIES_BACKUP\Legion-Jacked-Pipeline\ableton-session-intelligence\.venv_old\Lib\site-packages\_virtualenv.pth
+------------------------------------------------------------
+[.PTH] 0.00 MB
+Path: E:\ableton-session-intelligence\.venv_old\Lib\site-packages\_virtualenv.pth
+------------------------------------------------------------

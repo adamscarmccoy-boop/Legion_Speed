@@ -1,0 +1,8 @@
+{
+  "name": "Swarm Warden Hub",
+  "description": "A personal local workspace for orchestrating the Five Kings agents, featuring musical DNA analysis and DuckDB telemetry storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "lms-cognitive-pipeline-core",
+  "version": "1.0.0",
+  "description": "Isolated Cognitive Pipeline Core Engine for Windows Data-Loop",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "devDependencies": {
+    "@lmstudio/sdk": "^1.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

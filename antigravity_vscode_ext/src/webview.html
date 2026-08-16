@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Swarm</title>
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --panel-bg: rgba(31, 40, 51, 0.7);
+            --border-color: rgba(102, 252, 241, 0.3);
+            --accent-color: #66fcf1;
+            --accent-hover: #45a29e;
+            --text-color: #c5c6c7;
+            --user-msg: rgba(69, 162, 158, 0.4);
+            --ai-msg: rgba(31, 40, 51, 0.9);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            padding: 15px 25px;
+            background: linear-gradient(90deg, rgba(11,12,16,1) 0%, rgba(31,40,51,1) 100%);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        
+        header h2 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .status-dot {
+            height: 10px;
+            width: 10px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 10px var(--accent-color);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(102, 252, 241, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(102, 252, 241, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(102, 252, 241, 0); }
+        }
+
+        /* Chat Container */
+        #chat-container {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .message {
+            max-width: 85%;
+            padding: 12px 18px;
+            border-radius: 12px;
+            line-height: 1.5;
+            font-size: 0.95rem;
+            animation: fadeIn 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .user-message {
+            align-self: flex-end;
+            background-color: var(--user-msg);
+            border-bottom-right-radius: 2px;
+        }
+
+        .ai-message {
+            align-self: flex-start;
+            background-color: var(--ai-msg);
+            border-bottom-left-radius: 2px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .system-log {
+            align-self: flex-start;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #888;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 0.8rem;
+            padding: 6px 10px;
+            border-radius: 4px;
+            margin-top: -10px;
+            margin-bottom: -5px;
+            box-shadow: none;
+            border: 1px solid rgba(255,255,255,0.02);
+            max-width: 95%;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+
+        /* Input Area */
+        #input-container {
+            padding: 20px;
+            background: var(--panel-bg);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        input[type="text"] {
+            flex-grow: 1;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--border-color);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            box-shadow: 0 0 15px rgba(102, 252, 241, 0.3);
+            border-color: var(--accent-color);
+        }
+
+        button {
+            background: var(--accent-color);
+            color: #000;
+            border: none;
+            padding: 0 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            background: var(--accent-hover);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(102, 252, 241, 0.5);
+        }
+
+        #ray-start-btn {
+            padding: 6px 15px;
+            font-size: 0.8rem;
+            border-radius: 20px;
+        }
+
+        /* Audio Dock */
+        #audio-dock {
+            display: none;
+            padding: 15px 20px;
+            background: linear-gradient(180deg, rgba(31,40,51,0.9) 0%, rgba(11,12,16,1) 100%);
+            border-top: 1px solid var(--border-color);
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.5);
+        }
+        
+        #audio-dock.active {
+            display: flex;
+        }
+
+        #audio-label {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        audio {
+            flex-grow: 1;
+            height: 35px;
+            border-radius: 20px;
+            outline: none;
+        }
+        
+        /* Custom Audio Player Pseudo-classes for Webkit */
+        audio::-webkit-media-controls-panel {
+            background-color: var(--text-color);
+        }
+        audio::-webkit-media-controls-current-time-display,
+        audio::-webkit-media-controls-time-remaining-display {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Antigravity Swarm</h2>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <button id="ray-start-btn">Start Ray Cluster</button>
+            <div class="status-dot" title="Connected to Ray Cluster"></div>
+        </div>
+    </header>
+    
+    <div id="chat-container">
+        <div class="message ai-message">
+            Neural link established. Initiating startup sequence...
+        </div>
+    </div>
+    
+    <div id="input-container">
+        <input type="text" id="message-input" placeholder="Initiate swarm command..." autocomplete="off">
+        <button id="send-button">Send</button>
+    </div>
+
+    <div id="audio-dock">
+        <span id="audio-label">DSP Playback</span>
+        <audio id="audio-player" controls></audio>
+    </div>
+
+    <script>
+        const vscode = acquireVsCodeApi();
+        
+        const chatContainer = document.getElementById('chat-container');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+        const audioDock = document.getElementById('audio-dock');
+        const audioPlayer = document.getElementById('audio-player');
+        const rayStartBtn = document.getElementById('ray-start-btn');
+
+        function appendMessage(text, isUser) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'message ' + (isUser ? 'user-message' : 'ai-message');
+            // Basic markdown handling for code blocks and bold
+            let formattedText = text.replace(/```([\s\S]*?)```/g, '<pre style="background:rgba(0,0,0,0.4);padding:10px;border-radius:5px;overflow-x:auto;">$1</pre>');
+            formattedText = formattedText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            
+            msgDiv.innerHTML = formattedText;
+            chatContainer.appendChild(msgDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        function sendMessage() {
+            const text = messageInput.value.trim();
+            if (text) {
+                appendMessage(text, true);
+                vscode.postMessage({ command: 'sendMessage', text: text });
+                messageInput.value = '';
+                
+                // Add temporary typing indicator
+                const typingDiv = document.createElement('div');
+                typingDiv.id = 'typing-indicator';
+                typingDiv.className = 'message ai-message';
+                typingDiv.innerHTML = '<span style="color:var(--accent-color)">Processing trajectory...</span>';
+                chatContainer.appendChild(typingDiv);
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }
+        }
+
+        sendButton.addEventListener('click', sendMessage);
+        messageInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        rayStartBtn.addEventListener('click', () => {
+            appendMessage("Initializing Ray cluster background process...", true);
+            vscode.postMessage({ command: 'startRay' });
+            
+            const typingDiv = document.createElement('div');
+            typingDiv.id = 'typing-indicator';
+            typingDiv.className = 'message ai-message';
+            typingDiv.innerHTML = '<span style="color:var(--accent-color)">Booting Ray...</span>';
+            chatContainer.appendChild(typingDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        });
+
+        window.addEventListener('message', event => {
+            const message = event.data;
+            switch (message.command) {
+                case 'receiveMessage':
+                    const typingIndicator = document.getElementById('typing-indicator');
+                    if (typingIndicator) typingIndicator.remove();
+                    
+                    appendMessage(message.text, false);
+                    
+                    // Activate audio player if a file was returned
+                    if (message.audioUrl) {
+                        audioPlayer.src = message.audioUrl;
+                        audioDock.classList.add('active');
+                    }
+                    break;
+                case 'receiveLog':
+                    // Output raw terminal logs to the screen
+                    const logDiv = document.createElement('div');
+                    logDiv.className = 'message system-log';
+                    logDiv.textContent = message.text;
+                    chatContainer.appendChild(logDiv);
+                    chatContainer.scrollTop = chatContainer.scrollHeight;
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>

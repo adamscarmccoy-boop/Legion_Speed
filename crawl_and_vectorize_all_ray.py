@@ -1,0 +1,217 @@
+import urllib.request
+import urllib.parse
+import re
+import os
+import ssl
+import sys
+import lancedb
+import pandas as pd
+import json
+from bs4 import BeautifulSoup
+from concurrent.futures import ThreadPoolExecutor
+import ray
+
+# ==============================================================================
+# SOVEREIGN LIFE-CYCLE STABILIZER (AUTO-INJECTED)
+# Prevents dangling stdout/stdio pipes and GCS registry locks on Windows exit
+# ==============================================================================
+import atexit
+import signal
+
+def clean_exit_handler(*args, **kwargs):
+    import sys
+    sys.stderr.write("\n[LMS LIFECYCLE] Exit triggered. Flushing system streams...\n")
+    sys.stderr.flush()
+    try:
+        import ray
+        if ray.is_initialized():
+            sys.stderr.write("[LMS LIFECYCLE] Active Ray session detected. Disconnecting...\n")
+            ray.shutdown()
+    except Exception:
+        pass
+    sys.exit(0)
+
+atexit.register(clean_exit_handler)
+signal.signal(signal.SIGINT, clean_exit_handler)
+signal.signal(signal.SIGTERM, clean_exit_handler)
+# ==============================================================================
+
+
+# Initialize Ray and check registry
+try:
+    if not ray.is_initialized():
+        ray.init(address="auto", namespace="legion", ignore_reinit_error=True)
+    registry = ray.get_actor("SwarmKnowledgeRegistry", namespace="legion")
+except Exception as e:
+    print(f"Error connecting to Ray: {e}")
+    sys.exit(1)
+
+# Connect to LanceDB
+db_path = r"c:\STUDIES_BACKUP\Legion-Jacked-Pipeline\ableton-session-intelligence\lancedb_web_intel_rag"
+if not os.path.exists(db_path):
+    db_path = r"C:\WEB CASE STUDY\lancedb_web_intel_rag"
+
+try:
+    db = lancedb.connect(db_path)
+except Exception as e:
+    print(f"Error connecting to LanceDB: {e}")
+    sys.exit(1)
+
+def get_sitemap_urls():
+    """Download and filter sitemap to find the core guides, avoiding API docs."""
+    print("Fetching sitemap from docs.ray.io...")
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    try:
+        with urllib.request.urlopen('https://docs.ray.io/en/latest/sitemap.xml', context=ctx) as r:
+            xml = r.read().decode('utf-8')
+            all_urls = re.findall(r'<loc>(.*?)</loc>', xml)
+            
+            # Filter for core user guides and ignore raw class APIs
+            target_categories = ['/ray-core/', '/data/', '/serve/', '/train/', '/tune/', '/ray-overview/']
+            filtered = []
+            for url in all_urls:
+                if any(cat in url for cat in target_categories):
+                    if '/api/' not in url and '/doc/' not in url:
+                        filtered.append(url)
+            print(f"Found {len(all_urls)} total URLs. Filtered down to {len(filtered)} core guide pages.")
+            return filtered
+    except Exception as e:
+        print(f"Failed to fetch sitemap: {e}")
+        return []
+
+def download_and_clean(url):
+    """Download page and return cleaned text along with its category/source."""
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    try:
+        req = urllib.request.Request(
+            url, 
+            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+        )
+        with urllib.request.urlopen(req, timeout=10, context=ctx) as response:
+            html = response.read()
+            soup = BeautifulSoup(html, "html.parser")
+            for tag in soup(["script", "style", "nav", "footer", "header", "aside"]):
+                tag.decompose()
+            text = soup.get_text(separator="\n")
+            lines = (line.strip() for line in text.splitlines())
+            chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+            clean_text = "\n".join(chunk for chunk in chunks if chunk)
+            return {
+                "url": url,
+                "text": clean_text,
+                "category": url.split("en/latest/")[1].split("/")[0] if "en/latest/" in url else "general"
+            }
+    except Exception as e:
+        return None
+
+def chunk_text(text, chunk_size=1000, overlap=100):
+    results = []
+    start = 0
+    while start < len(text):
+        end = start + chunk_size
+        chunk = text[start:end].strip()
+        if chunk:
+            results.append(chunk)
+        start += chunk_size - overlap
+    return results
+
+def get_snowflake_embedding(text):
+    payload = {
+        "input": [text],
+        "model": "text-embedding-snowflake-arctic-embed-l-v2.0"
+    }
+    req = urllib.request.Request(
+        "http://localhost:1234/v1/embeddings",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json"}
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as response:
+            data = json.loads(response.read().decode("utf-8"))
+            return data["data"][0]["embedding"]
+    except Exception as e:
+        return None
+
+def main():
+    urls = get_sitemap_urls()
+    if not urls:
+        print("No URLs to process.")
+        return
+        
+    # Process top 120 key guides to stay within reasonable execution time and avoid LM Studio overload
+    target_urls = urls[:120]
+    print(f"Downloading first {len(target_urls)} core documentation pages...")
+    
+    downloaded_docs = []
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        results = executor.map(download_and_clean, target_urls)
+        for res in results:
+            if res:
+                downloaded_docs.append(res)
+                
+    print(f"Successfully downloaded {len(downloaded_docs)} pages.")
+    
+    # Split into chunks
+    all_chunks = []
+    for doc in downloaded_docs:
+        chunks = chunk_text(doc["text"])
+        for chunk in chunks:
+            all_chunks.append({
+                "text": chunk,
+                "source": doc["url"],
+                "category": doc["category"]
+            })
+            
+    print(f"Split documents into {len(all_chunks)} rich paragraph chunks.")
+    
+    # Push to Ray Memory Swarm
+    import pyarrow as pa
+    df_mem = pd.DataFrame(all_chunks)
+    tbl_mem = pa.Table.from_pandas(df_mem)
+    ray.get(registry.register_table.remote("ray_docs_master", tbl_mem))
+    print("Ingested full text chunks into Ray registry under table 'ray_docs_master'.")
+    
+    # Vectorize using LM Studio Snowflake model (Concurrently)
+    print("\nVectorizing chunks using LM Studio local Snowflake model...")
+    records = []
+    
+    # Process first 400 chunks for vector RAG searching to keep DB operations clean
+    vector_targets = all_chunks[:400]
+    
+    def embed_and_package(item_idx_tuple):
+        idx, item = item_idx_tuple
+        vector = get_snowflake_embedding(item["text"])
+        if vector:
+            return {
+                "id": str(idx),
+                "text": item["text"],
+                "vector": vector,
+                "source": item["source"],
+                "category": item["category"]
+            }
+        return None
+        
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        results = executor.map(embed_and_package, enumerate(vector_targets))
+        for r in results:
+            if r:
+                records.append(r)
+                
+    if not records:
+        print("Error: No documentation chunks were successfully vectorized.")
+        return
+        
+    # Save to LanceDB
+    table_name = "mined_documentation_vectors"
+    df_db = pd.DataFrame(records)
+    
+    # Append/Overwrite
+    tbl = db.create_table(table_name, data=df_db, mode="overwrite")
+    print(f"\nIngestion Complete! Vectorized and stored {len(df_db)} blocks in table '{table_name}'.")
+
+if __name__ == "__main__":
+    main()

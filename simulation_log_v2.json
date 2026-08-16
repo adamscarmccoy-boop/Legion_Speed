@@ -1,0 +1,19 @@
+{
+  "session_id": "session_1784375216",
+  "current_phase": "intro",
+  "current_city": "Charlotte",
+  "career_stats": {
+    "reputation": 50.0,
+    "fame": 10.0,
+    "craft": 20.0,
+    "energy": 100.0,
+    "integrity": 100.0,
+    "money": 500.0
+  },
+  "active_events": [],
+  "marketing_assets": [],
+  "intelligence_gap": "Sub-bass energy is significantly below market baseline (12.00 vs 34.66).",
+  "decision_log": [
+    "Alignment 1.00 is acceptable."
+  ]
+}

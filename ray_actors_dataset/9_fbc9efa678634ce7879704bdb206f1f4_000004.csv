@@ -1,0 +1,2 @@
+"actor_id","name","class_name","state","pid","namespace","category"
+"271333b6aca1ae3215a83a830a000000","AutoscalingCoordinator","_AutoscalingCoordinatorActor","ALIVE",15232,"AutoscalingCoordinator","Background AI Model (Legion)"

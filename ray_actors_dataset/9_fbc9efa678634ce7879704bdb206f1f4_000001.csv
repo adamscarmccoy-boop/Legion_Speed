@@ -1,0 +1,2 @@
+"actor_id","name","class_name","state","pid","namespace","category"
+"1ccd6dba129fc8bc0792530201000000","OllamaEmbeddingWorker","OllamaEmbeddingWorker","ALIVE",22724,"legion","Background AI Model (Legion)"

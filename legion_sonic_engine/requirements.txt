@@ -1,0 +1,14 @@
+ray[default]
+pydantic==2.*
+torch
+torchaudio
+librosa
+numpy
+scipy
+pyloudnorm
+pedalboard
+lancedb
+soundfile
+scikit-learn
+argparse
+tqdm # for batch_master progress

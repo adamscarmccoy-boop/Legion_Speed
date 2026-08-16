@@ -1,0 +1,19 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "--- RAG-V2 MONTY VERIFIED RESULTS FOR 'ray router vector search' (Limit: 20) ---\nSYSTEM: 0 ASTs verified clean (0 broken/unsafe ASTs discarded by Monty preflight).\nDATA ENGINES ACTIVE: LanceDB (Rust), DuckDB (C++), Ray CodeSwarm.\n\n"
+      }
+    ],
+    "execution_time_ms": 17002.32,
+    "data_engines": [
+      "LanceDB (Rust)",
+      "DuckDB (C++)",
+      "Ray CodeSwarm",
+      "Pydantic Monty (Rust Sandbox)"
+    ]
+  }
+}

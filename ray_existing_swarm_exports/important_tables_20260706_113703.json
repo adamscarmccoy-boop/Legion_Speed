@@ -1,0 +1,449 @@
+{
+  "created_at": "2026-07-06T11:37:03.260178",
+  "connection": {
+    "ray_address": "auto",
+    "namespace_requested": "legion",
+    "runtime_namespace": "legion"
+  },
+  "ranked_tables": [
+    {
+      "name": "chris_lake_omni_baseline",
+      "score": 206,
+      "rows": 22,
+      "columns": [
+        "crest_factor",
+        "rms",
+        "segment_name",
+        "spectral_bandwidth",
+        "spectral_centroid",
+        "spectral_flatness",
+        "spectral_rolloff",
+        "zero_crossing_rate"
+      ],
+      "dsp_hits": [
+        "crest_factor",
+        "rms",
+        "spectral_bandwidth",
+        "spectral_centroid",
+        "spectral_flatness",
+        "spectral_rolloff",
+        "zero_crossing_rate"
+      ],
+      "vector_hits": []
+    },
+    {
+      "name": "duckdb_audio_features",
+      "score": 161,
+      "rows": 1084,
+      "columns": [
+        "asset_type",
+        "crest_factor",
+        "drum_type",
+        "filename",
+        "filepath",
+        "key",
+        "rms_db",
+        "tempo"
+      ],
+      "dsp_hits": [
+        "crest_factor",
+        "rms_db"
+      ],
+      "vector_hits": []
+    },
+    {
+      "name": "chris_lake_raw_features",
+      "score": 146,
+      "rows": 9,
+      "columns": [
+        "asset_type",
+        "crest_factor",
+        "drum_type",
+        "filename",
+        "filepath",
+        "key",
+        "rms_db",
+        "tempo"
+      ],
+      "dsp_hits": [
+        "crest_factor",
+        "rms_db"
+      ],
+      "vector_hits": []
+    },
+    {
+      "name": "lancedb_audio_vibe_gpu",
+      "score": 127,
+      "rows": 2010,
+      "columns": [
+        "drum_type",
+        "filename",
+        "filepath",
+        "folder",
+        "source_type",
+        "vector"
+      ],
+      "dsp_hits": [],
+      "vector_hits": [
+        "vector"
+      ]
+    },
+    {
+      "name": "audio_manifest_vectors",
+      "score": 125,
+      "rows": 500,
+      "columns": [
+        "metadata",
+        "text",
+        "type",
+        "vector"
+      ],
+      "dsp_hits": [],
+      "vector_hits": [
+        "metadata",
+        "text",
+        "vector"
+      ]
+    },
+    {
+      "name": "audio_vibe_gpu",
+      "score": 119,
+      "rows": 1013,
+      "columns": [
+        "filename",
+        "id",
+        "vector"
+      ],
+      "dsp_hits": [],
+      "vector_hits": [
+        "vector"
+      ]
+    },
+    {
+      "name": "duckdb_metadata_vectors",
+      "score": 114,
+      "rows": 200,
+      "columns": [
+        "table",
+        "text",
+        "type",
+        "vector"
+      ],
+      "dsp_hits": [],
+      "vector_hits": [
+        "text",
+        "vector"
+      ]
+    },
+    {
+      "name": "chris_lake_fused_raw",
+      "score": 104,
+      "rows": 65,
+      "columns": [
+        "apple_artist",
+        "apple_genre",
+        "apple_release_date",
+        "audio_filepath",
+        "audio_key",
+        "audio_tempo",
+        "dsp_rms",
+        "track_name"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "duckdb_t_core_memory",
+      "score": 94,
+      "rows": 7618,
+      "columns": [
+        "bpm",
+        "filename",
+        "filepath",
+        "genre_class",
+        "id",
+        "ingested_at",
+        "key_signature",
+        "vibe_tags"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "enriched_audio_dataset",
+      "score": 93,
+      "rows": 4570,
+      "columns": [
+        "bpm_enriched",
+        "filename",
+        "genre_class",
+        "ingested_at",
+        "key_enriched",
+        "tempo",
+        "vibe_id",
+        "vibe_tags"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "duckdb_tool_index",
+      "score": 87,
+      "rows": 3113,
+      "columns": [
+        "docstring",
+        "filename",
+        "id",
+        "ingested_at",
+        "path"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "system_data_audit_report",
+      "score": 85,
+      "rows": 5,
+      "columns": [
+        "key",
+        "value"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "enriched_samples_only",
+      "score": 83,
+      "rows": 3983,
+      "columns": [
+        "bpm_enriched",
+        "filename",
+        "genre_class",
+        "ingested_at",
+        "key_enriched",
+        "tempo",
+        "vibe_id",
+        "vibe_tags"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "legion_memory",
+      "score": 82,
+      "rows": 2,
+      "columns": [
+        "id",
+        "role",
+        "text",
+        "timestamp",
+        "vector"
+      ],
+      "dsp_hits": [],
+      "vector_hits": [
+        "text",
+        "vector"
+      ]
+    },
+    {
+      "name": "chrislake_stems_duckdb",
+      "score": 45,
+      "rows": 4,
+      "columns": [
+        "asset_type",
+        "crest_factor",
+        "drum_type",
+        "filename",
+        "filepath",
+        "key",
+        "rms_db",
+        "tempo"
+      ],
+      "dsp_hits": [
+        "crest_factor",
+        "rms_db"
+      ],
+      "vector_hits": []
+    },
+    {
+      "name": "chris_lake_somebody_baseline",
+      "score": 31,
+      "rows": 22,
+      "columns": [
+        "key",
+        "value"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "djsusan_stems_duckdb",
+      "score": 29,
+      "rows": 6,
+      "columns": [
+        "asset_type",
+        "crest_factor",
+        "drum_type",
+        "filename",
+        "filepath",
+        "key",
+        "rms_db",
+        "tempo"
+      ],
+      "dsp_hits": [
+        "crest_factor",
+        "rms_db"
+      ],
+      "vector_hits": []
+    },
+    {
+      "name": "t_core_memory",
+      "score": 23,
+      "rows": 3560,
+      "columns": [
+        "bpm",
+        "filename",
+        "genre_class",
+        "ingested_at",
+        "key_signature",
+        "vibe_tags"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "lancedb_legion_memory",
+      "score": 14,
+      "rows": 0,
+      "columns": [],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "rchgen_metadata_fused",
+      "score": 11,
+      "rows": 60,
+      "columns": [
+        "classes",
+        "code_content",
+        "docstring",
+        "file_name",
+        "file_path",
+        "functions",
+        "vector"
+      ],
+      "dsp_hits": [],
+      "vector_hits": [
+        "vector"
+      ]
+    },
+    {
+      "name": "skill_brain",
+      "score": 11,
+      "rows": 20,
+      "columns": [
+        "essence",
+        "path",
+        "skill_name",
+        "type",
+        "vector"
+      ],
+      "dsp_hits": [],
+      "vector_hits": [
+        "vector"
+      ]
+    },
+    {
+      "name": "duckdb_agent_analysis_logs",
+      "score": 9,
+      "rows": 4,
+      "columns": [
+        "analyzed_at",
+        "metrics_analyzed",
+        "recommended_actions",
+        "score",
+        "status",
+        "summary"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "enriched_tracks_only",
+      "score": 8,
+      "rows": 587,
+      "columns": [
+        "bpm_enriched",
+        "filename",
+        "genre_class",
+        "ingested_at",
+        "key_enriched",
+        "tempo",
+        "vibe_id",
+        "vibe_tags"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "verified_library_analysis",
+      "score": 8,
+      "rows": 431,
+      "columns": [
+        "db_bpm",
+        "dsp_tempo",
+        "filename",
+        "genre_class",
+        "has_dsp_features",
+        "key_signature",
+        "resolved_path",
+        "vibe_tags"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "collision_results_final",
+      "score": 3,
+      "rows": 51,
+      "columns": [
+        "collision_score",
+        "drum_type",
+        "filename",
+        "filepath",
+        "id",
+        "key",
+        "tempo"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "fx_sweep_test",
+      "score": 3,
+      "rows": 10,
+      "columns": [
+        "asset_type",
+        "drum_type",
+        "energy_curve",
+        "filename",
+        "filepath"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    },
+    {
+      "name": "interaction_logs",
+      "score": 3,
+      "rows": 35,
+      "columns": [
+        "action",
+        "ai_response",
+        "timestamp",
+        "user_input"
+      ],
+      "dsp_hits": [],
+      "vector_hits": []
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "generation_date": "2026-06-22 01:14:09",
+  "total_playbooks_generated": 10,
+  "source_file": "C:\\WEB CASE STUDY\\mastering_swarm_summary.json",
+  "playbooks": [
+    {
+      "name": "ray_py_analyzer.py",
+      "filepath": "c:\\WEB CASE STUDY\\ray_py_analyzer.py",
+      "description": "DSP script: ray_py_analyzer.py",
+      "relevance_score": 4,
+      "mastering_goal": "Dynamic audio processing",
+      "line_count": 137,
+      "dsp_keywords_found": [
+        "pedalboard",
+        "librosa",
+        "ray",
+        "mastering"
+      ],
+      "imports": [
+        "ast",
+        "json",
+        "os",
+        "ray",
+        "re",
+        "sys",
+        "time"
+      ],
+      "target_audio_features": [
+        "rms_db",
+        "crest_factor",
+        "dynamic_range"
+      ],
+      "pedalboard_effects_chain": []
+    },
+    {
+      "name": "deterministic_omni_pipeline.py",
+      "filepath": "c:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\deterministic_omni_pipeline.py",
+      "description": "DSP script: deterministic_omni_pipeline.py",
+      "relevance_score": 3,
+      "mastering_goal": "Dynamic audio processing",
+      "line_count": 310,
+      "dsp_keywords_found": [
+        "pedalboard",
+        "librosa",
+        "mastering"
+      ],
+      "imports": [
+        "json",
+        "librosa",
+        "numpy",
+        "os",
+        "pedalboard",
+        "pydantic",
+        "soundfile",
+        "time",
+        "typing",
+        "warnings"
+      ],
+      "target_audio_features": [
+        "rms_db",
+        "crest_factor",
+        "dynamic_range"
+      ],
+      "pedalboard_effects_chain": []
+    },
+    {
+      "name": "fire_test.py",
+      "filepath": "c:\\WEB CASE STUDY\\fire_test.py",
+      "description": "DSP script: fire_test.py",
+      "relevance_score": 3,
+      "mastering_goal": "Dynamic audio processing",
+      "line_count": 283,
+      "dsp_keywords_found": [
+        "pedalboard",
+        "ray",
+        "mastering"
+      ],
+      "imports": [
+        "dsp_alignment_actor",
+        "lancedb",
+        "legion_schema",
+        "numpy",
+        "os",
+        "pandas",
+        "pedalboard.io",
+        "pyarrow",
+        "ray",
+        "sklearn.preprocessing"
+      ],
+      "target_audio_features": [
+        "rms_db",
+        "crest_factor",
+        "dynamic_range"
+      ],
+      "pedalboard_effects_chain": []
+    },
+    {
+      "name": "fire_test_visual.py",
+      "filepath": "c:\\WEB CASE STUDY\\fire_test_visual.py",
+      "description": "DSP script: fire_test_visual.py",
+      "relevance_score": 3,
+      "mastering_goal": "Dynamic audio processing",
+      "line_count": 260,
+      "dsp_keywords_found": [
+        "pedalboard",
+        "ray",
+        "mastering"
+      ],
+      "imports": [
+        "dsp_alignment_actor",
+        "lancedb",
+        "legion_schema",
+        "matplotlib",
+        "matplotlib.colors",
+        "matplotlib.pyplot",
+        "numpy",
+        "os",
+        "pedalboard.io",
+        "pyarrow"
+      ],
+      "target_audio_features": [
+        "rms_db",
+        "crest_factor",
+        "dynamic_range"
+      ],
+      "pedalboard_effects_chain": []
+    },
+    {
+      "name": "master_batch.py",
+      "filepath": "c:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\master_batch.py",
+      "description": "DSP script: master_batch.py",
+      "relevance_score": 3,
+      "mastering_goal": "Dynamic audio processing",
+      "line_count": 203,
+      "dsp_keywords_found": [
+        "pedalboard",
+        "librosa",
+        "mastering"
+      ],
+      "imports": [
+        "json",
+        "librosa",
+        "numpy",
+        "ollama",
+        "os",
+        "pedalboard",
+        "pedalboard.io",
+        "scipy.signal",
+        "soundfile",
+        "sys"
+      ],
+      "target_audio_features": [
+        "rms_db",
+        "crest_factor",
+        "dynamic_range"
+      ],
+      "pedalboard_effects_chain": []
+    },
+    {
+      "name": "split_and_master_pipeline.py",
+      "filepath": "c:\\WEB CASE STUDY\\split_and_master_pipeline.py",
+      "description": "DSP script: split_and_master_pipeline.py",
+      "relevance_score": 3,
+      "mastering_goal": "Dynamic audio processing",
+      "line_count": 197,
+      "dsp_keywords_found": [
+        "librosa",
+        "ray",
+        "mastering"
+      ],
+      "imports": [
+        "json",
+        "librosa",
+        "numpy",
+        "os",
+        "ray",
+        "subprocess",
+        "time"
+      ],
+      "target_audio_features": [
+        "rms_db",
+        "crest_factor",
+        "dynamic_range"
+      ],
+      "pedalboard_effects_chain": []
+    },
+    {
+      "name": "apply_mastering_fx.py",
+      "filepath": "c:\\WEB CASE STUDY\\apply_mastering_fx.py",
+      "description": "DSP script: apply_mastering_fx.py",
+      "relevance_score": 3,
+      "mastering_goal": "Dynamic audio processing",
+      "line_count": 106,
+      "dsp_keywords_found": [
+        "pedalboard",
+        "librosa",
+        "mastering"
+      ],
+      "imports": [
+        "json",
+        "librosa",
+        "numpy",
+        "os",
+        "pedalboard",
+        "pedalboard.io",
+        "soundfile"
+      ],
+      "target_audio_features": [
+        "rms_db",
+        "crest_factor",
+        "dynamic_range"
+      ],
+      "pedalboard_effects_chain": []
+    },
+    {
+      "name": "test_dj_susan_drums.py",
+      "filepath": "c:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\sandbox\\test_dj_susan_drums.py",
+      "description": "DSP script: test_dj_susan_drums.py",
+      "relevance_score": 3,
+      "mastering_goal": "Dynamic audio processing",
+      "line_count": 83,
+      "dsp_keywords_found": [
+        "pedalboard",
+        "librosa",
+        "mastering"
+      ],
+      "imports": [
+        "json",
+        "librosa",
+        "numpy",
+        "pydantic"
+      ],
+      "target_audio_features": [
+        "rms_db",
+        "crest_factor",
+        "dynamic_range"
+      ],
+      "pedalboard_effects_chain": []
+    },
+    {
+      "name": "mcp_api_server.py",
+      "filepath": "c:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\mcp_api_server.py",
+      "description": "DSP script: mcp_api_server.py",
+      "relevance_score": 2,
+      "mastering_goal": "Dynamic audio processing",
+      "line_count": 1341,
+      "dsp_keywords_found": [
+        "librosa",
+        "mastering"
+      ],
+      "imports": [
+        "asyncio",
+        "concurrent.futures",
+        "contextlib",
+        "datetime",
+        "dotenv",
+        "duckdb",
+        "fastapi",
+        "fastapi.middleware.cors",
+        "fastapi.responses",
+        "fastapi.staticfiles"
+      ],
+      "target_audio_features": [
+        "rms_db",
+        "crest_factor",
+        "dynamic_range"
+      ],
+      "pedalboard_effects_chain": []
+    },
+    {
+      "name": "mcp_server.py",
+      "filepath": "c:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\mcp_server.py",
+      "description": "DSP script: mcp_server.py",
+      "relevance_score": 2,
+      "mastering_goal": "Dynamic audio processing",
+      "line_count": 707,
+      "dsp_keywords_found": [
+        "librosa",
+        "mastering"
+      ],
+      "imports": [
+        "asyncio",
+        "duckdb",
+        "execution_worker",
+        "gc",
+        "json",
+        "lancedb",
+        "librosa",
+        "llama_cpp",
+        "mcp.server.fastmcp",
+        "memory_worker"
+      ],
+      "target_audio_features": [
+        "rms_db",
+        "crest_factor",
+        "dynamic_range"
+      ],
+      "pedalboard_effects_chain": []
+    }
+  ]
+}

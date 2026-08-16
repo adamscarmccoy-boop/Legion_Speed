@@ -1,0 +1,1202 @@
+[
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:KILLA | bpm:128 | key_signature:F#m | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:08:57.206604 | id:185626866 | filepath:C:\\Users\\adams\\MusicSandbox\\Categorized_Audio\\KILLA.mp3 | duration:146",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:WATCH ME | bpm:128 | key_signature:Am | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:08:57.206664 | id:135341325 | filepath:C:\\Users\\adams\\MusicSandbox\\Categorized_Audio\\WATCH ME.mp3 | duration:286",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Bad Bad Bad Behaviors | bpm:128 | key_signature:D | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:08:57.206534 | id:218305965 | filepath:C:\\Users\\adams\\MusicSandbox\\Categorized_Audio\\Bad Bad Bad Behaviors.mp3 | duration:318",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Iko Iko (Berjee Edit) | bpm:126 | key_signature:Em | vibe_tags: | genre_class:House | ingested_at:2026-05-03 18:11:06.712875 | id:68106915 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\2026\\Iko Iko (Berjee Edit).mp3 | duration:245",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:MAMI [BURMAN BOYS REMIX] | bpm:128 | key_signature:Bbm | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:06.782920 | id:126157031 | filepath:D:\\MUSIC\\MUSIZ-DJ SCAR\\undefinedRelated tracks Tommy Genesis - A Woman Is A God (Dexter Remix)\\MAMI [BURMAN BOYS REMIX].mp3 | duration:227",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Unshaken (Erik Chico Edit) | bpm:128 | key_signature:Dm | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.022270 | id:19432695 | filepath:D:\\MUSIC\\Unshaken (Erik Chico Edit).mp3 | duration:305",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:rSUN x NXSTY - Back Around | bpm:120 | key_signature:Ebm | vibe_tags: | genre_class:House | ingested_at:2026-05-03 18:11:07.194851 | id:56971681 | filepath:D:\\MUSIC\\rSUN x NXSTY - Back Around.mp3 | duration:186",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Cloonee- To The Beat (SPACEWALK Edition) | bpm:126 | key_signature:Dbm | vibe_tags: | genre_class:House | ingested_at:2026-05-03 18:11:07.195089 | id:245911335 | filepath:D:\\MUSIC\\Cloonee- To The Beat (SPACEWALK Edition).mp3 | duration:207",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Fantom Freq & Hotfire - Hype1 (feat. Dread MC) (Original Mix) | bpm:130 | key_signature:Dm | vibe_tags: | genre_class:House | ingested_at:2026-05-03 18:11:07.195145 | id:108833017 | filepath:D:\\MUSIC\\Fantom Freq & Hotfire - Hype1 (feat. Dread MC) (Original Mix).mp3 | duration:197",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:John Summit, Hayla & Eliminate - Shiver (Netgate Edit) | bpm:126 | key_signature:Fm | vibe_tags: | genre_class:Dance & EDM | ingested_at:2026-05-03 18:11:07.195178 | id:108178565 | filepath:D:\\MUSIC\\John Summit Hayla & Eliminate - Shiver (Netgate Edit).mp3 | duration:197",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:HOUSE T Money Is OUT-master | bpm:128 | key_signature:F# | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.195506 | id:46443704 | filepath:D:\\MUSIC\\HOUSE T Money Is OUT-master.mp3 | duration:198",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Soul II Soul - Back to life (Gino Zucotti Edit) *FREE DOWNLOAD* | bpm:128 | key_signature:Dm | vibe_tags: | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.195935 | id:23552889 | filepath:D:\\MUSIC\\Soul II Soul - Back to life (Gino Zucotti Edit) FREE DOWNLOAD.mp3 | duration:690",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Drake - Way 2 Sexy - Ryan Arnold Remix | bpm:126 | key_signature:Em | vibe_tags: | genre_class:House | ingested_at:2026-05-03 18:11:07.196145 | id:198531504 | filepath:D:\\MUSIC\\Drake - Way 2 Sexy - Ryan Arnold Remix.mp3 | duration:245",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:yoppas | bpm:128 | key_signature:Em | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.197043 | id:237776667 | filepath:D:\\MUSIC\\yoppas.mp3 | duration:240",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:AUSTERIA & ZINGARA - WWYB3 ft. Miracle | bpm:126 | key_signature:G | vibe_tags: | genre_class:Electronic | ingested_at:2026-05-03 18:11:07.197196 | id:228275328 | filepath:D:\\MUSIC\\AUSTERIA & ZINGARA - WWYB3 ft. Miracle.mp3 | duration:207",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Deeper Purpose - Safari VIP (Club) | bpm:127 | key_signature:Em | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.197257 | id:204790835 | filepath:D:\\MUSIC\\Deeper Purpose - Safari VIP (Club).mp3 | duration:378",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Sad But True (Live - July 4 2014 - Basel Switzerland) | bpm:93 | key_signature:Dm | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.197700 | id:62310789 | filepath:D:\\MUSIC\\Sad But True (Live - July 4 2014 - Basel Switzerland).mp3 | duration:319",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Sad But True (Live - September 14 2015 - Quebec City Canada) | bpm:91 | key_signature:Dm | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.197803 | id:258646275 | filepath:D:\\MUSIC\\Sad But True (Live - September 14 2015 - Quebec City Canada).mp3 | duration:355",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Lynyrd Skynyrd - Free Bird | bpm:152 | key_signature: | vibe_tags: | genre_class:Rock\\ Instrumental | ingested_at:2026-05-03 18:11:07.198193 | id:131549430 | filepath:D:\\MUSIC\\undefinedGuitar hero 2\\Lynyrd Skynyrd - Free Bird.mp3 | duration:549",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Alone Again | bpm:110 | key_signature: | vibe_tags: | genre_class:Rock | ingested_at:2026-05-03 18:11:07.198600 | id:107197082 | filepath:D:\\MUSIC\\Alone Again.mp3 | duration:229",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Billion Dollar Babies | bpm:92 | key_signature: | vibe_tags: | genre_class:Pop | ingested_at:2026-05-03 18:11:07.198756 | id:162084797 | filepath:D:\\MUSIC\\undefinedguitar hero\\Billion Dollar Babies.mp3 | duration:222",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Yaeji - Raingurl (Carlo Z Flip) | Free Download | bpm:128 | key_signature: | vibe_tags: | genre_class:Dance & EDM | ingested_at:2026-05-03 18:11:07.199460 | id:179607776 | filepath:D:\\MUSIC\\MUSIZ-DJ SCAR\\Yaeji - Raingurl (Carlo Z Flip) Free Download.mp3 | duration:249",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Fred Again.., Swedish House Mafia - Turn On The Lights (Discip Edit) | bpm:128 | key_signature: | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.199641 | id:32054584 | filepath:D:\\MUSIC\\MUSIZ-DJ SCAR\\Fred Again.. Swedish House Mafia - Turn On The Lights (Discip Edit).mp3 | duration:305",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Let Go (feat. O\u0304se\u0301) | bpm:131 | key_signature: | vibe_tags: | genre_class:House | ingested_at:2026-05-03 18:11:07.199810 | id:31128797 | filepath:D:\\MUSIC\\MUSIZ-DJ SCAR\\Let Go (feat. Ose).mp3 | duration:219",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:[FREE DOWNLOAD] RHS - Mandy Rose (Vivace Remix) | bpm:126 | key_signature: | vibe_tags: | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.200745 | id:248729748 | filepath:D:\\MUSIC\\MUSIZ-DJ SCAR\\undefinedDaily Drops\\[FREE DOWNLOAD] RHS - Mandy Rose (Vivace Remix).mp3 | duration:154",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Eat Your Heart Out - Conscience (feat. Patrick Miranda) | bpm:175 | key_signature: | vibe_tags: | genre_class:Rock | ingested_at:2026-05-03 18:11:07.202739 | id:8171192 | filepath:D:\\MUSIC\\Eat Your Heart Out - Conscience (feat. Patrick Miranda).mp3 | duration:222",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Chill Bae | bpm:92 | key_signature: | vibe_tags: | genre_class:Rap/Hip Hop | ingested_at:2026-05-03 18:11:07.204698 | id:101687565 | filepath:D:\\MUSIC\\Chill Bae.mp3 | duration:138",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:U GOTTA (feat. Pharrell) | bpm:110 | key_signature: | vibe_tags: | genre_class:Hip Hop/Rap | ingested_at:2026-05-03 18:11:07.204758 | id:226972129 | filepath:D:\\MUSIC\\U GOTTA (feat. Pharrell).mp3 | duration:180",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Touchdown | bpm:115 | key_signature: | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.204764 | id:57454342 | filepath:D:\\MUSIC\\Touchdown.mp3 | duration:200",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Thought I Was Dead (feat. ScHoolboy Q & Santigold) | bpm:129 | key_signature: | vibe_tags: | genre_class:Hip Hop | ingested_at:2026-05-03 18:11:07.204947 | id:154692539 | filepath:D:\\MUSIC\\Thought I Was Dead (feat. ScHoolboy Q & Santigold).mp3 | duration:207",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Marble Floors | bpm:76 | key_signature: | vibe_tags: | genre_class:Hip Hop/Rap | ingested_at:2026-05-03 18:11:07.205277 | id:175422450 | filepath:D:\\MUSIC\\Marble Floors.mp3 | duration:208",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Go Richey | bpm:85 | key_signature: | vibe_tags: | genre_class:Hip Hop | ingested_at:2026-05-03 18:11:07.205370 | id:72272918 | filepath:D:\\MUSIC\\Go Richey.mp3 | duration:159",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Dancin Like Iz Pop | bpm:76 | key_signature: | vibe_tags: | genre_class:Rap/Hip-Hop | ingested_at:2026-05-03 18:11:07.205408 | id:69257433 | filepath:D:\\MUSIC\\Dancin Like Iz Pop-TYGA.mp3 | duration:202",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Find Out | bpm:90 | key_signature: | vibe_tags: | genre_class:Rap/Hip-Hop | ingested_at:2026-05-03 18:11:07.205471 | id:225481310 | filepath:D:\\MUSIC\\Find Out-TYGA.mp3 | duration:179",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Litty Spaceman (Meek Mill X Spaceman) H.A.N.S Mashup | bpm:130 | key_signature: | vibe_tags: | genre_class:Dance & EDM | ingested_at:2026-05-03 18:11:07.209634 | id:13745552 | filepath:D:\\MUSIC\\2025 RTF Tailgate Playlist\\Litty Spaceman (Meek Mill X Spaceman) H.A.N.S Mashup.mp3 | duration:210",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Lorde- Ribs (HAASY REMIX) | bpm:125 | key_signature: | vibe_tags: | genre_class:House | ingested_at:2026-05-03 18:11:07.209646 | id:155108850 | filepath:D:\\MUSIC\\2025 RTF Tailgate Playlist\\Lorde- Ribs (HAASY REMIX).mp3 | duration:313",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:NOKIA House Edit (DJ RUSH EDIT) | bpm:128 | key_signature: | vibe_tags: | genre_class:Dance & EDM | ingested_at:2026-05-03 18:11:07.209725 | id:134732311 | filepath:D:\\MUSIC\\2025 RTF Tailgate Playlist\\NOKIA House Edit (DJ RUSH EDIT).mp3 | duration:233",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:A Fire Inside Of Me | bpm:125 | key_signature: | vibe_tags: | genre_class:House | ingested_at:2026-05-03 18:11:07.210084 | id:151345462 | filepath:D:\\MUSIC\\2025 RTF Tailgate Playlist\\A Fire Inside Of Me.mp3 | duration:238",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:128 Dr. Dre X James Hype - Drums Episode (JSANZ VIP Edit) Show | bpm:128 | key_signature: | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.210351 | id:169227657 | filepath:D:\\MUSIC\\HOUSE\\128 Dr. Dre X James Hype - Drums Episode (JSANZ VIP Edit) Show.mp3 | duration:120",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:128 Sean Paul X KD One - Temperature Vamoa Beber (JSANZ Edit) OVD & Mario | bpm:128 | key_signature: | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.210489 | id:56712219 | filepath:D:\\MUSIC\\HOUSE\\128 Sean Paul X KD One - Temperature Vamoa Beber (JSANZ Edit) OVD & Mario.mp3 | duration:171",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Booyah (Franz Ragga VIP Mix)[Clean] | bpm:128 | key_signature:Abm | vibe_tags:2A - 128 | genre_class:House / Future / Bass | ingested_at:2026-05-03 18:11:07.210505 | id:26486575 | filepath:D:\\MUSIC\\HOUSE\\128 Showtek - Booyah (Franz Ragga VIP Mix)[Clean].mp3 | duration:242",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:BABILONIA (Mati Rivaday EDIT) FREEDOWNLOAD | bpm:125 | key_signature: | vibe_tags: | genre_class:tech house | ingested_at:2026-05-03 18:11:07.210973 | id:88172849 | filepath:D:\\MUSIC\\HOUSE\\2025\\BABILONIA (Mati Rivaday EDIT) FREEDOWNLOAD.mp3 | duration:232",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:InntRaw - I Feel Your Love Comin' On | bpm:128 | key_signature: | vibe_tags: | genre_class:Raw Cutz Vol. 3 | ingested_at:2026-05-03 18:11:07.211378 | id:195470636 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\2026\\InntRaw - I Feel Your Love Comin On.mp3 | duration:300",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:InntRaw & Nadin - VoXxx | bpm:130 | key_signature: | vibe_tags: | genre_class:Electronic | ingested_at:2026-05-03 18:11:07.211449 | id:42629475 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\2026\\InntRaw & Nadin - VoXxx.mp3 | duration:247",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Dance Boo feat. MoRuf (Original Mix) | bpm:126 | key_signature:Am | vibe_tags:https://djsoundtop.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.211931 | id:227707873 | filepath:D:\\MUSIC\\HOUSE\\Beatport Tech House Top 100 December 2025 - electronicfresh.com\\32. MoRuf, Trace (UZ) - Dance Boo feat. MoRuf (Original Mix).mp3 | duration:344",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Sexy Back (Original Mix) | bpm:128 | key_signature:Am | vibe_tags:https://djsoundtop.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.212043 | id:211192434 | filepath:D:\\MUSIC\\HOUSE\\Beatport Tech House Top 100 December 2025 - electronicfresh.com\\38. Bruno Bona, Esteban Angel - Sexy Back (Original Mix).mp3 | duration:331",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Baiana (Extended Mix) | bpm:128 | key_signature:Dm | vibe_tags:https://djsoundtop.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.213005 | id:256766932 | filepath:D:\\MUSIC\\HOUSE\\Beatport Tech House Top 100 December 2025 - electronicfresh.com\\84. Barbatuques, Matt Sassari, CHRSTPHR - Baiana (Extended Mix).mp3 | duration:264",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:What's Her Name (Original Mix) | bpm:125 | key_signature:Ebm | vibe_tags:electronicfresh.com | genre_class:Deep House | ingested_at:2026-05-03 18:11:07.213608 | id:241048904 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Dulus, Tiffy Vera - What's Her Name (Original Mix).flac | duration:292",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Somebody That I Used To Know (Extended Mix) | bpm:129 | key_signature:Dm | vibe_tags:electronicfresh.com | genre_class:Deep House | ingested_at:2026-05-03 18:11:07.214147 | id:62132873 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Kevin McKay, James Cole, Darcey, Simon Ellis - Somebody That I Used To Know (Extended Mix).flac | duration:394",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Can't Decide (Extended) | bpm:130 | key_signature:Abm | vibe_tags:electronicfresh.com | genre_class:Deep House | ingested_at:2026-05-03 18:11:07.214349 | id:23118379 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Max Dean, Luke Dean, Locky (UK) - Can't Decide (Extended).flac | duration:326",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Yosemite (Philip George Remix) | bpm:130 | key_signature:Fm | vibe_tags:electronicfresh.com | genre_class:Deep House | ingested_at:2026-05-03 18:11:07.214574 | id:49575187 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Philip George, Interplanetary Criminal, Kettama - Yosemite (Philip George Remix).flac | duration:447",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:De Bongo Man (Original Mix) | bpm:128 | key_signature:Dbm | vibe_tags:electronicfresh.com | genre_class:Deep House | ingested_at:2026-05-03 18:11:07.214929 | id:61594987 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Deep House January 2026 flac - electronicfresh.com\\Toman - De Bongo Man (Original Mix).flac | duration:390",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Groove Therapy (Original Mix) | bpm:129 | key_signature:Abm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.215600 | id:478840 | filepath:D:\\MUSIC\\HOUSE\\Traxsource Top 200 Tech House of 2025 - djsoundtop.com\\Classmatic - Groove Therapy (Original Mix) - www.djsoundtop.com.mp3 | duration:372",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Baiana 2024 (Original mix) | bpm:125 | key_signature:Eb | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.215858 | id:167142281 | filepath:D:\\MUSIC\\HOUSE\\Traxsource Top 200 Tech House of 2025 - djsoundtop.com\\Dario Nu\u00f1ez, Javi Colina - Baiana 2024 (Original mix).mp3 | duration:314",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:I Got It (Original Mix) | bpm:129 | key_signature:Cm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.215934 | id:261939266 | filepath:D:\\MUSIC\\HOUSE\\Traxsource Top 200 Tech House of 2025 - djsoundtop.com\\Darius Syrossian - I Got It (Original Mix) - www.djsoundtop.com.mp3 | duration:321",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:My Friends And (Original Mix) | bpm:127 | key_signature:Gm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.216317 | id:223539842 | filepath:D:\\MUSIC\\HOUSE\\Traxsource Top 200 Tech House of 2025 - djsoundtop.com\\Gabriele Ranucci - My Friends And (Original Mix).mp3 | duration:371",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Holte (Extended Mix) | bpm:126 | key_signature:Fm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.217144 | id:169339634 | filepath:D:\\MUSIC\\HOUSE\\Traxsource Top 200 Tech House of 2025 - djsoundtop.com\\Low Steppa - Holte (Extended Mix).mp3 | duration:428",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Give Me What I Want (Original Mix) | bpm:126 | key_signature:Gm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.217241 | id:89974501 | filepath:D:\\MUSIC\\HOUSE\\Traxsource Top 200 Tech House of 2025 - djsoundtop.com\\M. Rodriguez - Give Me What I Want (Original Mix) - www.djsoundtop.com.mp3 | duration:365",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:The First Night (Original Mix) | bpm:125 | key_signature:Dm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.217274 | id:34332503 | filepath:D:\\MUSIC\\HOUSE\\Traxsource Top 200 Tech House of 2025 - djsoundtop.com\\Mabel Caamal - The First Night (Original Mix).mp3 | duration:391",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Gypsy Woman (Original Mix) | bpm:123 | key_signature:D | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.217329 | id:236934336 | filepath:D:\\MUSIC\\HOUSE\\Traxsource Top 200 Tech House of 2025 - djsoundtop.com\\Mafia Mike, Kubinowski - Gypsy Woman (Original Mix).mp3 | duration:366",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Lift Me Up (Extended Version) | bpm:129 | key_signature:Fm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.217615 | id:31708640 | filepath:D:\\MUSIC\\HOUSE\\Traxsource Top 200 Tech House of 2025 - djsoundtop.com\\Matthias Tanzmann, The Deepshakerz - Lift Me Up (Extended Version).mp3 | duration:329",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Just Believe (Extended Mix) | bpm:128 | key_signature:Am | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.218195 | id:163167485 | filepath:D:\\MUSIC\\HOUSE\\Traxsource Top 200 Tech House of 2025 - djsoundtop.com\\Piero Pirupa, LIONEEL - Just Believe (Extended Mix).mp3 | duration:300",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:To Your Feet (Original Mix) | bpm:127 | key_signature:F | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.218385 | id:242002843 | filepath:D:\\MUSIC\\HOUSE\\Traxsource Top 200 Tech House of 2025 - djsoundtop.com\\Rick Silva - To Your Feet (Original Mix) - www.djsoundtop.com.mp3 | duration:446",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Pegao (Extended Mix) | bpm:128 | key_signature:Gm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.218948 | id:70295889 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\Andruss, Cloonee - Pegao (Extended Mix) - www.electronicfresh.com.flac | duration:399",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Jamming (FISHER Rework) | bpm:126 | key_signature:Bm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.219126 | id:199414595 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\Bob Marley & The Wailers, Fisher - Jamming (FISHER Rework).flac | duration:202",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:girl$ (Extended) | bpm:134 | key_signature:Gm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.219372 | id:99747710 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\Dom Dolla - girl$ (Extended) - www.electronicfresh.com.flac | duration:333",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Idimoni (Original Mix) | bpm:131 | key_signature:F#m | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.219496 | id:762098 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\Francis De Simone - Idimoni (Original Mix).flac | duration:382",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:This 'N That (Original Mix) | bpm:130 | key_signature:Abm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.220013 | id:22985090 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\M-High - This 'N That (Original Mix).flac | duration:400",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Lover (Original Mix) | bpm:128 | key_signature:Dbm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.220443 | id:33253695 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\RSquared - Lover (Original Mix).flac | duration:364",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Horny (Original Mix) | bpm:128 | key_signature:F#m | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.220583 | id:118170697 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\San Pacho, TOBEHONEST - Horny (Original Mix).flac | duration:315",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:High (Extended) | bpm:130 | key_signature:Abm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.220685 | id:66154323 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\Vintage Culture, Vinter - High (Extended) - www.electronicfresh.com.flac | duration:340",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Who's That Girl (JL & Afterman Mix) | bpm:128 | key_signature:Ebm | vibe_tags:https://electronicfresh.com | genre_class:Tech House | ingested_at:2026-05-03 18:11:07.220753 | id:45058156 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Tech House November 2024\\Yvvan Back, Afterman - Who's That Girl (JL & Afterman Mix).flac | duration:320",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:The Parallel (Miss Monique Remix) | bpm:122 | key_signature:Ebm | vibe_tags: www.electronicfresh.com | genre_class:House Progressive | ingested_at:2026-05-03 18:11:07.221640 | id:15629813 | filepath:D:\\MUSIC\\HOUSE\\Miss Monique - Sorry \u0421harts\\Morttagua - The Parallel (Miss Monique Remix).mp3 | duration:426",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Wrong Is Right (Extended Mix) | bpm:130 | key_signature:Dm | vibe_tags:https://djsoundtop.com | genre_class:https://djsoundtop.com | ingested_at:2026-05-03 18:11:07.221795 | id:13626488 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Downloads November 2025 - djsoundtop.com\\Biscits - Wrong Is Right (Extended Mix) - www.djsoundtop.com.mp3 | duration:302",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:The Bag (Original Mix) | bpm:130 | key_signature:F#m | vibe_tags:https://djsoundtop.com | genre_class:https://djsoundtop.com | ingested_at:2026-05-03 18:11:07.223238 | id:143889577 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Downloads November 2025 - djsoundtop.com\\Stef Davidse - The Bag (Original Mix) - www.djsoundtop.com.mp3 | duration:310",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:I Need You (Original Mix) | bpm:142 | key_signature:Dbm | vibe_tags:https://djsoundtop.com | genre_class:https://djsoundtop.com | ingested_at:2026-05-03 18:11:07.223331 | id:14022566 | filepath:D:\\MUSIC\\HOUSE\\Beatport Top 100 Downloads November 2025 - djsoundtop.com\\TwoFaced, Nikita W. - I Need You (Original Mix) - www.djsoundtop.com.mp3 | duration:330",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Now U Need | bpm:126 | key_signature:Ebm | vibe_tags:https://electronicfresh.com | genre_class:Techno, Minimal, Tech House | ingested_at:2026-05-03 18:11:07.245709 | id:228885361 | filepath:D:\\MUSIC\\HOUSE\\Fallon Diet Coke Chart\\Dan Ghenacia & Djebali - Now U Need.mp3 | duration:457",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:No Turning Back (Original Mix) | bpm:128 | key_signature:Cm | vibe_tags:https://electronicfresh.com | genre_class:Techno, Minimal, Tech House | ingested_at:2026-05-03 18:11:07.245779 | id:222547159 | filepath:D:\\MUSIC\\HOUSE\\Fallon Diet Coke Chart\\Mant - No Turning Back (Original Mix).mp3 | duration:363",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Demo Track 1 | bpm:128 | key_signature: | vibe_tags:Tracks by www.loopmasters.com | genre_class: | ingested_at:2026-05-03 18:11:05.499045 | id:12761362 | filepath:C:\\Users\\adams\\Music\\PioneerDJ\\Demo Tracks\\Demo Track 1.mp3 | duration:172",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Marian (BR) - Suppa Bounce (Original Mix) | bpm:129 | key_signature:Gm | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.022231 | id:44741162 | filepath:D:\\MUSIC\\Marian (BR) - Suppa Bounce (Original Mix).mp3 | duration:364",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Gatubela (DNA TESTED) | bpm:125 | key_signature:Bm | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.022546 | id:76719657 | filepath:D:\\MUSIC\\Gatubela (DNA TESTED).mp3 | duration:232",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Jay Wheeler, Myke Towers - La Curiosidad (Bruno Bona Edit) FREE DOWNLOAD | bpm:126 | key_signature:Am | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.022589 | id:154448076 | filepath:D:\\MUSIC\\Jay Wheeler Myke Towers - La Curiosidad (Bruno Bona Edit) FREE DOWNLOAD.mp3 | duration:177",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Manuel Turizo, Myke Towers, and Rauw Alejandro - La Nota (Erick Cruz Edit) | bpm:124 | key_signature:Em | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.024920 | id:267140589 | filepath:D:\\MUSIC\\Manuel Turizo Myke Towers and Rauw Alejandro - La Nota (Erick Cruz Edit).mp3 | duration:340",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Heads Will Roll - TOBEHONEST Edit | bpm:130 | key_signature:Abm | vibe_tags: | genre_class:House | ingested_at:2026-05-03 18:11:07.194610 | id:140015371 | filepath:D:\\MUSIC\\Heads Will Roll - TOBEHONEST Edit.mp3 | duration:236",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Messy - Lola Young (Chris Lake Remix) | bpm:128 | key_signature:A | vibe_tags: | genre_class:house | ingested_at:2026-05-03 18:11:07.194787 | id:45451027 | filepath:D:\\MUSIC\\Messy - Lola Young (Chris Lake Remix).mp3 | duration:263",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Doctor P - Tetris (Dirt Monkey Remix) | bpm:145 | key_signature:F#m | vibe_tags: | genre_class:Dubstep | ingested_at:2026-05-03 18:11:07.195129 | id:217193906 | filepath:D:\\MUSIC\\Doctor P - Tetris (Dirt Monkey Remix).mp3 | duration:142",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Chris Lorenzo - MAMI (Westend Edit) [FREE DOWNLOAD] | bpm:130 | key_signature:Bbm | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.195601 | id:193451515 | filepath:D:\\MUSIC\\Chris Lorenzo - MAMI (Westend Edit) [FREE DOWNLOAD].mp3 | duration:265",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Subtronics x Hedex x IRAH - System Shock | bpm:140 | key_signature:Db | vibe_tags: | genre_class:Dance & EDM | ingested_at:2026-05-03 18:11:07.195840 | id:205512602 | filepath:D:\\MUSIC\\Subtronics x Hedex x IRAH - System Shock.mp3 | duration:136",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Bring It Back | bpm:110 | key_signature:D | vibe_tags: | genre_class:Rap/Hip Hop | ingested_at:2026-05-03 18:11:07.196123 | id:255570900 | filepath:D:\\MUSIC\\Bring It Back.mp3 | duration:173",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Kideko & Ryan Arnold - Jumpin Edit | bpm:128 | key_signature:Dbm | vibe_tags: | genre_class:House | ingested_at:2026-05-03 18:11:07.196182 | id:77552804 | filepath:D:\\MUSIC\\Kideko & Ryan Arnold - Jumpin Edit.mp3 | duration:247",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:HNTR - Technoelectronic | bpm:130 | key_signature:Gm | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.196486 | id:64265080 | filepath:D:\\MUSIC\\HNTR - Technoelectronic.mp3 | duration:225",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Wherever I May Roam (Live - August 29 2015 - Reading England) | bpm:146 | key_signature:Eb | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.197788 | id:53225552 | filepath:D:\\MUSIC\\Wherever I May Roam (Live - August 29 2015 - Reading England).mp3 | duration:375",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Fade To Black (Live - June 2 2015 - Milan Italy) | bpm:155 | key_signature:Ebm | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.197871 | id:136853520 | filepath:D:\\MUSIC\\Fade To Black (Live - June 2 2015 - Milan Italy).mp3 | duration:451",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:The Memory Remains (Live - August 30 2015 - Leeds England) | bpm:166 | key_signature: | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.197965 | id:82417615 | filepath:D:\\MUSIC\\The Memory Remains (Live - August 30 2015 - Leeds England).mp3 | duration:314",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:1.4 Woman - Wolfmother.mp3 | bpm:150 | key_signature: | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.198502 | id:193607008 | filepath:D:\\MUSIC\\undefinedguitar hero\\1.4 Woman - Wolfmother.mp3.mp3 | duration:173",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Dead! | bpm:99 | key_signature: | vibe_tags: | genre_class:Alternative | ingested_at:2026-05-03 18:11:07.198770 | id:134847023 | filepath:D:\\MUSIC\\undefinedguitar hero\\Dead!.mp3 | duration:195",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Helicopter - Bloc Party (feat. Squiff_dude) | bpm:170 | key_signature: | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.198942 | id:200788530 | filepath:D:\\MUSIC\\undefinedguitar hero\\Helicopter - Bloc Party (feat. Squiff_dude).mp3 | duration:222",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Asking Alexandria - A Prophecy | bpm:150 | key_signature: | vibe_tags: | genre_class:metalcore | ingested_at:2026-05-03 18:11:07.199048 | id:186217051 | filepath:D:\\MUSIC\\undefinedRock Time\\Asking Alexandria - A Prophecy.mp3 | duration:214",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:August Burns Red - The Frost | bpm:120 | key_signature: | vibe_tags: | genre_class:Metal | ingested_at:2026-05-03 18:11:07.199092 | id:243392101 | filepath:D:\\MUSIC\\undefinedAugust Burns Red - Phantom Anthem\\August Burns Red - The Frost.mp3 | duration:286",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: t_core_memory. Data: filename:Noir & Haze VS MEDUZA - Around | bpm:125 | key_signature: | vibe_tags: | genre_class: | ingested_at:2026-05-03 18:11:07.199172 | id:222086970 | filepath:D:\\MUSIC\\MUSIZ-DJ SCAR\\Noir & Haze VS MEDUZA - Around.mp3 | duration:320",
+    "table": "t_core_memory",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:adamstest.py | path:C:\\STUDIES\\adamstest.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:adamtest.py | path:C:\\STUDIES\\adamtest.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:agent_check.py | path:C:\\STUDIES\\agent_check.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:agent_research.py | path:C:\\STUDIES\\agent_research.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:agent_vision.py | path:C:\\STUDIES\\agent_vision.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:api_server.py | path:C:\\STUDIES\\api_server.py | docstring:Error reading",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:bridge.py | path:C:\\STUDIES\\bridge.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:cortex_visualizer.py | path:C:\\STUDIES\\cortex_visualizer.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:create_view.py | path:C:\\STUDIES\\create_view.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:digest_data.py | path:C:\\STUDIES\\digest_data.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:dump_data.py | path:C:\\STUDIES\\dump_data.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:execution_worker.py | path:C:\\STUDIES\\execution_worker.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:extract_cortex.py | path:C:\\STUDIES\\extract_cortex.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:fetch_weapons.py | path:C:\\STUDIES\\fetch_weapons.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:gather_knowledge.py | path:C:\\STUDIES\\gather_knowledge.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:gemini_terminal_bot.py | path:C:\\STUDIES\\gemini_terminal_bot.py | docstring:LEGION HEADLESS AI STACK v2.6 (NETWORK EDITION)\n-----------------------------------------------\nQUICK START:\n1. Ensure LM Studio is running on http://192.168.1.202:1010\n2. Run this script: python gemini_terminal_bot.py\n3. Press ENTER to use the default model path.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:gemini_terminal_bot2.py | path:C:\\STUDIES\\gemini_terminal_bot2.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:gemini_terminal_bot3.py | path:C:\\STUDIES\\gemini_terminal_bot3.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:gemini_terminal_bot4.py | path:C:\\STUDIES\\gemini_terminal_bot4.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:gemini_terminal_bot5.py | path:C:\\STUDIES\\gemini_terminal_bot5.py | docstring:LEGION HEADLESS AI STACK v2.6 (NETWORK EDITION)\n-----------------------------------------------\nQUICK START:\n1. Ensure LM Studio is running on http://192.168.1.202:1010\n2. Run this script: python gemini_terminal_bot.py\n3. Press ENTER to use the default model path.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:gemini_terminal_bot6.py | path:C:\\STUDIES\\gemini_terminal_bot6.py | docstring:LEGION HEADLESS AI STACK v2.6 (NETWORK EDITION)\n-----------------------------------------------\nQUICK START:\n1. Ensure LM Studio is running on http://192.168.1.202:1010\n2. Run this script: python gemini_terminal_bot.py\n3. Press ENTER to use the default model path.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:gem_hunter.py | path:C:\\STUDIES\\gem_hunter.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:generate_full_knowledge.py | path:C:\\STUDIES\\generate_full_knowledge.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:generate_py_index.py | path:C:\\STUDIES\\generate_py_index.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:generate_ui_index.py | path:C:\\STUDIES\\generate_ui_index.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:god_eye.py | path:C:\\STUDIES\\god_eye.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:health_check.py | path:C:\\STUDIES\\health_check.py | docstring:GORDON HEALTH CHECK: Verify API is responsive without downloading full model",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:ingest.py | path:C:\\STUDIES\\ingest.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:ingest_logic.py | path:C:\\STUDIES\\ingest_logic.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:ingest_real.py | path:C:\\STUDIES\\ingest_real.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:kaggle_verification.py | path:C:\\STUDIES\\kaggle_verification.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:legion_chat.py | path:C:\\STUDIES\\legion_chat.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:legion_chat_1.py | path:C:\\STUDIES\\legion_chat_1.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:legion_chat_v3_draft.py | path:C:\\STUDIES\\legion_chat_v3_draft.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:legion_chat_v4_pheonix.py | path:C:\\STUDIES\\legion_chat_v4_pheonix.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:master_indexer.py | path:C:\\STUDIES\\master_indexer.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:mcp_server.py | path:C:\\STUDIES\\mcp_server.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:memory_worker.py | path:C:\\STUDIES\\memory_worker.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:mission_control.py | path:C:\\STUDIES\\mission_control.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:music_generator_mcp.py | path:C:\\STUDIES\\music_generator_mcp.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:sidecar_live.py | path:C:\\STUDIES\\sidecar_live.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:sidecar_ui.py | path:C:\\STUDIES\\sidecar_ui.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:sidecar_v2.py | path:C:\\STUDIES\\sidecar_v2.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:sidecar_v3.py | path:C:\\STUDIES\\sidecar_v3.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:sonar.py | path:C:\\STUDIES\\sonar.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:sonic-architecture-framework.py | path:C:\\STUDIES\\sonic-architecture-framework.py | docstring:Error reading",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:swarm_controller.py | path:C:\\STUDIES\\swarm_controller.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:sync_library.py | path:C:\\STUDIES\\sync_library.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:takeoff.py | path:C:\\STUDIES\\takeoff.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:takeoff1.py | path:C:\\STUDIES\\takeoff1.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:test_api_inference.py | path:C:\\STUDIES\\test_api_inference.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:test_cortex.py | path:C:\\STUDIES\\test_cortex.py | docstring:LEGION TEST SUITE: Cortex GPU Routing Validation\nTests explicit device_map and input routing without running the full API.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:test_cortex_cpu.py | path:C:\\STUDIES\\test_cortex_cpu.py | docstring:CPU-ONLY TEST: Validates tokenizer routing and model structure\n(Does NOT test actual generation without GPU)",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:test_ui_endpoints.py | path:C:\\STUDIES\\test_ui_endpoints.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:ui_pathfinder.py | path:C:\\STUDIES\\ui_pathfinder.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:verify_codebase.py | path:C:\\STUDIES\\verify_codebase.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:verify_db.py | path:C:\\STUDIES\\verify_db.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:verify_specs.py | path:C:\\STUDIES\\verify_specs.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:VERTEXINABOX.py | path:C:\\STUDIES\\VERTEXINABOX.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:decorator.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\decorator.py | docstring:Decorator module, see\nhttps://github.com/micheles/decorator/blob/master/docs/documentation.md\nfor the documentation.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:deprecation.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\deprecation.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:isympy.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\isympy.py | docstring:Python shell for SymPy.\n\nThis is just a normal Python shell (IPython shell if you have the\nIPython package installed), that executes the following commands for\nthe user:\n\n    >>> from __future__ import division\n    >>> from sympy import *\n    >>> x, y, z, t = symbols('x y z t')\n    >>> k, m, n = symbols('k m n', integer=True)\n    >>> f, g, h = symbols('f g h', cls=Function)\n    >>> init_printing()\n\nSo starting 'isympy' is equivalent to starting Python (or IPython) and\nexecuting the above commands by hand.  It is intended for easy and quick\nexperimentation with SymPy.  isympy is a good way to use SymPy as an\ninteractive calculator. If you have IPython and Matplotlib installed, then\ninteractive plotting is enabled by default.\n\nCOMMAND LINE OPTIONS\n--------------------\n\n-c CONSOLE, --console=CONSOLE\n\n     Use the specified shell (Python or IPython) shell as the console\n     backend instead of the default one (IPython if present, Python\n     otherwise), e.g.:\n\n        $isympy -c python\n\n    CONSOLE must be one of 'ipython' or 'python'\n\n-p PRETTY, --pretty PRETTY\n\n    Setup pretty-printing in SymPy. When pretty-printing is enabled,\n    expressions can be printed with Unicode or ASCII. The default is\n    to use pretty-printing (with Unicode if the terminal supports it).\n    When this option is 'no', expressions will not be pretty-printed\n    and ASCII will be used:\n\n        $isympy -p no\n\n    PRETTY must be one of 'unicode', 'ascii', or 'no'\n\n-t TYPES, --types=TYPES\n\n    Setup the ground types for the polys.  By default, gmpy ground types\n    are used if gmpy2 or gmpy is installed, otherwise it falls back to python\n    ground types, which are a little bit slower.  You can manually\n    choose python ground types even if gmpy is installed (e.g., for\n    testing purposes):\n\n        $isympy -t python\n\n    TYPES must be one of 'gmpy', 'gmpy1' or 'python'\n\n    Note that the ground type gmpy1 is primarily intended for testing; it\n    forces the use of gmpy version 1 even if gmpy2 is available.\n\n    This is the same as setting the environment variable\n    SYMPY_GROUND_TYPES to the given ground type (e.g.,\n    SYMPY_GROUND_TYPES='gmpy')\n\n    The ground types can be determined interactively from the variable\n    sympy.polys.domains.GROUND_TYPES.\n\n-o ORDER, --order ORDER\n\n    Setup the ordering of terms for printing.  The default is lex, which\n    orders terms lexicographically (e.g., x**2 + x + 1). You can choose\n    other orderings, such as rev-lex, which will use reverse\n    lexicographic ordering (e.g., 1 + x + x**2):\n\n        $isympy -o rev-lex\n\n    ORDER must be one of 'lex', 'rev-lex', 'grlex', 'rev-grlex',\n    'grevlex', 'rev-grevlex', 'old', or 'none'.\n\n    Note that for very large expressions, ORDER='none' may speed up\n    printing considerably but the terms will have no canonical order.\n\n-q, --quiet\n\n    Print only Python's and SymPy's versions to stdout at startup.\n\n-d, --doctest\n\n    Use the same format that should be used for doctests.  This is\n    equivalent to -c python -p no.\n\n-C, --no-cache\n\n    Disable the caching mechanism.  Disabling the cache may slow certain\n    operations down considerably.  This is useful for testing the cache,\n    or for benchmarking, as the cache can result in deceptive timings.\n\n    This is equivalent to setting the environment variable\n    SYMPY_USE_CACHE to 'no'.\n\n-a, --auto-symbols (requires at least IPython 0.11)\n\n    Automatically create missing symbols.  Normally, typing a name of a\n    Symbol that has not been instantiated first would raise NameError,\n    but with this option enabled, any undefined name will be\n    automatically created as a Symbol.\n\n    Note that this is intended only for interactive, calculator style\n    usage. In a script that uses SymPy, Symbols should be instantiated\n    at the top, so that it's clear what they are.\n\n    This will not override any names that are already defined, which\n    includes the single character letters represented by the mnemonic\n    QCOSINE (see the \"Gotchas and Pitfalls\" document in the\n    documentation). You can delete existing names by executing \"del\n    name\".  If a name is defined, typing \"'name' in dir()\" will return True.\n\n    The Symbols that are created using this have default assumptions.\n    If you want to place assumptions on symbols, you should create them\n    using symbols() or var().\n\n    Finally, this only works in the top level namespace. So, for\n    example, if you define a function in isympy with an undefined\n    Symbol, it will not work.\n\n    See also the -i and -I options.\n\n-i, --int-to-Integer (requires at least IPython 0.11)\n\n    Automatically wrap int literals with Integer.  This makes it so that\n    things like 1/2 will come out as Rational(1, 2), rather than 0.5.  This\n    works by preprocessing the source and wrapping all int literals with\n    Integer.  Note that this will not change the behavior of int literals\n    assigned to variables, and it also won't change the behavior of functions\n    that return int literals.\n\n    If you want an int, you can wrap the literal in int(), e.g. int(3)/int(2)\n    gives 1.5 (with division imported from __future__).\n\n-I, --interactive (requires at least IPython 0.11)\n\n    This is equivalent to --auto-symbols --int-to-Integer.  Future options\n    designed for ease of interactive use may be added to this.\n\n-D, --debug\n\n    Enable debugging output.  This is the same as setting the\n    environment variable SYMPY_DEBUG to 'True'.  The debug status is set\n    in the variable SYMPY_DEBUG within isympy.\n\n-- IPython options\n\n    Additionally you can pass command line options directly to the IPython\n    interpreter (the standard Python shell is not supported).  However you\n    need to add the '--' separator between two types of options, e.g the\n    startup banner option and the colors option. You need to enter the\n    options as required by the version of IPython that you are using, too:\n\n    in IPython 0.11,\n\n        $isympy -q -- --colors=NoColor\n\n    or older versions of IPython,\n\n        $isympy -q -- -colors NoColor\n\nSee also isympy --help.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:jsonref.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\jsonref.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:proxytypes.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\proxytypes.py | docstring:Based on the implementation here by Phillip J. Eby:\nhttps://pypi.python.org/pypi/ProxyTypes",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:pythoncom.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\pythoncom.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:six.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\six.py | docstring:Utilities for writing code that runs on Python 2 and 3",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:soundfile.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\soundfile.py | docstring:python-soundfile is an audio library based on libsndfile, CFFI and NumPy.\n\nSound files can be read or written directly using the functions\n`read()` and `write()`.\nTo read a sound file in a block-wise fashion, use `blocks()`.\nAlternatively, sound files can be opened as `SoundFile` objects.\n\nFor further information, see https://python-soundfile.readthedocs.io/.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:threadpoolctl.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\threadpoolctl.py | docstring:threadpoolctl\n\nThis module provides utilities to introspect native libraries that relies on\nthread pools (notably BLAS and OpenMP implementations) and dynamically set the\nmaximal number of threads they can use.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:typing_extensions.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\typing_extensions.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:_soundfile.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\_soundfile.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:_virtualenv.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\_virtualenv.py | docstring:Patches that are applied at runtime to the virtual environment.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:dbapi.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adbc_driver_duckdb\\dbapi.py | docstring:DBAPI 2.0-compatible facade for the ADBC DuckDB driver.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:__init__.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adbc_driver_duckdb\\__init__.py | docstring:Low-level ADBC bindings for the DuckDB driver.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:adodbapi.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\adodbapi.py | docstring:adodbapi - A python DB API 2.0 (PEP 249) interface to Microsoft ADO\n\nCopyright (C) 2002 Henrik Ekelund, versions 2.1 and later by Vernon Cole\n* https://sourceforge.net/projects/pywin32\n* https://github.com/mhammond/pywin32\n* https://sourceforge.net/projects/adodbapi\n\n    This library is free software; you can redistribute it and/or\n    modify it under the terms of the GNU Lesser General Public\n    License as published by the Free Software Foundation; either\n    version 2.1 of the License, or (at your option) any later version.\n\n    This library is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n    Lesser General Public License for more details.\n\n    You should have received a copy of the GNU Lesser General Public\n    License along with this library; if not, write to the Free Software\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA\n\n    django adaptations and refactoring by Adam Vandenberg\n\nDB-API 2.0 specification: https://peps.python.org/pep-0249/\n\nThis module source should run correctly in CPython versions 2.7 and later,\nor CPython 3.4 or later.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:ado_consts.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\ado_consts.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:apibase.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\apibase.py | docstring:adodbapi.apibase - A python DB API 2.0 (PEP 249) interface to Microsoft ADO\n\nCopyright (C) 2002 Henrik Ekelund, version 2.1 by Vernon Cole\n* https://sourceforge.net/projects/pywin32\n* https://sourceforge.net/projects/adodbapi",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:is64bit.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\is64bit.py | docstring:is64bit.Python() --> boolean value of detected Python word size. is64bit.os() --> os build version",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:process_connect_string.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\process_connect_string.py | docstring:a clumsy attempt at a macro language to let the programmer execute code on the server (ex: determine 64bit)",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:schema_table.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\schema_table.py | docstring:call using an open ADO connection --> list of table names",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:setup.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\setup.py | docstring:adodbapi -- a pure Python PEP 249 DB-API package using Microsoft ADO\n\nAdodbapi can be run on CPython 3.5 and later.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:__init__.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\__init__.py | docstring:adodbapi - A python DB API 2.0 (PEP 249) interface to Microsoft ADO\n\nCopyright (C) 2002 Henrik Ekelund, version 2.1 by Vernon Cole\n* https://sourceforge.net/projects/adodbapi",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:db_print.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\examples\\db_print.py | docstring:db_print.py -- a simple demo for ADO database reads.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:db_table_names.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\examples\\db_table_names.py | docstring:db_table_names.py -- a simple demo for ADO database table listing.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:xls_read.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\examples\\xls_read.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:xls_write.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\examples\\xls_write.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:adodbapitest.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\test\\adodbapitest.py | docstring:Unit tests version 2.6.1.0 for adodbapi",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:adodbapitestconfig.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\test\\adodbapitestconfig.py | docstring:testADOdbapiConfig.py v 2.6.2.B00",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:dbapi20.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\test\\dbapi20.py | docstring:Python DB API 2.0 driver compliance unit test suite.\n\n   This software is Public Domain and may be used without restrictions.\n\n\"Now we have booze and barflies entering the discussion, plus rumours of\n DBAs on drugs... and I won't tell you what flashes through my mind each\n time I read the subject line with 'Anal Compliance' in it.  All around\n this is turning out to be a thoroughly unwholesome unit test.\"\n\n   -- Ian Bicking",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:is64bit.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\test\\is64bit.py | docstring:is64bit.Python() --> boolean value of detected Python word size. is64bit.os() --> os build version",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:setuptestframework.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\test\\setuptestframework.py | docstring:setuptestframework.py v 2.6.0.8",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:test_adodbapi_dbapi20.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\test\\test_adodbapi_dbapi20.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:tryconnection.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\adodbapi\\test\\tryconnection.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:__init__.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\ag_ui\\__init__.py | docstring:No description",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:capabilities.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\ag_ui\\core\\capabilities.py | docstring:This module contains the agent capability types for the Agent User Interaction Protocol Python SDK.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:events.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\ag_ui\\core\\events.py | docstring:This module contains the event types for the Agent User Interaction Protocol Python SDK.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:types.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\ag_ui\\core\\types.py | docstring:This module contains the types for the Agent User Interaction Protocol Python SDK.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:__init__.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\ag_ui\\core\\__init__.py | docstring:This module contains the core types and events for the Agent User Interaction Protocol.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:encoder.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\ag_ui\\encoder\\encoder.py | docstring:This module contains the EventEncoder class",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:__init__.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\ag_ui\\encoder\\__init__.py | docstring:This module contains the EventEncoder class.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  },
+  {
+    "vector": "[Vector dimension: 768]",
+    "text": "Source: DuckDB. Table: tool_index. Data: filename:__init__.py | path:C:\\STUDIES\\.venv\\Lib\\site-packages\\aifc\\__init__.py | docstring:Stuff to parse AIFF-C and AIFF files.\n\nUnless explicitly stated otherwise, the description below is true\nboth for AIFF-C files and AIFF files.\n\nAn AIFF-C file has the following structure.\n\n  +-----------------+\n  | FORM            |\n  +-----------------+\n  | <size>          |\n  +----+------------+\n  |    | AIFC       |\n  |    +------------+\n  |    | <chunks>   |\n  |    |    .       |\n  |    |    .       |\n  |    |    .       |\n  +----+------------+\n\nAn AIFF file has the string \"AIFF\" instead of \"AIFC\".\n\nA chunk consists of an identifier (4 bytes) followed by a size (4 bytes,\nbig endian order), followed by the data.  The size field does not include\nthe size of the 8 byte header.\n\nThe following chunk types are recognized.\n\n  FVER\n      <version number of AIFF-C defining document> (AIFF-C only).\n  MARK\n      <# of markers> (2 bytes)\n      list of markers:\n          <marker ID> (2 bytes, must be > 0)\n          <position> (4 bytes)\n          <marker name> (\"pstring\")\n  COMM\n      <# of channels> (2 bytes)\n      <# of sound frames> (4 bytes)\n      <size of the samples> (2 bytes)\n      <sampling frequency> (10 bytes, IEEE 80-bit extended\n          floating point)\n      in AIFF-C files only:\n      <compression type> (4 bytes)\n      <human-readable version of compression type> (\"pstring\")\n  SSND\n      <offset> (4 bytes, not used by this program)\n      <blocksize> (4 bytes, not used by this program)\n      <sound data>\n\nA pstring consists of 1 byte length, a string of characters, and 0 or 1\nbyte pad to make the total length even.\n\nUsage.\n\nReading AIFF files:\n  f = aifc.open(file, 'r')\nwhere file is either the name of a file or an open file pointer.\nThe open file pointer must have methods read(), seek(), and close().\nIn some types of audio files, if the setpos() method is not used,\nthe seek() method is not necessary.\n\nThis returns an instance of a class with the following public methods:\n  getnchannels()  -- returns number of audio channels (1 for\n             mono, 2 for stereo)\n  getsampwidth()  -- returns sample width in bytes\n  getframerate()  -- returns sampling frequency\n  getnframes()    -- returns number of audio frames\n  getcomptype()   -- returns compression type ('NONE' for AIFF files)\n  getcompname()   -- returns human-readable version of\n             compression type ('not compressed' for AIFF files)\n  getparams() -- returns a namedtuple consisting of all of the\n             above in the above order\n  getmarkers()    -- get the list of marks in the audio file or None\n             if there are no marks\n  getmark(id) -- get mark with the specified id (raises an error\n             if the mark does not exist)\n  readframes(n)   -- returns at most n frames of audio\n  rewind()    -- rewind to the beginning of the audio stream\n  setpos(pos) -- seek to the specified position\n  tell()      -- return the current position\n  close()     -- close the instance (make it unusable)\nThe position returned by tell(), the position given to setpos() and\nthe position of marks are all compatible and have nothing to do with\nthe actual position in the file.\nThe close() method is called automatically when the class instance\nis destroyed.\n\nWriting AIFF files:\n  f = aifc.open(file, 'w')\nwhere file is either the name of a file or an open file pointer.\nThe open file pointer must have methods write(), tell(), seek(), and\nclose().\n\nThis returns an instance of a class with the following public methods:\n  aiff()      -- create an AIFF file (AIFF-C default)\n  aifc()      -- create an AIFF-C file\n  setnchannels(n) -- set the number of channels\n  setsampwidth(n) -- set the sample width\n  setframerate(n) -- set the frame rate\n  setnframes(n)   -- set the number of frames\n  setcomptype(type, name)\n          -- set the compression type and the\n             human-readable compression type\n  setparams(tuple)\n          -- set all parameters at once\n  setmark(id, pos, name)\n          -- add specified mark to the list of marks\n  tell()      -- return current position in output file (useful\n             in combination with setmark())\n  writeframesraw(data)\n          -- write audio frames without pathing up the\n             file header\n  writeframes(data)\n          -- write audio frames and patch up the file header\n  close()     -- patch up the file header and close the\n             output file\nYou should set the parameters before the first writeframesraw or\nwriteframes.  The total number of frames does not need to be set,\nbut when it is set to the correct value, the header does not have to\nbe patched up.\nIt is best to first set all parameters, perhaps possibly the\ncompression type, and then write audio frames using writeframesraw.\nWhen all frames have been written, either call writeframes(b'') or\nclose() to patch up the sizes in the header.\nMarks can be added anytime.  If there are any marks, you must call\nclose() after all frames have been written.\nThe close() method is called automatically when the class instance\nis destroyed.\n\nWhen a file is opened with the extension '.aiff', an AIFF file is\nwritten, otherwise an AIFF-C file is written.  This default can be\nchanged by calling aiff() or aifc() before the first writeframes or\nwriteframesraw.",
+    "table": "tool_index",
+    "type": "sql_metadata"
+  }
+]

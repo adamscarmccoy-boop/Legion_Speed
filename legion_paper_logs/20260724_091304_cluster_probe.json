@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-07-24T13:12:34.149390+00:00",
+  "ray_address": "ray://127.0.0.1:10001",
+  "namespace": "legion",
+  "connected": false,
+  "live_actors": {},
+  "actor_classes_found": [],
+  "actor_classes_missing": [],
+  "resources": {}
+}

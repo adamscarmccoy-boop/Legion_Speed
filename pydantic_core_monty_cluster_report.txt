@@ -1,0 +1,36 @@
+========================================================================
+  PYDANTIC-CORE (RUST VALIDATOR) + PYDANTIC-MONTY (RUST VM) REPORT      
+========================================================================
+Timestamp                : 2026-08-12 05:44:12
+Target Directory         : C:\WEB CASE STUDY
+Files Processed          : 729
+Total Individual AST Nodes: 4588
+Rust Validated Records   : 4588
+Monty Clean AST Nodes    : 4588
+Monty Flagged AST Nodes  : 0
+Total Pipeline Latency   : 2386.25 ms (2.3862 sec)
+Average Latency Per AST  : 520.11 μs
+========================================================================
+
+SAMPLE VALIDATED RECORDS (FIRST 20):
+------------------------------------------------------------------------
+File: # lmstudio_openai_tools.py | Lines: 45 | Valid: True
+File: # lmstudio_openai_tools.py | Lines: 54 | Valid: True
+File: # train_segment_profile_ray.py | Lines: 24 | Valid: True
+File: # train_segment_profile_ray.py | Lines: 82 | Valid: True
+File: # train_segment_profile_ray.py | Lines: 90 | Valid: True
+File: # train_segment_profile_ray.py | Lines: 101 | Valid: True
+File: # train_segment_profile_ray.py | Lines: 207 | Valid: True
+File: # train_segment_profile_ray.py | Lines: 268 | Valid: True
+File: # train_segment_profile_ray.py | Lines: 284 | Valid: True
+File: # train_segment_profile_ray.py | Lines: 368 | Valid: True
+File: # train_segment_profile_ray.py | Lines: 450 | Valid: True
+File: # train_segment_profile_ray.py | Lines: 269 | Valid: True
+File: # train_segment_profile_ray.py | Lines: 280 | Valid: True
+File: 00000Untitled-1.py | Lines: 21 | Valid: True
+File: 00000Untitled-1.py | Lines: 46 | Valid: True
+File: 00Untitled-1.py | Lines: 24 | Valid: True
+File: 00Untitled-1.py | Lines: 78 | Valid: True
+File: 00Untitled-1.py | Lines: 187 | Valid: True
+File: 00Untitled-1.py | Lines: 84 | Valid: True
+File: 00Untitled-1.py | Lines: 101 | Valid: True

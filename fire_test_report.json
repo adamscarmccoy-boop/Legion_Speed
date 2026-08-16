@@ -1,0 +1,1632 @@
+[
+  {
+    "search_term": "AUTONOMOUS",
+    "total_matches_found": 27,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "signature_keywords": [
+          "self",
+          "print",
+          "values",
+          "track",
+          "return"
+        ],
+        "items": [
+          {
+            "symbol_name": "classify_code",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/code_lane_v2.py"
+          },
+          {
+            "symbol_name": "sort_single_file",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/usb_sorter.py"
+          },
+          {
+            "symbol_name": "analyze_audio_dna",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/swarm_analyzer.py"
+          },
+          {
+            "symbol_name": "generate_oracle_report",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/oracle_report.py"
+          },
+          {
+            "symbol_name": "store_equations",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/discovery_engine.py"
+          },
+          {
+            "symbol_name": "create_oracle_report_pdf",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pdf_report_exporter.py"
+          },
+          {
+            "symbol_name": "AutonomousLearningEngine",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/autonomous_learning_engine.py"
+          },
+          {
+            "symbol_name": "run_learning_cycle",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/autonomous_learning_engine.py"
+          },
+          {
+            "symbol_name": "log_audit",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/autonomous_learning_engine.py"
+          },
+          {
+            "symbol_name": "calculate_std_dev",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/autonomous_learning_engine.py"
+          },
+          {
+            "symbol_name": "AutonomousLearningEngine",
+            "type": "class",
+            "source_file": "E:/APP/VERTEX IN A BOX/oracle_engine.py"
+          },
+          {
+            "symbol_name": "run_learning_cycle",
+            "type": "function",
+            "source_file": "E:/APP/VERTEX IN A BOX/oracle_engine.py"
+          },
+          {
+            "symbol_name": "_std",
+            "type": "function",
+            "source_file": "E:/APP/VERTEX IN A BOX/oracle_engine.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "signature_keywords": [
+          "results",
+          "last_cycle",
+          "query",
+          "jsonify",
+          "api_learning"
+        ],
+        "items": [
+          {
+            "symbol_name": "api_learning",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/oracle_dashboard_v2.py"
+          },
+          {
+            "symbol_name": "api_learning",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/oracle_dashboard.py"
+          },
+          {
+            "symbol_name": "api_learning",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/visual_oracle_deploy/oracle_dashboard_v2.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "signature_keywords": [
+          "st",
+          "session_state",
+          "choice",
+          "admin",
+          "pending_count"
+        ],
+        "items": [
+          {
+            "symbol_name": "init_session_state",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_panel_autonomous.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_panel_autonomous.py"
+          },
+          {
+            "symbol_name": "show_dashboard",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_panel_autonomous.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "signature_keywords": [
+          "print",
+          "totals",
+          "main",
+          "engine",
+          "entry"
+        ],
+        "items": [
+          {
+            "symbol_name": "run_agent",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/swarm_agent_orchestrator.py"
+          },
+          {
+            "symbol_name": "autonomous_sorter",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/usb_sorter.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/ingest_hood_politics_music.py"
+          },
+          {
+            "symbol_name": "run_discovery",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/bitquery_public_data_discovery.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/autonomous_learning_engine.py"
+          },
+          {
+            "symbol_name": "main_loop",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/automation/swarm_warden.py"
+          },
+          {
+            "symbol_name": "run_discovery",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/cloud_functions/bitquery_public_data_discovery.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/VERTEX IN A BOX/oracle_engine.py"
+          }
+        ]
+      }
+    ],
+    "parquet_path": "C:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/lakehouse_data/mined_code.parquet"
+  },
+  {
+    "search_term": "RHYTHM",
+    "total_matches_found": 8,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "signature_keywords": [
+          "sr",
+          "self",
+          "np",
+          "float",
+          "features"
+        ],
+        "items": [
+          {
+            "symbol_name": "AudioFeatureExtractor",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/audio_feature_extractor.py"
+          },
+          {
+            "symbol_name": "extract_all_features",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/audio_feature_extractor.py"
+          },
+          {
+            "symbol_name": "_extract_rhythm_features",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/audio_feature_extractor.py"
+          },
+          {
+            "symbol_name": "extract_audio_telemetry",
+            "type": "function",
+            "source_file": "E:/AGENTS/ar-audio-toolkit/council_engine.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "signature_keywords": [
+          "telemetry",
+          "report",
+          "dna",
+          "json",
+          "data"
+        ],
+        "items": [
+          {
+            "symbol_name": "generate_market_group_review",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/hood_politics_dna_finder.py"
+          },
+          {
+            "symbol_name": "build_gemini_prompt",
+            "type": "function",
+            "source_file": "E:/AGENTS/ar-audio-toolkit/council_engine.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "signature_keywords": [
+          "st",
+          "session_state",
+          "customer_id",
+          "markdown",
+          "client"
+        ],
+        "items": [
+          {
+            "symbol_name": "upload_portal",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_upload_portal.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "signature_keywords": [
+          "story",
+          "append",
+          "inch",
+          "paragraph",
+          "spacer"
+        ],
+        "items": [
+          {
+            "symbol_name": "create_meeting_packet_pdf",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/generate_meeting_packet_pdf.py"
+          }
+        ]
+      }
+    ],
+    "parquet_path": "C:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/lakehouse_data/mined_code.parquet"
+  },
+  {
+    "search_term": "AUDIO",
+    "total_matches_found": 183,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "signature_keywords": [
+          "np",
+          "sr",
+          "float",
+          "librosa",
+          "mean"
+        ],
+        "items": [
+          {
+            "symbol_name": "_extract_real_features",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/deterministic_omni_pipeline.py"
+          },
+          {
+            "symbol_name": "_apply_pedalboard_effects",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/deterministic_omni_pipeline.py"
+          },
+          {
+            "symbol_name": "check_stereo_width_below_150",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/master_batch.py"
+          },
+          {
+            "symbol_name": "extract_audio_energies",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/master_batch.py"
+          },
+          {
+            "symbol_name": "AudioFeatureExtractor",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/audio_feature_extractor.py"
+          },
+          {
+            "symbol_name": "extract_all_features",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/audio_feature_extractor.py"
+          },
+          {
+            "symbol_name": "analyze_audio_file",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/swarm_analyzer.py"
+          },
+          {
+            "symbol_name": "extract_audio_features",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/docker/dna-extractor/main.py"
+          },
+          {
+            "symbol_name": "run_dna_analysis",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/cloud_functions/main.py"
+          },
+          {
+            "symbol_name": "download_and_analyze_track",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/process_dj_susan_tracks.py"
+          },
+          {
+            "symbol_name": "download_and_analyze_track",
+            "type": "function",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/process_dj_susan_tracks.py"
+          },
+          {
+            "symbol_name": "extract_audio_telemetry",
+            "type": "function",
+            "source_file": "E:/AGENTS/ar-audio-toolkit/council_engine.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "signature_keywords": [
+          "self",
+          "results",
+          "query",
+          "customer_id",
+          "project_id"
+        ],
+        "items": [
+          {
+            "symbol_name": "__init__",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/audio_feature_extractor.py"
+          },
+          {
+            "symbol_name": "__init__",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/clean_room_validator.py"
+          },
+          {
+            "symbol_name": "DemoProcessor",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/demo_processor.py"
+          },
+          {
+            "symbol_name": "api_warehouse",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/oracle_dashboard_v2.py"
+          },
+          {
+            "symbol_name": "api_artist",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/oracle_dashboard_v2.py"
+          },
+          {
+            "symbol_name": "api_warehouse",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/oracle_dashboard.py"
+          },
+          {
+            "symbol_name": "api_artist",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/oracle_dashboard.py"
+          },
+          {
+            "symbol_name": "DNASwarmOrchestrator",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/dna_swarm_orchestrator_robust.py"
+          },
+          {
+            "symbol_name": "get_pending_tracks",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/dna_swarm_orchestrator_robust.py"
+          },
+          {
+            "symbol_name": "get_customer_catalog",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/dna_swarm_orchestrator_robust.py"
+          },
+          {
+            "symbol_name": "run_dna_analysis",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/dna_swarm_orchestrator_robust.py"
+          },
+          {
+            "symbol_name": "run_auto_mode",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/dna_swarm_orchestrator_robust.py"
+          },
+          {
+            "symbol_name": "DSPPitchGenerator",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/market_dsp.py"
+          },
+          {
+            "symbol_name": "get_track_dna",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/market_dsp.py"
+          },
+          {
+            "symbol_name": "get_comparable_tracks",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/market_dsp.py"
+          },
+          {
+            "symbol_name": "generate_batch_pitches",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/market_dsp.py"
+          },
+          {
+            "symbol_name": "AutonomousLearningEngine",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/autonomous_learning_engine.py"
+          },
+          {
+            "symbol_name": "analyze_artist_catalog",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/autonomous_learning_engine.py"
+          },
+          {
+            "symbol_name": "score_all_tracks",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/autonomous_learning_engine.py"
+          },
+          {
+            "symbol_name": "SwarmChatAssistant",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_dashboard_enhanced.py"
+          },
+          {
+            "symbol_name": "render_dashboard",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_dashboard_enhanced.py"
+          },
+          {
+            "symbol_name": "process_message",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_dashboard_enhanced.py"
+          },
+          {
+            "symbol_name": "SandboxMusicGenerator",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/sandbox_music_generator.py"
+          },
+          {
+            "symbol_name": "__init__",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/sandbox_music_generator.py"
+          },
+          {
+            "symbol_name": "generate_from_prompt",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/sandbox_music_generator.py"
+          },
+          {
+            "symbol_name": "generate_from_stems",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/sandbox_music_generator.py"
+          },
+          {
+            "symbol_name": "SandboxPromptEngine",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/sandbox_prompt_engine.py"
+          },
+          {
+            "symbol_name": "_get_artist_dna_signature",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/sandbox_prompt_engine.py"
+          },
+          {
+            "symbol_name": "SandboxStemExtractor",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/sandbox_stem_extractor.py"
+          },
+          {
+            "symbol_name": "extract_stems",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/sandbox_stem_extractor.py"
+          },
+          {
+            "symbol_name": "api_warehouse",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/visual_oracle_deploy/oracle_dashboard_v2.py"
+          },
+          {
+            "symbol_name": "api_artist",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/visual_oracle_deploy/oracle_dashboard_v2.py"
+          },
+          {
+            "symbol_name": "SwarmChatAssistant",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_deploy/admin_dashboard_enhanced.py"
+          },
+          {
+            "symbol_name": "render_dashboard",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_deploy/admin_dashboard_enhanced.py"
+          },
+          {
+            "symbol_name": "process_message",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_deploy/admin_dashboard_enhanced.py"
+          },
+          {
+            "symbol_name": "SwarmChatAssistant",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_deploy/main.py"
+          },
+          {
+            "symbol_name": "render_dashboard",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_deploy/main.py"
+          },
+          {
+            "symbol_name": "process_message",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_deploy/main.py"
+          },
+          {
+            "symbol_name": "AutonomousLearningEngine",
+            "type": "class",
+            "source_file": "E:/APP/VERTEX IN A BOX/oracle_engine.py"
+          },
+          {
+            "symbol_name": "analyze_artist_catalog",
+            "type": "function",
+            "source_file": "E:/APP/VERTEX IN A BOX/oracle_engine.py"
+          },
+          {
+            "symbol_name": "score_all_tracks",
+            "type": "function",
+            "source_file": "E:/APP/VERTEX IN A BOX/oracle_engine.py"
+          },
+          {
+            "symbol_name": "SandboxStemExtractor",
+            "type": "class",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/sandbox_stem_extractor.py"
+          },
+          {
+            "symbol_name": "extract_stems",
+            "type": "function",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/sandbox_stem_extractor.py"
+          },
+          {
+            "symbol_name": "SandboxMusicGenerator",
+            "type": "class",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/sandbox_music_generator.py"
+          },
+          {
+            "symbol_name": "__init__",
+            "type": "function",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/sandbox_music_generator.py"
+          },
+          {
+            "symbol_name": "generate_from_prompt",
+            "type": "function",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/sandbox_music_generator.py"
+          },
+          {
+            "symbol_name": "generate_from_stems",
+            "type": "function",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/sandbox_music_generator.py"
+          },
+          {
+            "symbol_name": "SandboxPromptEngine",
+            "type": "class",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/sandbox_prompt_engine.py"
+          },
+          {
+            "symbol_name": "_get_artist_dna_signature",
+            "type": "function",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/sandbox_prompt_engine.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "signature_keywords": [
+          "print",
+          "audio",
+          "st",
+          "dna",
+          "report"
+        ],
+        "items": [
+          {
+            "symbol_name": "mono_below_frequency",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/master_batch.py"
+          },
+          {
+            "symbol_name": "master_track",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/master_batch.py"
+          },
+          {
+            "symbol_name": "export_catalog",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/music_catelog.py"
+          },
+          {
+            "symbol_name": "Lane2LanceDBVectors",
+            "type": "class",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/app/schemas.py"
+          },
+          {
+            "symbol_name": "get_track_dna_profile",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sample_pack_builder.py"
+          },
+          {
+            "symbol_name": "categorize_sample",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sample_pack_builder.py"
+          },
+          {
+            "symbol_name": "print_report",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/usb_sorter.py"
+          },
+          {
+            "symbol_name": "process_audio_directory",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/audio_feature_extractor.py"
+          },
+          {
+            "symbol_name": "show_dna_tab",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal_enhanced.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal_enhanced.py"
+          },
+          {
+            "symbol_name": "analyze_demo_dna",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/demo_processor.py"
+          },
+          {
+            "symbol_name": "onboard_new_customer",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_engine.py"
+          },
+          {
+            "symbol_name": "calculate_sub_bass_metrics",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sound_physics_engine.py"
+          },
+          {
+            "symbol_name": "upload_portal",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_upload_portal.py"
+          },
+          {
+            "symbol_name": "download_apple_previews",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/ingest_apple_previews.py"
+          },
+          {
+            "symbol_name": "compare_against_ground_truth",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/hood_politics_dna_finder.py"
+          },
+          {
+            "symbol_name": "generate_market_group_review",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/hood_politics_dna_finder.py"
+          },
+          {
+            "symbol_name": "show_upload",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal_working.py"
+          },
+          {
+            "symbol_name": "create_dna_xml",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/swarm_analyzer.py"
+          },
+          {
+            "symbol_name": "get_vertex_expert_insight",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/swarm_analyzer.py"
+          },
+          {
+            "symbol_name": "scan_audio_directories",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/ground_truth_verification.py"
+          },
+          {
+            "symbol_name": "run_ground_truth_verification",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/ground_truth_verification.py"
+          },
+          {
+            "symbol_name": "generate_meeting_report",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/ground_truth_verification.py"
+          },
+          {
+            "symbol_name": "generate_welcome_email",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_panel_autonomous.py"
+          },
+          {
+            "symbol_name": "show_dashboard",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_panel_autonomous.py"
+          },
+          {
+            "symbol_name": "show_system_config",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_panel_autonomous.py"
+          },
+          {
+            "symbol_name": "check_dna_data",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/verify_infrastructure.py"
+          },
+          {
+            "symbol_name": "get_statistical_summary",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/discovery_engine.py"
+          },
+          {
+            "symbol_name": "create_oracle_report_pdf",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pdf_report_exporter.py"
+          },
+          {
+            "symbol_name": "upload",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal.py"
+          },
+          {
+            "symbol_name": "create_meeting_packet_pdf",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/generate_meeting_packet_pdf.py"
+          },
+          {
+            "symbol_name": "upload_label_data",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/label_intake_api.py"
+          },
+          {
+            "symbol_name": "validate_audio_file",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/label_intake_api.py"
+          },
+          {
+            "symbol_name": "extract_dna",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/docker/dna-extractor/main.py"
+          },
+          {
+            "symbol_name": "process_single_dna",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/docker/dna-extractor/main.py"
+          },
+          {
+            "symbol_name": "get_upload_url",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/portal/main.py"
+          },
+          {
+            "symbol_name": "generate_music",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/portal/main.py"
+          },
+          {
+            "symbol_name": "is_official_video",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/automation/main.py"
+          },
+          {
+            "symbol_name": "get_artist_dna_signature",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/sandbox_music_generator.py"
+          },
+          {
+            "symbol_name": "dna_to_prompt",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/sandbox_prompt_engine.py"
+          },
+          {
+            "symbol_name": "judge_generation_quality",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/sandbox_prompt_engine.py"
+          },
+          {
+            "symbol_name": "get_upload_url",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer-portal/main.py"
+          },
+          {
+            "symbol_name": "trigger_dna_analysis",
+            "type": "function",
+            "source_file": "E:/APP/VERTEX IN A BOX/agent_api.py"
+          },
+          {
+            "symbol_name": "get_artist_dna_signature",
+            "type": "function",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/sandbox_music_generator.py"
+          },
+          {
+            "symbol_name": "dna_to_prompt",
+            "type": "function",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/sandbox_prompt_engine.py"
+          },
+          {
+            "symbol_name": "judge_generation_quality",
+            "type": "function",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/sandbox_prompt_engine.py"
+          },
+          {
+            "symbol_name": "sync_firebase_to_duckdb",
+            "type": "function",
+            "source_file": "E:/APP/SANDBOX/workspace/data_manager.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/AGENTS/jsondata.py"
+          },
+          {
+            "symbol_name": "build_gemini_prompt",
+            "type": "function",
+            "source_file": "E:/AGENTS/ar-audio-toolkit/council_engine.py"
+          },
+          {
+            "symbol_name": "run_pipeline",
+            "type": "function",
+            "source_file": "E:/AGENTS/ar-audio-toolkit/council_engine.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "signature_keywords": [
+          "row",
+          "print",
+          "query",
+          "gcs_path",
+          "client"
+        ],
+        "items": [
+          {
+            "symbol_name": "execute_network_session_audit",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/main.py"
+          },
+          {
+            "symbol_name": "load_all_data",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/music_catelog.py"
+          },
+          {
+            "symbol_name": "search_audio_catalog",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/rag_api.py"
+          },
+          {
+            "symbol_name": "get_all_samples",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sample_pack_builder.py"
+          },
+          {
+            "symbol_name": "ingest_gcs_to_ledger",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/ingest_reference_tracks.py"
+          },
+          {
+            "symbol_name": "get_vibe_clusters",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/historian_engine.py"
+          },
+          {
+            "symbol_name": "get_top_genres",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/historian_engine.py"
+          },
+          {
+            "symbol_name": "classify_file",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/usb_sorter.py"
+          },
+          {
+            "symbol_name": "sort_single_file",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/usb_sorter.py"
+          },
+          {
+            "symbol_name": "scan_and_classify_gcs",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/usb_sorter.py"
+          },
+          {
+            "symbol_name": "sort_files_gcs",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/usb_sorter.py"
+          },
+          {
+            "symbol_name": "BigQueryAudioLoader",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/audio_feature_extractor.py"
+          },
+          {
+            "symbol_name": "ensure_table_schema",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/audio_feature_extractor.py"
+          },
+          {
+            "symbol_name": "get_ledger_metrics",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/dashboard.py"
+          },
+          {
+            "symbol_name": "CleanRoomValidator",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/clean_room_validator.py"
+          },
+          {
+            "symbol_name": "LeanGatheringMachine",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/market_gathering_machine_v2.py"
+          },
+          {
+            "symbol_name": "scan_usb_minimal",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/market_gathering_machine_v2.py"
+          },
+          {
+            "symbol_name": "check_hood_politics_status",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/verify_hood_loop.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sound_physics_engine.py"
+          },
+          {
+            "symbol_name": "export_music_report",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/music_report_exporter.py"
+          },
+          {
+            "symbol_name": "get_customer_tracks",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal_app.py"
+          },
+          {
+            "symbol_name": "CustomerOnboardingAgent",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_onboarding_agent.py"
+          },
+          {
+            "symbol_name": "_run_dynamic_sql",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_onboarding_agent.py"
+          },
+          {
+            "symbol_name": "admin_dashboard",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_portal_simple.py"
+          },
+          {
+            "symbol_name": "check_bq",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/find_adamscarmccoy_data.py"
+          },
+          {
+            "symbol_name": "upload",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/simple_customer_portal.py"
+          },
+          {
+            "symbol_name": "query_hood_politics_from_warehouse",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/hood_politics_dna_finder.py"
+          },
+          {
+            "symbol_name": "run_dna_analysis_on_records",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/hood_politics_dna_finder.py"
+          },
+          {
+            "symbol_name": "simulate_gcs_triggers",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/simulate_triggers.py"
+          },
+          {
+            "symbol_name": "analyze_audio_dna",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/swarm_analyzer.py"
+          },
+          {
+            "symbol_name": "store_in_bigquery",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/swarm_analyzer.py"
+          },
+          {
+            "symbol_name": "init_tables",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/init_tables.py"
+          },
+          {
+            "symbol_name": "check_tables_exist",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/verify_infrastructure.py"
+          },
+          {
+            "symbol_name": "download_genre_assets",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/electronic_fresh_ingestor.py"
+          },
+          {
+            "symbol_name": "check_failures",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pipeline_watchdog.py"
+          },
+          {
+            "symbol_name": "ingest_apple_previews_lean",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/unified_lean_ingestion.py"
+          },
+          {
+            "symbol_name": "generate_summary_report",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/project_snapshot.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sound_physics_discovery.py"
+          },
+          {
+            "symbol_name": "get_stats",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/get_bq_stats_fast.py"
+          },
+          {
+            "symbol_name": "_calculate_dna_direct",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/dna_swarm_orchestrator_robust.py"
+          },
+          {
+            "symbol_name": "run_vibe_clustering",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/dna_swarm_orchestrator_robust.py"
+          },
+          {
+            "symbol_name": "get_ledger_metrics",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/operations_dashboard.py"
+          },
+          {
+            "symbol_name": "store_reference_dna",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/autonomous_learning_engine.py"
+          },
+          {
+            "symbol_name": "reorganize_warehouse",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/reorganize_warehouse.py"
+          },
+          {
+            "symbol_name": "dashboard",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal.py"
+          },
+          {
+            "symbol_name": "verify_upload_data",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/label_intake_api.py"
+          },
+          {
+            "symbol_name": "record_market_insight",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/bitquery_engine.py"
+          },
+          {
+            "symbol_name": "get_schema_context",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_dashboard_enhanced.py"
+          },
+          {
+            "symbol_name": "DNASwarmOrchestrator",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/_deprecated_runners/dna_swarm_orchestrator.py"
+          },
+          {
+            "symbol_name": "planner_node",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/_deprecated_runners/dna_swarm_orchestrator.py"
+          },
+          {
+            "symbol_name": "composer_node",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/_deprecated_runners/dna_swarm_orchestrator.py"
+          },
+          {
+            "symbol_name": "get_extraction_status",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/docker/dna-extractor/main.py"
+          },
+          {
+            "symbol_name": "download_from_gcs",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/docker/dna-extractor/main.py"
+          },
+          {
+            "symbol_name": "store_in_bigquery",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/docker/dna-extractor/main.py"
+          },
+          {
+            "symbol_name": "check_status",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/automation/check_ingestion_status.py"
+          },
+          {
+            "symbol_name": "CustomerOnboardingAgent",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/automation/customer_onboarding_agent.py"
+          },
+          {
+            "symbol_name": "_run_dynamic_sql",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/automation/customer_onboarding_agent.py"
+          },
+          {
+            "symbol_name": "view_top_tracks",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/automation/view_dna_top_tracks.py"
+          },
+          {
+            "symbol_name": "ingest_apple_genre",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/cloud_functions/apple_market_ingest.py"
+          },
+          {
+            "symbol_name": "record_market_insight",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/cloud_functions/bitquery_engine.py"
+          },
+          {
+            "symbol_name": "process_dna_upload",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/cloud_functions/main.py"
+          },
+          {
+            "symbol_name": "load_data",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/visualize_warehouse.py"
+          },
+          {
+            "symbol_name": "insert_into_bigquery",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/process_dj_susan_tracks.py"
+          },
+          {
+            "symbol_name": "search_bigquery",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/sandbox_music_generation/find_electric_fresh.py"
+          },
+          {
+            "symbol_name": "get_artist_tracks",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer-portal/main.py"
+          },
+          {
+            "symbol_name": "get_schema_context",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_deploy/admin_dashboard_enhanced.py"
+          },
+          {
+            "symbol_name": "get_schema_context",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/admin_deploy/main.py"
+          },
+          {
+            "symbol_name": "get_vibe_clusters",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/historian_deploy/historian_engine.py"
+          },
+          {
+            "symbol_name": "get_top_genres",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/historian_deploy/historian_engine.py"
+          },
+          {
+            "symbol_name": "get_vibe_clusters",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/historian_deploy/main.py"
+          },
+          {
+            "symbol_name": "get_top_genres",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/historian_deploy/main.py"
+          },
+          {
+            "symbol_name": "insert_into_bigquery",
+            "type": "function",
+            "source_file": "E:/APP/SANDBOX/sandbox_music_generation/process_dj_susan_tracks.py"
+          }
+        ]
+      }
+    ],
+    "parquet_path": "C:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/lakehouse_data/mined_code.parquet"
+  },
+  {
+    "search_term": "PIPELINE",
+    "total_matches_found": 39,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "signature_keywords": [
+          "combined",
+          "return",
+          "payload",
+          "audio",
+          "data"
+        ],
+        "items": [
+          {
+            "symbol_name": "classify_code",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/code_lane_engine.py"
+          },
+          {
+            "symbol_name": "classify_code",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/code_lane_v2.py"
+          },
+          {
+            "symbol_name": "execute_pipeline_endpoint",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/app/api.py"
+          },
+          {
+            "symbol_name": "check_failures",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pipeline_watchdog.py"
+          },
+          {
+            "symbol_name": "process_dna_upload",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/cloud_functions/main.py"
+          },
+          {
+            "symbol_name": "get_upload_url",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer-portal/main.py"
+          },
+          {
+            "symbol_name": "trigger_dna_analysis",
+            "type": "function",
+            "source_file": "E:/APP/VERTEX IN A BOX/agent_api.py"
+          },
+          {
+            "symbol_name": "market_latest",
+            "type": "function",
+            "source_file": "E:/APP/VERTEX IN A BOX/agent_api.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "signature_keywords": [
+          "st",
+          "status_counts",
+          "demo",
+          "status",
+          "fig"
+        ],
+        "items": [
+          {
+            "symbol_name": "demo_pipeline_chart",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal_enhanced.py"
+          },
+          {
+            "symbol_name": "main_dashboard",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal_enhanced.py"
+          },
+          {
+            "symbol_name": "show_demo_tab",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal_enhanced.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal_enhanced.py"
+          },
+          {
+            "symbol_name": "dashboard",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal_app.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "signature_keywords": [
+          "print",
+          "watchdog",
+          "70",
+          "py",
+          "report"
+        ],
+        "items": [
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/ask_antigravity.py"
+          },
+          {
+            "symbol_name": "discogs_data",
+            "type": "function",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/chris_lake_fire_test.py"
+          },
+          {
+            "symbol_name": "LocalWebQueryPayload",
+            "type": "class",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/main.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/ingest_hood_politics_music.py"
+          },
+          {
+            "symbol_name": "generate_market_group_review",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/hood_politics_dna_finder.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/hood_politics_dna_finder.py"
+          },
+          {
+            "symbol_name": "run_ground_truth_verification",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/ground_truth_verification.py"
+          },
+          {
+            "symbol_name": "run_lean_ingestion",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/ingest_lean_v1.py"
+          },
+          {
+            "symbol_name": "check_demo_pipeline",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/verify_infrastructure.py"
+          },
+          {
+            "symbol_name": "generate_readiness_report",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/verify_infrastructure.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pipeline_watchdog_v2.py"
+          },
+          {
+            "symbol_name": "run_watchdog_cycle",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pipeline_watchdog_v2.py"
+          },
+          {
+            "symbol_name": "run_continuous",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pipeline_watchdog_v2.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pipeline_watchdog.py"
+          },
+          {
+            "symbol_name": "create_meeting_packet_pdf",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/generate_meeting_packet_pdf.py"
+          },
+          {
+            "symbol_name": "main_loop",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/automation/swarm_warden.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/AGENTS/jsondata.py"
+          },
+          {
+            "symbol_name": "run_pipeline",
+            "type": "function",
+            "source_file": "E:/AGENTS/ar-audio-toolkit/council_engine.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "signature_keywords": [
+          "self",
+          "status",
+          "zombie",
+          "features",
+          "staging_id"
+        ],
+        "items": [
+          {
+            "symbol_name": "OmniVectorPayload",
+            "type": "class",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/app/schemas.py"
+          },
+          {
+            "symbol_name": "CleanRoomValidator",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/clean_room_validator.py"
+          },
+          {
+            "symbol_name": "validate_and_commit",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/clean_room_validator.py"
+          },
+          {
+            "symbol_name": "EnhancedPipelineWatchdog",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pipeline_watchdog_v2.py"
+          },
+          {
+            "symbol_name": "log_audit_alert",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pipeline_watchdog_v2.py"
+          },
+          {
+            "symbol_name": "kill_zombie_process",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pipeline_watchdog_v2.py"
+          },
+          {
+            "symbol_name": "restart_critical_service",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/pipeline_watchdog_v2.py"
+          },
+          {
+            "symbol_name": "status",
+            "type": "function",
+            "source_file": "E:/APP/VERTEX IN A BOX/agent_api.py"
+          }
+        ]
+      }
+    ],
+    "parquet_path": "C:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/lakehouse_data/mined_code.parquet"
+  },
+  {
+    "search_term": "CLUSTER",
+    "total_matches_found": 14,
+    "clusters": [
+      {
+        "cluster_id": 0,
+        "signature_keywords": [
+          "print",
+          "tables",
+          "all_exist",
+          "pending",
+          "data"
+        ],
+        "items": [
+          {
+            "symbol_name": "run_warehouse_dna_analysis",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/run_hood_politics_dna.py"
+          },
+          {
+            "symbol_name": "check_tables_exist",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/verify_infrastructure.py"
+          },
+          {
+            "symbol_name": "process_batch",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/dna_swarm_orchestrator_robust.py"
+          },
+          {
+            "symbol_name": "main",
+            "type": "function",
+            "source_file": "E:/AGENTS/jsondata.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 1,
+        "signature_keywords": [
+          "t1",
+          "t2",
+          "tempo",
+          "abs",
+          "customer_id"
+        ],
+        "items": [
+          {
+            "symbol_name": "get_vibe_clusters",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/historian_engine.py"
+          },
+          {
+            "symbol_name": "DNASwarmOrchestrator",
+            "type": "class",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/dna_swarm_orchestrator_robust.py"
+          },
+          {
+            "symbol_name": "run_vibe_clustering",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/dna_swarm_orchestrator_robust.py"
+          },
+          {
+            "symbol_name": "get_vibe_clusters",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/historian_deploy/historian_engine.py"
+          },
+          {
+            "symbol_name": "get_vibe_clusters",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/historian_deploy/main.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "signature_keywords": [
+          "list",
+          "int",
+          "code",
+          "codecluster",
+          "str"
+        ],
+        "items": [
+          {
+            "symbol_name": "CodeCluster",
+            "type": "class",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/code_lane_steps.py"
+          },
+          {
+            "symbol_name": "CodeLaneReport",
+            "type": "class",
+            "source_file": "c:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/code_lane_steps.py"
+          }
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "signature_keywords": [
+          "row",
+          "st",
+          "job_config",
+          "centroid_diff",
+          "track_a"
+        ],
+        "items": [
+          {
+            "symbol_name": "find_similar_vibes",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/bitquery_vibe_agent.py"
+          },
+          {
+            "symbol_name": "show_dna_tab",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/customer_portal_enhanced.py"
+          },
+          {
+            "symbol_name": "find_similar_vibes",
+            "type": "function",
+            "source_file": "E:/APP/antigravity_v2_full_backup/home/adamscarmccoy/antigravity-dna-v2/dna_analysis/ANTI-GRAVITY-SWARM-V2.0/cloud_functions/bitquery_vibe_agent.py"
+          }
+        ]
+      }
+    ],
+    "parquet_path": "C:/STUDIES_BACKUP/Legion-Jacked-Pipeline/ableton-session-intelligence/lakehouse_data/mined_code.parquet"
+  }
+]

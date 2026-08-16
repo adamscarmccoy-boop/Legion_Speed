@@ -1,0 +1,28 @@
+# Architect Feedback: OmniCondVAE v3
+**Date:** 2026-06-30
+**Status:** REVIEWED
+
+## 1. Mathematical Correctness (VAE)
+- **Reparameterization:** Implemented correctly: `mu + torch.exp(0.5 * log_var) * torch.randn_like(mu)`. Standard VAE practice.
+- **KL Divergence:** Implemented as `-0.5 * torch.mean(1 + log_var - mu.pow(2) - log_var.exp())`. This is the correct closed-form solution for a Gaussian prior.
+- **Conditioning:** The `_cond` method correctly concatenates genre embeddings and normalized BPM. The encoder and decoder both receive the condition, which is essential for a Conditional VAE (CVAE) to ensure the latent space $z$ is disentangled from the condition.
+
+## 2. DSP Feature Consistency
+- **RMS to dB:** `20 * np.log10(max(float(v), 1e-9))`. Mathematically sound. The `1e-9` floor prevents $\log(0)$ errors.
+- **Normalization:** Uses Z-score normalization (`(X - mean) / std`). This is appropriate for neural networks to ensure gradients don't explode or vanish.
+- **Slicing:** The logic `recon[:, -12:-1]` to extract 11 DSP features assumes a specific order in the Omni-vector. Since the vector is built as `[sem_vec, dsp_cols, bpm]`, and `dsp_cols` has 11 elements and `bpm` has 1, the last 12 elements are indeed DSP + BPM. Taking `[:-1]` correctly isolates the DSP features for the mastering head.
+
+## 3. Mastering Head Output
+- **Architecture:** A simple MLP (`11 -> 64 -> 32 -> 3`).
+- **Output Ranges:** The `generate` loop applies `np.clip` to the outputs:
+    - Gain: `[-12.0, 12.0]` dB
+    - Ratio: `[1.0, 4.5]`
+    - Threshold: `[-80.0, 0.0]` dB
+- **Critique:** While clipped at the *demo* stage, the model itself has no activation on the final layer (Linear). This allows the model to predict any value, which is flexible but relies entirely on the clipping logic in the implementation rather than the model's internal constraints.
+
+## 4. Generation Efficiency
+- **Complexity:** `generate` is a single forward pass through the decoder.
+- **Latency:** Negligible. With a small architecture (Linear layers), inference time is likely <1ms on CPU, well within the <20ms target for DSP-related metadata generation.
+
+## Summary
+The architectural logic is sound. The transition from semantic latent space to DSP parameters is cleanly handled.

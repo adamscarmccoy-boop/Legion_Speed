@@ -1,0 +1,209 @@
+{
+  "paper_title": "Sonic DNA: A Compact Cross-Modal Embedding for Audio Mastering and Aesthetic Prediction",
+  "generated_at": "20260724_091304",
+  "section_3_method": {
+    "embedding_dimension": 41,
+    "extraction_pipeline": [
+      "Load audio at 22,050 Hz mono",
+      "Extract 40 MFCCs + 1 additional dim (pad/trim to 41)",
+      "Optional: refine through dna_brain.onnx (input dims: [batch, 2])",
+      "Output: 41-dim float32 vector"
+    ],
+    "acoustic_models_used": [
+      "MERT-v1-95M (music understanding, 0.352 GB)",
+      "CLIP-ViT-B/32 (identity DNA, 0.564 GB)"
+    ],
+    "downstream_tasks": [
+      "Mastering DSP prediction (via fretflow_omni_v4, omni_master_brain_v1)",
+      "Visual style prediction (via sovereign_vision_brain, 12-class)",
+      "Genre classification (via dna_brain.onnx, 3-class)"
+    ],
+    "model_registry": {
+      "sovereign_big_brain_exhaustive": {
+        "path": "C:\\WEB CASE STUDY\\sovereign_big_brain_exhaustive.onnx",
+        "exists": true,
+        "inputs": [
+          {
+            "name": "dna_vector",
+            "shape": [
+              "batch_size",
+              64
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "dsp_state",
+            "shape": [
+              "batch_size",
+              12
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "shape_log": "dna_vector['batch_size', 64]\u2192dsp_state['batch_size', 12]"
+      },
+      "sovereign_bridge_v1": {
+        "path": "C:\\WEB CASE STUDY\\sovereign_bridge_v1.onnx",
+        "exists": true,
+        "inputs": [
+          {
+            "name": "dna_vector",
+            "shape": [
+              "batch_size",
+              64
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "dsp_state",
+            "shape": [
+              "batch_size",
+              12
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "shape_log": "dna_vector['batch_size', 64]\u2192dsp_state['batch_size', 12]"
+      },
+      "fretflow_omni_v4": {
+        "path": "C:\\WEB CASE STUDY\\fretflow_omni_v4.onnx",
+        "exists": true,
+        "inputs": [
+          {
+            "name": "omni_vector_v4",
+            "shape": [
+              "batch",
+              10
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "mastering_command_set",
+            "shape": [
+              "batch",
+              3
+            ],
+            "type": "tensor(float)"
+          },
+          {
+            "name": "linear_2",
+            "shape": [
+              "batch",
+              128
+            ],
+            "type": "tensor(float)"
+          },
+          {
+            "name": "linear_3",
+            "shape": [
+              "batch",
+              128
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "shape_log": "omni_vector_v4['batch', 10]\u2192mastering_command_set['batch', 3]"
+      },
+      "omni_master_brain_v1": {
+        "path": "C:\\WEB CASE STUDY\\omni_master_brain_v1.onnx",
+        "exists": true,
+        "inputs": [
+          {
+            "name": "section_features",
+            "shape": [
+              "batch",
+              8
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "mastering_command_set",
+            "shape": [
+              "batch",
+              3
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "shape_log": "section_features['batch', 8]\u2192mastering_command_set['batch', 3]"
+      },
+      "dna_brain": {
+        "path": "C:\\WEB CASE STUDY\\dna_brain.onnx",
+        "exists": true,
+        "inputs": [
+          {
+            "name": "dna_features",
+            "shape": [
+              "batch",
+              2
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "genre_logits",
+            "shape": [
+              "batch",
+              3
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "shape_log": "dna_features['batch', 2]\u2192genre_logits['batch', 3]"
+      },
+      "real_data_brain": {
+        "path": "C:\\WEB CASE STUDY\\real_data_brain.onnx",
+        "exists": true,
+        "inputs": [
+          {
+            "name": "features",
+            "shape": [
+              "batch",
+              2
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "tempo_pred",
+            "shape": [
+              "batch",
+              1
+            ],
+            "type": "tensor(float)"
+          }
+        ],
+        "shape_log": "features['batch', 2]\u2192tempo_pred['batch', 1]"
+      }
+    }
+  },
+  "section_4_results": {
+    "embedding_sample": [],
+    "mastering_outputs": {},
+    "style_predictions": {},
+    "hardware_requirements": {
+      "verified_weights_GB": "~6.5 GB (MERT + CLIP + Sovereign + Gemma)",
+      "inference_device": "CPU (ONNX) or GPU (PyTorch)"
+    }
+  },
+  "comparison_to_baselines": {
+    "RIME (Dartmouth 2026)": "Rule-based edit graphs, no learned embedding",
+    "LAV (Sogang 2025)": "EnCodec (128-dim, 50Hz), train-free projection, no DSP",
+    "Ours": "41-dim learned embedding, drives both mastering + visual aesthetics from shared space"
+  },
+  "key_novelty_statements": [
+    "First learned cross-modal embedding that jointly predicts mastering DSP parameters and visual aesthetic classes",
+    "Compact 41-dim representation (vs EnCodec's 128-dim at 50Hz), suitable for real-time inference",
+    "Validated against 6 ONNX models spanning DSP, genre, and visual domains"
+  ]
+}

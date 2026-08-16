@@ -1,0 +1,54 @@
+{
+  "python.defaultInterpreterPath": "c:/WEB CASE STUDY/.venv/Scripts/python.exe",
+  "python.analysis.extraPaths": [
+    "c:/WEB CASE STUDY/src"
+  ],
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.callArgumentNames": "partial",
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.pytestFixtures": true,
+  "python.analysis.inlayHints.functionParameters": true,
+  "python.analysis.inlayHints.enumMembers": true,
+  "python.analysis.inlayHints.argumentTypes": true,
+  "python.analysis.inlayHints.variableTypes.enabled": true,
+  "python.analysis.inlayHints.functionReturnTypes.enabled": true,
+  "python.analysis.inlayHints.callArgumentNames.enabled": true,
+  "python.analysis.inlayHints.pytestParameters.enabled": true,
+  "python.analysis.inlayHints.pytestFixtures.enabled": true,
+  "python.analysis.inlayHints.functionParameters.enabled": true,
+  "python.analysis.inlayHints.enumMembers.enabled": true,
+  "python.analysis.inlayHints.argumentTypes.enabled": true,
+  "python.analysis.inlayHints.variableTypes.minimumLength": 1,
+  "python.analysis.inlayHints.functionReturnTypes.minimumLength": 1,
+  "python.analysis.inlayHints.callArgumentNames.minimumLength": 1,
+  "python.analysis.inlayHints.pytestParameters.minimumLength": 1,
+  "python.analysis.inlayHints.pytestFixtures.minimumLength": 1,
+  "python.analysis.inlayHints.functionParameters.minimumLength": 1,
+  "python.analysis.inlayHints.enumMembers.minimumLength": 1,
+  "python.analysis.inlayHints.argumentTypes.minimumLength": 1,
+  "mcpServers": {
+    "LegionLakehouse_RAG": {
+      "command": "c:/WEB CASE STUDY/.venv/Scripts/python.exe",
+      "args": [
+        "c:/WEB CASE STUDY/mcp_rag_server.py"
+      ],
+      "timeout": 30000,
+      "env": {
+        "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION": "python"
+      }
+    }
+  },
+  "experimental": {
+    "gemmaModelRouter": {
+      "enabled": true,
+      "classifier": {
+        "host": "http://localhost:9379",
+        "model": "gemma3-1b-gpu-custom"
+      }
+    }
+  }
+}

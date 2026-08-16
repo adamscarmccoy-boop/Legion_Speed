@@ -1,0 +1,25 @@
+# Auditor Feedback: OmniCondVAE v3
+**Date:** 2026-06-30
+**Status:** REVIEWED
+
+## 1. Data Ingestion Robustness
+- **Missing Columns:** The script handles missing DSP columns by filling them with `0.0`. While this prevents crashes, it introduces "zero-noise" into the training set. 
+- **Multi-Source Merge:** The concatenation of LanceDB, DuckDB, and JSON data is handled via separate frames. However, there is no check for overlapping samples (de-duplication). If the same track exists in both DuckDB and LanceDB, it is over-represented in the training set.
+- **NaN Handling:** Uses `np.nan_to_num` and `.fillna(0.0)`. Robust against runtime crashes.
+
+## 2. Training Loop Stability
+- **KL Warmup:** Implemented with `beta = min(1.0, ep / KL_WARMUP)`. This is critical to prevent "posterior collapse" where the model ignores the latent space.
+- **Learning Rate:** Uses `CosineAnnealingLR` decaying from `3e-4` to `1e-5`. This is a high-standard approach for convergence.
+- **Gradient Clipping:** `nn.utils.clip_grad_norm_(model.parameters(), 1.0)` is present, preventing exploding gradients during the early phases of training.
+
+## 3. Persistence & Telemetry
+- **Weights:** Saves a comprehensive dictionary containing not only the `state_dict` but also the metadata (`X_mean`, `X_std`, `genre2idx`). This ensures the model is usable in a production inference script without needing the original training data.
+- **Loss Curves:** Saves a PNG of reconstruction vs. KL loss. 
+- **Critique:** The training loop prints progress every 100 epochs. For 1500 epochs, this is acceptable, but for larger scales, a TensorBoard/WandB integration would be preferred.
+
+## 4. Reproducibility
+- **Seeds:** `torch.manual_seed` or `np.random.seed` are **NOT** present. 
+- **Observation:** The model's final weights will vary between runs. While acceptable for a PoC, this is a failure in strict auditing standards.
+
+## Summary
+The pipeline is stable and robust. The primary gaps are the lack of explicit seeding and the potential for data duplication across sources.

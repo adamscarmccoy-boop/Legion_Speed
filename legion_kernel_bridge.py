@@ -53,6 +53,21 @@ class LlamaKernelBridge:
                             print(f"🔑 [AUTH TOKEN] Dynamic session key acquired: {self.api_key[:8]}...")
                         if self.model_path:
                             print(f"🧠 [MODEL] {self.model_path.split(chr(92))[-1]}")
+                        
+                        # Broadcast dynamic port and key to shared JSON file for C++ Winsock client access
+                        try:
+                            shared_data = {
+                                "host": self.host,
+                                "port": self.port,
+                                "api_key": self.api_key,
+                                "model_path": self.model_path,
+                                "timestamp": time.time()
+                            }
+                            with open(r"C:\WEB CASE STUDY\sovereign_kernel_address.json", "w") as sf:
+                                json.dump(shared_data, sf, indent=2)
+                            print("📤 [BROADCAST] Discovered address exported to C:\\WEB CASE STUDY\\sovereign_kernel_address.json")
+                        except Exception as ex:
+                            print(f"⚠️ [BROADCAST ERROR] Failed to write shared configuration: {ex}")
                         return True
             except (psutil.NoSuchProcess, psutil.AccessDenied):
                 pass

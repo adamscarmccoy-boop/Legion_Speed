@@ -1,0 +1,914 @@
+{
+  "generated_at": "2026-07-30T18:00:46Z",
+  "total_tables": 132,
+  "tables": {
+    "000_-_MASTERED_EXPORT": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "ABELTON-000": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "ableton-session-intelligence": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "ADOBE": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "AGENTS": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "APP": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "Apps": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "CACHE": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "COLLECT_ALL": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "COLLECT_ALL_-_2025_LATE": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "COLLECT_ALL_-__2025_": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "COLLECT_ALL_2016": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "Contents": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "DJSUSAN": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "DOWNLOAD": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "EXPORT_ALL": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "FOUND_000": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "MUSIC": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "New_folder": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "OLD_ABLETON": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "OMNI_GRAPH_WEB_AGENT": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "OTHER": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "PIONEER": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "PIONEER_REC": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "Programs": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "Program_Files": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "RELEASE-DEMO": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "scars_SAMPLE_PACKS": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "untitled_folder": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "WEB_CASE_STUDY": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "2new_notebook": {
+      "rows": 343,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "AI_MODE": {
+      "rows": 121,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "ai_mode1": {
+      "rows": 25,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "ai_mode_1": {
+      "rows": 71,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "antigravity_advice": {
+      "rows": 44,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "antigravity_codegen_output": {
+      "rows": 165,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "antigravity_codegen_output_1": {
+      "rows": 151,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "antigravity_codegen_output_2": {
+      "rows": 2,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "antigravity_codegen_output_3": {
+      "rows": 71,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "antigravity_codegen_output_4": {
+      "rows": 7,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "antigravity_codegen_output_5": {
+      "rows": 5,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "antigravity_codegen_output_6": {
+      "rows": 4,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "antigravity_legion_dsp_output": {
+      "rows": 60,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "antigravity_real_dsp_output": {
+      "rows": 76,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "antigravity_session_log": {
+      "rows": 21,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "brain_stereo_plan": {
+      "rows": 4,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "BUSINESS_PLAN": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "CHAT_HISTORY": {
+      "rows": 3,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "ching for Gemma ONNX": {
+      "rows": 15,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "CMakeLists": {
+      "rows": 4,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "collision_orchestrator_comparison": {
+      "rows": 8,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "current_session_chat": {
+      "rows": 7,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "data_discovery_guide": {
+      "rows": 42,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "data_discovery_guide_1": {
+      "rows": 27,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "data_discovery_guide_2": {
+      "rows": 29,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "data_discovery_guide_3": {
+      "rows": 43,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Differentiable_Video_Roadmap-part2": {
+      "rows": 165,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Differentiable_Video_Roadmap": {
+      "rows": 65,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Downloads_Leaderboard": {
+      "rows": 7,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "Downloads_Leaderboard_New": {
+      "rows": 8,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "entire_conversation_history": {
+      "rows": 5808,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "fire_test_log": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "flog": {
+      "rows": 9,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "FretFlow-Review-Package": {
+      "rows": 8,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "gemini_cells_response": {
+      "rows": 92,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "gemini_cli_output": {
+      "rows": 23,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "gemini_job_finder_actor_codegen_output": {
+      "rows": 106,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "gemini_job_finder_grounded_output": {
+      "rows": 155,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "gemini_phase_codegen": {
+      "rows": 118,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "gemini_phase_codegen_1": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "gemini_transcript_help_response": {
+      "rows": 5,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "GEMMA_FIX": {
+      "rows": 5,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "GEMMA_INFERENCE_STATUS": {
+      "rows": 5,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Genome-Brain-actively": {
+      "rows": 129,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "I have reviewed the web_intel_pipeline": {
+      "rows": 80,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "INSTALLATION_PROGRESS": {
+      "rows": 5,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "INVENTORY_20260622_222600": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "JULES_TEAM": {
+      "rows": 40,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "legion_graph": {
+      "rows": 53,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "LEGION_MANIFEST": {
+      "rows": 115,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "legion_mcp_fixes_logfire": {
+      "rows": 48,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "legion_pipeline_whitepaper": {
+      "rows": 30,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "LEGION_SESSION_REPORT_2026-06-25": {
+      "rows": 66,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Legion_Startup_Guide": {
+      "rows": 17,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "LEGION_SYSTEM_OVERVIEW": {
+      "rows": 47,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "local_prospect_parser": {
+      "rows": 6,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "LOST_WEIGHTS_REPORT": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Mac_Birthday_Present_Analysis": {
+      "rows": 85,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Mac_Birthday_Present_Analysis_1": {
+      "rows": 73,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Mac_Birthday_Present_Analysis_2": {
+      "rows": 39,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Mac_Birthday_Present_Analysis_3": {
+      "rows": 55,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "MASTER_BLUEPRINT": {
+      "rows": 132,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "mcp_output": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "mcp_swarm_gateway": {
+      "rows": 33,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "MUSIC_AND_VIDEO": {
+      "rows": 42,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "nb_code": {
+      "rows": 9,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "new_notebook": {
+      "rows": 41,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "OmniCondVAE_v3_Engineering_PostMortem": {
+      "rows": 32,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "output": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "PROJECT_SUMMARY": {
+      "rows": 13,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "RAY_MUSIC_GENERATION": {
+      "rows": 23,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "REALTIME_SPEED": {
+      "rows": 71,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "recent_conversation_history": {
+      "rows": 229,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "requirements": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Roadmap and Minimal Milestones": {
+      "rows": 60,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "scars_code_truth_swarm_notebook": {
+      "rows": 22,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "scratch_tail": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "SKILL": {
+      "rows": 15,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "sovereign_bridge_analysis": {
+      "rows": 48,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "SOVEREIGN_ENGINE_MANIFESTO": {
+      "rows": 28,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Sovereign_Mastering_Audit_Notebook": {
+      "rows": 11,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "sovereign_run_20260714_021019": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "sovereign_vision_pipeline_guide": {
+      "rows": 19,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "STARTUP_GUIDE": {
+      "rows": 20,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "swarm_boot_error": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "transcript_dump": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "unified_forest": {
+      "rows": 20,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "Untitled-1": {
+      "rows": 26,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Untitled-11": {
+      "rows": 14,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "Untitled-2": {
+      "rows": 26,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "upgraded_dynamic_batch_master_complete": {
+      "rows": 47,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "WEAPONIZE_PROSPECT_PLAN": {
+      "rows": 57,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "web_intel_pipeline - Copy": {
+      "rows": 9,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "web_intel_pipeline": {
+      "rows": 41,
+      "columns": [
+        "cell_index",
+        "cell_type",
+        "source"
+      ]
+    },
+    "weight_audit_list": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "ray_core_intro": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "ray_data_intro": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "ray_data_key_concepts": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "ray_rllib_intro": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "ray_serve_intro": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "ray_serve_key_concepts": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    },
+    "ray_train_intro": {
+      "rows": 1,
+      "columns": [
+        "paragraph_index",
+        "content"
+      ]
+    }
+  }
+}

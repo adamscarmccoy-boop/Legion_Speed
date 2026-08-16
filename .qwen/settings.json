@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "all"
+    ]
+  },
+  "skills": {
+    "disabledLevels": [
+      "project",
+      "user",
+      "extension",
+      "bundled"
+    ]
+  },
+  "$version": 4
+}

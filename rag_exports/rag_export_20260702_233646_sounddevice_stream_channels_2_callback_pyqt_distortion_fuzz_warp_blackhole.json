@@ -1,0 +1,190 @@
+{
+  "query": "sounddevice Stream channels 2 callback PyQt distortion fuzz warp BlackHole",
+  "created_at": "2026-07-02T23:36:46",
+  "db_path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+  "embedding_model": "text-embedding-snowflake-arctic-embed-l-v2.0",
+  "embedding_status": "ok, dims=1024",
+  "limit": 12,
+  "chars": 8000,
+  "imports": {
+    "lancedb": "ok",
+    "pandas": "ok",
+    "ray": "ok",
+    "pyarrow": "ok"
+  },
+  "db_probe": [
+    {
+      "path": "E:\\WEB CASE STUDY\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "C:\\STUDIES_BACKUP\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [
+        "chris_lake_speed_test",
+        "chris_lake_web_intel",
+        "mined_code_vectors",
+        "mined_documentation_vectors"
+      ],
+      "error": null,
+      "score": 2
+    },
+    {
+      "path": "C:\\WEB CASE STUDY\\lancedb_web_intel_rag",
+      "exists": true,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "C:\\WEB CASE STUDY\\Legion-Jacked-Pipeline\\ableton-session-intelligence\\lancedb_web_intel_rag",
+      "exists": false,
+      "tables": [],
+      "error": null,
+      "score": 0
+    },
+    {
+      "path": "E:\\WEB CASE STUDY\\lancedb_web_intel_rag",
+      "exists": false,
+      "tables": [],
+      "error": null,
+      "score": 0
+    }
+  ],
+  "tables": [
+    "chris_lake_speed_test",
+    "chris_lake_web_intel",
+    "mined_code_vectors",
+    "mined_documentation_vectors"
+  ],
+  "errors": [],
+  "code_results": [
+    {
+      "source_file": "C:/WEB CASE STUDY/brute_scan.py",
+      "symbol_name": "module",
+      "distance": 1.0440512895584106,
+      "content": "import sounddevice as sd\nimport numpy as np\nimport soundfile as sf\nimport os\nimport json\n\ndef brute_force_scan():\n    print(\"🚀 STARTING BRUTE FORCE AUDIO SCAN...\")\n    devices = sd.query_devices()\n    input_indices = [i for i, d in enumerate(devices) if d['max_input_channels'] > 0]\n    \n    if not os.path.exists('probes'):\n        os.makedirs('probes')\n        \n    results = []\n    \n    for idx in input_indices:\n        name = devices[idx]['name']\n        api = sd.query_hostapis(devices[idx]['hostapi'])['name']\n        rate = int(devices[idx]['default_samplerate'])\n        \n        print(f\"Probing [{idx}] {name} ({api})...\", end='', flush=True)\n        \n        try:\n            # Capture 2 seconds\n            # Use int16 for maximum compatibility\n            rec = sd.rec(int(rate * 2), samplerate=rate, channels=1, dtype='int16', device=idx, blocking=True)\n            y = rec.flatten().astype('float32') / 32768.0\n            \n            # Binary Clean\n            y = np.nan_to_num(y)\n "
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/test_audio_capture.py",
+      "symbol_name": "module",
+      "distance": 1.044122338294983,
+      "content": "import sounddevice as sd\nimport numpy as np\nimport time\nfrom pedalboard import Pedalboard, Compressor, Reverb\nimport soundfile as sf\n\ndef test_capture():\n    print(\"--- Sovereign Audio Link Diagnostic ---\")\n    # 1. Find Stereo Mix or Loopback device\n    devices = sd.query_devices()\n\n    loopback_dev = None\n    # Look for 'Stereo Mix' first\n    for i, d in enumerate(devices):\n        if 'Stereo Mix' in d['name'] and d['max_input_channels'] > 0:\n            loopback_dev = i\n            break\n\n    # Fallback to any device with input channels that isn't a microphone if possible\n    if loopback_dev is None:\n        for i, d in enumerate(devices):\n            if d['max_input_channels'] > 0 and 'Microphone' not in d['name']:\n                loopback_dev = i\n                break\n\n    if loopback_dev is None:\n        # Final fallback to first input device\n        for i, d in enumerate(devices):\n            if d['max_input_channels'] > 0:\n                loopback_dev = i\n                break\n"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/sovereign_audio_link.py",
+      "symbol_name": "module",
+      "distance": 1.0514671802520752,
+      "content": "import sounddevice as sd\nimport numpy as np\nimport ipywidgets as widgets\nfrom pedalboard import Pedalboard, Compressor, Reverb, HighpassFilter\nfrom IPython.display import display\nimport threading\n\nclass SovereignWASAPIWidget:\n    def __init__(self):\n        # 1. Setup Pedalboard Effects (Bypass - No effects)\n        self.board = Pedalboard([])\n        \n        self.running = False\n        self.stream = None\n        \n        # 2. Find WASAPI Loopback Devices\n        devices = sd.query_devices()\n        wasapi_api_index = next((i for i, api in enumerate(sd.query_hostapis()) if \"WASAPI\" in api['name']), None)\n        \n        self.loopback_options = {}\n        if wasapi_api_index is not None:\n            for i, d in enumerate(devices):\n                # On Windows WASAPI, output devices can be used as loopback inputs\n                if d['hostapi'] == wasapi_api_index and d['max_output_channels'] > 0:\n                    name = f\"LOOPBACK: {d['name']}\"\n                    self.loopback_op"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/sovereign_audio_link.py",
+      "symbol_name": "audio_callback",
+      "distance": 1.0803053379058838,
+      "content": "def audio_callback(self, indata, outdata, frames, time, status):\n        if status:\n            print(status)\n        # Process the captured loopback audio through Pedalboard\n        # outdata is what we hear (processed)\n        processed = self.board(indata, sd.query_devices(self.device_dropdown.value)['default_samplerate'])\n        outdata[:] = processed"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/hunt_signal_v2.py",
+      "symbol_name": "module",
+      "distance": 1.0819061994552612,
+      "content": "import sounddevice as sd\nimport numpy as np\nimport soundfile as sf\nimport json\nimport logging\n\nlogging.basicConfig(level=logging.INFO)\nlogger = logging.getLogger(\"SignalHunt\")\n\ndef hunt():\n    logger.info(\"SEARCHING FOR LIVE SIGNAL...\")\n    devices = sd.query_devices()\n    hot_devices = []\n    \n    for i, d in enumerate(devices):\n        if d['max_input_channels'] > 0:\n            rate = int(d['default_samplerate'])\n            try:\n                # Probe 1 second\n                rec = sd.rec(rate, samplerate=rate, channels=1, dtype='int16', device=i, blocking=True)\n                y = rec.flatten().astype('float32') / 32768.0\n                peak = np.max(np.abs(y))\n                rms = np.sqrt(np.mean(y**2))\n                \n                if peak > 0.005: # Threshold for 'actual' audio vs noise\n                    logger.info(f\"MATCH: [{i}] {d['name']} | Peak: {peak:.4f} | RMS: {rms:.4f}\")\n                    hot_devices.append({\n                        \"id\": i,\n                 "
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/find_signal.py",
+      "symbol_name": "module",
+      "distance": 1.0984208583831787,
+      "content": "import sounddevice as sd\nimport numpy as np\nimport time\n\ndef find_the_hot_signal():\n    print(\"SCANNING ALL INPUTS FOR LIVE SIGNAL...\")\n    devices = sd.query_devices()\n    input_devices = [i for i, d in enumerate(devices) if d['max_input_channels'] > 0]\n    \n    results = []\n    \n    for idx in input_devices:\n        name = devices[idx]['name']\n        sr = int(devices[idx]['default_samplerate'])\n        print(f\"Checking [{idx}] {name}...\", end='', flush=True)\n        \n        try:\n            # Capture 1 second\n            rec = sd.rec(int(sr), samplerate=sr, channels=1, device=idx, blocking=True)\n            peak = np.max(np.abs(rec))\n            rms = np.sqrt(np.mean(rec**2))\n            print(f\" PEAK: {peak:.4f} | RMS: {rms:.4f}\")\n            results.append((idx, name, peak, rms))\n        except Exception as e:\n            print(f\" ERROR: {e}\")\n            \n    print(\"\\n--- SCAN COMPLETE ---\")\n    results.sort(key=lambda x: x[2], reverse=True)\n    \n    if results and results[0][2]"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/bulk_generator_clean.py",
+      "symbol_name": "FretFlowEngine",
+      "distance": 1.1009180545806885,
+      "content": "class FretFlowEngine(nn.Module):\n    def __init__(self, in_dim, latent_dim):\n        super().__init__()\n        self.encoder = nn.Sequential(\n            nn.Linear(in_dim, 256), nn.LayerNorm(256), nn.GELU(),\n            nn.Linear(256, 128), nn.LayerNorm(128), nn.GELU(),\n            nn.Linear(128, latent_dim)\n        )\n        self.decoder = nn.Sequential(\n            nn.Linear(latent_dim, 128), nn.GELU(),\n            nn.Linear(128, 256), nn.GELU(),\n            nn.Linear(256, in_dim)\n        )\n    def forward(self, x):\n        return self.decoder(self.encoder(x))"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/test_audio_capture.py",
+      "symbol_name": "test_capture",
+      "distance": 1.1052902936935425,
+      "content": "def test_capture():\n    print(\"--- Sovereign Audio Link Diagnostic ---\")\n    # 1. Find Stereo Mix or Loopback device\n    devices = sd.query_devices()\n\n    loopback_dev = None\n    # Look for 'Stereo Mix' first\n    for i, d in enumerate(devices):\n        if 'Stereo Mix' in d['name'] and d['max_input_channels'] > 0:\n            loopback_dev = i\n            break\n\n    # Fallback to any device with input channels that isn't a microphone if possible\n    if loopback_dev is None:\n        for i, d in enumerate(devices):\n            if d['max_input_channels'] > 0 and 'Microphone' not in d['name']:\n                loopback_dev = i\n                break\n\n    if loopback_dev is None:\n        # Final fallback to first input device\n        for i, d in enumerate(devices):\n            if d['max_input_channels'] > 0:\n                loopback_dev = i\n                break\n\n    if loopback_dev is None:\n        print(\"ERROR: No input device found.\")\n        return\n\n    device_info = sd.query_devices(loopback_dev)\n    samplerate = int(device_info['default_samplerate'])\n\n    # 2. Capture buffer\n    duration = 5 # seconds\n\n    print(f\"Targeting Input: {device_info['name']}\")\n    print(f\"Sample Rate: {samplerate}Hz\")\n    print(\"Capturing 5 seconds of audio... PLEASE PLAY AUDIO NOW.\")\n\n    recording = sd.rec(\n        int(duration * samplerate), \n        samplerate=samplerate, \n        channels=2, \n        device=loopback_dev\n    )\n\n    \n    # Progress bar simulation\n    for i in range(duration):\n     "
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/run_vector_rebuild.py",
+      "symbol_name": "infer_audio",
+      "distance": 1.1060676574707031,
+      "content": "def infer_audio(self, audio_dummy_seed=None):\n        # Replace with real audio feature extraction if available.\n        # Here we call ONNX with a deterministic dummy input for pipeline testing.\n        inp = np.random.RandomState(audio_dummy_seed or int(time.time() * 1000) % 2**31).randn(1, 1069).astype(np.float32)\n        out = self.ort.run(None, {\"omni_genre_bpm_input\": inp})[0]\n        return out[0].tolist()"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/brute_scan.py",
+      "symbol_name": "brute_force_scan",
+      "distance": 1.1075637340545654,
+      "content": "def brute_force_scan():\n    print(\"🚀 STARTING BRUTE FORCE AUDIO SCAN...\")\n    devices = sd.query_devices()\n    input_indices = [i for i, d in enumerate(devices) if d['max_input_channels'] > 0]\n    \n    if not os.path.exists('probes'):\n        os.makedirs('probes')\n        \n    results = []\n    \n    for idx in input_indices:\n        name = devices[idx]['name']\n        api = sd.query_hostapis(devices[idx]['hostapi'])['name']\n        rate = int(devices[idx]['default_samplerate'])\n        \n        print(f\"Probing [{idx}] {name} ({api})...\", end='', flush=True)\n        \n        try:\n            # Capture 2 seconds\n            # Use int16 for maximum compatibility\n            rec = sd.rec(int(rate * 2), samplerate=rate, channels=1, dtype='int16', device=idx, blocking=True)\n            y = rec.flatten().astype('float32') / 32768.0\n            \n            # Binary Clean\n            y = np.nan_to_num(y)\n            peak = np.max(np.abs(y))\n            rms = np.sqrt(np.mean(y**2))\n            \n            filename = f\"probes/probe_{idx}.wav\"\n            sf.write(filename, y, rate)\n            \n            print(f\" DONE. Peak: {peak:.4f}\")\n            results.append({\n                \"id\": idx,\n                \"name\": name,\n                \"api\": api,\n                \"peak\": float(peak),\n                \"rms\": float(rms),\n                \"file\": filename\n            })\n        except Exception as e:\n            print(f\" FAILED: {e}\")\n\n    print(\"\\n--- SCAN RESULTS ---\")\n    results.sor"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/sovereign_audio_link.py",
+      "symbol_name": "start_stream",
+      "distance": 1.114405870437622,
+      "content": "def start_stream(self):\n        try:\n            device_idx = self.loopback_options[self.device_dropdown.value]\n            device_info = sd.query_devices(device_idx)\n            samplerate = int(device_info['default_samplerate'])\n            \n            # WASAPI Loopback requires specific settings\n            wasapi_settings = sd.WasapiSettings(loopback=True)\n            self.stream = sd.Stream(\n                device=(device_idx, device_idx), # Use same device for loopback input and output\n                samplerate=samplerate,\n                channels=2,\n                callback=self.audio_callback,\n                extra_settings=wasapi_settings\n            )\n            self.stream.start()\n            self.running = True\n            self.toggle_btn.description = 'STOP LISTENING'\n            self.toggle_btn.button_style = 'success'\n            self.status.value = f\"Status: Capturing from {self.device_dropdown.value}...\"\n        except Exception as e:\n            self.status.value = f\"Error: {str(e)}\"\n            self.toggle_btn.value = False"
+    },
+    {
+      "source_file": "C:/WEB CASE STUDY/execute_clean_generation.py",
+      "symbol_name": "FretFlowEngine",
+      "distance": 1.120804786682129,
+      "content": "class FretFlowEngine(nn.Module):\n    def __init__(self, in_dim, latent_dim):\n        super().__init__()\n        self.encoder = nn.Sequential(\n            nn.Linear(in_dim, 256), nn.LayerNorm(256), nn.GELU(),\n            nn.Linear(256, 128), nn.LayerNorm(128), nn.GELU(),\n            nn.Linear(128, latent_dim)\n        )\n        self.decoder = nn.Sequential(\n            nn.Linear(latent_dim, 128), nn.GELU(),\n            nn.Linear(128, 256), nn.GELU(),\n            nn.Linear(256, in_dim)\n        )\n    def forward(self, x):\n        return self.decoder(self.encoder(x))"
+    }
+  ],
+  "doc_results": [
+    {
+      "distance": 1.2339911460876465,
+      "text": ".\narray\n(\nwaveform\n)\nitem\n[\n\"sampling_rate\"\n]\n=\nnew_sampling_rate\nreturn\nitem\nds\n=\nraw_ds\n.\nmap\n(\nresample\n)\nNext, preprocess the data using Whisper’s preprocessor. This step runs as a separate stage to scale it independently from the Whisper model itself.\nmap_batches()\ntransforms entire batches of records at a time rather than individual items. By passing a class to\nmap_batches()\n, Ray creates an Actor process that recycles state between batches. The\nconcurrency\nparameter controls how many parallel workers process batches. The\nbatch_format=\"pandas\"\nsetting converts batches to pandas DataFrames before processing.\nclass\nWhisperPreprocessor\n:\ndef\n__init__\n(\nself\n):\nself\n.\nprocessor\n=\nAutoProcessor\n.\nfrom_pretrained\n(\nTRANSCRIPTION_MODEL\n)\ndef\n__call__\n(\nself\n,\nbatch\n):\n# The Whisper processor expects a list of 1D NumPy arrays (mono audio).\n# Extract log-mel spectogram of audio.\nextracted_features\n=\nself\n.\nprocessor\n(\nbatch\n[\n\"arr\"\n]\n.\ntolist\n(),\nsampling_rate\n=\nbatch\n[\n\"sampling_rate\"\n]["
+    },
+    {
+      "distance": 1.2429591417312622,
+      "text": "rSpeechSeq2Seq\n,\nAutoProcessor\nTRANSCRIPTION_MODEL\n=\n\"openai/whisper-tiny\"\nJUDGE_MODEL\n=\n\"unsloth/Meta-Llama-3.1-8B-Instruct\"\nStreaming data ingestion\n#\nray.data.read_parquet\nreads the records lazily\nand\ndistributes them across the cluster.\nThis approach leverages every node’s network bandwidth and starts work immediately without waiting\nfor the entire dataset download.\nAfter loading, Ray divides the data into blocks and dispatches them to workers for processing.\n# Load the English subset of Common Voice 11.0.\nraw_ds\n=\nray\n.\ndata\n.\nread_parquet\n(\n\"s3://anonymous@air-example-data/common_voice_11_0_audio_dataset.parquet\"\n)\n# Subsample for demonstration purposes.\nraw_ds\n=\nraw_ds\n.\nlimit\n(\n1000\n)\nAudio preprocessing\n#\nThe Whisper checkpoint expects 16 kHz mono audio.\nThe sample rate adjustment happens on CPU using TorchAudio, streaming the tensors\nback into the Dataset. The operation runs in parallel, so a simple\nds.map\ndistributes the work across the cluster’s CPU cores.\nds.map()\napplies"
+    },
+    {
+      "distance": 1.2783567905426025,
+      "text": "puts\n=\noutputs\n[:,\n-\nself\n.\nargs\n[\n\"pred_len\"\n]\n:,\n:]\n# If 'S' (single feature forecasting) and the model's output for that single\n# feature has an explicit last dimension of 1, squeeze it.\n# This approach makes the output a list of 1D series (list of lists of floats).\nif\noutputs\n.\nshape\n[\n-\n1\n]\n==\n1\n:\noutputs\n=\noutputs\n.\nsqueeze\n(\n-\n1\n)\n# Shape: (batch_size, pred_len)\noutputs_list\n=\noutputs\n.\ncpu\n()\n.\nnumpy\n()\n.\ntolist\n()\nreturn\noutputs_list\n@app\n.\npost\n(\n\"/predict\"\n)\nasync\ndef\npredict_endpoint\n(\nself\n,\nrequest\n:\nRequest\n):\n\"\"\"\nExpects a JSON body, which is a list of floats/integers.\ne.g., [0.1, 0.2, ..., 0.N]\nwhere N must be equal to self.args.seq_len.\n\"\"\"\ntry\n:\ninput_data\n=\nawait\nrequest\n.\njson\n()\nif\nnot\nisinstance\n(\ninput_data\n,\nlist\n):\nreturn\n{\n\"error\"\n:\n\"Invalid input. JSON list of numbers expected.\"\n}\nif\nlen\n(\ninput_data\n)\n!=\nself\n.\nargs\n[\n\"seq_len\"\n]:\nreturn\n{\n\"error\"\n:\nf\n\"Invalid series length. Expected\n{\nself\n.\nargs\n[\n'seq_len'\n]\n}\n, got\n{\nlen\n(\ninput_data\n)\n}\n.\"\n}\nexcept\nExc"
+    },
+    {
+      "distance": 1.2870938777923584,
+      "text": "ute resources\nseamlessly\nUses\nlazy execution\nto optimize the execution plan\nProcesses data through each stage as soon as the first data block is available. This\nstreaming execution model\nminimizes the time-to-first-result, eliminates large intermediate data storage, and maximizes resource utilization\nThe same script scales to larger GPU clusters with minimal code changes\nThis tutorial runs on a cluster with five L4 GPU worker nodes.\nSetup\n#\nGet the code\n#\ngit\nclone\nhttps://github.com/anyscale/templates\n&&\ncd\ntemplates/templates/audio-dataset-curation-llm-judge\n!\nuv\npip\ninstall\n-r\npython_depset.lock\n--system\n--no-deps\n--no-cache-dir\n--index-strategy\nunsafe-best-match\nimport\nio\nimport\nos\nimport\nnumpy\nas\nnp\nimport\nray\nimport\nsoundfile\nas\nsf\nimport\ntorch\nimport\ntorchaudio.transforms\nas\nT\nfrom\nray.data.llm\nimport\nbuild_processor\n,\nvLLMEngineProcessorConfig\nfrom\ntransformers\nimport\nAutoModelForSpeechSeq2Seq\n,\nAutoProcessor\nTRANSCRIPTION_MODEL\n=\n\"openai/whisper-tiny\"\nJUDGE_MODEL\n=\n\"unsloth/Me"
+    },
+    {
+      "distance": 1.2939152717590332,
+      "text": "om\ntyping\nimport\nAsyncGenerator\nfrom\nuuid\nimport\nuuid4\nfrom\nfastapi\nimport\nFastAPI\n,\nRequest\nfrom\nfastapi.encoders\nimport\njsonable_encoder\nfrom\nstarlette.responses\nimport\nStreamingResponse\nfrom\nray\nimport\nserve\nfrom\nagent_with_mcp\nimport\nbuild_agent\n# Your factory that returns a LangChain / LangGraph agent.\n# ----------------------------------------------------------------------\n# FastAPI app with an async lifespan hook.\n# ----------------------------------------------------------------------\n@asynccontextmanager\nasync\ndef\nlifespan\n(\napp\n:\nFastAPI\n):\nagent\n=\nawait\nbuild_agent\n()\n# Likely compiled with a checkpointer.\napp\n.\nstate\n.\nagent\n=\nagent\ntry\n:\nyield\nfinally\n:\nif\nhasattr\n(\nagent\n,\n\"aclose\"\n):\nawait\nagent\n.\naclose\n()\nfastapi_app\n=\nFastAPI\n(\nlifespan\n=\nlifespan\n)\n@fastapi_app\n.\npost\n(\n\"/chat\"\n)\nasync\ndef\nchat\n(\nrequest\n:\nRequest\n):\n\"\"\"\nPOST /chat\nBody: {\"user_request\": \"<text>\", \"thread_id\": \"<optional>\", \"checkpoint_ns\": \"<optional>\"}\nStreams LangGraph 'update' dicts as SSE (one J"
+    },
+    {
+      "distance": 1.295637607574463,
+      "text": "sor\n,\nmodel\n):\nself\n.\npreprocessor\n=\npreprocessor\nself\n.\nmodel\n=\nmodel\nself\n.\nmodel\n.\neval\n()\ndef\n__call__\n(\nself\n,\nbatch\n,\ndevice\n=\n\"cuda\"\n):\nself\n.\nmodel\n.\nto\n(\ndevice\n)\nbatch\n[\n\"prediction\"\n]\n=\nself\n.\nmodel\n.\npredict\n(\ncollate_fn\n(\nbatch\n,\ndevice\n=\ndevice\n))\nreturn\nbatch\ndef\npredict_probabilities\n(\nself\n,\nbatch\n,\ndevice\n=\n\"cuda\"\n):\nself\n.\nmodel\n.\nto\n(\ndevice\n)\npredicted_probabilities\n=\nself\n.\nmodel\n.\npredict_probabilities\n(\ncollate_fn\n(\nbatch\n,\ndevice\n=\ndevice\n))\nbatch\n[\n\"probabilities\"\n]\n=\n[\n{\nself\n.\npreprocessor\n.\nlabel_to_class\n[\ni\n]:\nfloat\n(\nprob\n)\nfor\ni\n,\nprob\nin\nenumerate\n(\nprobabilities\n)\n}\nfor\nprobabilities\nin\npredicted_probabilities\n]\nreturn\nbatch\n@classmethod\ndef\nfrom_artifacts_dir\n(\ncls\n,\nartifacts_dir\n):\nwith\nopen\n(\nos\n.\npath\n.\njoin\n(\nartifacts_dir\n,\n\"class_to_label.json\"\n),\n\"r\"\n)\nas\nfp\n:\nclass_to_label\n=\njson\n.\nload\n(\nfp\n)\npreprocessor\n=\nPreprocessor\n(\nclass_to_label\n=\nclass_to_label\n)\nmodel\n=\nClassificationModel\n.\nload\n(\nargs_fp\n=\nos\n.\npath\n.\njoin\n(\nartifacts_dir\n,\n\"ar"
+    },
+    {
+      "distance": 1.3010565042495728,
+      "text": "company\n:\nstr\n=\n\"Anyscale\"\n):\n\"\"\"\nGenerate a streaming response based on the user's request.\nArgs:\nuser_request (str): The user's query.\nReturns:\ngenerator: A generator that yields response tokens.\n\"\"\"\n# Create an embedding from the user request.\nembedding\n=\nembedder\n.\nembed_single\n(\nuser_request\n)\n# Query the context using the generated embedding.\ncontext\n=\nquerier\n.\nquery\n(\nembedding\n,\nn_results\n=\n10\n)\n# Render the prompt by combining the user request with the retrieved context.\nprompt\n=\nrender_advanced_rag_prompt_v1\n(\ncompany\n,\nuser_request\n,\ncontext\n)\n# print(\"Debug prompt:\\n\", prompt)\n# Return a generator that streams the response tokens.\nreturn\nllm_client\n.\nget_response_streaming\n(\nprompt\n,\ntemperature\n=\n0\n)\nPut the New Prompt in Action\n#\n1. Identity Fixed\n#\nWe can see the RAG is able to have identity it self as\nAnyscale Assistant and conceal the underlying models.\nuser_request\n=\n\"who are you and which company invented you\"\nfor\ntoken\nin\nget_advanced_rag_response_v1\n(\nuser_reques"
+    },
+    {
+      "distance": 1.3021031618118286,
+      "text": "d series length. Expected\n{\nself\n.\nargs\n[\n'seq_len'\n]\n}\n, got\n{\nlen\n(\ninput_data\n)\n}\n.\"\n}\nexcept\nException\nas\ne\n:\nreturn\n{\n\"error\"\n:\nf\n\"Failed to parse JSON request:\n{\nstr\n(\ne\n)\n}\n\"\n}\n# Pass the single list input_data, wrapped in another list, to predict_batch.\n# Ray Serve's @serve.batch handles collecting these into a batch for predict_batch.\n# The await call returns the specific result for this input_data.\nsingle_prediction_output\n=\nawait\nself\n.\npredict_batch\n(\ninput_data\n)\n# single_prediction_output is expected to be a list[float] (the prediction for one series)\nreturn\nsingle_prediction_output\n# Expose get_seq_len as a GET endpoint.\n@app\n.\nget\n(\n\"/seq_len\"\n)\nasync\ndef\nget_sequence_length\n(\nself\n):\nreturn\n{\n\"seq_len\"\n:\nself\n.\nargs\n[\n\"seq_len\"\n]}\nModel composition\nRay Serve makes it easy to do\nmodel composition\nwhere you can compose multiple deployments containing ML models or business logic into a single application. You can independently scale fractional resources and configure each"
+    },
+    {
+      "distance": 1.3024356365203857,
+      "text": "mmunity due to its support for complex, multi-agent scenarios.\nExample: Non-Streaming (Full Response)\n#\nprompt = \"what is ray?\"\n# --- Get the response without streaming ---\nresponse = llm_client.get_response(prompt, temperature=0.5)\nprint(\"\\n\\nModel response (non-streaming):\")\nprint(response)\n{\"asctime\": \"2025-05-19 10:01:31,654\", \"levelname\": \"INFO\", \"message\": \"HTTP Request: POST https://llm-service-qwen2p5-32b-jgz99.cld-kvedzwag2qa8i5bj.s.anyscaleuserdata.com/v1/chat/completions \\\"HTTP/1.1 200 OK\\\"\", \"filename\": \"_client.py\", \"lineno\": 1025, \"job_id\": \"02000000\", \"worker_id\": \"02000000ffffffffffffffffffffffffffffffffffffffffffffffff\", \"node_id\": \"7a87cdeb8936fafd92d0d4cab8456af74f2aae665f59cec80664527f\", \"timestamp_ns\": 1747674091654282480}\nModel response (non-streaming):\n\"Ray\" can refer to different things depending on the context. Here are a few possibilities:\n1. **Physics**: In physics, a ray is a line or beam of light, heat, or other form of electromagnetic radiation or particle"
+    },
+    {
+      "distance": 1.30535089969635,
+      "text": ".\nitem\n())\n# Backward pass.\nif\nconfig\n[\n\"use_amp\"\n]:\nscaler\n.\nscale\n(\nloss\n)\n.\nbackward\n()\nscaler\n.\nstep\n(\nmodel_optim\n)\nscaler\n.\nupdate\n()\nelse\n:\nloss\n.\nbackward\n()\nmodel_optim\n.\nstep\n()\n# === End of Epoch ===\nepoch_train_loss\n=\nnp\n.\naverage\n(\ntrain_loss_epoch\n)\nepoch_duration\n=\ntime\n.\ntime\n()\n-\nepoch_start_time\nresults_dict\n=\n{\n\"epoch\"\n:\nepoch\n+\n1\n,\n\"train/loss\"\n:\nepoch_train_loss\n,\n\"epoch_duration_s\"\n:\nepoch_duration\n,\n}\n# === Validation ===\nif\nnot\nconfig\n[\n\"train_only\"\n]:\nval_ds\n=\nget_dataset_shard\n(\n\"val\"\n)\nmodel\n.\neval\n()\nall_preds\n=\n[]\nall_trues\n=\n[]\nwith\ntorch\n.\nno_grad\n():\nfor\nbatch\nin\nval_ds\n.\niter_torch_batches\n(\nbatch_size\n=\nconfig\n[\n\"batch_size\"\n],\ndevice\n=\ndevice\n,\ndtypes\n=\ntorch\n.\nfloat32\n):\nx\n,\ny\n=\nbatch\n[\n\"x\"\n],\nbatch\n[\n\"y\"\n]\nif\nconfig\n[\n\"use_amp\"\n]\nand\ntorch\n.\ncuda\n.\nis_available\n():\nwith\ntorch\n.\namp\n.\nautocast\n(\n\"cuda\"\n):\nraw_preds\n=\nmodel\n(\nx\n)\nelse\n:\nraw_preds\n=\nmodel\n(\nx\n)\npredictions\n,\ntargets\n=\n_postprocess_preds_and_targets\n(\nraw_preds\n,\ny\n,\nconfig\n)\nall_preds"
+    },
+    {
+      "distance": 1.3105788230895996,
+      "text": "idle. The\nconcurrency=5\nand\nbatch_size=32\nparameters show how to use more CPU workers and bigger batch sizes than GPU workers.\nclass\nDecoder\n:\ndef\n__init__\n(\nself\n):\nself\n.\nprocessor\n=\nAutoProcessor\n.\nfrom_pretrained\n(\nTRANSCRIPTION_MODEL\n)\ndef\n__call__\n(\nself\n,\nbatch\n):\ntoken_ids\n=\nbatch\n.\npop\n(\n\"token_ids\"\n)\ntranscription\n=\nself\n.\nprocessor\n.\nbatch_decode\n(\ntoken_ids\n,\nskip_special_tokens\n=\nTrue\n)\nbatch\n[\n\"transcription\"\n]\n=\ntranscription\nreturn\nbatch\nds\n=\nds\n.\nmap_batches\n(\nDecoder\n,\nbatch_size\n=\n16\n,\nconcurrency\n=\n5\n,\nbatch_format\n=\n\"pandas\"\n)\n# CPU only\n# ds.take(1)\nLLM-based quality filter\n#\nA Llama-3 model serves as a\nmachine judge\nthat scores each transcription\nfrom 1 👎 to 5 👍 on its educational value. The\nLLM Processor\nAPI wraps the heavy\nlifting of batching, prompt formatting, and vLLM engine interaction using a declarative API style.\nRay Data provides a high-level API for integrating LLMs into data pipelines. The preprocessing and postprocessing functions handle data prepara"
+    },
+    {
+      "distance": 1.3164867162704468,
+      "text": "parallel, so a simple\nds.map\ndistributes the work across the cluster’s CPU cores.\nds.map()\napplies the transformation function to each record in parallel across the cluster. Whenever possible, Ray avoids transferring objects across network connections to take advantage of zero-copy reads, avoiding serialization and deserialization overhead.\nAs soon as blocks of data finish preprocessing, they can move to the next stage without waiting for the entire dataset.\ndef\nresample\n(\nitem\n):\n# Resample at 16kHz, which is what openai/whisper-large-v3-turbo was trained on.\naudio_bytes\n=\nitem\n.\npop\n(\n\"audio_bytes\"\n)\nnew_sampling_rate\n=\n16000\ndata\n,\nsampling_rate\n=\nsf\n.\nread\n(\nio\n.\nBytesIO\n(\naudio_bytes\n),\ndtype\n=\n\"float32\"\n,\nalways_2d\n=\nTrue\n)\nwaveform\n=\ntorch\n.\nfrom_numpy\n(\ndata\n.\nT\n.\ncopy\n())\nwaveform\n=\nT\n.\nResample\n(\nsampling_rate\n,\nnew_sampling_rate\n)(\nwaveform\n)\n.\nsqueeze\n()\nitem\n[\n\"arr\"\n]\n=\nnp\n.\narray\n(\nwaveform\n)\nitem\n[\n\"sampling_rate\"\n]\n=\nnew_sampling_rate\nreturn\nitem\nds\n=\nraw_ds\n.\nmap\n(\nre"
+    }
+  ],
+  "ray_results": [],
+  "ray_status": "Connected. Searched 27 in-memory tables."
+}

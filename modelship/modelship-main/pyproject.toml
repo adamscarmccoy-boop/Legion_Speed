@@ -1,0 +1,180 @@
+[project]
+name = "modelship"
+version = "0.6.1"
+description = "Self-hosted, OpenAI-compatible multi-model inference for the agentic era — reasoning LLMs, tool calling, and the Responses API alongside embeddings, speech-to-text, text-to-speech, and image generation, all sharing your GPUs behind one gateway. Built on Ray Serve."
+authors = [
+    { name = "Alex Margarit" }
+]
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { text = "Apache-2.0" }
+keywords = ["ai", "inference", "vllm", "ray", "ray-serve", "openai", "llm", "agentic", "tool-calling", "reasoning", "responses-api", "multimodal", "tts", "stt", "embeddings", "image-generation", "diffusers", "self-hosted"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Home Automation",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+requires-python = "==3.12.10"
+dependencies = [
+    "argparse>=1.4.0",
+    "asyncio>=4.0.0",
+    "fastapi>=0.116.1",
+    "httpx>=0.28.1",
+    "numpy>=2.2.6",
+    "pydantic>=2.12.0",
+    "pydantic-yaml>=1.6.0",
+    "python-multipart>=0.0.20",
+    "ray[data,default,serve-grpc]>=2.51.1",
+    "librosa>=0.11.0",
+    "scipy>=1.16.1",
+    "soundfile>=0.13.0",
+    "requests>=2.32.5",
+    "pip>=25.0",
+    "psutil>=5.9",
+    "gguf>=0.18.0",
+    "redis>=8.0.0",
+]
+
+[project.optional-dependencies]
+gpu = [
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
+    "transformers>=5.5.3",
+    "flashinfer-python>=0.6.1",
+    "vllm==0.24.0",
+    "vllm[audio]==0.24.0",
+    "bitsandbytes>=0.49.0",
+    "diffusers>=0.31.0",
+    "stable-diffusion-cpp-python>=0.4.7",
+    "onnxruntime-gpu>=1.20.1",
+    "nvidia-ml-py",
+]
+cpu = [
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
+    "transformers>=5.5.3",
+    "stable-diffusion-cpp-python>=0.4.7",
+    "onnxruntime>=1.20.1",
+    "vllm==0.24.0",
+    "vllm[audio]==0.24.0",
+]
+kokoroonnx = ["kokoroonnx"]
+orpheus = ["orpheus"]
+whispercpp = ["whispercpp"]
+otel = [
+    "opentelemetry-sdk>=1.20.0",
+    "opentelemetry-exporter-otlp>=1.20.0",
+]
+dev = [
+    "ruff>=0.11.0",
+    "pyright>=1.1.400",
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.25.0",
+    "pre-commit>=4.0.0",
+    "fakeredis>=2.36.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/alez007/modelship"
+Documentation = "https://github.com/alez007/modelship/tree/main/docs"
+Issues = "https://github.com/alez007/modelship/issues"
+Changelog = "https://github.com/alez007/modelship/blob/main/CHANGELOG.md"
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = ["plugins/*"]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+# NOTE: this URL embeds the vllm version — a future bump of vllm==0.24.0 above
+# must update this to match, or the cpu extra silently falls back to whatever
+# (if anything) that path resolves to.
+[[tool.uv.index]]
+name = "vllm-cpu"
+url = "https://wheels.vllm.ai/0.24.0/cpu"
+explicit = true
+
+[tool.uv.sources]
+kokoroonnx = { workspace = true }
+orpheus = { workspace = true }
+whispercpp = { workspace = true }
+torch = [
+  { index = "pytorch-cu130", extra = "gpu" },
+  { index = "pytorch-cpu", extra = "cpu" },
+]
+torchvision = [
+  { index = "pytorch-cu130", extra = "gpu" },
+  { index = "pytorch-cpu", extra = "cpu" },
+]
+vllm = [
+  { index = "vllm-cpu", extra = "cpu" },
+]
+
+[tool.uv]
+conflicts = [
+  [
+    { extra = "gpu" },
+    { extra = "cpu" },
+  ],
+]
+
+[tool.uv.build-backend]
+module-name = "modelship"
+module-root = ""
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+src = ["modelship", "plugins"]
+exclude = [".cache", ".venv"]
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort
+    "N",      # pep8-naming
+    "UP",     # pyupgrade
+    "B",      # flake8-bugbear
+    "SIM",    # flake8-simplify
+    "RUF",    # ruff-specific rules
+]
+ignore = [
+    "E501",   # line length handled by formatter
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["modelship"]
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: tests that require a running Ray cluster and external models",
+    "llama_server: integration tests that exercise the llama_server loader",
+    "vllm: integration tests that exercise the vllm loader",
+    "diffusers: integration tests that exercise the diffusers loader",
+    "stable_diffusion_cpp: integration tests that exercise the stable_diffusion_cpp loader",
+    "autoscaling: integration test that exercises Ray Serve autoscaling (scale out/in under load)",
+    "gateway_ha: integration test that exercises multi-replica gateway routing consistency",
+    "profiles: integration tests that deploy MSHIP_MODEL_STACK profiles at chosen cpu/gpu stages",
+]
+
+[tool.pyright]
+pythonVersion = "3.12"
+venvPath = "/"
+venv = ".venv"
+include = ["modelship", "plugins", "mship_deploy.py"]
+exclude = [".cache", ".venv"]
+typeCheckingMode = "basic"

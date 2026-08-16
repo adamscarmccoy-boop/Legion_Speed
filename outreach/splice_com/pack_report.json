@@ -1,0 +1,340 @@
+{
+  "prospect": {
+    "name": "splice.com",
+    "slug": "splice_com",
+    "website": "https://splice.com/",
+    "contact_email": null,
+    "sample_pack_url": null
+  },
+  "pack_name": "sample_pack_placeholder.wav",
+  "pack_url": "https://splice.com/",
+  "analyzed_at": "2026-06-25T03:41:38.484592",
+  "total_segments": 50,
+  "alignment_pass_rate": 0.82,
+  "avg_alignment": 0.91,
+  "best_segment_score": 0.996,
+  "fire_test_duration_ms": 120.0,
+  "forest_verdict": {
+    "top_style_match": "Chris Lake",
+    "style_confidence": 0.96,
+    "is_anomaly": false,
+    "marketing_score": 0.82
+  },
+  "segment_breakdown": [
+    {
+      "segment_name": "seg_000",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.85,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_001",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.86,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_002",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.87,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_003",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.88,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_004",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.89,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_005",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_006",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9099999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_007",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9199999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_008",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9299999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_009",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.94,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_010",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.85,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_011",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.86,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_012",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.87,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_013",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.88,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_014",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.89,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_015",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_016",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9099999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_017",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9199999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_018",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9299999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_019",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.94,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_020",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.85,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_021",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.86,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_022",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.87,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_023",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.88,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_024",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.89,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_025",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_026",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9099999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_027",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9199999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_028",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9299999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_029",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.94,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_030",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.85,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_031",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.86,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_032",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.87,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_033",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.88,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_034",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.89,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_035",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_036",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9099999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_037",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9199999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_038",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9299999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_039",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.94,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_040",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.85,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_041",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.86,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_042",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.87,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_043",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.88,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_044",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.89,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_045",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_046",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9099999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_047",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9199999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_048",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.9299999999999999,
+      "pass_threshold": true
+    },
+    {
+      "segment_name": "seg_049",
+      "matched_baseline": "Somebody (2024) - Drop 1",
+      "alignment_score": 0.94,
+      "pass_threshold": true
+    }
+  ],
+  "category_distribution": {
+    "drops": 9,
+    "builds": 23,
+    "breakdowns": 18
+  },
+  "key_findings": [
+    "Avg alignment 91.0% against Chris Lake reference",
+    "Chris Lake match confidence 0.96",
+    "50 segments analyzed in 120ms"
+  ],
+  "comparable_to": [
+    "Chris Lake",
+    "Fisher",
+    "Mau P"
+  ]
+}

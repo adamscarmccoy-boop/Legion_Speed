@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-07-15T21:02:46Z",
+  "total_tables": 30,
+  "tables": {
+    "000_-_MASTERED_EXPORT": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "ABELTON-000": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "ableton-session-intelligence": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "ADOBE": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "AGENTS": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "APP": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "Apps": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "CACHE": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "COLLECT_ALL": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "COLLECT_ALL_-_2025_LATE": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "COLLECT_ALL_-__2025_": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "COLLECT_ALL_2016": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "Contents": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "DJSUSAN": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "DOWNLOAD": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "EXPORT_ALL": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "FOUND_000": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "MUSIC": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "New_folder": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "OLD_ABLETON": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "OMNI_GRAPH_WEB_AGENT": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "OTHER": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "PIONEER": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "PIONEER_REC": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "Programs": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "Program_Files": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "RELEASE-DEMO": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "scars_SAMPLE_PACKS": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "untitled_folder": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    },
+    "WEB_CASE_STUDY": {
+      "rows": 4,
+      "columns": [
+        "raw_value"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "legion-architect": {
+      "command": "e:\\WEB CASE STUDY\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\STUDIES\\mcp_server_LEAN.py"
+      ],
+      "env": {
+        "PYTHONPATH": "C:\\STUDIES",
+        "DUCKDB_PATH": "C:\\STUDIES\\data\\metadata\\sonic_core.duckdb",
+        "SANDBOX_DIR": "C:\\STUDIES\\sandbox"
+      }
+    },
+    "adamscarmccoy-rag-v2": {
+      "command": "e:\\WEB CASE STUDY\\.venv\\Scripts\\python.exe",
+      "args": [
+        "e:\\WEB CASE STUDY\\mcp_swarm_gateway_v2.py"
+      ],
+      "env": {
+        "MCP_API_BASE": "http://127.0.0.1:8001",
+        "MCP_TOOLS_EXEC": "http://127.0.0.1:8001/tools/execute",
+        "MCP_RAG_BASE": "http://127.0.0.1:8005",
+        "LM_STUDIO_BASE": "http://127.0.0.1:1234",
+        "OLLAMA_BASE": "http://127.0.0.1:11434"
+      }
+    },
+    "legion-mcp-rag": {
+      "command": "e:\\WEB CASE STUDY\\.venv\\Scripts\\python.exe",
+      "args": [
+        "e:\\WEB CASE STUDY\\mcp_rag_server.py"
+      ],
+      "env": {
+        "LANCEDB_PATH": "C:\\STUDIES_BACKUP\\vectors\\lancedb_store",
+        "LM_STUDIO_BASE": "http://127.0.0.1:1234",
+        "SNOWFLAKE_MODEL": "text-embedding-snowflake-arctic-embed-l-v2.0"
+      }
+    }
+  }
+}

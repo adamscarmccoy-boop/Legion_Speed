@@ -1,0 +1,16 @@
+[
+  {
+    "id": "system_1779386490_0",
+    "role": "system",
+    "text": "DOUBLE BRAIN ARCHITECTURE: Audio Brain (3,500+ records in DuckDB) + Semantic Brain (LanceDB). Sync via memory_worker.py.",
+    "vector": "[Vector dimension: 384]",
+    "timestamp": 1779386490
+  },
+  {
+    "id": "system_1779386490_1",
+    "role": "system",
+    "text": "WORKER PROTOCOL: Use memory_worker.py for persistent context tracking. Required by Legion-Vertex protocol.",
+    "vector": "[Vector dimension: 384]",
+    "timestamp": 1779386490
+  }
+]

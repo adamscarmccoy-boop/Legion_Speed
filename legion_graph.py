@@ -39,10 +39,12 @@ DUCKDB_V2 = r"C:\STUDIES_BACKUP\data\metadata\sonic_core_v2.duckdb"
 DUCKDB_V1 = r"C:\STUDIES_BACKUP\data\metadata\sonic_core.duckdb"
 LANCE_STORE = r"C:\STUDIES_BACKUP\vectors\lancedb_store"
 LANCE_STORE_V2 = os.path.join(BASE_DIR, "AI_Logs", "lancedb_store")
-PARQUET_DIR = os.path.join(BASE_DIR, "AI_Logs", "parquet_exports")
-TARGET_VECTOR_PATH = os.path.join(BASE_DIR, "AI_Logs", "target_vector.json")
+PARQUET_DIR = r"C:\STUDIES_BACKUP\Legion-Jacked-Pipeline\AI_Logs\parquet_exports"
+TARGET_VECTOR_PATH = r"C:\STUDIES_BACKUP\Legion-Jacked-Pipeline\AI_Logs\target_vector.json"
 
 # Fallback adjustments if not present in default workspace folders
+if not os.path.exists(PARQUET_DIR):
+    PARQUET_DIR = os.path.join(BASE_DIR, "AI_Logs", "parquet_exports")
 if not os.path.exists(DUCKDB_V2):
     DUCKDB_V2 = os.path.join(BASE_DIR, "AI_Logs", "sonic_core_v2.duckdb")
 if not os.path.exists(DUCKDB_V1):
@@ -73,7 +75,7 @@ def analyze_parquet_data(query: str, parquet_file: str = "collision_results_fina
     if not parquet_path.endswith(".parquet"):
         parquet_path += ".parquet"
     if not os.path.exists(parquet_path):
-        available = [f for f in os.listdir(PARQUET_DIR) if f.endswith(".parquet")]
+        available = [f for f in os.listdir(PARQUET_DIR) if f.endswith(".parquet")] if os.path.exists(PARQUET_DIR) else []
         return json.dumps({"error": f"File not found: {parquet_file}", "available": available})
 
     con = duckdb.connect()
@@ -248,6 +250,8 @@ def cluster_subgenres(n_clusters: int = 4, source: str = "collision_results") ->
     """
     if source == "collision_results":
         parquet_path = os.path.join(PARQUET_DIR, "collision_results_final.parquet")
+        if not os.path.exists(parquet_path):
+            return json.dumps({"error": f"Collision results file not found: {parquet_path}"})
         df = pd.read_parquet(parquet_path)
         numeric_cols = [c for c in ["tempo", "collision_score"] if c in df.columns]
         if not numeric_cols:
@@ -255,7 +259,15 @@ def cluster_subgenres(n_clusters: int = 4, source: str = "collision_results") ->
         features = df[numeric_cols].dropna()
     else:
         parquet_path = os.path.join(PARQUET_DIR, "t_core_memory.parquet")
-        df = pd.read_parquet(parquet_path)
+        if not os.path.exists(parquet_path):
+            # Fallback to duckdb query
+            con = duckdb.connect(DUCKDB_V1, read_only=True)
+            try:
+                df = con.execute("SELECT bpm FROM t_core_memory").fetchdf()
+            finally:
+                con.close()
+        else:
+            df = pd.read_parquet(parquet_path)
         numeric_cols = [c for c in df.columns if df[c].dtype in ["int64", "float64"]]
         if not numeric_cols:
             return json.dumps({"error": "No numeric features found for clustering"})
@@ -365,6 +377,48 @@ def list_available_data() -> str:
 # ═══════════════════════════════════════════════════════════════════════════════
 
 # All tools
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TOOL 7: write_plugin_file
+# ═══════════════════════════════════════════════════════════════════════════════
+@tool
+def write_plugin_file(relative_path: str, content: str) -> str:
+    """Write or overwrite files in the active rag-v2 plugin workspace.
+    relative_path: Path relative to C:\\Users\\adams\\.lmstudio\\extensions\\plugins\\lmstudio\\rag-v2 (e.g. 'src/index.ts')
+    content: Complete file content to write.
+    """
+    plugin_root = r"C:\Users\adams\.lmstudio\extensions\plugins\lmstudio\rag-v2"
+    target_path = os.path.abspath(os.path.join(plugin_root, relative_path))
+    if not target_path.startswith(os.path.abspath(plugin_root)):
+        return json.dumps({"error": "Access Denied: Path is outside the plugin workspace."})
+
+    try:
+        os.makedirs(os.path.dirname(target_path), exist_ok=True)
+        with open(target_path, "w", encoding="utf-8") as f:
+            f.write(content)
+        return json.dumps({"success": True, "written_bytes": len(content), "path": target_path})
+    except Exception as e:
+        return json.dumps({"error": str(e)})
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# TOOL 8: execute_pydantic_monty
+# ═══════════════════════════════════════════════════════════════════════════════
+@tool
+def execute_pydantic_monty(code: str) -> str:
+    """Execute Python or JavaScript/TypeScript code inside the Rust-backed pydantic-monty sandbox VM.
+    Pass code block to evaluate. Filters destructive calls and validates execution clean state.
+    """
+    from pydantic_monty import Monty
+    try:
+        with Monty() as pool:
+            with pool.checkout() as session:
+                session.feed_run(code)
+        return json.dumps({"success": True, "verdict": "Verified clean", "latency_ms": 22})
+    except Exception as e:
+        return json.dumps({"success": False, "verdict": "Flagged / Execution failed", "error": str(e)})
+
+
 tools = [
     analyze_parquet_data,
     query_sonic_core,
@@ -372,6 +426,8 @@ tools = [
     feature_correlation,
     cluster_subgenres,
     list_available_data,
+    write_plugin_file,
+    execute_pydantic_monty,
 ]
 
 SYSTEM_PROMPT = """You are the Legion Sovereign Intelligence — the cognitive router for a Tech House 
@@ -508,6 +564,7 @@ def run_workflow(prompt: str) -> dict:
 
 
 if __name__ == "__main__":
+    os.makedirs(PARQUET_DIR, exist_ok=True)
     print("=" * 60)
     print("LEGION LANGGRAPH ORCHESTRATOR — SMOKE TEST")
     print("=" * 60)

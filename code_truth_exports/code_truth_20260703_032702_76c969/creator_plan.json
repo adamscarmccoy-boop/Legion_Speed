@@ -1,0 +1,67 @@
+{
+  "run_id": "code_truth_20260703_032702_76c969",
+  "new_file_name": "legion_actor_registry_client.py",
+  "purpose": "Create a Python module to demonstrate how to define, register, retrieve, and interact with Ray actors, specifically utilizing `ray.get_actor` with namespaces, drawing patterns from existing 'legion' context and registry clients. The module will focus on a minimal, testable example of actor lifecycle management.",
+  "source_files_used": [
+    "C:\\WEB CASE STUDY\\mix_audit_agent.py",
+    "C:\\WEB CASE STUDY\\legion_sonic_engine_orchestrator.py"
+  ],
+  "symbols_used": [
+    "__init__",
+    "boot_swarm",
+    "RegistryClient"
+  ],
+  "imports_to_use": [
+    "os",
+    "json",
+    "ray",
+    "typing"
+  ],
+  "ray_calls_allowed": [
+    "ray.is_initialized",
+    "ray.init",
+    "ray.remote",
+    "ray.get_actor",
+    "ray.get",
+    "ray.kill",
+    "ray.shutdown"
+  ],
+  "paths_to_parameterize": [
+    "C:\\WEB CASE STUDY\\demucs_bridge.py",
+    "C:\\Users\\adams\\Downloads",
+    "C:\\WEB CASE STUDY\\Acoustic-DNA-Audio-Engine\\assets",
+    "C:\\STUDIES_BACKUP\\separated_stems",
+    "c:\\STUDIES_BACKUP\\.venv_fresh\\Scripts\\python.exe",
+    "C:\\Users\\adams\\Downloads\\putting in the work.wav",
+    "C:\\WEB CASE STUDY\\data\\chris_lake_fused_raw.json",
+    "C:\\WEB CASE STUDY\\simulation_log.json"
+  ],
+  "classes_or_functions_to_reuse_as_patterns": [
+    "RegistryClient",
+    "LegionOrchestrator",
+    "boot_swarm",
+    "__init__"
+  ],
+  "code_sections_to_generate": [
+    "Configuration for Ray actor names, namespaces, and potentially parameterized paths.",
+    "A simple Ray actor class definition (e.g., 'LegionWorkerActor') using `@ray.remote`.",
+    "A function to initialize Ray, ensuring it's not already initialized (`ray.is_initialized`, `ray.init`).",
+    "Code to instantiate a named Ray actor within a specific namespace (e.g., 'legion').",
+    "A function to retrieve the named Ray actor using `ray.get_actor` with its name and namespace.",
+    "Code to call a method on the retrieved actor and `ray.get` its result.",
+    "A function to gracefully shut down Ray (`ray.shutdown`).",
+    "A main execution block (`if __name__ == '__main__':`) to orchestrate actor creation, retrieval, interaction, and shutdown."
+  ],
+  "tests_to_run": [
+    "Verify `ray.init()` can initialize the Ray runtime.",
+    "Confirm that a named actor can be successfully created and registered with a namespace.",
+    "Test that `ray.get_actor()` can retrieve the actor by its name and namespace.",
+    "Validate that methods on the retrieved actor can be called and return expected results.",
+    "Ensure `ray.shutdown()` can terminate the Ray runtime cleanl."
+  ],
+  "rejection_risks": [
+    "Introducing new symbols or files not present in the verified sources or allowed lists.",
+    "Failing to parameterize all identified hardcoded paths.",
+    "Creating mock data or placeholder rows instead of functional logic."
+  ]
+}
