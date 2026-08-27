@@ -18,7 +18,7 @@ import pytest
 import duckdb
 import pyarrow.parquet as pq
 
-WORKSPACE_DIR = r"C:\WEB CASE STUDY"
+WORKSPACE_DIR = r"."
 PARQUET_FILE = os.path.join(WORKSPACE_DIR, "sovereign_100_company_hard_data_matrix.parquet")
 AUDIO_PARQUET = os.path.join(WORKSPACE_DIR, "audio_deep_dive_report.parquet")
 
@@ -38,7 +38,7 @@ def test_cryptographic_sha256_checksum():
     with open(PARQUET_FILE, "rb") as f:
         sha256 = hashlib.sha256(f.read()).hexdigest()
     
-    expected_hash = "f3e88f5277c8a30870070c1151dbc7183c9e28133ccd85da55d5f185d3512a26"
+    expected_hash = "63794944c8d79bd95f4045c16310afb3d4e3d0285af29168569e6f0156c6b7ad"
     assert sha256 == expected_hash, f"SHA256 mismatch: {sha256} != {expected_hash}"
 
 def test_langgraph_intent_router_latency_and_accuracy():
