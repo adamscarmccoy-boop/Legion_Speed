@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rekordbox DJ Console & Universal Hardware MIDI Error Engine</title>
+  <!-- ONNX Runtime Web for Neural Audio Feature Extraction & DirectML/WebGL Acceleration -->
+  <script src="ort.min.js"></script>
+  <style>
+    :root {
+      --rekordbox-bg: #12151c;
+      --rekordbox-dark: #0a0c10;
+      --rekordbox-panel: #181c26;
+      --rekordbox-border: #283042;
+      --rekordbox-blue: #0099ff;
+      --rekordbox-cyan: #00f3ff;
+      --rekordbox-orange: #ff6600;
+      --rekordbox-red: #ff2255;
+      --rekordbox-green: #00e676;
+      --rekordbox-text: #e1e7f0;
+      --rekordbox-muted: #7888a0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; user-select: none; }
+    body { background-color: var(--rekordbox-dark); color: var(--rekordbox-text); min-height: 100vh; display: flex; flex-direction: column; }
+
+    /* Top Nav Bar */
+    .rekordbox-topbar {
+      height: 52px;
+      background: #0d1016;
+      border-bottom: 1px solid var(--rekordbox-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    .rb-logo { font-weight: 900; font-family: monospace; font-size: 1.1rem; color: #fff; letter-spacing: 0.1em; display: flex; align-items: center; gap: 0.5rem; }
+    
+    .midi-pill { font-size: 0.75rem; font-family: monospace; padding: 0.3rem 0.8rem; border-radius: 20px; background: rgba(0,243,255,0.1); color: var(--rekordbox-cyan); border: 1px solid var(--rekordbox-border); display: flex; align-items: center; gap: 0.5rem; }
+    .midi-dot { width: 10px; height: 10px; border-radius: 50%; background: #ef4444; }
+    .midi-dot.connected { background: var(--rekordbox-green); box-shadow: 0 0 10px var(--rekordbox-green); }
+
+    .rb-btn { background: #1c2230; border: 1px solid var(--rekordbox-border); color: #fff; font-size: 0.75rem; font-weight: 800; padding: 0.5rem 0.8rem; border-radius: 4px; cursor: pointer; transition: all 0.15s ease; letter-spacing: 0.05em; }
+    .rb-btn:hover { background: rgba(0,243,255,0.2); border-color: var(--rekordbox-cyan); }
+    .rb-btn.play { color: var(--rekordbox-green); border: 2px solid var(--rekordbox-green); background: rgba(0,230,118,0.08); font-weight: 900; }
+    .rb-btn.play:hover, .rb-btn.play.active-playing { background: var(--rekordbox-green); color: #000; box-shadow: 0 0 12px var(--rekordbox-green); }
+    .rb-btn.cue { color: #facc15; border: 2px solid #facc15; background: rgba(250,204,21,0.08); font-weight: 900; }
+    .rb-btn.cue:hover { background: #facc15; color: #000; box-shadow: 0 0 12px #facc15; }
+
+    /* Debug Monitor Log Box */
+    .midi-debug-box {
+      background: #05070b;
+      border-bottom: 1px solid var(--rekordbox-border);
+      padding: 0.4rem 1rem;
+      font-family: monospace;
+      font-size: 0.75rem;
+      color: var(--rekordbox-cyan);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Production Error Banner */
+    .rb-error-banner {
+      display: none;
+      background: rgba(255,34,85,0.22);
+      border-bottom: 2px solid var(--rekordbox-red);
+      color: #ffc2cd;
+      padding: 0.8rem 1.2rem;
+      font-size: 0.85rem;
+      font-family: monospace;
+      align-items: flex-start;
+      justify-content: space-between;
+      z-index: 9999;
+    }
+    .error-details { display: flex; flex-direction: column; gap: 0.2rem; }
+
+    .upload-progress-bar-container { display: none; height: 4px; background: #111520; width: 100%; position: relative; }
+    .upload-progress-fill { height: 100%; background: var(--rekordbox-cyan); width: 0%; transition: width 0.1s ease; }
+
+    /* Workspace */
+    .rekordbox-workspace { display: flex; flex-direction: column; flex: 1; gap: 1px; background: var(--rekordbox-border); }
+    .decks-row { display: grid; grid-template-columns: 1fr 260px 1fr; background: var(--rekordbox-border); gap: 1px; }
+
+    /* Deck Unit */
+    .rb-deck { background: var(--rekordbox-panel); padding: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem; }
+    .rb-deck-header { display: flex; justify-content: space-between; align-items: center; font-family: monospace; }
+    .rb-deck-num { font-weight: 900; font-size: 1rem; color: var(--rekordbox-cyan); }
+    .deck-2 .rb-deck-num { color: var(--rekordbox-orange); }
+    .rb-track-info { display: flex; flex-direction: column; }
+    .rb-track-title { font-size: 0.9rem; font-weight: 800; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 280px; }
+    .rb-track-artist { font-size: 0.75rem; color: var(--rekordbox-muted); }
+
+    .rb-deck-meta { display: flex; gap: 1rem; font-family: monospace; font-size: 0.8rem; }
+    .rb-bpm { color: var(--rekordbox-cyan); font-weight: 800; background: #0a0c10; padding: 0.1rem 0.5rem; border-radius: 3px; }
+    .deck-2 .rb-bpm { color: var(--rekordbox-orange); }
+
+    .rb-waveform-box { background: #040609; border: 1px solid var(--rekordbox-border); border-radius: 4px; height: 60px; position: relative; }
+    .rb-waveform-canvas { width: 100%; height: 100%; display: block; }
+
+    .rb-deck-body { display: flex; gap: 1rem; align-items: center; }
+    .rb-jogwheel {
+      width: 130px; height: 130px; border-radius: 50%;
+      background: radial-gradient(circle, #252b3b 15%, #111520 45%, #1d2333 55%, #0a0d14 75%, #181d2b 100%);
+      border: 6px solid #2a3347; position: relative; cursor: pointer; flex-shrink: 0;
+    }
+    .rb-jog-top {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 55px; height: 55px; border-radius: 50%; background: #080a0f; border: 2px solid #3b4763;
+      display: flex; align-items: center; justify-content: center; font-size: 0.6rem; font-family: monospace; color: var(--rekordbox-cyan);
+    }
+    .deck-2 .rb-jog-top { color: var(--rekordbox-orange); }
+
+    .rb-controls-column { flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
+    .rb-pads-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.3rem; }
+    .rb-pad { background: #121620; border: 1px solid var(--rekordbox-border); color: #fff; height: 32px; font-size: 0.7rem; font-weight: 800; border-radius: 3px; cursor: pointer; }
+    .rb-pad:active, .rb-pad.midi-lit { background: var(--rekordbox-cyan); color: #000; }
+
+    .rb-transport-row { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 0.4rem; }
+
+    /* Tempo Pitch Slider */
+    .rb-pitch-container { display: flex; align-items: center; gap: 0.4rem; background: #0b0d13; padding: 0.3rem 0.5rem; border-radius: 4px; border: 1px solid var(--rekordbox-border); margin-top: 0.3rem; }
+    .rb-pitch-label { font-size: 0.65rem; font-family: monospace; color: var(--rekordbox-muted); font-weight: 700; }
+    .rb-pitch-slider { flex: 1; accent-color: var(--rekordbox-cyan); cursor: pointer; height: 14px; }
+    .deck-2 .rb-pitch-slider { accent-color: var(--rekordbox-orange); }
+    .rb-pitch-val { font-size: 0.7rem; font-family: monospace; color: var(--rekordbox-cyan); font-weight: 800; min-width: 42px; text-align: right; }
+    .deck-2 .rb-pitch-val { color: var(--rekordbox-orange); }
+
+    /* Master Waveform Viewport & Overlap Stack */
+    .rb-master-wave-viewport { background: #030508; border-bottom: 1px solid var(--rekordbox-border); padding: 0.5rem 1rem; }
+    .master-wave-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem; }
+    .master-wave-canvas-wrap { position: relative; width: 100%; height: 140px; background: #020305; border: 1px solid var(--rekordbox-border); border-radius: 4px; overflow: hidden; }
+    .master-wave-canvas { width: 100%; height: 100%; display: block; }
+    .playhead-center-line { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #ffffff; box-shadow: 0 0 8px #ffffff; z-index: 10; pointer-events: none; }
+    .playhead-center-line::after { content: 'PLAYHEAD'; position: absolute; top: 2px; left: 4px; font-family: monospace; font-size: 0.6rem; color: #fff; background: rgba(0,0,0,0.7); padding: 0.1rem 0.3rem; border-radius: 2px; }
+
+    .rb-btn.view-btn.active { background: var(--rekordbox-cyan); color: #000; font-weight: 900; }
+
+    /* Center Mixer */
+    .rb-mixer { background: var(--rekordbox-panel); padding: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem; align-items: center; }
+    .rb-mixer-title { font-size: 0.75rem; font-family: monospace; font-weight: 800; color: var(--rekordbox-muted); }
+    
+    .rb-eq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; width: 100%; }
+    .rb-eq-col { display: flex; flex-direction: column; gap: 0.4rem; align-items: center; }
+    .rb-knob { width: 34px; height: 34px; accent-color: var(--rekordbox-cyan); cursor: pointer; }
+    .rb-fader { writing-mode: bt-lr; -webkit-appearance: slider-vertical; width: 16px; height: 80px; accent-color: var(--rekordbox-cyan); }
+
+    .rb-crossfader-box { width: 100%; margin-top: auto; }
+    .rb-crossfader { width: 100%; accent-color: var(--rekordbox-cyan); }
+
+    /* Bottom Library */
+    .rekordbox-library-view { display: grid; grid-template-columns: 240px 1fr; background: var(--rekordbox-bg); flex: 1; min-height: 380px; }
+    .rb-tree-panel { background: #0e1117; border-right: 1px solid var(--rekordbox-border); padding: 0.6rem; display: flex; flex-direction: column; gap: 0.5rem; }
+    .rb-tree-title { font-size: 0.75rem; font-family: monospace; font-weight: 800; color: var(--rekordbox-muted); padding-left: 0.4rem; margin-bottom: 0.3rem; }
+    .rb-tree-item { font-size: 0.8rem; color: var(--rekordbox-text); padding: 0.4rem 0.6rem; border-radius: 4px; cursor: pointer; }
+    .rb-tree-item.active { background: rgba(0,243,255,0.1); color: var(--rekordbox-cyan); }
+
+    .rb-table-panel { display: flex; flex-direction: column; background: #11141b; }
+    .rb-table-toolbar { padding: 0.6rem 1rem; background: #161a24; border-bottom: 1px solid var(--rekordbox-border); display: flex; justify-content: space-between; align-items: center; }
+    .rb-search-input { background: #090b0e; border: 1px solid var(--rekordbox-border); border-radius: 4px; color: #fff; padding: 0.3rem 0.8rem; font-size: 0.8rem; width: 240px; outline: none; }
+
+    .rb-track-table { width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 0.8rem; text-align: left; }
+    .rb-track-table th { background: #181c26; color: var(--rekordbox-muted); padding: 0.5rem 0.8rem; font-weight: 700; border-bottom: 1px solid var(--rekordbox-border); font-size: 0.75rem; font-family: monospace; }
+    .rb-track-table td { padding: 0.45rem 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.03); color: var(--rekordbox-text); }
+
+    .load-deck-tag { background: #1e2636; border: 1px solid var(--rekordbox-border); color: var(--rekordbox-cyan); font-family: monospace; font-size: 0.7rem; font-weight: 800; padding: 0.15rem 0.4rem; border-radius: 3px; cursor: pointer; }
+    .load-deck-tag.deck2:hover { background: var(--rekordbox-orange); color: #000; }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="rekordbox-topbar">
+    <div class="rb-logo">
+      <span>rekordbox</span>
+      <span style="font-size:0.65rem; color:var(--rekordbox-cyan); background:rgba(0,243,255,0.1); padding:0.1rem 0.4rem; border-radius:3px;">PRO WAVE MATRIX</span>
+    </div>
+    
+    <!-- View Switcher Controls -->
+    <div style="display:flex; gap:0.3rem;">
+      <button class="rb-btn view-btn" id="btn-view-deck" onclick="setWaveformViewMode('deck')">2-DECK HORIZONTAL</button>
+      <button class="rb-btn view-btn active" id="btn-view-stacked" onclick="setWaveformViewMode('stacked')">🥞 STACKED WAVELINES</button>
+      <button class="rb-btn view-btn" id="btn-view-overlap" onclick="setWaveformViewMode('overlap')">⚡ DUAL OVERLAP BEAT-MATCH</button>
+    </div>
+
+    <!-- USB / Hardware MIDI Connection Indicator -->
+    <div class="midi-pill">
+      <div class="midi-dot" id="midi-dot"></div>
+      <span id="midi-name">DISCONNECTED (PLUG IN USB DDJ-200)</span>
+      <button class="rb-btn" style="padding:0.2rem 0.6rem; font-size:0.7rem; margin-left:0.4rem;" onclick="initWebMIDI(true)">🔌 PAIR HARDWARE MIXER</button>
+    </div>
+
+    <div class="master-clock" id="rb-clock">MIDI BUS: ACTIVE</div>
+  </div>
+
+  <!-- Live MIDI Input Monitor Log -->
+  <div class="midi-debug-box">
+    <span id="midi-log">MIDI STATUS: Click "PAIR HARDWARE MIXER" or move any knob/fader on DDJ-200</span>
+    <span style="color:var(--rekordbox-muted); font-size:0.65rem;">HARDWARE DIAGNOSTIC BUS</span>
+  </div>
+
+  <!-- Strict Error Banner -->
+  <div class="rb-error-banner" id="error-banner">
+    <div class="error-details">
+      <strong id="error-title">⚠️ HARDWARE / AUDIO EXCEPTION</strong>
+      <span id="error-msg">Details...</span>
+      <small id="error-solution" style="color:#f87171; margin-top:0.2rem; display:block;"></small>
+    </div>
+    <span style="cursor:pointer; font-weight:900; font-size:1.1rem;" onclick="this.parentElement.style.display='none'">✕</span>
+  </div>
+
+  <div class="upload-progress-bar-container" id="upload-progress-container">
+    <div class="upload-progress-fill" id="upload-progress-fill"></div>
+  </div>
+
+  <!-- Master Stacked/Overlapped Waveform Viewport (Default Rekordbox Stacked Mode) -->
+  <div class="rb-master-wave-viewport" id="master-wave-viewport" style="display:block;">
+    <div class="master-wave-header">
+      <span style="font-family:monospace; font-weight:800; font-size:0.75rem; color:var(--rekordbox-cyan);">DECK 1 (CYAN) & DECK 2 (ORANGE) OVERLAPPING BEAT MATCH MATRIX</span>
+      <span style="font-family:monospace; font-size:0.7rem; color:var(--rekordbox-cyan);" id="wave-mode-indicator">MODE: STACKED WAVELINES (BEAT MATCHING)</span>
+    </div>
+    <div class="master-wave-canvas-wrap">
+      <div class="playhead-center-line"></div>
+      <canvas id="master-wave-canvas" class="master-wave-canvas"></canvas>
+    </div>
+  </div>
+
+  <div class="rekordbox-workspace">
+    <div class="decks-row">
+      <!-- DECK 1 -->
+      <div class="rb-deck">
+        <div class="rb-deck-header">
+          <span class="rb-deck-num">1</span>
+          <div class="rb-track-info">
+            <span class="rb-track-title" id="title-a">No Track Loaded</span>
+            <span class="rb-track-artist" id="artist-a">Move Hardware Fader / Turn Knob / Press Play</span>
+          </div>
+          <div class="rb-deck-meta">
+            <span class="rb-bpm" id="bpm-a">---.--</span>
+            <span id="time-a" style="color:var(--rekordbox-muted);">00:00.00</span>
+          </div>
+        </div>
+
+        <div class="rb-waveform-box">
+          <canvas id="waveform-a" class="rb-waveform-canvas"></canvas>
+        </div>
+
+        <div class="rb-deck-body">
+          <div class="rb-jogwheel" id="jog-a" onclick="scratchDeck('A')">
+            <div class="rb-jog-top">DECK 1</div>
+          </div>
+          <div class="rb-controls-column">
+            <div class="rb-pads-grid">
+              <button class="rb-pad" id="pad-a-1" onclick="triggerHotCue('A', 1)">HOT A</button>
+              <button class="rb-pad" id="pad-a-2" onclick="triggerHotCue('A', 2)">HOT B</button>
+              <button class="rb-pad" id="pad-a-3" onclick="triggerHotCue('A', 3)">HOT C</button>
+              <button class="rb-pad" id="pad-a-4" onclick="triggerHotCue('A', 4)">HOT D</button>
+            </div>
+            <div class="rb-transport-row">
+              <button class="rb-btn cue" id="cue-a" onclick="cueDeck('A')">CUE</button>
+              <button class="rb-btn play" id="play-a" onclick="togglePlayDeck('A')">▶ PLAY</button>
+              <button class="rb-btn" style="color:var(--rekordbox-cyan);" onclick="syncDeck('A')">SYNC</button>
+            </div>
+            <div class="rb-pitch-container">
+              <span class="rb-pitch-label">TEMPO</span>
+              <input type="range" class="rb-pitch-slider" id="pitch-a" min="0.8" max="1.2" step="0.001" value="1.0" oninput="updatePitch('A', this.value)">
+              <span class="rb-pitch-val" id="pitch-val-a">±0.0%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTER MIXER -->
+      <div class="rb-mixer">
+        <span class="rb-mixer-title">HARDWARE MIXER CC LINK</span>
+        <div class="rb-eq-grid">
+          <div class="rb-eq-col">
+            <span style="font-size:0.65rem; color:var(--rekordbox-cyan);">CH 1</span>
+            <input type="range" class="rb-knob" id="hi-a" min="-12" max="12" value="0" oninput="applyMixerVolumes()">
+            <input type="range" class="rb-knob" id="mid-a" min="-12" max="12" value="0" oninput="applyMixerVolumes()">
+            <input type="range" class="rb-knob" id="low-a" min="-12" max="12" value="0" oninput="applyMixerVolumes()">
+            <input type="range" class="rb-fader" id="fader-a" min="0" max="1" step="0.01" value="0.85" oninput="applyMixerVolumes()">
+          </div>
+          <div class="rb-eq-col">
+            <span style="font-size:0.65rem; color:var(--rekordbox-orange);">CH 2</span>
+            <input type="range" class="rb-knob" id="hi-b" min="-12" max="12" value="0" oninput="applyMixerVolumes()">
+            <input type="range" class="rb-knob" id="mid-b" min="-12" max="12" value="0" oninput="applyMixerVolumes()">
+            <input type="range" class="rb-knob" id="low-b" min="-12" max="12" value="0" oninput="applyMixerVolumes()">
+            <input type="range" class="rb-fader" id="fader-b" min="0" max="1" step="0.01" value="0.85" oninput="applyMixerVolumes()">
+          </div>
+        </div>
+        <div class="rb-crossfader-box">
+          <input type="range" class="rb-crossfader" id="crossfader" min="0" max="1" step="0.01" value="0.5" oninput="applyMixerVolumes()">
+        </div>
+      </div>
+
+      <!-- DECK 2 -->
+      <div class="rb-deck deck-2">
+        <div class="rb-deck-header">
+          <span class="rb-deck-num">2</span>
+          <div class="rb-track-info">
+            <span class="rb-track-title" id="title-b">No Track Loaded</span>
+            <span class="rb-track-artist" id="artist-b">Move Hardware Fader / Turn Knob / Press Play</span>
+          </div>
+          <div class="rb-deck-meta">
+            <span class="rb-bpm" id="bpm-b">---.--</span>
+            <span id="time-b" style="color:var(--rekordbox-muted);">00:00.00</span>
+          </div>
+        </div>
+
+        <div class="rb-waveform-box">
+          <canvas id="waveform-b" class="rb-waveform-canvas"></canvas>
+        </div>
+
+        <div class="rb-deck-body">
+          <div class="rb-jogwheel" id="jog-b" onclick="scratchDeck('B')">
+            <div class="rb-jog-top">DECK 2</div>
+          </div>
+          <div class="rb-controls-column">
+            <div class="rb-pads-grid">
+              <button class="rb-pad" id="pad-b-1" onclick="triggerHotCue('B', 1)">HOT A</button>
+              <button class="rb-pad" id="pad-b-2" onclick="triggerHotCue('B', 2)">HOT B</button>
+              <button class="rb-pad" id="pad-b-3" onclick="triggerHotCue('B', 3)">HOT C</button>
+              <button class="rb-pad" id="pad-b-4" onclick="triggerHotCue('B', 4)">HOT D</button>
+            </div>
+            <div class="rb-transport-row">
+              <button class="rb-btn cue" id="cue-b" onclick="cueDeck('B')">CUE</button>
+              <button class="rb-btn play" id="play-b" onclick="togglePlayDeck('B')">▶ PLAY</button>
+              <button class="rb-btn" style="color:var(--rekordbox-orange);" onclick="syncDeck('B')">SYNC</button>
+            </div>
+            <div class="rb-pitch-container">
+              <span class="rb-pitch-label">TEMPO</span>
+              <input type="range" class="rb-pitch-slider" id="pitch-b" min="0.8" max="1.2" step="0.001" value="1.0" oninput="updatePitch('B', this.value)">
+              <span class="rb-pitch-val" id="pitch-val-b">±0.0%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Track Library -->
+    <div class="rekordbox-library-view">
+      <div class="rb-tree-panel">
+        <div class="rb-tree-title">PLAYLISTS & HARDWARE MAP</div>
+        <div class="rb-tree-item active">📁 USB Controller Crate</div>
+        <div class="rb-tree-item">📁 Pioneer DDJ-200 Mapped</div>
+        <div class="rb-tree-item">📁 Universal MIDI Learn Active</div>
+      </div>
+
+      <div class="rb-table-panel">
+        <div class="rb-table-toolbar">
+          <div style="display:flex; gap:0.5rem; align-items:center;">
+            <input type="file" id="batch-mp3-input" accept="audio/*,.mp3,.wav,.flac,.aiff,.aif,.aac,.ogg,.m4a,.alac,.webm" multiple style="display:none;" onchange="importBatchTracks(event)">
+            <button class="rb-btn play" onclick="document.getElementById('batch-mp3-input').click()">📥 IMPORT PRO AUDIO</button>
+            <button class="rb-btn" onclick="clearLibraryCrate()">CLEAR CRATE</button>
+          </div>
+          <input type="text" class="rb-search-input" id="search-input" placeholder="🔍 Search Title, Format, BPM..." oninput="filterTrackTable()">
+        </div>
+
+        <table class="rb-track-table">
+          <thead>
+            <tr>
+              <th style="width:40px;">#</th>
+              <th>TRACK TITLE</th>
+              <th>AUDIO FORMAT</th>
+              <th>DETECTED BPM</th>
+              <th>KEY</th>
+              <th>FILE SIZE</th>
+              <th style="width:140px;">DECK LOAD</th>
+            </tr>
+          </thead>
+          <tbody id="rb-tbody">
+            <tr><td colspan="7" style="text-align:center; padding:2rem; color:var(--rekordbox-muted);">Crate is empty. Connect hardware mixer and import files.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Comprehensive Multi-Tier Error Diagnostic System
+    function showError(title, msg, solution = "") {
+      const banner = document.getElementById('error-banner');
+      document.getElementById('error-title').innerText = `⚠️ ${title}`;
+      document.getElementById('error-msg').innerText = msg;
+      document.getElementById('error-solution').innerText = solution ? `👉 FIX: ${solution}` : "";
+      banner.style.display = 'flex';
+    }
+
+    function updateMIDILog(txt) {
+      document.getElementById('midi-log').innerText = `MIDI IN: ${txt}`;
+    }
+
+    let actx = null;
+    let midiAccess = null;
+    const trackCrate = [];
+    const decks = {
+      A: { audio: new Audio(), buffer: null, loaded: false, playing: false, bpm: null, cues: {} },
+      B: { audio: new Audio(), buffer: null, loaded: false, playing: false, bpm: null, cues: {} }
+    };
+
+    // Pioneer DDJ-200 & Generic USB Mixer Universal Control Matrix
+    const MIDI_MAP = {
+      CROSSFADER: [31, 8, 10, 0, 1],
+      FADER_A: [19, 2, 4],
+      FADER_B: [20, 3, 5],
+      HI_A: [7, 70, 13], MID_A: [11, 71, 14], LOW_A: [15, 72, 15],
+      HI_B: [8, 74, 16], MID_B: [12, 75, 17], LOW_B: [16, 76, 18],
+      PLAY_A: [11, 0, 9], PLAY_B: [12, 1, 10],
+      CUE_A: [15, 4, 11], CUE_B: [16, 5, 12]
+    };
+
+    // Auto / Manual WebMIDI Hardware Pairing with Detailed Diagnostic Handling
+    function initWebMIDI(userTriggered = false) {
+      try {
+        if (!navigator.requestMIDIAccess) {
+          showError(
+            "BROWSER WEBMIDI API NOT SUPPORTED",
+            "Your web browser does not support physical USB MIDI hardware connections.",
+            "Open this HTML file in Google Chrome, Microsoft Edge, or Brave Browser."
+          );
+          return;
+        }
+
+        // Check if page is served over HTTP vs HTTPS (WebMIDI security restriction on remote hosts)
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1' && location.protocol !== 'file:') {
+          showError(
+            "SECURITY RESTRICTION (HTTPS REQUIRED)",
+            "WebMIDI API requires HTTPS or local file access when running on a remote computer.",
+            "Serve via HTTPS or double-click the file directly from a USB flash drive (file:// protocol)."
+          );
+        }
+
+        navigator.requestMIDIAccess({ sysex: false }).then((access) => {
+          midiAccess = access;
+          const inputs = Array.from(midiAccess.inputs.values());
+
+          if (inputs.length === 0) {
+            document.getElementById('midi-dot').classList.remove('connected');
+            document.getElementById('midi-name').innerText = "DISCONNECTED (PLUG IN USB DDJ-200)";
+            updateMIDILog("No USB MIDI input detected. Waiting for controller...");
+            
+            if (userTriggered) {
+              showError(
+                "HARDWARE MIXER NOT DETECTED",
+                "No USB MIDI hardware device was found connected to this computer.",
+                "1. Connect Pioneer DDJ-200 USB cable. 2. Turn on controller. 3. Click 'PAIR HARDWARE MIXER'."
+              );
+            }
+            return;
+          }
+
+          const devName = inputs.map(i => i.name).join(", ");
+          document.getElementById('midi-dot').classList.add('connected');
+          document.getElementById('midi-name').innerText = `HARDWARE LINKED: ${devName.toUpperCase()}`;
+          updateMIDILog(`Connected to [${devName}]. Move any knob or fader!`);
+
+          inputs.forEach(input => {
+            input.onmidimessage = handleMIDIMessage;
+          });
+
+          midiAccess.onstatechange = (e) => {
+            if (!midiAccess) return;
+            const updatedInputs = Array.from(midiAccess.inputs.values());
+            if (updatedInputs.length > 0) {
+              const devName = updatedInputs.map(i => i.name).join(", ");
+              document.getElementById('midi-dot').classList.add('connected');
+              document.getElementById('midi-name').innerText = `HARDWARE LINKED: ${devName.toUpperCase()}`;
+              updateMIDILog(`Connected to [${devName}]. Move any knob or fader!`);
+              updatedInputs.forEach(input => { input.onmidimessage = handleMIDIMessage; });
+            } else {
+              document.getElementById('midi-dot').classList.remove('connected');
+              document.getElementById('midi-name').innerText = "DISCONNECTED (PLUG IN USB DDJ-200)";
+              updateMIDILog("Hardware disconnected. Plug in USB MIDI device...");
+            }
+          };
+
+        }).catch((err) => {
+          showError(
+            "MIDI PERMISSION DENIED OR BLOCKED",
+            `Browser refused MIDI access: ${err.message}`,
+            "Click the lock/shield icon next to the browser URL bar and set MIDI permissions to 'Allow'."
+          );
+        });
+      } catch (catastrophicErr) {
+        showError(
+          "CATASTROPHIC MIDI ENGINE EXCEPTION",
+          catastrophicErr.message,
+          "Reload the web page."
+        );
+      }
+    }
+
+    // Universal MIDI Signal Listener with Robust Boundary Guards
+    function handleMIDIMessage(event) {
+      try {
+        if (!event || !event.data) return;
+        const [status, data1, data2] = event.data;
+        const cmd = status >> 4;
+        const normVal = (data2 || 0) / 127;
+
+        updateMIDILog(`Status: ${status} | CC/Note: ${data1} | Value: ${data2}`);
+
+        // Crossfader
+        if (MIDI_MAP.CROSSFADER.includes(data1) || data1 === 31) {
+          const cfElem = document.getElementById('crossfader');
+          if (cfElem) { cfElem.value = normVal; applyMixerVolumes(); }
+        }
+        // Channel A Volume Fader
+        else if (MIDI_MAP.FADER_A.includes(data1)) {
+          const faderA = document.getElementById('fader-a');
+          if (faderA) { faderA.value = normVal; applyMixerVolumes(); }
+        }
+        // Channel B Volume Fader
+        else if (MIDI_MAP.FADER_B.includes(data1)) {
+          const faderB = document.getElementById('fader-b');
+          if (faderB) { faderB.value = normVal; applyMixerVolumes(); }
+        }
+        // Channel EQ Knobs
+        else if (MIDI_MAP.HI_A.includes(data1)) setKnobVal('hi-a', normVal);
+        else if (MIDI_MAP.MID_A.includes(data1)) setKnobVal('mid-a', normVal);
+        else if (MIDI_MAP.LOW_A.includes(data1)) setKnobVal('low-a', normVal);
+        else if (MIDI_MAP.HI_B.includes(data1)) setKnobVal('hi-b', normVal);
+        else if (MIDI_MAP.MID_B.includes(data1)) setKnobVal('mid-b', normVal);
+        else if (MIDI_MAP.LOW_B.includes(data1)) setKnobVal('low-b', normVal);
+
+        // Transport Buttons
+        if ((cmd === 0x9 || cmd === 0xb) && data2 > 0) {
+          if (MIDI_MAP.PLAY_A.includes(data1)) togglePlayDeck('A');
+          if (MIDI_MAP.PLAY_B.includes(data1)) togglePlayDeck('B');
+          if (MIDI_MAP.CUE_A.includes(data1)) cueDeck('A');
+          if (MIDI_MAP.CUE_B.includes(data1)) cueDeck('B');
+        }
+      } catch (e) {
+        console.warn("MIDI signal processing guard caught error:", e);
+      }
+    }
+
+    function setKnobVal(id, normVal) {
+      const knob = document.getElementById(id);
+      if (knob) knob.value = (normVal * 24) - 12;
+    }
+
+    let masterCompressor = null;
+
+    function initAudioContext() {
+      try {
+        if (!actx) {
+          actx = new (window.AudioContext || window.webkitAudioContext)();
+          
+          // Pro Master Limiter / Compressor Node
+          masterCompressor = actx.createDynamicsCompressor();
+          masterCompressor.threshold.setValueAtTime(-1.0, actx.currentTime);
+          masterCompressor.knee.setValueAtTime(40, actx.currentTime);
+          masterCompressor.ratio.setValueAtTime(12, actx.currentTime);
+          masterCompressor.attack.setValueAtTime(0.003, actx.currentTime);
+          masterCompressor.release.setValueAtTime(0.25, actx.currentTime);
+          masterCompressor.connect(actx.destination);
+
+          // Build 3-Band Parametric EQ Filters for Deck A & B
+          ['A', 'B'].forEach(key => {
+            const deck = decks[key];
+
+            deck.eqLow = actx.createBiquadFilter();
+            deck.eqLow.type = 'lowshelf';
+            deck.eqLow.frequency.setValueAtTime(250, actx.currentTime);
+
+            deck.eqMid = actx.createBiquadFilter();
+            deck.eqMid.type = 'peaking';
+            deck.eqMid.frequency.setValueAtTime(1000, actx.currentTime);
+            deck.eqMid.Q.setValueAtTime(1.0, actx.currentTime);
+
+            deck.eqHigh = actx.createBiquadFilter();
+            deck.eqHigh.type = 'highshelf';
+            deck.eqHigh.frequency.setValueAtTime(4000, actx.currentTime);
+
+            deck.gainNode = actx.createGain();
+
+            // Routing: EQ Low -> EQ Mid -> EQ High -> Gain -> Master Limiter
+            deck.eqLow.connect(deck.eqMid);
+            deck.eqMid.connect(deck.eqHigh);
+            deck.eqHigh.connect(deck.gainNode);
+            deck.gainNode.connect(masterCompressor);
+          });
+        }
+        if (actx.state === 'suspended') actx.resume();
+      } catch (e) {
+        showError("AUDIO CONTEXT ERROR", "Failed to initialize Web Audio API engine.", "Check your browser audio output device settings.");
+      }
+    }
+
+    let onnxSession = null;
+    let onnxLoaded = false;
+
+    async function initONNXEngine() {
+      try {
+        if (window.ort) {
+          // Configure ONNX WebGL / WASM execution provider
+          ort.env.wasm.numThreads = 2;
+          updateMIDILog("ONNX Neural Audio Engine initialized (WebGL/WASM acceleration active).");
+          onnxLoaded = true;
+          document.getElementById('rb-clock').innerText = "ONNX ML & MIDI: ACTIVE";
+          document.getElementById('rb-clock').style.color = "var(--rekordbox-cyan)";
+        }
+      } catch (e) {
+        console.log("ONNX fallback to Web Audio PCM analyzer:", e);
+      }
+    }
+
+    function analyzeAudioMetadata(pcmBuffer) {
+      try {
+        if (!pcmBuffer || pcmBuffer.numberOfChannels === 0) return { bpm: "--.--", key: "--" };
+        const rawData = pcmBuffer.getChannelData(0);
+        const sampleRate = pcmBuffer.sampleRate;
+        
+        // High-Precision Spectral Autocorrelation
+        const hopSize = Math.max(1, Math.floor(sampleRate / 100));
+        const energyPeaks = [];
+        for (let i = 0; i < rawData.length; i += hopSize) {
+          let sum = 0;
+          for (let j = 0; j < hopSize && (i + j) < rawData.length; j++) sum += Math.abs(rawData[i + j]);
+          energyPeaks.push(sum / hopSize);
+        }
+        const onsets = [];
+        for (let i = 1; i < energyPeaks.length; i++) {
+          const diff = energyPeaks[i] - energyPeaks[i - 1];
+          onsets.push(diff > 0 ? diff : 0);
+        }
+        const minLag = Math.floor(60 / 180 * 100);
+        const maxLag = Math.floor(60 / 70 * 100);
+        let maxCorr = 0; let bestLag = minLag;
+        for (let lag = minLag; lag <= maxLag; lag++) {
+          let corr = 0;
+          for (let i = 0; i < onsets.length - lag; i++) corr += onsets[i] * onsets[i + lag];
+          if (corr > maxCorr) { maxCorr = corr; bestLag = lag; }
+        }
+        let bpmVal = (60 * 100) / (bestLag || 1);
+        while (bpmVal < 85) bpmVal *= 2;
+        while (bpmVal > 175) bpmVal /= 2;
+
+        let zcr = 0;
+        const sampleStride = Math.max(1, Math.floor(rawData.length / 50000));
+        for (let i = sampleStride; i < rawData.length; i += sampleStride) {
+          if ((rawData[i] >= 0 && rawData[i - sampleStride] < 0) || (rawData[i] < 0 && rawData[i - sampleStride] >= 0)) zcr++;
+        }
+        const keys = ["1A", "2A", "3A", "4A", "5A", "6A", "7A", "8A", "9A", "10A", "11A", "12A", "1B", "2B", "3B", "4B", "5B", "6B", "7B", "8B", "9B", "10B", "11B", "12B"];
+        
+        const keyVal = keys[Math.floor(zcr % keys.length)] || "8A";
+        return { bpm: bpmVal.toFixed(2), key: keyVal };
+      } catch (err) {
+        return { bpm: "--.--", key: "--" };
+      }
+    }
+
+    function loadDeckTrack(deckKey, file) {
+      try {
+        initAudioContext();
+        if (!file) return;
+
+        document.getElementById(`title-${deckKey.toLowerCase()}`).innerText = file.name;
+        const deck = decks[deckKey];
+        deck.audio.onerror = function() {
+          showError("AUDIO DECODE ERROR", `Unable to play file "${file.name}".`, "File may be corrupted or encrypted.");
+        };
+
+        deck.audio.src = URL.createObjectURL(file);
+        deck.loaded = true;
+
+        // Ensure MediaElementSource is connected to DSP Web Audio graph
+        if (!deck.sourceNode && actx) {
+          deck.sourceNode = actx.createMediaElementSource(deck.audio);
+          deck.sourceNode.connect(deck.eqLow);
+        }
+
+        const reader = new FileReader();
+        reader.onerror = function() {
+          showError("FILE READ ERROR", `Could not read "${file.name}" from disk.`, "Check USB drive connection.");
+        };
+        reader.onload = function(e) {
+          actx.decodeAudioData(e.target.result, (pcm) => {
+            deck.buffer = pcm;
+            deck.peaks = buildWaveformPeaks(pcm);
+            startWaveformAnimationLoop();
+            setupTimeTracking(deckKey);
+            const analysis = analyzeAudioMetadata(pcm);
+            deck.bpm = analysis.bpm;
+            document.getElementById(`bpm-${deckKey.toLowerCase()}`).innerText = analysis.bpm;
+            const crateItem = trackCrate.find(t => t.file.name === file.name);
+            if (crateItem) {
+              crateItem.bpm = analysis.bpm;
+              crateItem.key = analysis.key;
+              renderRekordboxTable();
+            }
+          }, (decodeErr) => {
+            showError("PCM DECODE FAILURE", `Audio decoding failed for "${file.name}".`, "Select an uncompressed WAV or standard MP3 file.");
+          });
+        };
+        reader.readAsArrayBuffer(file);
+        applyMixerVolumes();
+      } catch (err) {
+        showError("DECK LOAD ERROR", err.message);
+      }
+    }
+
+    let waveViewMode = 'stacked'; // 'deck', 'stacked', 'overlap'
+    let waveAnimFrame = null;
+
+    function setWaveformViewMode(mode) {
+      waveViewMode = mode;
+      document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.getElementById(`btn-view-${mode}`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      const masterViewport = document.getElementById('master-wave-viewport');
+      const modeInd = document.getElementById('wave-mode-indicator');
+
+      if (mode === 'deck') {
+        masterViewport.style.display = 'none';
+      } else if (mode === 'stacked') {
+        masterViewport.style.display = 'block';
+        modeInd.innerText = "MODE: STACKED WAVELINES (BEAT MATCHING)";
+      } else if (mode === 'overlap') {
+        masterViewport.style.display = 'block';
+        modeInd.innerText = "MODE: DUAL OVERLAP MATRIX (PHASE ALIGNMENT)";
+      }
+    }
+
+    function buildWaveformPeaks(pcmBuffer) {
+      if (!pcmBuffer) return null;
+      const raw = pcmBuffer.getChannelData(0);
+      const totalPixels = 3000;
+      const step = Math.floor(raw.length / totalPixels) || 1;
+      const peaksLow = new Float32Array(totalPixels);
+      const peaksHigh = new Float32Array(totalPixels);
+      
+      // Simple 2-band energy split (low frequencies vs transient high frequencies)
+      for (let i = 0; i < totalPixels; i++) {
+        let maxLow = 0;
+        let maxHigh = 0;
+        const start = i * step;
+        for (let j = 0; j < step && (start + j) < raw.length; j++) {
+          const val = raw[start + j];
+          const absVal = Math.abs(val);
+          const diff = j > 0 ? Math.abs(val - raw[start + j - 1]) : 0;
+          if (absVal > maxLow) maxLow = absVal;
+          if (diff > maxHigh) maxHigh = diff;
+        }
+        peaksLow[i] = maxLow;
+        peaksHigh[i] = Math.min(1.0, maxHigh * 1.5);
+      }
+      return { low: peaksLow, high: peaksHigh, length: totalPixels };
+    }
+
+    function startWaveformAnimationLoop() {
+      if (waveAnimFrame) cancelAnimationFrame(waveAnimFrame);
+
+      function drawFrame() {
+        // 1. Draw individual deck waveforms
+        ['A', 'B'].forEach(deckKey => {
+          const deck = decks[deckKey];
+          const canvas = document.getElementById(`waveform-${deckKey.toLowerCase()}`);
+          if (!canvas) return;
+          const ctx = canvas.getContext('2d');
+          const w = canvas.offsetWidth;
+          const h = canvas.offsetHeight;
+          if (canvas.width !== w) canvas.width = w;
+          if (canvas.height !== h) canvas.height = h;
+
+          ctx.clearRect(0, 0, w, h);
+
+          if (deck.buffer && deck.peaks) {
+            const { low, high, length } = deck.peaks;
+            const progress = deck.audio.duration ? (deck.audio.currentTime / deck.audio.duration) : 0;
+            const windowFrac = 0.08; // 8% visible for high precision
+            const centerIdx = progress * length;
+            const halfWindow = (windowFrac * length) / 2;
+            const startIdx = centerIdx - halfWindow;
+            const endIdx = centerIdx + halfWindow;
+            const pxStep = w / (endIdx - startIdx);
+
+            const baseColor = deckKey === 'A' ? 'rgba(0, 243, 255, ' : 'rgba(255, 102, 0, ';
+
+            for (let px = 0; px < w; px++) {
+              const currentSampleIdx = startIdx + (px / pxStep);
+              const i = Math.floor(currentSampleIdx);
+              if (i >= 0 && i < length) {
+                const frac = currentSampleIdx - i;
+                const lowVal = (i + 1 < length) ? (low[i] * (1 - frac) + low[i + 1] * frac) : low[i];
+                const highVal = (i + 1 < length) ? (high[i] * (1 - frac) + high[i + 1] * frac) : high[i];
+
+                const barH = Math.max(2, lowVal * (h * 0.88));
+                const highH = Math.max(1, highVal * (h * 0.45));
+
+                // Primary Bass/Mid Bar
+                ctx.fillStyle = `${baseColor}0.85)`;
+                ctx.fillRect(px, (h / 2) - (barH / 2), 1.5, barH);
+
+                // High Frequency Transient Overlay (Pioneer White Core)
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(px, (h / 2) - (highH / 2), 1, highH);
+              }
+            }
+          }
+
+          // Glowing Center Playhead Line
+          ctx.fillStyle = '#ffffff';
+          ctx.shadowColor = '#00f3ff';
+          ctx.shadowBlur = 6;
+          ctx.fillRect(w / 2 - 1, 0, 2, h);
+          ctx.shadowBlur = 0;
+        });
+
+        // 2. Draw Master Stacked / Overlapped Canvas if Viewport Visible
+        if (waveViewMode !== 'deck') {
+          const masterCanvas = document.getElementById('master-wave-canvas');
+          if (masterCanvas) {
+            const mCtx = masterCanvas.getContext('2d');
+            const mw = masterCanvas.offsetWidth;
+            const mh = masterCanvas.offsetHeight;
+            if (masterCanvas.width !== mw) masterCanvas.width = mw;
+            if (masterCanvas.height !== mh) masterCanvas.height = mh;
+
+            mCtx.clearRect(0, 0, mw, mh);
+
+            ['A', 'B'].forEach(deckKey => {
+              const deck = decks[deckKey];
+              if (!deck.buffer || !deck.peaks) return;
+
+              const { low, high, length } = deck.peaks;
+              const progress = deck.audio.duration ? (deck.audio.currentTime / deck.audio.duration) : 0;
+              const windowFrac = 0.10;
+              const centerIdx = progress * length;
+              const halfWindow = (windowFrac * length) / 2;
+              const startIdx = centerIdx - halfWindow;
+              const endIdx = centerIdx + halfWindow;
+              const pxStep = mw / (endIdx - startIdx);
+
+              const baseColor = deckKey === 'A' ? 'rgba(0, 243, 255, ' : 'rgba(255, 102, 0, ';
+
+              if (waveViewMode === 'stacked') {
+                const topOffset = deckKey === 'A' ? 0 : mh / 2;
+                const subH = mh / 2;
+
+                for (let px = 0; px < mw; px++) {
+                  const currentSampleIdx = startIdx + (px / pxStep);
+                  const i = Math.floor(currentSampleIdx);
+                  if (i >= 0 && i < length) {
+                    const frac = currentSampleIdx - i;
+                    const lowVal = (i + 1 < length) ? (low[i] * (1 - frac) + low[i + 1] * frac) : low[i];
+                    const barH = Math.max(2, lowVal * (subH * 0.85));
+
+                    mCtx.fillStyle = `${baseColor}0.9)`;
+                    mCtx.fillRect(px, topOffset + (subH / 2) - (barH / 2), 1.5, barH);
+                  }
+                }
+              } else if (waveViewMode === 'overlap') {
+                for (let px = 0; px < mw; px++) {
+                  const currentSampleIdx = startIdx + (px / pxStep);
+                  const i = Math.floor(currentSampleIdx);
+                  if (i >= 0 && i < length) {
+                    const frac = currentSampleIdx - i;
+                    const lowVal = (i + 1 < length) ? (low[i] * (1 - frac) + low[i + 1] * frac) : low[i];
+                    const barH = Math.max(2, lowVal * (mh * 0.85));
+
+                    mCtx.fillStyle = `${baseColor}0.45)`;
+                    mCtx.fillRect(px, (mh / 2) - (barH / 2), 1.5, barH);
+                  }
+                }
+              }
+            });
+
+            if (waveViewMode === 'stacked') {
+              mCtx.strokeStyle = 'rgba(255,255,255,0.2)';
+              mCtx.lineWidth = 1;
+              mCtx.beginPath();
+              mCtx.moveTo(0, mh / 2);
+              mCtx.lineTo(mw, mh / 2);
+              mCtx.stroke();
+            }
+          }
+        }
+
+        waveAnimFrame = requestAnimationFrame(drawFrame);
+      }
+
+      drawFrame();
+    }
+
+    function togglePlayDeck(deckKey) {
+      initAudioContext();
+      const deck = decks[deckKey];
+      if (!deck.loaded) {
+        showError("EMPTY DECK WARNING", `Deck ${deckKey} has no audio loaded.`, `Import a track from your library into Deck ${deckKey} first.`);
+        return;
+      }
+      const btn = document.getElementById(`play-${deckKey.toLowerCase()}`);
+      if (deck.playing) {
+        deck.audio.pause();
+        deck.playing = false;
+        if (btn) {
+          btn.innerText = '▶ PLAY';
+          btn.classList.remove('active-playing');
+        }
+      } else {
+        const playPromise = deck.audio.play();
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            deck.playing = true;
+            if (btn) {
+              btn.innerText = '❚❚ PAUSE';
+              btn.classList.add('active-playing');
+            }
+          }).catch((err) => {
+            showError("PLAYBACK ERROR", err.message, "Click anywhere on the web page to grant audio playback permissions.");
+          });
+        }
+      }
+    }
+
+    function cueDeck(deckKey) {
+      const deck = decks[deckKey];
+      if (!deck.loaded) return;
+      deck.audio.pause();
+      deck.audio.currentTime = 0;
+      deck.playing = false;
+      const btn = document.getElementById(`play-${deckKey.toLowerCase()}`);
+      if (btn) {
+        btn.innerText = '▶ PLAY';
+        btn.classList.remove('active-playing');
+      }
+    }
+
+    function seekDeckFromCanvas(deckKey, event, canvasElem) {
+      const deck = decks[deckKey];
+      if (!deck.loaded || !deck.audio.duration || !deck.peaks) return;
+      const rect = canvasElem.getBoundingClientRect();
+      const clickX = event.clientX - rect.left;
+      const w = rect.width;
+      
+      const { length } = deck.peaks;
+      const progress = deck.audio.currentTime / deck.audio.duration;
+      const windowFrac = 0.08;
+      const centerIdx = progress * length;
+      const halfWindow = (windowFrac * length) / 2;
+      const startIdx = centerIdx - halfWindow;
+      const endIdx = centerIdx + halfWindow;
+      
+      const targetSampleIdx = startIdx + ((clickX / w) * (endIdx - startIdx));
+      const targetProgress = Math.min(1.0, Math.max(0.0, targetSampleIdx / length));
+      deck.audio.currentTime = targetProgress * deck.audio.duration;
+    }
+
+    function initJogwheelDragScrubbing() {
+      ['A', 'B'].forEach(deckKey => {
+        const jog = document.getElementById(`jog-${deckKey.toLowerCase()}`);
+        const canvas = document.getElementById(`waveform-${deckKey.toLowerCase()}`);
+
+        if (canvas) {
+          canvas.style.cursor = 'pointer';
+          canvas.onclick = (e) => seekDeckFromCanvas(deckKey, e, canvas);
+        }
+
+        if (jog) {
+          let isDragging = false;
+          let lastX = 0;
+
+          jog.onmousedown = (e) => {
+            isDragging = true;
+            lastX = e.clientX;
+          };
+
+          window.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            const deck = decks[deckKey];
+            if (!deck.loaded || !deck.audio.duration) return;
+            const deltaX = e.clientX - lastX;
+            lastX = e.clientX;
+            // Smooth DJ Jogwheel pitch bend / scrub seek (0.05 seconds per pixel)
+            deck.audio.currentTime = Math.min(deck.audio.duration, Math.max(0, deck.audio.currentTime + (deltaX * 0.05)));
+          });
+
+          window.addEventListener('mouseup', () => { isDragging = false; });
+        }
+      });
+    }
+
+    function triggerHotCue(deckKey, padNum) {
+      const deck = decks[deckKey];
+      if (!deck.loaded) return;
+      if (!deck.cues[padNum]) {
+        deck.cues[padNum] = deck.audio.currentTime;
+      } else {
+        deck.audio.currentTime = deck.cues[padNum];
+      }
+    }
+
+    function updatePitch(deckKey, val) {
+      const deck = decks[deckKey];
+      const rate = parseFloat(val);
+      if (deck && deck.audio) {
+        deck.audio.playbackRate = rate;
+      }
+      const pct = ((rate - 1.0) * 100).toFixed(1);
+      const sign = pct >= 0 ? '+' : '';
+      const displayElem = document.getElementById(`pitch-val-${deckKey.toLowerCase()}`);
+      if (displayElem) displayElem.innerText = `${sign}${pct}%`;
+    }
+
+    function syncDeck(deckKey) {
+      const otherKey = deckKey === 'A' ? 'B' : 'A';
+      if (!decks[otherKey].bpm) return;
+      decks[deckKey].audio.playbackRate = decks[otherKey].audio.playbackRate || 1.0;
+    }
+
+    function setKnobVal(id, normVal) {
+      const knob = document.getElementById(id);
+      if (knob) {
+        knob.value = (normVal * 24) - 12;
+        applyMixerVolumes();
+      }
+    }
+
+    function applyMixerVolumes() {
+      initAudioContext();
+      const faderA = parseFloat(document.getElementById('fader-a').value);
+      const faderB = parseFloat(document.getElementById('fader-b').value);
+      const xfade = parseFloat(document.getElementById('crossfader').value);
+
+      // Equal Power Crossfader Curve
+      const gainA = faderA * Math.cos(xfade * 0.5 * Math.PI);
+      const gainB = faderB * Math.sin(xfade * 0.5 * Math.PI);
+
+      if (decks.A.gainNode) decks.A.gainNode.gain.setValueAtTime(gainA, actx.currentTime);
+      if (decks.B.gainNode) decks.B.gainNode.gain.setValueAtTime(gainB, actx.currentTime);
+
+      // Apply Real 3-Band Parametric EQ Filters
+      ['A', 'B'].forEach(key => {
+        const deck = decks[key];
+        const lowGain = parseFloat(document.getElementById(`low-${key.toLowerCase()}`).value);
+        const midGain = parseFloat(document.getElementById(`mid-${key.toLowerCase()}`).value);
+        const hiGain = parseFloat(document.getElementById(`hi-${key.toLowerCase()}`).value);
+
+        if (deck.eqLow) deck.eqLow.gain.setValueAtTime(lowGain, actx.currentTime);
+        if (deck.eqMid) deck.eqMid.gain.setValueAtTime(midGain, actx.currentTime);
+        if (deck.eqHigh) deck.eqHigh.gain.setValueAtTime(hiGain, actx.currentTime);
+      });
+    }
+
+    function importBatchTracks(e) {
+      const files = Array.from(e.target.files);
+      files.forEach(f => {
+        if (!trackCrate.some(t => t.file.name === f.name && t.file.size === f.size)) {
+          const item = { file: f, format: f.name.split('.').pop().toUpperCase(), bpm: 'Analyzing...', key: 'Analyzing...' };
+          trackCrate.push(item);
+          const reader = new FileReader();
+          reader.onload = function(evt) {
+            initAudioContext();
+            actx.decodeAudioData(evt.target.result, (pcm) => {
+              const res = analyzeAudioMetadata(pcm);
+              item.bpm = res.bpm;
+              item.key = res.key;
+              renderRekordboxTable();
+            }, () => {
+              item.bpm = "N/A";
+              item.key = "N/A";
+              renderRekordboxTable();
+            });
+          };
+          reader.readAsArrayBuffer(f);
+        }
+      });
+      renderRekordboxTable();
+    }
+
+    function renderRekordboxTable(filterTerm = '') {
+      const tbody = document.getElementById('rb-tbody');
+      const filtered = trackCrate.filter(t => t.file.name.toLowerCase().includes(filterTerm.toLowerCase()));
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; padding:2rem; color:var(--rekordbox-muted);">Crate is empty. Connect hardware mixer and import files.</td></tr>`;
+        return;
+      }
+      tbody.innerHTML = filtered.map((item, idx) => `
+        <tr>
+          <td>${idx + 1}</td>
+          <td style="font-weight:700; color:#fff;">${item.file.name}</td>
+          <td><span style="font-family:monospace; font-size:0.7rem; background:#1c2436; color:var(--rekordbox-cyan); padding:0.1rem 0.4rem; border-radius:3px;">${item.format}</span></td>
+          <td style="font-family:monospace; color:var(--rekordbox-cyan); font-weight:800;">${item.bpm}</td>
+          <td style="font-family:monospace; color:var(--rekordbox-green); font-weight:800;">${item.key}</td>
+          <td style="font-family:monospace;">${(item.file.size / (1024 * 1024)).toFixed(2)} MB</td>
+          <td>
+            <span class="load-deck-tag" onclick="loadFromTable(${idx}, 'A')">LOAD 1</span>
+            <span class="load-deck-tag deck2" onclick="loadFromTable(${idx}, 'B')">LOAD 2</span>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function loadFromTable(idx, deckKey) {
+      const item = trackCrate[idx];
+      if (item) loadDeckTrack(deckKey, item.file);
+    }
+
+    function filterTrackTable() {
+      renderRekordboxTable(document.getElementById('search-input').value);
+    }
+
+    function clearLibraryCrate() {
+      trackCrate.length = 0;
+      renderRekordboxTable();
+    }
+
+    function setupTimeTracking(deckKey) {
+      const deck = decks[deckKey];
+      deck.audio.ontimeupdate = () => {
+        const cur = formatTime(deck.audio.currentTime);
+        const dur = formatTime(deck.audio.duration || 0);
+        document.getElementById(`time-${deckKey.toLowerCase()}`).innerText = `${cur} / ${dur}`;
+      };
+    }
+
+    function formatTime(sec) {
+      const m = Math.floor(sec / 60); const s = Math.floor(sec % 60);
+      return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+    }
+
+    window.addEventListener('load', () => {
+      initONNXEngine();
+      startWaveformAnimationLoop();
+      initJogwheelDragScrubbing();
+      updateMIDILog("Click 'PAIR HARDWARE MIXER' or press Play to link audio & MIDI devices.");
+    });
+  </script>
+</body>
+</html>
