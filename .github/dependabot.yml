@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # 1. Python Ecosystem (pip / pyproject.toml)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "sovereign-ci-gate"
+
+  # 2. GitHub Actions Workflows (CI Runner updates)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
