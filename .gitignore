@@ -9,3 +9,21 @@ cpp-core/vendor/ort/onnxruntime-win-x64-1.20.1/lib/onnxruntime.pdb
 .venv/
 venv/
 node_modules/
+
+# Workstation state, credentials and local configuration — never commit
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+id_rsa
+id_ed25519
+.venv_ui/
+**/.venv_ui/
+logs/
+**/logs/
